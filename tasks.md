@@ -74,6 +74,8 @@ and [spoofing-inventory.md](spoofing-inventory.md).
 
 ## Remaining acceptance work
 
+- [ ] Identify the user-reported Duck failure: fresh backend state is Ready/no error;
+  exact Settings/provisioning symptom is pending. Do not equate Ready with consumer success.
 - [ ] Sync Frankel's proprietary vendor/kernel dependencies and complete full device preflight.
 - [ ] Validate Frankel compilation and compiled SELinux after integrating the shared build fixes.
 - [ ] Validate Frankel firmware import signing, production CA constraints and consumers.

@@ -248,6 +248,17 @@ the actual checker/consumer acceptance remains unresolved.
   manufacturer-certified boot state; STRONG also imposes update requirements.
   Successful certificate issuance alone does not establish those verdicts.
 
+## Duck failure report follow-up
+
+The user reports Duck RKP is not working. A fresh read-only check still returns
+available/enabled/active=true, busy=false, has_keybox=true, stage=ready and an empty
+error. Automatic provisioning is not paused or waiting for network; expiry is
+2026-11-20 09:46:07 UTC. The sampled 3000 recent log lines contain no known Duck
+error codes or relevant AVC denials. This does not reproduce a provisioning fault
+or establish consumer acceptance. The exact Settings/action symptom is pending.
+See [status follow-up](porting/audit/tokay-duck-status-followup.json). No setting,
+keybox, package or partition was changed by this check.
+
 ## Scoped validation commands
 
 For the device checks, use the saved

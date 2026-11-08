@@ -22,6 +22,10 @@ The Zumapro source fix is published from an isolated worktree; handoff overlays 
 its main branch. Active build sources/manifests remain unchanged. No rebuilt OTA with
 this source fix was made; the signed metadata derivative was tested on the phone.
 
+The subsequent [Duck status check](porting/audit/tokay-duck-status-followup.json)
+still reports Ready/no error following the user's failure report. Its exact
+Settings/provisioning symptom remains unidentified; no source fix was made.
+
 ## Supplied device references
 
 - [SM8450](https://github.com/Evolution-X-Devices/device_xiaomi_sm8450-common/commit/6249226dc962b78852097d4612875fc16dd665e5)
