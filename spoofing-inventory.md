@@ -1,15 +1,16 @@
 # Evolution X spoofing and Duck RKP port inventory
 
-Updated 2026-11-08 UTC after the Tokay import-attestation source commits.
+Updated 2026-11-08 UTC after Tokay build-output verification and publication of the build fixes.
 
 Targets: LineageOS lineage-24.0 / Android 17, Pixel 9 (tokay, zumapro) and
 Pixel 10 (frankel, laguna).
 Source: [Evolution X repositories](https://github.com/orgs/Evolution-X/repositories),
 active cnb sources and the supplied device commits.
 
-Fifteen source commits cover the shared stack and device import configuration. Static checks pass with
-the qualifications in [verification.md](porting/audit/verification.md). Tokay Duck signing,
-Android compilation, compiled policy and device behavior remain unverified.
+Seventeen source commits cover the shared stack and device import configuration. Static checks pass with
+the qualifications in [verification.md](porting/audit/verification.md). The user's Tokay OTA,
+compiled Settings, Keystore2, runtime libc and policy outputs are verified. Duck signing,
+device behavior, Android tests and Frankel compilation remain unverified.
 
 ## Supplied device references
 
@@ -71,6 +72,8 @@ No upstream PR was opened.
 | device/google/muzel | 2b195b35d051eb63c9dcc6b02ff66a9e5c1a6a61 | Isolated Frankel selection and RKP hostname default |
 | device/google/caimito | 2f7cc304134f77b3858da6e9d2390a5b22fbc467 | Product-partition placement, captured outside the running build |
 | device/google/muzel | 9c4bad6692c8275790bff334263914ddbd2a59e5 | Product-partition placement for Frankel |
+| system/security | a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8 | Concrete Keystore error type for generation/import callbacks |
+| packages/apps/Settings | 233ff319af4e0eb8369b4f1a5f976b3205a591e9 | Missing shared Compose focus-ring dependency; Joey's upstream helper |
 
 Evolution vendor coverage: vendor/lineage contains the optional API-32 Soong change.
 The audited global Pixel Beta fingerprint override explicitly excludes Tokay upstream
@@ -93,8 +96,8 @@ retain their actual author.
 | system/core | [android_system_core](https://github.com/fruity-lineage/android_system_core/commit/19383c870279c12a823f1757ac455961b0973485) |
 | device/lineage/sepolicy | [android_device_lineage_sepolicy](https://github.com/fruity-lineage/android_device_lineage_sepolicy/commit/7fc49f44fb98584fc3890f0e77609c246b19c126) |
 | frameworks/base | [android_frameworks_base](https://github.com/fruity-lineage/android_frameworks_base/commit/474ebc595d120aa3025f6ec0e95acb9a2112e85e) |
-| packages/apps/Settings | [android_packages_apps_Settings](https://github.com/fruity-lineage/android_packages_apps_Settings/commit/19a7e7263ff77194412e7aff729ab3d9b924e6b3) |
-| system/security | [android_system_security](https://github.com/fruity-lineage/android_system_security/commit/52f9343c51950fcb5b10d0e485c7f044250cdc93) |
+| packages/apps/Settings | [android_packages_apps_Settings](https://github.com/fruity-lineage/android_packages_apps_Settings/commit/233ff319af4e0eb8369b4f1a5f976b3205a591e9) |
+| system/security | [android_system_security](https://github.com/fruity-lineage/android_system_security/commit/a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8) |
 | device/google/caimito | [android_device_google_caimito](https://github.com/fruity-lineage/android_device_google_caimito/commit/2f7cc304134f77b3858da6e9d2390a5b22fbc467) |
 | device/google/muzel | [android_device_google_muzel](https://github.com/fruity-lineage/android_device_google_muzel/commit/9c4bad6692c8275790bff334263914ddbd2a59e5) |
 
@@ -102,7 +105,7 @@ Bouncy Castle is a fork of Evolution-X/external_bouncycastle, which contains the
 verified Android 17 base. LineageOS's GitHub Bouncy Castle mirror stops at older
 Android branches. The other nine forks use their corresponding LineageOS parents.
 
-[publication-commits.json](porting/audit/publication-commits.json) maps all fifteen local
+[publication-commits.json](porting/audit/publication-commits.json) maps all seventeen local
 and public commits. Only ported code was uploaded; pre-existing build/soong edits remain
 outside publication. The handoff repository is
 [rom-porting](https://github.com/fruity-lineage/rom-porting); its manifest
@@ -133,7 +136,8 @@ compilation, firmware behavior and CA acceptance remain pending. See
 - The baseline 94 files were checked at the initial checkpoint. The follow-up verifies
   all 99 combined files, including 88 unchanged baseline files, against committed trees.
 - The initial nine port working trees were clean at verification; commit whitespace and
-  attribution were checked. The current active caimito property edit is preserved.
+  attribution were checked. The active build fixes are now in amended local topic tips;
+  security, Settings and caimito are clean and match the published trees.
 - 41 Java and 16 Kotlin sources parse without syntax errors.
 - 353 resource references resolve; 244 imported names are unique; eight destinations exist.
 - All 276 prior ActivityManager signatures remain; all 15 additions have implementations.
@@ -145,11 +149,16 @@ compilation, firmware behavior and CA acceptance remain pending. See
 - Import follow-up: five final Java parses and both Rust rustfmt checks pass;
   source/API/service/property inspection and scoped preflight pass. Added tests are unexecuted.
 - Current device snapshots use PRODUCT_PRODUCT_PROPERTIES. Both partition corrections
-  were published from isolated worktrees; 100 combined snapshot hashes pass. The active
-  Tokay edit is preserved, and the active muzel checkout is unchanged.
+  were published from isolated worktrees; the prior 100 combined snapshot hashes passed.
+  Tokay's property edit is now committed in its active topic tip, and the active muzel
+  checkout is unchanged.
 
-These checks do not establish Java/Kotlin type checking, native linking, compiled policy,
-hardware signing or remote acceptance. Android/bionic tests remain unexecuted. C++ parser
+The initial static checks did not establish compilation. The user's subsequent Tokay OTA
+and installed compiled outputs provide build evidence after the three fixes above.
+All 101 current source snapshot files match public trees; 99 prior hashes are unchanged.
+See [tokay-build-followups.md](porting/audit/tokay-build-followups.md) for provenance,
+artifact hashes and acceptance limits. Hardware signing and remote acceptance remain
+unverified. Android/bionic tests remain unexecuted. C++ parser
 limitations, non-transactional imports/reset, refresh races and the native invalid-pointer
 edge case are detailed in the verification report.
 

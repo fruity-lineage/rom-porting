@@ -1,0 +1,200 @@
+{
+  "date": "2026-11-08",
+  "ota": {
+    "path": "out/target/product/tokay/lineage-24.0-20261108-UNOFFICIAL-tokay.zip",
+    "bytes": 1705536749,
+    "modified_utc": "2026-11-08T20:47:16.780504+00:00",
+    "sha256": "55f7a4cec8e04562628351d9c685159a864b4d77470aad320a521129d1c86852",
+    "zip_crc_check": "pass",
+    "declared_metadata": {
+      "ota-type": "AB",
+      "pre-device": "tokay",
+      "post-sdk-level": "37",
+      "post-security-patch-level": "2026-11-01",
+      "post-build-incremental": "1794170175",
+      "post-timestamp": "1794170175"
+    }
+  },
+  "focus_helper": {
+    "source_commit": "https://github.com/Evolution-X/packages_apps_Settings/commit/3c0e5203a323c7d9a3e36e560be6196ee2a01b5c",
+    "source_author": "Joey <joey@evolution-x.org>",
+    "upstream_blob": "ad97c8f1d3700450320ec9088bddcbdce65abb85",
+    "sha256": "2eb5aa694500aa69230a76d5ee6ba9240f9e21d806f17f50ecba45ea251cf549",
+    "upstream_exact_match": true
+  },
+  "agent_ran_build": false,
+  "limits": [
+    "OTA generation and compilation are supported by user build outputs; a complete build source manifest was not captured before the build.",
+    "Signing-key identity and OTA signature verification were not checked.",
+    "Device boot, imported ATTEST_KEY signing and remote consumer acceptance remain unverified."
+  ],
+  "source_followups": [
+    {
+      "project": "system/security",
+      "base": "52f9343c51950fcb5b10d0e485c7f044250cdc93",
+      "file": "keystore2/src/security_level.rs",
+      "worktree": "/tmp/rom-keystore-build-fix",
+      "branch": "port/build-fix-20261108",
+      "active_checkout_tip": "27c3ec5862429ce676e1a396a747caf7c4567da1",
+      "active_tree": "11c5c2de89fbc415194a1fcf044967dea7fe39f0",
+      "source_sha256": "55bd199f074112bf3f9b0263ad36c605f294517efd4c3e7f19c52a2df2474962",
+      "repository": "fruity-lineage/android_system_security",
+      "published_tip": "a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8",
+      "published_tree": "11c5c2de89fbc415194a1fcf044967dea7fe39f0",
+      "author": "fuzailmansuri <mfm9875@gmail.com>",
+      "subject": "keystore2: Preserve KeyMint errors in attestation creation callbacks",
+      "blob": "9330f12cbaa88ad3ac7de3acf0492f605670acf7",
+      "fast_forward": true,
+      "verified": true
+    },
+    {
+      "project": "packages/apps/Settings",
+      "base": "19a7e7263ff77194412e7aff729ab3d9b924e6b3",
+      "file": "src/com/android/settings/widget/InsetFocusRing.kt",
+      "worktree": "/tmp/rom-settings-build-fix",
+      "branch": "port/build-fix-20261108",
+      "active_checkout_tip": "53030932d1aa4b763b77c5085b2430709048dbe0",
+      "active_tree": "e6b7c18fe6a22cac13aa1a864d2b6490b979f6ce",
+      "source_sha256": "2eb5aa694500aa69230a76d5ee6ba9240f9e21d806f17f50ecba45ea251cf549",
+      "repository": "fruity-lineage/android_packages_apps_Settings",
+      "published_tip": "233ff319af4e0eb8369b4f1a5f976b3205a591e9",
+      "published_tree": "e6b7c18fe6a22cac13aa1a864d2b6490b979f6ce",
+      "author": "Joey <joey@evolution-x.org>",
+      "subject": "Settings: Add the focus-ring helper used by spoofing controls",
+      "blob": "ad97c8f1d3700450320ec9088bddcbdce65abb85",
+      "fast_forward": true,
+      "verified": true
+    }
+  ],
+  "source_snapshot_files": 101,
+  "source_snapshot_changes": [
+    {
+      "project": "system/security",
+      "path": "keystore2/src/security_level.rs",
+      "previous_sha256": "e1cad173e270a9ad2db7bc99343cc31856a820be7ff7533a7240fe3a0efa878a",
+      "sha256": "55bd199f074112bf3f9b0263ad36c605f294517efd4c3e7f19c52a2df2474962"
+    },
+    {
+      "project": "packages/apps/Settings",
+      "path": "src/com/android/settings/widget/InsetFocusRing.kt",
+      "previous_sha256": null,
+      "sha256": "2eb5aa694500aa69230a76d5ee6ba9240f9e21d806f17f50ecba45ea251cf549"
+    }
+  ],
+  "source_commit_count": 17,
+  "active_checkouts_preserved": true,
+  "installed_artifacts": [
+    {
+      "path": "out/target/product/tokay/system/bin/keystore2",
+      "bytes": 2491088,
+      "sha256": "5892ef997bb46c8d93c67849b2783bec2c477e44ac554e15e632b638ff2e06dd"
+    },
+    {
+      "path": "out/target/product/tokay/apex/com.android.runtime/lib64/bionic/libc.so",
+      "bytes": 1400440,
+      "sha256": "7bb3e0883477ce139048dcf28055317b3e3719b1d07dc4130da2c09e237d4e6d"
+    },
+    {
+      "path": "out/target/product/tokay/system_ext/priv-app/Settings/Settings.apk",
+      "bytes": 93372600,
+      "sha256": "ed0495dfd492498fb61e9a9f757f047a50e9bb54bc6b3214839ca97a215dfc15"
+    },
+    {
+      "path": "out/target/product/tokay/product/etc/build.prop",
+      "bytes": 9677,
+      "sha256": "f8229a2e54274f52f60832cef304ee6551b4ad20298b8a5e2c1ef9963f87b859"
+    },
+    {
+      "path": "out/target/product/tokay/vendor/etc/selinux/precompiled_sepolicy",
+      "bytes": 1281805,
+      "sha256": "93e5b07475a6e0cc35c33646aa52049386a58986f85bfec0e734b0b2878384c0"
+    }
+  ],
+  "installed_focus_class_present": true,
+  "installed_product_properties": {
+    "ro.lineage.duckrkp.trusty_import": "true",
+    "remote_provisioning.hostname": "remoteprovisioning.googleapis.com"
+  },
+  "current_fork_verification": [
+    {
+      "repository": "fruity-lineage/android_external_bouncycastle",
+      "tip": "6d01d24edd9e4838ddde5be7cbcfff7b1d4ea7bc",
+      "tree": "4216bd3ab659e3f31fcf5ad5b15e09c251d19d9f",
+      "default_branch": "main",
+      "fork_parent": "Evolution-X/external_bouncycastle",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_bionic",
+      "tip": "32c175151d1b0fd666de2bfa70b32e246d26cbe8",
+      "tree": "5f06a2b1ab8f144a6783dac5dc250009d13bb6b7",
+      "default_branch": "main",
+      "fork_parent": "LineageOS/android_bionic",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_vendor_lineage",
+      "tip": "887e8e0b3ae15e6c84de29953169392cd220a1c8",
+      "tree": "565399672310113808be796ddc922e9abe0fc049",
+      "default_branch": "main",
+      "fork_parent": "LineageOS/android_vendor_lineage",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_system_core",
+      "tip": "19383c870279c12a823f1757ac455961b0973485",
+      "tree": "88286a85679865dae4a35548a1af0f59fb0b3a48",
+      "default_branch": "main",
+      "fork_parent": "LineageOS/android_system_core",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_device_lineage_sepolicy",
+      "tip": "7fc49f44fb98584fc3890f0e77609c246b19c126",
+      "tree": "c2b7ddcaf38f4c47cb6d5d04c7c9c13947c5f47a",
+      "default_branch": "main",
+      "fork_parent": "LineageOS/android_device_lineage_sepolicy",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_frameworks_base",
+      "tip": "474ebc595d120aa3025f6ec0e95acb9a2112e85e",
+      "tree": "60ac2574e42b052f80d4ed82c0f7fb9a7e3e471c",
+      "default_branch": "main",
+      "fork_parent": "LineageOS/android_frameworks_base",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_packages_apps_Settings",
+      "tip": "233ff319af4e0eb8369b4f1a5f976b3205a591e9",
+      "tree": "e6b7c18fe6a22cac13aa1a864d2b6490b979f6ce",
+      "default_branch": "main",
+      "fork_parent": "LineageOS/android_packages_apps_Settings",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_system_security",
+      "tip": "a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8",
+      "tree": "11c5c2de89fbc415194a1fcf044967dea7fe39f0",
+      "default_branch": "main",
+      "fork_parent": "LineageOS/android_system_security",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_device_google_caimito",
+      "tip": "2f7cc304134f77b3858da6e9d2390a5b22fbc467",
+      "tree": "de14f764bf325ecfc181214052b0b7319337f0f1",
+      "default_branch": "main",
+      "fork_parent": "LineageOS/android_device_google_caimito",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_device_google_muzel",
+      "tip": "9c4bad6692c8275790bff334263914ddbd2a59e5",
+      "tree": "1b89905adb299ff0f35a3744619d5b69cecaef4b",
+      "default_branch": "main",
+      "fork_parent": "LineageOS/android_device_google_muzel",
+      "verified": true
+    }
+  ]
+}

@@ -171,9 +171,9 @@
     "upstream": "LineageOS/android_packages_apps_Settings",
     "repository": "fruity-lineage/android_packages_apps_Settings",
     "branch": "main",
-    "local_tip": "a2bc940f5c9089ea445f1baaacaa68e307456b45",
-    "published_tip": "19a7e7263ff77194412e7aff729ab3d9b924e6b3",
-    "tree": "dc807d6a9ef312ca71b115ff0750a5223926ffad",
+    "local_tip": "233ff319af4e0eb8369b4f1a5f976b3205a591e9",
+    "published_tip": "233ff319af4e0eb8369b4f1a5f976b3205a591e9",
+    "tree": "e6b7c18fe6a22cac13aa1a864d2b6490b979f6ce",
     "backup_ref": "refs/heads/backup/pre-fruity-publication-20261108",
     "commits": [
       {
@@ -186,18 +186,30 @@
           "https://github.com/Evolution-X/packages_apps_Evolver/commit/17ba8bbbc530c305efcc3c102bbc9d6f97e99f4d",
           "https://github.com/Evolution-X/packages_apps_Sandbox/commit/db3d493ae3bd988e3df682c81941867c0f81b5b2"
         ]
+      },
+      {
+        "local_commit": "233ff319af4e0eb8369b4f1a5f976b3205a591e9",
+        "published_commit": "233ff319af4e0eb8369b4f1a5f976b3205a591e9",
+        "subject": "Settings: Add the focus-ring helper used by spoofing controls",
+        "author": "Joey <joey@evolution-x.org>",
+        "references": [
+          "https://github.com/Evolution-X/packages_apps_Settings/commit/3c0e5203a323c7d9a3e36e560be6196ee2a01b5c",
+          "https://github.com/fruity-lineage/android_packages_apps_Settings/commit/19a7e7263ff77194412e7aff729ab3d9b924e6b3"
+        ]
       }
     ],
-    "published": true
+    "published": true,
+    "worktree": "/tmp/rom-settings-build-fix",
+    "active_checkout_tip": "53030932d1aa4b763b77c5085b2430709048dbe0"
   },
   {
     "project": "system/security",
     "upstream": "LineageOS/android_system_security",
     "repository": "fruity-lineage/android_system_security",
     "branch": "main",
-    "local_tip": "cc1f9e42200d3e9c7a1aa47e433bd72023162002",
-    "published_tip": "52f9343c51950fcb5b10d0e485c7f044250cdc93",
-    "tree": "2c3d406570fd78d916309bd837a53fb3493dc48e",
+    "local_tip": "a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8",
+    "published_tip": "a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8",
+    "tree": "11c5c2de89fbc415194a1fcf044967dea7fe39f0",
     "backup_ref": "refs/heads/backup/pre-fruity-publication-20261108",
     "commits": [
       {
@@ -208,9 +220,20 @@
         "references": [
           "https://github.com/LineageOS/android_system_security/commit/123cc4af487922618cd99f28d05736e47eba7b00"
         ]
+      },
+      {
+        "local_commit": "a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8",
+        "published_commit": "a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8",
+        "subject": "keystore2: Preserve KeyMint errors in attestation creation callbacks",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/fruity-lineage/android_system_security/commit/52f9343c51950fcb5b10d0e485c7f044250cdc93"
+        ]
       }
     ],
-    "published": true
+    "published": true,
+    "worktree": "/tmp/rom-keystore-build-fix",
+    "active_checkout_tip": "27c3ec5862429ce676e1a396a747caf7c4567da1"
   },
   {
     "project": "device/google/caimito",
@@ -242,7 +265,8 @@
       }
     ],
     "published": true,
-    "worktree": "/tmp/caimito-property-port"
+    "worktree": "/tmp/caimito-property-port",
+    "active_checkout_tip": "bf2174958d133abfd1f233dd559e019939d8f707"
   },
   {
     "project": "device/google/muzel",

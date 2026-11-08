@@ -12,6 +12,9 @@ The shared stack is committed. Device configuration is available for Pixel 9
 (tokay/caimito/zumapro) and Pixel 10 (frankel/muzel/laguna). Imported-key signing,
 production CA constraints and consumer acceptance remain unverified on hardware.
 The original direct external-key CSR protocol remains unresolved on these targets.
+Tokay's user build produced a verified OTA after the recorded
+[build fixes](porting/audit/tokay-build-followups.md), now published as follow-up
+commits. Frankel compilation remains pending.
 
 ## Workspace setup
 
@@ -36,14 +39,14 @@ either path and commit them in agent-memory. This checkout alone contains no ROM
 sources or private keyboxes. Source commit mapping and identical-tree publication
 checks are in [publication-commits.json](porting/audit/publication-commits.json).
 
-Do not sync or change source revisions during an active build. The current server's
-Tokay build was reported by the user as running; Frankel's configuration change was
-prepared in a separate worktree. Its proprietary vendor and kernel dependencies
+Do not sync or change source revisions during an active build. Tokay's build fixes
+and Frankel's configuration were published from isolated worktrees, preserving
+active source checkouts. Frankel's proprietary vendor and kernel dependencies
 were not synced or built during this work.
 
 ## Acceptance work
 
 Read the [Tokay adapter audit](porting/audit/tokay-duck-import.md) and
-[Frankel source audit](porting/audit/frankel-import.md). Static checks are not a
-compiler, compiled policy or hardware result. Complete the recorded device checks
+[Frankel source audit](porting/audit/frankel-import.md). Tokay's compiled outputs are
+recorded separately from the initial static checks. Complete the recorded device checks
 before claiming successful signing or consumer acceptance.

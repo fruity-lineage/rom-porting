@@ -5,9 +5,11 @@ the final source trees. This report supersedes the earlier uncommitted-work stat
 
 The baseline source review and scoped static checks pass after corrections. A subsequent
 Tokay import-attestation adapter is committed and statically checked; its details are in
-[tokay-duck-import.md](tokay-duck-import.md). Full acceptance of
-the whole stack remains pending: Android compiler/linker/tests, compiled SELinux and
-Tokay external-key signing have no verified result.
+[tokay-duck-import.md](tokay-duck-import.md). The user's subsequent Tokay build produced
+a verified OTA after three fixes. Compiled Settings, Keystore2, runtime libc and policy
+outputs exist; [tokay-build-followups.md](tokay-build-followups.md) records the fixes and
+artifact checks. Full acceptance remains pending: Android tests, hardware signing,
+device behavior and Frankel compilation have no verified result.
 
 ## Scope and corrections
 
@@ -55,7 +57,8 @@ were committed separately. Other project commits keep connected dependencies tog
 The native parser attempt in verification-syntax.json encounters Android C++ macros and
 Clang C atomic extensions, including constructs with identical failures in the stock
 files. It is not a clean C++ compiler result. Native symbol/syscall checks and the prior
-inspection support the static assessment; native compilation/linking remain pending.
+inspection support the static assessment. Subsequent Tokay build outputs provide
+native compilation/linking evidence; runtime acceptance remains pending.
 
 AIDL --checkapi is intended for structured stable interfaces and rejected the stock
 unstructured ActivityManager dependencies. The successful --apimapping checks were used
@@ -80,7 +83,9 @@ neverallow success. Keep those distinctions when reusing the zero-error result.
 
 ## Pending tests and known risks
 
-No Android or kernel build ran in this verification. The applicable
+No agent-run Android or kernel build was used. The initial static review preceded the
+user's Tokay build; the subsequent OTA and compiled outputs were inspected read-only.
+The applicable
 [ROM skill](/serverhive4/fruitzail/.agents/skills/rom-device-dev/SKILL.md) states:
 “Nothing gets built to test — work must be right by inspection, symbol checking and
 scripts/preflight.py.” The
@@ -107,7 +112,8 @@ Concrete remaining limits:
   offer no cross-process compare-and-swap; a narrow final write race remains.
 - Response size bounds need comparison with live data and document-provider behavior.
 - Runtime GMS availability is not established by this LineageOS product configuration.
-- Java/Kotlin type checking, C++ linking, compiled policy and actual device behavior are pending.
+- Tokay's subsequent build provides compilation and compiled-policy evidence; Android
+  tests and actual device behavior remain pending. Frankel compilation is unverified.
 
 ## Tokay Duck backend
 
@@ -151,7 +157,14 @@ in publication-commits.json and publication-verification.json. Agent notes and p
 artifacts now reside in their own Git repository, linked from the Android root.
 
 Both device configurations now place their properties in the product partition. Fifteen
-source commits are published, and 100 current snapshot files are checked, including the
-isolated Frankel file. The active caimito one-line product edit remains unstaged and
-unmodified; published source corrections were prepared separately. The HTTPS Git
+source commits were published, and 100 snapshot files were checked at that checkpoint,
+including the isolated Frankel file. The active caimito property edit was preserved;
+published source corrections were prepared separately. The HTTPS Git
 endpoint returned HTTP 403, while GitHub API permissions and publication succeeded.
+
+Build follow-up: seventeen source commits are now public. Security and Settings received
+separate fast-forward fixes matching the user's amended build trees; caimito's matching
+property fix was already public. All 101 current snapshot files match published trees.
+The OTA checksum, ZIP CRC, declared metadata and selected installed artifacts are
+verified in tokay-build-followup-verification.json. Active source files, branches and
+manifests were preserved. Hardware signing and remote acceptance remain pending.

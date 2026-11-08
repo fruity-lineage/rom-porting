@@ -1,6 +1,6 @@
 # Task state
 
-Updated 2026-11-08 UTC after verifying source forks and publishing the shared handoff.
+Updated 2026-11-08 UTC after verifying Tokay build outputs and publishing the missing build fixes.
 
 ## Completed
 
@@ -35,32 +35,37 @@ Updated 2026-11-08 UTC after verifying source forks and publishing the shared ha
 - [x] Publish AGENTS.md, memory, inventory, audits and all three manifest overlays in rom-porting/main.
 - [x] Verify all ten source fork tips and all 57 initial handoff files against their local commits.
 - [x] Publish the device-neutral organization profile with the required AI-assistance note.
+- [x] Collect the user's Tokay OTA and verify its SHA-256, ZIP CRC, metadata and installed port artifacts.
+- [x] Resolved build blockers: keystore2 Rust closure type mismatch, Settings InsetFocusRing widget restoration, and caimito PRODUCT_PRODUCT_PROPERTIES partition placement.
+- [x] Publish the two missing fixes as separate fast-forward commits; preserve the helper's upstream author.
+- [x] Match all 101 current source snapshot files to public trees and preserve active checkouts.
 
 The initial nine projects were clean at verification. Current publication contains
-fifteen source commits in ten forks. The active caimito product-property edit is
-preserved; both device corrections were committed in isolated worktrees.
+seventeen source commits in ten forks. The active security, Settings and caimito
+build fixes are committed in their local topic tips. Their trees match public main;
+publication used isolated worktrees and did not switch or edit active source inputs.
 Pre-existing build/soong
 changes remain outside the port commits. See [verification.md](porting/audit/verification.md)
 and [spoofing-inventory.md](spoofing-inventory.md).
 
 ## Remaining acceptance work
 
-- [ ] Collect the result of the user's currently running Tokay build; no compiler result is recorded.
 - [ ] Sync Frankel's proprietary vendor/kernel dependencies and complete full device preflight.
+- [ ] Validate Frankel compilation and compiled SELinux after integrating the shared build fixes.
 - [ ] Validate Frankel firmware import signing, production CA constraints and consumers.
 - [ ] Connect Tokay through an ADB server reachable from this remote SSH server.
 - [ ] Verify imported ATTEST_KEY acceptance, RKPD chain constraints and ordinary Keystore behavior.
 - [ ] Validate the produced keybox with Tokay consumers, renewal and secondary users.
 - [ ] Resolve direct external-key CSR signing if exact original Duck protocol support is required;
   the imported-CA route is an alternative, not that protocol's implementation.
-- [ ] Complete Android compiler/linker/API checks and compiled SELinux validation.
 - [ ] Execute the added Android/bionic regressions and exercise Settings/Binder flows.
 - [ ] Address or accept the imported native pathname-pointer limitation.
 - [ ] Verify Tokay hardware behavior, ordinary keystore operations and secondary users.
 - [ ] Verify GMS availability and consumers on the intended installation.
 
-No build was run during this verification, following the applicable ROM skills'
-static-only workflow. Android/native tests remain unexecuted. The port is not fully
+No agent-run build was used, following the applicable ROM skills' static-only workflow.
+The user's Tokay build produced the verified OTA and compiled policy; signing-key
+identity and OTA signatures were not verified. Android/native tests remain unexecuted. The port is not fully
 validated on hardware and does not establish remote integrity acceptance.
 
 The original Duck CSR protocols require Qualcomm firmware. Tokay now selects the
