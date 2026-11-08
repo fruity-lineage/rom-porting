@@ -1,0 +1,407 @@
+[
+  {
+    "path": "src/org/evolution/settings/fragments/miscellaneous/Spoofing.kt",
+    "commits": [
+      {
+        "sha": "1475a664b26d8ee6350146ff65ec768280bab92a",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-09-21T06:23:33Z"
+        },
+        "subject": "Evolver: Move pickers, dialogs and spoofing to Material 3 Expressive",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/1475a664b26d8ee6350146ff65ec768280bab92a"
+      }
+    ]
+  },
+  {
+    "path": "src/org/evolution/settings/fragments/miscellaneous/TrickyStore.kt",
+    "commits": [
+      {
+        "sha": "3ba86a8d97e67a4fc5098287dd18a39436aede8f",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-11-06T14:05:40Z"
+        },
+        "subject": "Evolver: TrickyStore: Handle unsupported device RKP and hide keybox UI",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/3ba86a8d97e67a4fc5098287dd18a39436aede8f"
+      },
+      {
+        "sha": "fc55004373abe3562afcb36bfac749c5ca4b1c8f",
+        "author": {
+          "name": "Saikiran",
+          "email": "bjsaikiran@gmail.com",
+          "date": "2026-11-04T14:24:24Z"
+        },
+        "subject": "Evolver: Show native Duck RKP provisioning errors",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/fc55004373abe3562afcb36bfac749c5ca4b1c8f"
+      },
+      {
+        "sha": "6f0efbcb260835d9aeb26ad786c7c4e349403112",
+        "author": {
+          "name": "Saikiran",
+          "email": "bjsaikiran@gmail.com",
+          "date": "2026-11-02T14:20:15Z"
+        },
+        "subject": "Evolver: Show automatic Duck RKP provisioning status",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/6f0efbcb260835d9aeb26ad786c7c4e349403112"
+      },
+      {
+        "sha": "fd6897b49e3397e12e29a1b93341505305818ff9",
+        "author": {
+          "name": "Ghosuto",
+          "email": "clash.raja10@gmail.com",
+          "date": "2026-10-21T08:52:33Z"
+        },
+        "subject": "Evolver: Add Duck RKP V1 provisioning with TrickyStore integration",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/fd6897b49e3397e12e29a1b93341505305818ff9"
+      },
+      {
+        "sha": "cf07a22b6661f019e263a4cddc83b9d09e03f1e6",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-10-31T15:37:20Z"
+        },
+        "subject": "Evolver: TrickyStore: Accept JSON and check keys in patch levels",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/cf07a22b6661f019e263a4cddc83b9d09e03f1e6"
+      },
+      {
+        "sha": "1033bd7f098da29b8e8d1b8d26bb2bc4ac9c07c1",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-10-31T15:20:15Z"
+        },
+        "subject": "Evolver: TrickyStore: Use the framework keybox and patch validators",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/1033bd7f098da29b8e8d1b8d26bb2bc4ac9c07c1"
+      },
+      {
+        "sha": "919ad8feaa562d61f0f563121638972e8b8ae40b",
+        "author": {
+          "name": "Pranav Vashi",
+          "email": "neobuddy89@gmail.com",
+          "date": "2026-10-27T20:02:19Z"
+        },
+        "subject": "Evolver: spoofing: Validate imports and fix TrickyStore target counts",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/919ad8feaa562d61f0f563121638972e8b8ae40b"
+      },
+      {
+        "sha": "e4646384cf63ca2025d8513f1344b14915612daa",
+        "author": {
+          "name": "Pranav Vashi",
+          "email": "neobuddy89@gmail.com",
+          "date": "2026-10-27T08:52:14Z"
+        },
+        "subject": "Evolver: PIF/TrickyStore: per-device initial SDK, wipe prompt after keybox import",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/e4646384cf63ca2025d8513f1344b14915612daa"
+      },
+      {
+        "sha": "1475a664b26d8ee6350146ff65ec768280bab92a",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-09-21T06:23:33Z"
+        },
+        "subject": "Evolver: Move pickers, dialogs and spoofing to Material 3 Expressive",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/1475a664b26d8ee6350146ff65ec768280bab92a"
+      },
+      {
+        "sha": "979973bfe46de15dc0300d52ae7a14b9f4424b5c",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-10-24T05:48:43Z"
+        },
+        "subject": "Evolver: Update keybox repo URL",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/979973bfe46de15dc0300d52ae7a14b9f4424b5c"
+      },
+      {
+        "sha": "7d0abd8bbbb9459ccb5627cd499f5754e8489546",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-09-30T03:14:44Z"
+        },
+        "subject": "Evolver: TrickyStore: Keep the keybox until a replacement is validated",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/7d0abd8bbbb9459ccb5627cd499f5754e8489546"
+      },
+      {
+        "sha": "7ad058129393a62fee20102aaaf9359aa78a7bcb",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-09-29T19:49:59Z"
+        },
+        "subject": "Evolver: TrickyStore: Fix the keybox revocation check",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/7ad058129393a62fee20102aaaf9359aa78a7bcb"
+      },
+      {
+        "sha": "fcb25a7b5b89b05a78a0c4e53bd1074e7dfea090",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-08-18T06:13:23Z"
+        },
+        "subject": "Evolver: Move PIF/TrickyStore to framework backends, add reset",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/fcb25a7b5b89b05a78a0c4e53bd1074e7dfea090"
+      },
+      {
+        "sha": "f3012ef46a6864b84d23c5d0cf6d023a6fbafe52",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-07-14T06:25:24Z"
+        },
+        "subject": "Evolver: trickystore: expand patch date dialog to multi-line format",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/f3012ef46a6864b84d23c5d0cf6d023a6fbafe52"
+      },
+      {
+        "sha": "388e9dc43ab71ab08ff700fbc7067d9183ffa124",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-05-15T02:52:17Z"
+        },
+        "subject": "Evolver: Miscellaneous: Shared UI infrastructure and multi-screen refactors",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/388e9dc43ab71ab08ff700fbc7067d9183ffa124"
+      },
+      {
+        "sha": "5f60700d2b4e2aef6867faa8fbb91b19b745aa99",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-04-23T09:48:28Z"
+        },
+        "subject": "Evolver: Consolidate strings, restructure spoofing, fix stale state bugs",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/5f60700d2b4e2aef6867faa8fbb91b19b745aa99"
+      },
+      {
+        "sha": "f7b64679e6f2daef62fb48f0eee4d25ed6c8eb0e",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-04-25T04:26:23Z"
+        },
+        "subject": "Evolver: Misc: Overhaul app picker screens and consolidate shared UI",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/f7b64679e6f2daef62fb48f0eee4d25ed6c8eb0e"
+      },
+      {
+        "sha": "42227a7ccd02a4fc0e7f16dc88a514062a3d6e7b",
+        "author": {
+          "name": "Pranav Vashi",
+          "email": "neobuddy89@gmail.com",
+          "date": "2026-04-19T18:18:36Z"
+        },
+        "subject": "Evolver: Add auto-select button for tricky store apps list",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/42227a7ccd02a4fc0e7f16dc88a514062a3d6e7b"
+      },
+      {
+        "sha": "27cc9049eaae7bf946e8d452397771716b54e211",
+        "author": {
+          "name": "rmp22",
+          "email": "195054967+rmp22@users.noreply.github.com",
+          "date": "2026-04-18T07:03:23Z"
+        },
+        "subject": "Evolver: Fix spoofing structure",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/27cc9049eaae7bf946e8d452397771716b54e211"
+      },
+      {
+        "sha": "b11955f228f594fe00c13c91fb0fa819223037ac",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-04-14T18:29:23Z"
+        },
+        "subject": "Evolver: TrickyStore: restore target mode from disk on fragment resume",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/b11955f228f594fe00c13c91fb0fa819223037ac"
+      },
+      {
+        "sha": "58dc02dde08e779b8cd8bd4c251f683f966a1049",
+        "author": {
+          "name": "Pranav Vashi",
+          "email": "neobuddy89@gmail.com",
+          "date": "2026-04-14T04:28:47Z"
+        },
+        "subject": "Evolver: Move trickystore, pif and game props spoof",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/58dc02dde08e779b8cd8bd4c251f683f966a1049"
+      },
+      {
+        "sha": "8503001d2a920c5047af9b6a3639ce66d983c4a6",
+        "author": {
+          "name": "Pranav Vashi",
+          "email": "neobuddy89@gmail.com",
+          "date": "2026-04-13T04:13:08Z"
+        },
+        "subject": "Evolver: Add pref screens for game spoof, PIF and trickstore",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/8503001d2a920c5047af9b6a3639ce66d983c4a6"
+      }
+    ]
+  },
+  {
+    "path": "src/org/evolution/settings/fragments/miscellaneous/PlayIntegrityFix.kt",
+    "commits": [
+      {
+        "sha": "919ad8feaa562d61f0f563121638972e8b8ae40b",
+        "author": {
+          "name": "Pranav Vashi",
+          "email": "neobuddy89@gmail.com",
+          "date": "2026-10-27T20:02:19Z"
+        },
+        "subject": "Evolver: spoofing: Validate imports and fix TrickyStore target counts",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/919ad8feaa562d61f0f563121638972e8b8ae40b"
+      },
+      {
+        "sha": "e4646384cf63ca2025d8513f1344b14915612daa",
+        "author": {
+          "name": "Pranav Vashi",
+          "email": "neobuddy89@gmail.com",
+          "date": "2026-10-27T08:52:14Z"
+        },
+        "subject": "Evolver: PIF/TrickyStore: per-device initial SDK, wipe prompt after keybox import",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/e4646384cf63ca2025d8513f1344b14915612daa"
+      },
+      {
+        "sha": "1475a664b26d8ee6350146ff65ec768280bab92a",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-09-21T06:23:33Z"
+        },
+        "subject": "Evolver: Move pickers, dialogs and spoofing to Material 3 Expressive",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/1475a664b26d8ee6350146ff65ec768280bab92a"
+      },
+      {
+        "sha": "f0cedff4dc5673d44903dae947ca506de4613b68",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-10-17T17:30:33Z"
+        },
+        "subject": "Evolver: spoofing: use tonal ButtonPreference with reset icon for resets",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/f0cedff4dc5673d44903dae947ca506de4613b68"
+      },
+      {
+        "sha": "8596466e6aad52ffbe7786c5dc065e7d046bc283",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-10-08T07:53:38Z"
+        },
+        "subject": "Evolver: Recommend only the Pixel 6a for PIF",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/8596466e6aad52ffbe7786c5dc065e7d046bc283"
+      },
+      {
+        "sha": "9b6120202b4efb2e944668c5f1db661bf6090aca",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-09-29T09:28:16Z"
+        },
+        "subject": "Evolver: Drop stale PIF device fields on edit",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/9b6120202b4efb2e944668c5f1db661bf6090aca"
+      },
+      {
+        "sha": "fcb25a7b5b89b05a78a0c4e53bd1074e7dfea090",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-08-18T06:13:23Z"
+        },
+        "subject": "Evolver: Move PIF/TrickyStore to framework backends, add reset",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/fcb25a7b5b89b05a78a0c4e53bd1074e7dfea090"
+      },
+      {
+        "sha": "8ef4b540833c2c6e88db94f2579882a9b5cbe890",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-07-14T06:21:40Z"
+        },
+        "subject": "Evolver: pif: preserve per-package patch config on canary fetch",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/8ef4b540833c2c6e88db94f2579882a9b5cbe890"
+      },
+      {
+        "sha": "388e9dc43ab71ab08ff700fbc7067d9183ffa124",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-05-15T02:52:17Z"
+        },
+        "subject": "Evolver: Miscellaneous: Shared UI infrastructure and multi-screen refactors",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/388e9dc43ab71ab08ff700fbc7067d9183ffa124"
+      },
+      {
+        "sha": "5f60700d2b4e2aef6867faa8fbb91b19b745aa99",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-04-23T09:48:28Z"
+        },
+        "subject": "Evolver: Consolidate strings, restructure spoofing, fix stale state bugs",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/5f60700d2b4e2aef6867faa8fbb91b19b745aa99"
+      },
+      {
+        "sha": "f7b64679e6f2daef62fb48f0eee4d25ed6c8eb0e",
+        "author": {
+          "name": "Joey",
+          "email": "joey@evolution-x.org",
+          "date": "2026-04-25T04:26:23Z"
+        },
+        "subject": "Evolver: Misc: Overhaul app picker screens and consolidate shared UI",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/f7b64679e6f2daef62fb48f0eee4d25ed6c8eb0e"
+      },
+      {
+        "sha": "209901c28926625bd0649c216afed179f8454d5c",
+        "author": {
+          "name": "Pranav Vashi",
+          "email": "neobuddy89@gmail.com",
+          "date": "2026-04-19T16:57:51Z"
+        },
+        "subject": "Evolver: Check for all versions when parsing canary releases",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/209901c28926625bd0649c216afed179f8454d5c"
+      },
+      {
+        "sha": "9a4dfdf04d5ca9a598c67cb55bbfdd9bce265f45",
+        "author": {
+          "name": "Pranav Vashi",
+          "email": "neobuddy89@gmail.com",
+          "date": "2026-04-19T10:35:02Z"
+        },
+        "subject": "Evolver: Add canary channel selection for pif",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/9a4dfdf04d5ca9a598c67cb55bbfdd9bce265f45"
+      },
+      {
+        "sha": "27cc9049eaae7bf946e8d452397771716b54e211",
+        "author": {
+          "name": "rmp22",
+          "email": "195054967+rmp22@users.noreply.github.com",
+          "date": "2026-04-18T07:03:23Z"
+        },
+        "subject": "Evolver: Fix spoofing structure",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/27cc9049eaae7bf946e8d452397771716b54e211"
+      },
+      {
+        "sha": "58dc02dde08e779b8cd8bd4c251f683f966a1049",
+        "author": {
+          "name": "Pranav Vashi",
+          "email": "neobuddy89@gmail.com",
+          "date": "2026-04-14T04:28:47Z"
+        },
+        "subject": "Evolver: Move trickystore, pif and game props spoof",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/58dc02dde08e779b8cd8bd4c251f683f966a1049"
+      },
+      {
+        "sha": "8503001d2a920c5047af9b6a3639ce66d983c4a6",
+        "author": {
+          "name": "Pranav Vashi",
+          "email": "neobuddy89@gmail.com",
+          "date": "2026-04-13T04:13:08Z"
+        },
+        "subject": "Evolver: Add pref screens for game spoof, PIF and trickstore",
+        "url": "https://github.com/Evolution-X/packages_apps_Evolver/commit/8503001d2a920c5047af9b6a3639ce66d983c4a6"
+      }
+    ]
+  }
+]

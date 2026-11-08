@@ -1,0 +1,65 @@
+[
+  {
+    "project": "bionic",
+    "branch": "port/evolution-spoofing",
+    "head": "ff3bb041547924ac1a7504e4b3bd3ea18169ca2f",
+    "status": "M libc/Android.bp\n M libc/SYSCALLS.TXT\n M libc/bionic/dirent.cpp\n M libc/bionic/dup.cpp\n M libc/bionic/faccessat.cpp\n M libc/bionic/fcntl.cpp\n M libc/bionic/fdsan.cpp\n M libc/bionic/lstat.cpp\n M libc/bionic/open.cpp\n M libc/bionic/readlink.cpp\n M libc/bionic/stat.cpp\n M libc/bionic/sys_statfs.cpp\n M libc/bionic/system_property_api.cpp\n M tests/fcntl_test.cpp\n?? libc/bionic/custom_rom_hide.cpp\n?? libc/bionic/custom_rom_hide.h",
+    "diffstat": "libc/Android.bp                     |   1 +\n libc/SYSCALLS.TXT                   |  12 ++--\n libc/bionic/dirent.cpp              |  26 ++++----\n libc/bionic/dup.cpp                 |  13 +++-\n libc/bionic/faccessat.cpp           |   7 +++\n libc/bionic/fcntl.cpp               |   3 +\n libc/bionic/fdsan.cpp               |   2 +\n libc/bionic/lstat.cpp               |  23 +++++++-\n libc/bionic/open.cpp                |  58 ++++++++++++++++++\n libc/bionic/readlink.cpp            |  21 +++++++\n libc/bionic/stat.cpp                |  76 +++++++++++++++++++++++-\n libc/bionic/sys_statfs.cpp          |   9 +++\n libc/bionic/system_property_api.cpp | 114 ++++++++++++++++++++++++++++++++++--\n tests/fcntl_test.cpp                |   8 +++\n 14 files changed, 347 insertions(+), 26 deletions(-)",
+    "staged": "",
+    "recent": "ff3bb0415 libc: libstdc++: Introduce libstdc++_vendor"
+  },
+  {
+    "project": "build/soong",
+    "branch": "",
+    "head": "a528a88bd553d2a449ad9338a3e944b89a164971",
+    "status": "M ui/build/config.go\n M ui/build/rbe.go",
+    "diffstat": "ui/build/config.go | 8 +++++++-\n ui/build/rbe.go    | 6 +++---\n 2 files changed, 10 insertions(+), 4 deletions(-)",
+    "staged": "",
+    "recent": "a528a88bd systemfeatures: Only update outputs when their contents change"
+  },
+  {
+    "project": "device/lineage/sepolicy",
+    "branch": "port/evolution-spoofing",
+    "head": "b5b91f8e77e99a310109a630b40153eeb35083d7",
+    "status": "M common/private/property.te\n M common/private/property_contexts\n M common/private/shell.te\n M common/private/system_server.te\n?? common/private/gmscore_app.te",
+    "diffstat": "common/private/property.te       | 3 +++\n common/private/property_contexts | 3 +++\n common/private/shell.te          | 3 +++\n common/private/system_server.te  | 3 +++\n 4 files changed, 12 insertions(+)",
+    "staged": "",
+    "recent": "b5b91f8 sepolicy: system_ext: Allow setupwraith_app some things"
+  },
+  {
+    "project": "frameworks/base",
+    "branch": "port/evolution-spoofing",
+    "head": "7c7188f8585e20c035eb43fed72df5e717614b38",
+    "status": "M NOTICE\n M config/preloaded-classes-denylist\n M core/java/android/app/ActivityThread.java\n M core/java/android/app/ApplicationPackageManager.java\n M core/java/android/app/IActivityManager.aidl\n M core/java/android/app/Instrumentation.java\n M core/java/android/provider/Settings.java\n M keystore/java/android/security/keystore2/AndroidKeyStoreKeyPairGeneratorSpi.java\n M keystore/java/android/security/keystore2/AndroidKeyStoreSpi.java\n M packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java\n M services/core/Android.bp\n M services/core/java/com/android/server/am/ActivityManagerService.java\n M services/core/java/com/android/server/pm/AppsFilterBase.java\n M services/core/java/com/android/server/pm/Computer.java\n M services/core/java/com/android/server/pm/ComputerEngine.java\n M services/java/com/android/server/SystemServer.java\n M services/tests/PackageManagerServiceTests/server/src/com/android/server/pm/AppsFilterImplTest.java\n?? core/java/android/app/AxSettingsSpoofManager.java\n?? core/java/android/security/gameprops/\n?? core/java/android/security/pif/\n?? core/java/android/security/trickystore/\n?? core/java/com/android/internal/util/evolution/\n?? services/core/java/com/android/server/AxExtServiceFactory.java\n?? services/core/java/com/android/server/IAxExtServiceFactory.java\n?? services/core/java/com/android/server/NtServiceInjector.java\n?? services/core/java/com/android/server/security/rkp/DuckRkpCbor.java\n?? services/core/java/com/android/server/security/rkp/DuckRkpCertificates.java\n?? services/core/java/com/android/server/security/rkp/DuckRkpManager.java\n?? services/core/java/com/android/server/security/rkp/DuckRkpNative.java\n?? services/core/java/com/android/server/security/rkp/DuckRkpV1.java\n?? services/core/java/com/android/server/spoof/\n?? services/core/java/com/android/server/wm/sandbox/\n?? services/duck_rkp/\n?? services/tests/RemoteProvisioningServiceTests/src/com/android/server/security/rkp/DuckRkpManagerTest.java\n?? services/tests/servicestests/src/com/android/server/security/rkp/",
+    "diffstat": "NOTICE                                             |  51 ++++\n config/preloaded-classes-denylist                  |   9 +\n core/java/android/app/ActivityThread.java          |  15 ++\n .../android/app/ApplicationPackageManager.java     | 214 ++++++++++++++++-\n core/java/android/app/IActivityManager.aidl        |  17 ++\n core/java/android/app/Instrumentation.java         |   7 +\n core/java/android/provider/Settings.java           |  50 ++++\n .../AndroidKeyStoreKeyPairGeneratorSpi.java        | 267 ++++++++++++++++++++-\n .../security/keystore2/AndroidKeyStoreSpi.java     |  79 +++++-\n .../providers/settings/SettingsProvider.java       |  54 +++++\n services/core/Android.bp                           |   1 +\n .../android/server/am/ActivityManagerService.java  | 171 +++++++++++++\n .../java/com/android/server/pm/AppsFilterBase.java | 160 +++++++++++-\n .../core/java/com/android/server/pm/Computer.java  |   4 +\n .../java/com/android/server/pm/ComputerEngine.java |  81 ++++++-\n services/java/com/android/server/SystemServer.java |  10 +\n .../com/android/server/pm/AppsFilterImplTest.java  |  45 ++++\n 17 files changed, 1209 insertions(+), 26 deletions(-)",
+    "staged": "",
+    "recent": "7c7188f8585e SystemUI: Keep the TV power menu open for the restart submenu"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "branch": "port/evolution-spoofing",
+    "head": "2f16bfe2c784623a324350cd19dae7f6066e2cfb",
+    "status": "M res/xml/system_dashboard_fragment.xml\n M src/com/android/settings/core/gateway/SettingsGateway.java\n?? res/values/spoofing.xml\n?? res/xml/spoofing.xml\n?? src/com/android/settings/spoof/\n?? src/com/android/settings/widget/Scrollbar.kt",
+    "diffstat": "res/xml/system_dashboard_fragment.xml                      | 6 ++++++\n src/com/android/settings/core/gateway/SettingsGateway.java | 8 ++++++++\n 2 files changed, 14 insertions(+)",
+    "staged": "",
+    "recent": "2f16bfe2c78 Ensure non-admin users can't change the Content Protection toggle state"
+  },
+  {
+    "project": "system/core",
+    "branch": "port/evolution-spoofing",
+    "head": "65d661b1a536701e8b118be4e9728d7b5ca727c9",
+    "status": "M init/Android.bp\n M init/property_service.cpp",
+    "diffstat": "init/Android.bp           | 1 +\n init/property_service.cpp | 6 ++++++\n 2 files changed, 7 insertions(+)",
+    "staged": "",
+    "recent": "65d661b1a Add AID for AOA daemon"
+  },
+  {
+    "project": "vendor/lineage",
+    "branch": "port/evolution-spoofing",
+    "head": "155adf266c6615ed30c5e10ccc017be5cfe32b99",
+    "status": "M build/soong/Android.bp\n M config/BoardConfigSoong.mk",
+    "diffstat": "build/soong/Android.bp     | 17 +++++++++++++++++\n config/BoardConfigSoong.mk |  3 +++\n 2 files changed, 20 insertions(+)",
+    "staged": "",
+    "recent": "155adf26 config: Pass TARGET_BOARD_PLATFORM as a kernel flag"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "project": "bionic",
+    "diff_returncode": 0,
+    "diff_output": "",
+    "new_file_whitespace_or_conflicts": [],
+    "new_files_checked": 2
+  },
+  {
+    "project": "frameworks/base",
+    "diff_returncode": 0,
+    "diff_output": "",
+    "new_file_whitespace_or_conflicts": [],
+    "new_files_checked": 31
+  },
+  {
+    "project": "packages/apps/Settings",
+    "diff_returncode": 0,
+    "diff_output": "",
+    "new_file_whitespace_or_conflicts": [],
+    "new_files_checked": 18
+  },
+  {
+    "project": "system/core",
+    "diff_returncode": 0,
+    "diff_output": "",
+    "new_file_whitespace_or_conflicts": [],
+    "new_files_checked": 0
+  },
+  {
+    "project": "vendor/lineage",
+    "diff_returncode": 0,
+    "diff_output": "",
+    "new_file_whitespace_or_conflicts": [],
+    "new_files_checked": 0
+  },
+  {
+    "project": "device/lineage/sepolicy",
+    "diff_returncode": 0,
+    "diff_output": "",
+    "new_file_whitespace_or_conflicts": [],
+    "new_files_checked": 1
+  },
+  {
+    "project": "external/bouncycastle",
+    "diff_returncode": 0,
+    "diff_output": "",
+    "new_file_whitespace_or_conflicts": [],
+    "new_files_checked": 0
+  }
+]

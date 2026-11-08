@@ -1,0 +1,176 @@
+{
+  "date": "2026-11-08",
+  "result": "Source implementation committed; hardware and production CA acceptance unverified",
+  "backend": "KeyMint import attestation using existing Keystore2, Trusty KeyMint and RKPD",
+  "commits": [
+    {
+      "project": "system/security",
+      "sha": "cc1f9e42200d3e9c7a1aa47e433bd72023162002",
+      "parent": "123cc4af487922618cd99f28d05736e47eba7b00",
+      "subject": "keystore2: Honor attestation keys when importing keys",
+      "author": "fuzailmansuri <mfm9875@gmail.com>"
+    },
+    {
+      "project": "device/lineage/sepolicy",
+      "sha": "c9299e36c9738e4048bec188054ea0434e7b1798",
+      "parent": "2650f11ca9996f7f7faaa61acb14268bb7a60c51",
+      "subject": "sepolicy: Label the Duck import-backend property",
+      "author": "fuzailmansuri <mfm9875@gmail.com>"
+    },
+    {
+      "project": "frameworks/base",
+      "sha": "535d28c54c950b131550796c9829a4e572446df1",
+      "parent": "b2cb692a58995923598768877c0397cdd980a166",
+      "subject": "security: Add KeyMint import attestation for Duck",
+      "author": "fuzailmansuri <mfm9875@gmail.com>"
+    },
+    {
+      "project": "device/google/caimito",
+      "sha": "51ba2449f5180c93f6d2a7b4e6030a93034ed7f4",
+      "parent": "cceac3fb397ab27894c44ae30bb8894e64e64aff",
+      "subject": "tokay: Select KeyMint import attestation for Duck",
+      "author": "fuzailmansuri <mfm9875@gmail.com>"
+    }
+  ],
+  "source_pins": {
+    "system/keymint": "cfeefc94bf8c4f19d19dca193d376a1fc05e8e3e",
+    "trusty/user/app/keymint": "48faccf3fd79ef3bc23171ed9373965e8c302b4c",
+    "trusty/user/base": "058cbb7314268dd01c13263affc593ed87426b04",
+    "vendor/google/tokay": "e918e8f50f2e1ae6d882ac972eef42df82e704b0",
+    "device/google/zumapro": "c03df81e8fed84aeb4f2d26e9cef2ea5762d7c3f",
+    "packages/modules/RemoteKeyProvisioning": "d88e2305f9186661fe75ee2f00c8b250a76fdabe",
+    "system/sepolicy": "d61fd80832f558d52de026097d30d695634e8b0f",
+    "hardware/interfaces": "a0221f11248a924532444fc7de85d41998b9fe1e",
+    "system/hardware/interfaces": "9c3469aa3d4aeec5b2bc8e8ae8fdb4437dab4edb",
+    "build/make": "90d006387398ae6899145e6531a304500cfa0f70"
+  },
+  "files_changed": [
+    {
+      "project": "system/security",
+      "path": "keystore2/src/security_level.rs",
+      "sha256": "e1cad173e270a9ad2db7bc99343cc31856a820be7ff7533a7240fe3a0efa878a"
+    },
+    {
+      "project": "system/security",
+      "path": "keystore2/tests/import_keys.rs",
+      "sha256": "a8639e053e419ba2504b7e8b14352021878fa3cc2719ecc43376b09877aa7602"
+    },
+    {
+      "project": "device/lineage/sepolicy",
+      "path": "common/private/property.te",
+      "sha256": "81dad3ac1c6c841b16fd54630368c2dc07e8fa504330b9162018e7c23285e677"
+    },
+    {
+      "project": "device/lineage/sepolicy",
+      "path": "common/private/property_contexts",
+      "sha256": "8b479c81134b8621fc77e1d108d591437074811b33e78291973735f6aa3895b9"
+    },
+    {
+      "project": "device/lineage/sepolicy",
+      "path": "common/private/system_server.te",
+      "sha256": "bbc69498a74e83aeae16ceeff40e360a29651034e9a5e08b8c4b9ed482a1a653"
+    },
+    {
+      "project": "frameworks/base",
+      "path": "services/core/java/com/android/server/security/rkp/DuckRkpCertificates.java",
+      "sha256": "2cd1be6fbf7ff849bf2f15891354b229c21a1a1de15233cdd6c3038a75b96f89"
+    },
+    {
+      "project": "frameworks/base",
+      "path": "services/core/java/com/android/server/security/rkp/DuckRkpManager.java",
+      "sha256": "f194091da1f8c0819ca6d0bb45fbd51a543d50bd5cb39bd6d1db685a68f2d0d5"
+    },
+    {
+      "project": "frameworks/base",
+      "path": "services/core/java/com/android/server/security/rkp/DuckRkpTrusty.java",
+      "sha256": "6e280b8236d55865f2ebd80cabf590048d54c29b6242bd2f09161075c1cf6689"
+    },
+    {
+      "project": "frameworks/base",
+      "path": "services/tests/RemoteProvisioningServiceTests/src/com/android/server/security/rkp/DuckRkpManagerTest.java",
+      "sha256": "1568a0e7029fa8a0c567e0c9de1f75b1722c5f796a383e9243a7ec51e850dc75"
+    },
+    {
+      "project": "frameworks/base",
+      "path": "services/tests/servicestests/src/com/android/server/security/rkp/DuckRkpTrustyTest.java",
+      "sha256": "60fd850ecb9f8e1829c68647ae7925f534576d624d787a01bf03c82b1517a47c"
+    },
+    {
+      "project": "device/google/caimito",
+      "path": "device-tokay.mk",
+      "sha256": "8eb036c871802073cd39ff366462c4e23f68a802676047a52056fcd8dc6c0a33"
+    }
+  ],
+  "combined_hash_files": 99,
+  "unchanged_baseline_files": 88,
+  "working_trees_clean": true,
+  "whitespace_checks": "pass",
+  "java_syntax": [
+    {
+      "path": "frameworks/base/services/core/java/com/android/server/security/rkp/DuckRkpTrusty.java",
+      "syntax_error": false
+    },
+    {
+      "path": "frameworks/base/services/core/java/com/android/server/security/rkp/DuckRkpManager.java",
+      "syntax_error": false
+    },
+    {
+      "path": "frameworks/base/services/core/java/com/android/server/security/rkp/DuckRkpCertificates.java",
+      "syntax_error": false
+    },
+    {
+      "path": "frameworks/base/services/tests/RemoteProvisioningServiceTests/src/com/android/server/security/rkp/DuckRkpManagerTest.java",
+      "syntax_error": false
+    },
+    {
+      "path": "frameworks/base/services/tests/servicestests/src/com/android/server/security/rkp/DuckRkpTrustyTest.java",
+      "syntax_error": false
+    }
+  ],
+  "rust_validation": {
+    "tool": "prebuilts/rust-toolchain/linux-x86/1.93.1/bin/rustfmt",
+    "version": "rustfmt 1.8.0",
+    "config": "system/security/keystore2/rustfmt.toml",
+    "files": [
+      "keystore2/src/security_level.rs",
+      "keystore2/tests/import_keys.rs"
+    ],
+    "result": "--check passed; parsing/formatting, not type checking"
+  },
+  "preflight": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 porting/tools/preflight-tokay.py",
+    "errors": 0,
+    "warnings": 0,
+    "normal_manifests": 76,
+    "recovery_manifests": 2,
+    "qualification": "Static family source scan, not evaluated Tokay product or compiled policy"
+  },
+  "dependency_inspection": [
+    "Keystore2 Java import/getSecurityLevel/delete APIs",
+    "Keystore V6 / KeyMint V5 interface declarations",
+    "CA, SPKI, DER and signer APIs in platform Bouncy Castle",
+    "Test source globs and Rust feature macro/helper imports",
+    "zumapro -> trusty-base.mk -> trusty-keymint.mk service packaging",
+    "Existing Keystore2/KeyMint init and VINTF",
+    "system_server -> Keystore -> KeyMint/RKPD policy",
+    "Tokay production hostname default and exact property contexts"
+  ],
+  "android_tests_executed": false,
+  "builds_run": false,
+  "hardware_validation": "ADB endpoints 127.0.0.1:50096 and :5037 refused connections",
+  "acceptance_limits": [
+    "Adds an imported CA, not original external-key CSR signing",
+    "Production parent CA constraints and consumer compatibility unverified",
+    "Actual imported origin and boot state remain in the imported certificate",
+    "Standard RKPD hybrid fallback policy is retained",
+    "Interrupted Binder imports can leave a temporary alias until a later cleanup",
+    "Compiler/linker/compiled policy and added Android regressions remain pending"
+  ],
+  "preexisting_changes_preserved": [
+    "build/soong/ui/build/config.go",
+    "build/soong/ui/build/rbe.go"
+  ],
+  "property_partition": "product",
+  "partition_followup": "2f7cc304134f77b3858da6e9d2390a5b22fbc467",
+  "active_build_inputs_preserved": true
+}

@@ -1,0 +1,44 @@
+{
+  "files_identical_to_reviewed_sources": 94,
+  "commits_checked": 8,
+  "projects": [
+    {
+      "project": "bionic",
+      "clean": true,
+      "head": "f9af17ea14834116d9689fe54e597bf4cef46558"
+    },
+    {
+      "project": "device/lineage/sepolicy",
+      "clean": true,
+      "head": "2650f11ca9996f7f7faaa61acb14268bb7a60c51"
+    },
+    {
+      "project": "external/bouncycastle",
+      "clean": true,
+      "head": "38ec66a303d02bb3a1967ce7c5626bc6391b1303"
+    },
+    {
+      "project": "frameworks/base",
+      "clean": true,
+      "head": "b2cb692a58995923598768877c0397cdd980a166"
+    },
+    {
+      "project": "packages/apps/Settings",
+      "clean": true,
+      "head": "a2bc940f5c9089ea445f1baaacaa68e307456b45"
+    },
+    {
+      "project": "system/core",
+      "clean": true,
+      "head": "f5278125f50e104cb2315d947c721957a6601d81"
+    },
+    {
+      "project": "vendor/lineage",
+      "clean": true,
+      "head": "8c9e5f8ea343e0e2aaab001a8547a655d31a4d1c"
+    }
+  ],
+  "builds_run": false,
+  "android_tests_executed": false,
+  "tokay_backend_validated": false
+}

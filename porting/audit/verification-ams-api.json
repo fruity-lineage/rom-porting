@@ -1,0 +1,23 @@
+{
+  "original_signatures": 276,
+  "current_signatures": 291,
+  "added_signatures": [
+    "android.app.IActivityManager|getDuckRkpState||android.os.Bundle",
+    "android.app.IActivityManager|getSandboxEnabledSpoofSettings|java.lang.String,int,|java.util.List<java.lang.String>",
+    "android.app.IActivityManager|getSandboxSpoofedSetting|java.lang.String,java.lang.String,int,|java.lang.String",
+    "android.app.IActivityManager|getSpoofBootState||android.os.Bundle",
+    "android.app.IActivityManager|getSpoofGamePropsConfig||java.lang.String",
+    "android.app.IActivityManager|getSpoofPifConfig||java.lang.String",
+    "android.app.IActivityManager|getSpoofTrickyStoreKeyBox||java.lang.String",
+    "android.app.IActivityManager|getSpoofTrickyStorePatch||java.lang.String",
+    "android.app.IActivityManager|getSpoofTrickyStoreTarget||java.lang.String",
+    "android.app.IActivityManager|isSandboxSpoofSettingEnabled|java.lang.String,java.lang.String,int,|boolean",
+    "android.app.IActivityManager|provisionDuckRkp||void",
+    "android.app.IActivityManager|resetSandboxSpoofSettings|int,|void",
+    "android.app.IActivityManager|setDuckRkpEnabled|boolean,|void",
+    "android.app.IActivityManager|setSandboxSpoofSettingEnabled|java.lang.String,java.lang.String,boolean,int,|void",
+    "android.app.IActivityManager|setSpoofTrickyStoreKeyBox|java.lang.String,|void"
+  ],
+  "old_signatures_preserved": true,
+  "all_added_methods_implemented": true
+}

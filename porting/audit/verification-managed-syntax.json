@@ -1,0 +1,287 @@
+[
+  {
+    "path": "frameworks/base/core/java/android/app/ActivityThread.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/core/java/android/app/ApplicationPackageManager.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/core/java/android/app/AxSettingsSpoofManager.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/core/java/android/app/Instrumentation.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/core/java/android/provider/Settings.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/core/java/android/security/gameprops/GamePropsSpoofService.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/core/java/android/security/pif/PlayIntegritySpoofService.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/core/java/android/security/trickystore/AttestationUtils.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/core/java/android/security/trickystore/CertificateGenerator.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/core/java/android/security/trickystore/CertificateHacker.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/core/java/android/security/trickystore/KeyBoxManager.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/core/java/android/security/trickystore/TrickyStoreService.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/core/java/com/android/internal/util/evolution/PixelDeviceRepository.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/core/java/com/android/internal/util/evolution/PixelPropsUtils.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/core/tests/coretests/src/android/security/trickystore/KeyBoxManagerTest.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/keystore/java/android/security/keystore2/AndroidKeyStoreKeyPairGeneratorSpi.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/keystore/java/android/security/keystore2/AndroidKeyStoreSpi.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/AxExtServiceFactory.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/IAxExtServiceFactory.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/NtServiceInjector.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/pm/AppsFilterBase.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/pm/Computer.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/pm/ComputerEngine.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/security/rkp/DuckRkpCbor.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/security/rkp/DuckRkpCertificates.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/security/rkp/DuckRkpManager.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/security/rkp/DuckRkpNative.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/security/rkp/DuckRkpV1.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/spoof/AxSpoofManager.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/spoof/IAxSpoofManager.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/wm/sandbox/SandboxConfigStorage.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/wm/sandbox/spoof/SettingsSpoofRepository.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/wm/sandbox/spoof/SettingsSpoofService.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/java/com/android/server/SystemServer.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/tests/PackageManagerServiceTests/server/src/com/android/server/pm/AppsFilterImplTest.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/tests/RemoteProvisioningServiceTests/src/com/android/server/security/rkp/DuckRkpManagerTest.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "frameworks/base/services/tests/servicestests/src/com/android/server/security/rkp/DuckRkpNativeTest.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/core/gateway/SettingsGateway.java",
+    "language": ".java",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/AppPickerItem.kt",
+    "language": ".kt",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/AppPickerSearchField.kt",
+    "language": ".kt",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/ExpressiveUi.kt",
+    "language": ".kt",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/InsetFocusRing.kt",
+    "language": ".kt",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/PixelPropsSettings.kt",
+    "language": ".kt",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/PlayIntegrityFix.kt",
+    "language": ".kt",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/PlayIntegrityFixContent.kt",
+    "language": ".kt",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/SettingsValueSpoofSettings.kt",
+    "language": ".kt",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/Spoofing.kt",
+    "language": ".kt",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/SpoofingSharedUi.kt",
+    "language": ".kt",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/TensorTargetsSettings.kt",
+    "language": ".kt",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/TrickyStore.kt",
+    "language": ".kt",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/TrickyStoreAppSettings.kt",
+    "language": ".kt",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/TrickyStoreContent.kt",
+    "language": ".kt",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/UserSelectedAppSpoofSettings.kt",
+    "language": ".kt",
+    "syntax_error": false
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/widget/Scrollbar.kt",
+    "language": ".kt",
+    "syntax_error": false
+  },
+  {
+    "path": "external/bouncycastle/repackaged_platform/bcprov/src/main/java/com/android/internal/org/bouncycastle/jcajce/provider/asymmetric/EC.java",
+    "language": ".java",
+    "syntax_error": false
+  }
+]

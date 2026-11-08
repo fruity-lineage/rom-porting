@@ -1,0 +1,692 @@
+[
+  {
+    "path": "bionic/libc/bionic/custom_rom_hide.cpp",
+    "errors": [
+      {
+        "type": "ERROR",
+        "line": 157,
+        "column": 15
+      },
+      {
+        "type": "ERROR",
+        "line": 159,
+        "column": 8
+      },
+      {
+        "type": "ERROR",
+        "line": 246,
+        "column": 5
+      },
+      {
+        "type": "ERROR",
+        "line": 246,
+        "column": 12
+      },
+      {
+        "type": "ERROR",
+        "line": 246,
+        "column": 24
+      },
+      {
+        "type": "ERROR",
+        "line": 66316,
+        "column": 19
+      },
+      {
+        "type": "ERROR",
+        "line": 66316,
+        "column": 19
+      },
+      {
+        "type": "ERROR",
+        "line": 66316,
+        "column": 25
+      },
+      {
+        "type": ")",
+        "line": 66316,
+        "column": 41
+      },
+      {
+        "type": "ERROR",
+        "line": 66316,
+        "column": 37
+      },
+      {
+        "type": "ERROR",
+        "line": 66316,
+        "column": 34
+      },
+      {
+        "type": "ERROR",
+        "line": 66316,
+        "column": 45
+      },
+      {
+        "type": "ERROR",
+        "line": 66316,
+        "column": 9
+      },
+      {
+        "type": "ERROR",
+        "line": 66316,
+        "column": 19
+      },
+      {
+        "type": "ERROR",
+        "line": 66316,
+        "column": 19
+      },
+      {
+        "type": "ERROR",
+        "line": 66316,
+        "column": 25
+      },
+      {
+        "type": ")",
+        "line": 66316,
+        "column": 41
+      },
+      {
+        "type": "ERROR",
+        "line": 66316,
+        "column": 37
+      },
+      {
+        "type": "ERROR",
+        "line": 66316,
+        "column": 38
+      },
+      {
+        "type": "ERROR",
+        "line": 66316,
+        "column": 48
+      }
+    ],
+    "baseline_errors": []
+  },
+  {
+    "path": "bionic/libc/bionic/custom_rom_hide.h",
+    "errors": [
+      {
+        "type": "ERROR",
+        "line": 30,
+        "column": 1
+      },
+      {
+        "type": ";",
+        "line": 58,
+        "column": 12
+      }
+    ],
+    "baseline_errors": []
+  },
+  {
+    "path": "bionic/libc/bionic/dirent.cpp",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "bionic/libc/bionic/dup.cpp",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "bionic/libc/bionic/faccessat.cpp",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "bionic/libc/bionic/fcntl.cpp",
+    "errors": [
+      {
+        "type": "ERROR",
+        "line": 44,
+        "column": 26
+      }
+    ],
+    "baseline_errors": [
+      {
+        "type": "ERROR",
+        "line": 43,
+        "column": 26
+      }
+    ]
+  },
+  {
+    "path": "bionic/libc/bionic/fdsan.cpp",
+    "errors": [
+      {
+        "type": ";",
+        "line": 133,
+        "column": 19
+      }
+    ],
+    "baseline_errors": [
+      {
+        "type": ";",
+        "line": 132,
+        "column": 19
+      }
+    ]
+  },
+  {
+    "path": "bionic/libc/bionic/lstat.cpp",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "bionic/libc/bionic/open.cpp",
+    "errors": [
+      {
+        "type": "ERROR",
+        "line": 92,
+        "column": 50
+      },
+      {
+        "type": "ERROR",
+        "line": 125,
+        "column": 50
+      }
+    ],
+    "baseline_errors": [
+      {
+        "type": "ERROR",
+        "line": 62,
+        "column": 50
+      },
+      {
+        "type": "ERROR",
+        "line": 81,
+        "column": 50
+      }
+    ]
+  },
+  {
+    "path": "bionic/libc/bionic/readlink.cpp",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "bionic/libc/bionic/stat.cpp",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "bionic/libc/bionic/sys_statfs.cpp",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "bionic/libc/bionic/system_property_api.cpp",
+    "errors": [
+      {
+        "type": "ERROR",
+        "line": 47,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 50,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 55,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 60,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 66,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 71,
+        "column": 7
+      },
+      {
+        "type": "ERROR",
+        "line": 79,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 128,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 137,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 146,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 151,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 157,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 191,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 196,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 202,
+        "column": 7
+      },
+      {
+        "type": "ERROR",
+        "line": 231,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 238,
+        "column": 1
+      }
+    ],
+    "baseline_errors": [
+      {
+        "type": "ERROR",
+        "line": 44,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 47,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 52,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 57,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 63,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 68,
+        "column": 7
+      },
+      {
+        "type": "ERROR",
+        "line": 73,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 78,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 86,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 91,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 96,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 102,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 113,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 118,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 124,
+        "column": 7
+      },
+      {
+        "type": "ERROR",
+        "line": 129,
+        "column": 1
+      },
+      {
+        "type": "ERROR",
+        "line": 134,
+        "column": 1
+      }
+    ]
+  },
+  {
+    "path": "bionic/tests/fcntl_test.cpp",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/core/java/android/app/ActivityThread.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/core/java/android/app/ApplicationPackageManager.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/core/java/android/app/AxSettingsSpoofManager.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/core/java/android/app/Instrumentation.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/core/java/android/provider/Settings.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/core/java/android/security/gameprops/GamePropsSpoofService.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/core/java/android/security/pif/PlayIntegritySpoofService.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/core/java/android/security/trickystore/AttestationUtils.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/core/java/android/security/trickystore/CertificateGenerator.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/core/java/android/security/trickystore/CertificateHacker.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/core/java/android/security/trickystore/KeyBoxManager.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/core/java/android/security/trickystore/TrickyStoreService.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/core/java/com/android/internal/util/evolution/PixelDeviceRepository.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/core/java/com/android/internal/util/evolution/PixelPropsUtils.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/core/tests/coretests/src/android/security/trickystore/KeyBoxManagerTest.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/keystore/java/android/security/keystore2/AndroidKeyStoreKeyPairGeneratorSpi.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/keystore/java/android/security/keystore2/AndroidKeyStoreSpi.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/AxExtServiceFactory.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/IAxExtServiceFactory.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/NtServiceInjector.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/pm/AppsFilterBase.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/pm/Computer.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/pm/ComputerEngine.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/security/rkp/DuckRkpCbor.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/security/rkp/DuckRkpCertificates.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/security/rkp/DuckRkpManager.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/security/rkp/DuckRkpNative.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/security/rkp/DuckRkpV1.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/spoof/AxSpoofManager.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/spoof/IAxSpoofManager.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/wm/sandbox/SandboxConfigStorage.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/wm/sandbox/spoof/SettingsSpoofRepository.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/core/java/com/android/server/wm/sandbox/spoof/SettingsSpoofService.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/java/com/android/server/SystemServer.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/tests/PackageManagerServiceTests/server/src/com/android/server/pm/AppsFilterImplTest.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/tests/RemoteProvisioningServiceTests/src/com/android/server/security/rkp/DuckRkpManagerTest.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "frameworks/base/services/tests/servicestests/src/com/android/server/security/rkp/DuckRkpNativeTest.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/core/gateway/SettingsGateway.java",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/AppPickerItem.kt",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/AppPickerSearchField.kt",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/ExpressiveUi.kt",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/InsetFocusRing.kt",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/PixelPropsSettings.kt",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/PlayIntegrityFix.kt",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/PlayIntegrityFixContent.kt",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/SettingsValueSpoofSettings.kt",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/Spoofing.kt",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/SpoofingSharedUi.kt",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/TensorTargetsSettings.kt",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/TrickyStore.kt",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/TrickyStoreAppSettings.kt",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/TrickyStoreContent.kt",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/spoof/UserSelectedAppSpoofSettings.kt",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "packages/apps/Settings/src/com/android/settings/widget/Scrollbar.kt",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "system/core/init/property_service.cpp",
+    "errors": [],
+    "baseline_errors": []
+  },
+  {
+    "path": "external/bouncycastle/repackaged_platform/bcprov/src/main/java/com/android/internal/org/bouncycastle/jcajce/provider/asymmetric/EC.java",
+    "errors": [],
+    "baseline_errors": []
+  }
+]

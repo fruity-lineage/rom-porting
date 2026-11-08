@@ -1,0 +1,64 @@
+[
+  {
+    "repo": "frameworks_native",
+    "target": "frameworks/native",
+    "pin": "cb8303a432fc2eb4ea3bf57ec450501e18f2cced",
+    "specific_pattern": "(?i)(duck.?rkp|tricky.?store|play.?integrity|persist\\.sys\\.pif\\.|custom_rom_hide|ax.?spoof|settings.?spoof|spoof_first_api|SPOOF_SAFETYNET)",
+    "specific_hits": [],
+    "generic_spoof_paths": [
+      "include/android/input.h"
+    ],
+    "generic_spoof_differing_paths": []
+  },
+  {
+    "repo": "frameworks_av",
+    "target": "frameworks/av",
+    "pin": "2dc99a751a66141e3b5a24ae53fee412cb29a3ff",
+    "specific_pattern": "(?i)(duck.?rkp|tricky.?store|play.?integrity|persist\\.sys\\.pif\\.|custom_rom_hide|ax.?spoof|settings.?spoof|spoof_first_api|SPOOF_SAFETYNET)",
+    "specific_hits": [],
+    "generic_spoof_paths": [
+      "media/codec2/vndk/C2Buffer.cpp",
+      "media/libaudiopermission/tests/ValidatedAttributionSourceStateTest.cpp"
+    ],
+    "generic_spoof_differing_paths": []
+  },
+  {
+    "repo": "libcore",
+    "target": "libcore",
+    "pin": "45606a215025ddad56fbb088fc1f0124ffc82413",
+    "specific_pattern": "(?i)(duck.?rkp|tricky.?store|play.?integrity|persist\\.sys\\.pif\\.|custom_rom_hide|ax.?spoof|settings.?spoof|spoof_first_api|SPOOF_SAFETYNET)",
+    "specific_hits": [],
+    "generic_spoof_paths": [
+      "ojluni/src/main/java/java/net/InetAddress.java",
+      "ojluni/src/main/java/java/util/logging/LogRecord.java"
+    ],
+    "generic_spoof_differing_paths": []
+  },
+  {
+    "repo": "lineage-sdk",
+    "target": "lineage-sdk",
+    "pin": "a870f420bd1495160c83e0dcf0309c2a366b196f",
+    "specific_pattern": "(?i)(duck.?rkp|tricky.?store|play.?integrity|persist\\.sys\\.pif\\.|custom_rom_hide|ax.?spoof|settings.?spoof|spoof_first_api|SPOOF_SAFETYNET)",
+    "specific_hits": [],
+    "generic_spoof_paths": [],
+    "generic_spoof_differing_paths": []
+  },
+  {
+    "repo": "packages_apps_LineageParts",
+    "target": "packages/apps/LineageParts",
+    "pin": "21f90730a8de06e9275e82e270a5808503a2c296",
+    "specific_pattern": "(?i)(duck.?rkp|tricky.?store|play.?integrity|persist\\.sys\\.pif\\.|custom_rom_hide|ax.?spoof|settings.?spoof|spoof_first_api|SPOOF_SAFETYNET)",
+    "specific_hits": [],
+    "generic_spoof_paths": [],
+    "generic_spoof_differing_paths": []
+  },
+  {
+    "repo": "system_sepolicy",
+    "target": "system/sepolicy",
+    "pin": "dd9d56abe0590484ae145337ae1e728db9b2d57a",
+    "specific_pattern": "(?i)(duck.?rkp|tricky.?store|play.?integrity|persist\\.sys\\.pif\\.|custom_rom_hide|ax.?spoof|settings.?spoof|spoof_first_api|SPOOF_SAFETYNET)",
+    "specific_hits": [],
+    "generic_spoof_paths": [],
+    "generic_spoof_differing_paths": []
+  }
+]

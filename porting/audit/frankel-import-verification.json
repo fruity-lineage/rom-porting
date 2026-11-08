@@ -1,0 +1,21 @@
+{
+  "device": "Pixel 10 / frankel",
+  "source_pins": {
+    "device/google/frankel": "f3bcc57634a8d7e4831ea9fb74f1874fc7c4d5ef",
+    "device/google/muzel": "60f3d1ade4062cec3609023357eba8fcccc9e74a",
+    "device/google/laguna": "7ef3601320418d70f25509f4f1dd4895b6937fd2"
+  },
+  "port_commit": "2b195b35d051eb63c9dcc6b02ff66a9e5c1a6a61",
+  "path": "device-frankel.mk",
+  "sha256": "0c6bd07d92000edceee9041f878e05dc3312b32f0e5bdee9c09938865645aa6a",
+  "source_checks": "passed",
+  "active_checkout_unchanged": true,
+  "builds_run": false,
+  "hardware_validation": false,
+  "full_device_preflight": "pending; proprietary vendor and kernel dependencies not synced",
+  "backend_acceptance": "unverified; imported CA and production constraints require hardware validation",
+  "property_partition": "product",
+  "partition_followup": "9c4bad6692c8275790bff334263914ddbd2a59e5",
+  "active_build_inputs_preserved": true,
+  "current_published_tip": "9c4bad6692c8275790bff334263914ddbd2a59e5"
+}

@@ -1,0 +1,966 @@
+{
+  "image": "/serverhive4/fruitzail/evox/vendor/google/tokay/radio/tzsw.img",
+  "size": 8249344,
+  "sha256": "14b9ed8f8b1daf05c09092615ff2a4bd724b6a25bcc8fc552496de8ae766efd2",
+  "payloads": [
+    {
+      "offset": 258048,
+      "size": 68320,
+      "class": 2,
+      "machine": 183,
+      "entry": 8192,
+      "sha256": "46183ec5399f98bf71f600126433fbc8418bfb000f48ea2afc5af1d19cdb2e2a",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 0,
+          "filesz": 7164,
+          "memsz": 7164,
+          "flags": 4
+        },
+        {
+          "file_offset": 8192,
+          "vaddr": 8192,
+          "filesz": 56220,
+          "memsz": 56220,
+          "flags": 5
+        },
+        {
+          "file_offset": 65536,
+          "vaddr": 65536,
+          "filesz": 1552,
+          "memsz": 3353,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [
+        {
+          "file_offset": 2537,
+          "text": "com.android.trusty.storage.client.tp"
+        },
+        {
+          "file_offset": 2993,
+          "text": "com.android.trusty.gatekeeper"
+        },
+        {
+          "file_offset": 3377,
+          "text": "com.android.trusty.keymaster.secure"
+        },
+        {
+          "file_offset": 4126,
+          "text": "com.android.trusty.hwkey"
+        },
+        {
+          "file_offset": 5045,
+          "text": "com.android.trusty.hwrng"
+        }
+      ],
+      "extracted_path": "/tmp/tokay-trusty-all/elf-0003f000.elf"
+    },
+    {
+      "offset": 327680,
+      "size": 2503608,
+      "class": 2,
+      "machine": 183,
+      "entry": 409600,
+      "sha256": "19e3e7ea38dccd142bf3a09a6e8cf40f85609127040d7e2b2634b094ca67ce08",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 0,
+          "filesz": 406596,
+          "memsz": 406596,
+          "flags": 4
+        },
+        {
+          "file_offset": 409600,
+          "vaddr": 409600,
+          "filesz": 2008368,
+          "memsz": 2008368,
+          "flags": 5
+        },
+        {
+          "file_offset": 2420736,
+          "vaddr": 2420736,
+          "filesz": 79384,
+          "memsz": 86096,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [
+        {
+          "file_offset": 14457,
+          "text": "com.android.trusty.hwbcc"
+        },
+        {
+          "file_offset": 15822,
+          "text": "com.android.trusty.keymint.kak"
+        },
+        {
+          "file_offset": 24378,
+          "text": "com.android.trusty.storage.client.tp"
+        },
+        {
+          "file_offset": 34316,
+          "text": "com.android.trusty.hwkeybox"
+        },
+        {
+          "file_offset": 35134,
+          "text": "com.android.trusty.hwkey"
+        },
+        {
+          "file_offset": 36078,
+          "text": "com.android.trusty.system-state"
+        },
+        {
+          "file_offset": 37952,
+          "text": "com.android.trusty.hwwsk"
+        },
+        {
+          "file_offset": 40550,
+          "text": "com.android.trusty.hwrng"
+        },
+        {
+          "file_offset": 84431,
+          "text": "com.android.trusty.keymintcom.android.trusty.keymaster.secure"
+        },
+        {
+          "file_offset": 84668,
+          "text": "com.android.trusty.keymastercouldn"
+        }
+      ],
+      "extracted_path": "/tmp/tokay-trusty-all/elf-00050000.elf"
+    },
+    {
+      "offset": 2834432,
+      "size": 1108504,
+      "class": 2,
+      "machine": 183,
+      "entry": 274432,
+      "sha256": "c1694af812121fda292ac2b29aa9439f6cb89ac31b8bf2d7a6639b572f7bc794",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 0,
+          "filesz": 274252,
+          "memsz": 274252,
+          "flags": 4
+        },
+        {
+          "file_offset": 274432,
+          "vaddr": 274432,
+          "filesz": 805124,
+          "memsz": 805124,
+          "flags": 5
+        },
+        {
+          "file_offset": 1081344,
+          "vaddr": 1081344,
+          "filesz": 24144,
+          "memsz": 29288,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [
+        {
+          "file_offset": 24868,
+          "text": "com.android.trusty.storage.client.td"
+        },
+        {
+          "file_offset": 25239,
+          "text": "com.android.trusty.hwrng"
+        },
+        {
+          "file_offset": 54054,
+          "text": "com.android.trusty.secretkeeper.authgraphcom.android.trusty.secretkeepercom.android.trusty.secretkeeper.bootloaderunknown"
+        }
+      ],
+      "extracted_path": "/tmp/tokay-trusty-all/elf-002b4000.elf"
+    },
+    {
+      "offset": 3944448,
+      "size": 242728,
+      "class": 2,
+      "machine": 183,
+      "entry": 40960,
+      "sha256": "8f3c5dfa311602da5c48c27650480be156318367b9b2563b104112532f3b92e4",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 0,
+          "filesz": 38644,
+          "memsz": 38644,
+          "flags": 4
+        },
+        {
+          "file_offset": 40960,
+          "vaddr": 40960,
+          "filesz": 190044,
+          "memsz": 190044,
+          "flags": 5
+        },
+        {
+          "file_offset": 233472,
+          "vaddr": 233472,
+          "filesz": 8024,
+          "memsz": 155632,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [
+        {
+          "file_offset": 799,
+          "text": "com.android.trusty.storage.client.tdea"
+        },
+        {
+          "file_offset": 838,
+          "text": "com.android.trusty.storage.client.nsp"
+        },
+        {
+          "file_offset": 15889,
+          "text": "com.android.trusty.storage.client.tp"
+        },
+        {
+          "file_offset": 17567,
+          "text": "com.android.trusty.storage.proxy"
+        },
+        {
+          "file_offset": 25890,
+          "text": "com.android.trusty.storage.client.sec-wp"
+        },
+        {
+          "file_offset": 26068,
+          "text": "com.android.trusty.hwkey"
+        },
+        {
+          "file_offset": 26950,
+          "text": "com.android.trusty.system-state"
+        },
+        {
+          "file_offset": 30672,
+          "text": "com.android.trusty.storage.client.tdp"
+        },
+        {
+          "file_offset": 30710,
+          "text": "com.android.trusty.storage.client.td"
+        },
+        {
+          "file_offset": 30834,
+          "text": "com.android.trusty.hwrng"
+        }
+      ],
+      "extracted_path": "/tmp/tokay-trusty-all/elf-003c3000.elf"
+    },
+    {
+      "offset": 4190208,
+      "size": 1111920,
+      "class": 2,
+      "machine": 183,
+      "entry": 278528,
+      "sha256": "115e55ff902adf5e547ff31f7c6135000f74d521e8f0d3e8d48aad7253022c22",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 0,
+          "filesz": 278412,
+          "memsz": 278412,
+          "flags": 4
+        },
+        {
+          "file_offset": 278528,
+          "vaddr": 278528,
+          "filesz": 784408,
+          "memsz": 784408,
+          "flags": 5
+        },
+        {
+          "file_offset": 1064960,
+          "vaddr": 1064960,
+          "filesz": 45728,
+          "memsz": 1437684,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [
+        {
+          "file_offset": 10186,
+          "text": "com.android.trusty.hwbcc"
+        },
+        {
+          "file_offset": 19816,
+          "text": "com.android.trusty.hwhdcp"
+        },
+        {
+          "file_offset": 19951,
+          "text": "com.android.trusty.kernel.handle_prot"
+        },
+        {
+          "file_offset": 22583,
+          "text": "com.android.trusty.storage.client.tp"
+        },
+        {
+          "file_offset": 33097,
+          "text": "com.android.trusty.keymaster.secure"
+        },
+        {
+          "file_offset": 39492,
+          "text": "com.android.trusty.hwkey"
+        },
+        {
+          "file_offset": 41103,
+          "text": "com.android.trusty.system-state"
+        },
+        {
+          "file_offset": 41198,
+          "text": "com.android.trusty.widevine"
+        },
+        {
+          "file_offset": 46422,
+          "text": "com.android.trusty.storage.client.td"
+        },
+        {
+          "file_offset": 46459,
+          "text": "com.android.trusty.storage.client.tdp"
+        },
+        {
+          "file_offset": 47468,
+          "text": "com.android.trusty.hwrng"
+        }
+      ],
+      "extracted_path": "/tmp/tokay-trusty-all/elf-003ff000.elf"
+    },
+    {
+      "offset": 5304320,
+      "size": 474592,
+      "class": 2,
+      "machine": 183,
+      "entry": 188416,
+      "sha256": "ef0fc083190f7679a2eb84681edc703461fa01f07bc760033c93445c9fd74a48",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 0,
+          "filesz": 185876,
+          "memsz": 185876,
+          "flags": 4
+        },
+        {
+          "file_offset": 188416,
+          "vaddr": 188416,
+          "filesz": 280120,
+          "memsz": 280120,
+          "flags": 5
+        },
+        {
+          "file_offset": 471040,
+          "vaddr": 471040,
+          "filesz": 2320,
+          "memsz": 6977,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [
+        {
+          "file_offset": 9623,
+          "text": "com.android.trusty.apploader."
+        },
+        {
+          "file_offset": 11993,
+          "text": "com.android.trusty.storage.client.tp"
+        },
+        {
+          "file_offset": 12080,
+          "text": "com.android.trusty.apploader"
+        },
+        {
+          "file_offset": 12785,
+          "text": "com.android.trusty.apploader.secure"
+        },
+        {
+          "file_offset": 18105,
+          "text": "com.android.trusty.hwkey"
+        },
+        {
+          "file_offset": 18720,
+          "text": "com.android.trusty.system-state"
+        },
+        {
+          "file_offset": 21781,
+          "text": "com.android.trusty.hwrng"
+        },
+        {
+          "file_offset": 21806,
+          "text": "com.android.trusty.hwaes"
+        }
+      ],
+      "extracted_path": "/tmp/tokay-trusty-all/elf-0050f000.elf"
+    },
+    {
+      "offset": 5779456,
+      "size": 34784,
+      "class": 2,
+      "machine": 183,
+      "entry": 4096,
+      "sha256": "f9c665bc51ce069272eb1ac936a650f5bb9b508d7e2f9e082078e307633d512d",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 0,
+          "filesz": 3344,
+          "memsz": 3344,
+          "flags": 4
+        },
+        {
+          "file_offset": 4096,
+          "vaddr": 4096,
+          "filesz": 25364,
+          "memsz": 25364,
+          "flags": 5
+        },
+        {
+          "file_offset": 32768,
+          "vaddr": 32768,
+          "filesz": 784,
+          "memsz": 2496,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [
+        {
+          "file_offset": 2012,
+          "text": "com.android.trusty.metrics.consumer"
+        }
+      ],
+      "extracted_path": "/tmp/tokay-trusty-all/elf-00583000.elf"
+    },
+    {
+      "offset": 5816320,
+      "size": 43104,
+      "class": 2,
+      "machine": 183,
+      "entry": 8192,
+      "sha256": "d7d0358e5ee9e7538859ded1fd1c9dc5b8b4146a5e12289a1a531402185fa902",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 0,
+          "filesz": 5168,
+          "memsz": 5168,
+          "flags": 4
+        },
+        {
+          "file_offset": 8192,
+          "vaddr": 8192,
+          "filesz": 31680,
+          "memsz": 31680,
+          "flags": 5
+        },
+        {
+          "file_offset": 40960,
+          "vaddr": 40960,
+          "filesz": 912,
+          "memsz": 2632,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [
+        {
+          "file_offset": 3852,
+          "text": "com.android.trusty.spi.fingerprint"
+        }
+      ],
+      "extracted_path": "/tmp/tokay-trusty-all/elf-0058c000.elf"
+    },
+    {
+      "offset": 5861376,
+      "size": 56064,
+      "class": 2,
+      "machine": 183,
+      "entry": 8192,
+      "sha256": "c8482720b2da3a05cb9382b6ca96d6706350cbac48d765bdfa2eb7b76433cbb3",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 0,
+          "filesz": 8080,
+          "memsz": 8080,
+          "flags": 4
+        },
+        {
+          "file_offset": 8192,
+          "vaddr": 8192,
+          "filesz": 42088,
+          "memsz": 42088,
+          "flags": 5
+        },
+        {
+          "file_offset": 53248,
+          "vaddr": 53248,
+          "filesz": 1584,
+          "memsz": 13776,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [
+        {
+          "file_offset": 938,
+          "text": "com.android.trusty.gsa.hwmgr.dsp"
+        },
+        {
+          "file_offset": 971,
+          "text": "com.android.trusty.gsa.rkp"
+        },
+        {
+          "file_offset": 1692,
+          "text": "com.android.trusty.gsa.dice"
+        },
+        {
+          "file_offset": 1875,
+          "text": "com.android.trusty.gsa.hwmgr.tpu"
+        },
+        {
+          "file_offset": 2121,
+          "text": "com.android.trusty.gsa.hwmgr.aoc"
+        },
+        {
+          "file_offset": 4415,
+          "text": "com.android.trusty.gsa.hwmgr.dsp.wakelock"
+        },
+        {
+          "file_offset": 4654,
+          "text": "com.android.trusty.sensor_mute_proxy"
+        },
+        {
+          "file_offset": 5207,
+          "text": "com.android.trusty.kernel.smc"
+        },
+        {
+          "file_offset": 5577,
+          "text": "com.android.trusty.hwwsk"
+        },
+        {
+          "file_offset": 5602,
+          "text": "com.android.trusty.gsa.hwmgr.tpu.wakelock"
+        },
+        {
+          "file_offset": 6128,
+          "text": "com.android.trusty.gsa.otp"
+        }
+      ],
+      "extracted_path": "/tmp/tokay-trusty-all/elf-00597000.elf"
+    },
+    {
+      "offset": 5918720,
+      "size": 76352,
+      "class": 2,
+      "machine": 183,
+      "entry": 12288,
+      "sha256": "0cbb67c1ac83b57819c396707d97f00a72a051a9b8d76b38f0310de84becef8a",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 0,
+          "filesz": 8248,
+          "memsz": 8248,
+          "flags": 4
+        },
+        {
+          "file_offset": 12288,
+          "vaddr": 12288,
+          "filesz": 59624,
+          "memsz": 59624,
+          "flags": 5
+        },
+        {
+          "file_offset": 73728,
+          "vaddr": 73728,
+          "filesz": 1392,
+          "memsz": 4436,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [
+        {
+          "file_offset": 962,
+          "text": "com.android.trusty.hwrsa"
+        },
+        {
+          "file_offset": 2355,
+          "text": "com.android.trusty.hwhdcp"
+        },
+        {
+          "file_offset": 3757,
+          "text": "com.android.trusty.hdcp.auth"
+        },
+        {
+          "file_offset": 4958,
+          "text": "com.android.trusty.kernel.smc"
+        },
+        {
+          "file_offset": 5747,
+          "text": "com.android.trusty.hwrng"
+        },
+        {
+          "file_offset": 5844,
+          "text": "com.android.trusty.hwaes"
+        }
+      ],
+      "extracted_path": "/tmp/tokay-trusty-all/elf-005a5000.elf"
+    },
+    {
+      "offset": 5996544,
+      "size": 433776,
+      "class": 2,
+      "machine": 183,
+      "entry": 204800,
+      "sha256": "52ef0192939b2c674205ba1743e430db35417dd7e999854673162fa65c198aca",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 0,
+          "filesz": 201896,
+          "memsz": 201896,
+          "flags": 4
+        },
+        {
+          "file_offset": 204800,
+          "vaddr": 204800,
+          "filesz": 220568,
+          "memsz": 220568,
+          "flags": 5
+        },
+        {
+          "file_offset": 425984,
+          "vaddr": 425984,
+          "filesz": 6560,
+          "memsz": 13168,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [
+        {
+          "file_offset": 5287,
+          "text": "com.android.trusty.hwbcc"
+        },
+        {
+          "file_offset": 6291,
+          "text": "com.android.trusty.gsa.dice"
+        },
+        {
+          "file_offset": 12141,
+          "text": "com.android.trusty.hwkey"
+        },
+        {
+          "file_offset": 12339,
+          "text": "com.android.trusty.system-state"
+        },
+        {
+          "file_offset": 13527,
+          "text": "com.android.trusty.hwrng"
+        }
+      ],
+      "extracted_path": "/tmp/tokay-trusty-all/elf-005b8000.elf"
+    },
+    {
+      "offset": 6430720,
+      "size": 667752,
+      "class": 2,
+      "machine": 183,
+      "entry": 192512,
+      "sha256": "a8d5b4fa0120716aefbfea148b6ec8debb87ff62f2c4474cdaf3a6c3a7242a33",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 0,
+          "filesz": 190692,
+          "memsz": 190692,
+          "flags": 4
+        },
+        {
+          "file_offset": 192512,
+          "vaddr": 192512,
+          "filesz": 462780,
+          "memsz": 462780,
+          "flags": 5
+        },
+        {
+          "file_offset": 655360,
+          "vaddr": 655360,
+          "filesz": 11016,
+          "memsz": 27201,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [
+        {
+          "file_offset": 5621,
+          "text": "com.android.trusty.hwrsa"
+        },
+        {
+          "file_offset": 5706,
+          "text": "com.android.trusty.gsa.rkp"
+        },
+        {
+          "file_offset": 8402,
+          "text": "com.android.trusty.keymint.kak"
+        },
+        {
+          "file_offset": 12855,
+          "text": "com.android.trusty.timestamp.seed"
+        },
+        {
+          "file_offset": 14160,
+          "text": "com.android.trusty.resku_rescue.inbound_kak"
+        },
+        {
+          "file_offset": 15701,
+          "text": "com.android.trusty.resku_rescue.outbound_kak"
+        },
+        {
+          "file_offset": 20755,
+          "text": "com.android.trusty.kernel.cdt"
+        },
+        {
+          "file_offset": 21017,
+          "text": "com.android.trusty.hwkeybox"
+        },
+        {
+          "file_offset": 21128,
+          "text": "com.android.trusty.kernel.smc"
+        },
+        {
+          "file_offset": 21598,
+          "text": "com.android.trusty.hwkey"
+        },
+        {
+          "file_offset": 21669,
+          "text": "com.android.trusty.faceauth.encrypt.key.0"
+        },
+        {
+          "file_offset": 21711,
+          "text": "com.android.trusty.faceauth.encrypt.key.1"
+        },
+        {
+          "file_offset": 22415,
+          "text": "com.android.trusty.apploader.encrypt.key.1"
+        },
+        {
+          "file_offset": 22667,
+          "text": "com.android.trusty.system-state"
+        },
+        {
+          "file_offset": 22723,
+          "text": "com.android.trusty.hwiecs"
+        },
+        {
+          "file_offset": 24832,
+          "text": "com.android.trusty.hwrng"
+        },
+        {
+          "file_offset": 25042,
+          "text": "com.android.trusty.hwaes"
+        },
+        {
+          "file_offset": 25235,
+          "text": "com.android.trusty.apploader.encrypt.key.0"
+        }
+      ],
+      "extracted_path": "/tmp/tokay-trusty-all/elf-00622000.elf"
+    },
+    {
+      "offset": 7102464,
+      "size": 35384,
+      "class": 2,
+      "machine": 183,
+      "entry": 4096,
+      "sha256": "cd0d3cbcf63f7b0d5a840cf5cc76b2c53250344ccf81c0f545954ab7a8dd775c",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 0,
+          "filesz": 3752,
+          "memsz": 3752,
+          "flags": 4
+        },
+        {
+          "file_offset": 4096,
+          "vaddr": 4096,
+          "filesz": 27876,
+          "memsz": 27876,
+          "flags": 5
+        },
+        {
+          "file_offset": 32768,
+          "vaddr": 32768,
+          "filesz": 1384,
+          "memsz": 3096,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [
+        {
+          "file_offset": 880,
+          "text": "com.android.trusty.secure_camera"
+        },
+        {
+          "file_offset": 2442,
+          "text": "com.android.trusty.kernel.smc"
+        }
+      ],
+      "extracted_path": "/tmp/tokay-trusty-all/elf-006c6000.elf"
+    },
+    {
+      "offset": 7139328,
+      "size": 42976,
+      "class": 2,
+      "machine": 183,
+      "entry": 8192,
+      "sha256": "07b999133f52e0a0f34785c7c853735226cacb381d563f267203de5fd368ba41",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 0,
+          "filesz": 4640,
+          "memsz": 4640,
+          "flags": 4
+        },
+        {
+          "file_offset": 8192,
+          "vaddr": 8192,
+          "filesz": 29764,
+          "memsz": 29764,
+          "flags": 5
+        },
+        {
+          "file_offset": 40960,
+          "vaddr": 40960,
+          "filesz": 784,
+          "memsz": 2529,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [
+        {
+          "file_offset": 1726,
+          "text": "com.android.trusty.storage.client.tp"
+        },
+        {
+          "file_offset": 2715,
+          "text": "com.android.trusty.sensor_mute_proxy"
+        },
+        {
+          "file_offset": 3413,
+          "text": "com.android.trusty.sensor_mute"
+        }
+      ],
+      "extracted_path": "/tmp/tokay-trusty-all/elf-006cf000.elf"
+    },
+    {
+      "offset": 7184384,
+      "size": 68680,
+      "class": 2,
+      "machine": 183,
+      "entry": 12288,
+      "sha256": "c0303cdf79c78e11e32f293ea67cae45a11ce42af59535e065b88889f90f8899",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 0,
+          "filesz": 8728,
+          "memsz": 8728,
+          "flags": 4
+        },
+        {
+          "file_offset": 12288,
+          "vaddr": 12288,
+          "filesz": 49796,
+          "memsz": 49796,
+          "flags": 5
+        },
+        {
+          "file_offset": 65536,
+          "vaddr": 65536,
+          "filesz": 1912,
+          "memsz": 3913,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [
+        {
+          "file_offset": 4267,
+          "text": "com.android.trusty.kernel.cdt"
+        },
+        {
+          "file_offset": 4467,
+          "text": "com.android.trusty.system-state"
+        },
+        {
+          "file_offset": 6352,
+          "text": "com.android.trusty.boot_done.tidl"
+        },
+        {
+          "file_offset": 6485,
+          "text": "com.android.trusty.otp_manager.tidl"
+        },
+        {
+          "file_offset": 6521,
+          "text": "com.android.trusty.otp_manager.mock.tidl"
+        }
+      ],
+      "extracted_path": "/tmp/tokay-trusty-all/elf-006da000.elf"
+    },
+    {
+      "offset": 7254016,
+      "size": 976552,
+      "class": 2,
+      "machine": 183,
+      "entry": 270336,
+      "sha256": "7dfe4cdad81085b8bf47d7975928b3e8613491255b7506fceeecceb10dbb2fe1",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 0,
+          "filesz": 266696,
+          "memsz": 266696,
+          "flags": 4
+        },
+        {
+          "file_offset": 270336,
+          "vaddr": 270336,
+          "filesz": 647636,
+          "memsz": 647636,
+          "flags": 5
+        },
+        {
+          "file_offset": 921600,
+          "vaddr": 921600,
+          "filesz": 53720,
+          "memsz": 58769,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [
+        {
+          "file_offset": 21521,
+          "text": "com.android.trusty.timestamp.seed"
+        },
+        {
+          "file_offset": 21779,
+          "text": "com.android.trusty.timestamp"
+        },
+        {
+          "file_offset": 43340,
+          "text": "com.android.trusty.hwkey"
+        },
+        {
+          "file_offset": 50437,
+          "text": "com.android.trusty.hwrng"
+        }
+      ],
+      "extracted_path": "/tmp/tokay-trusty-all/elf-006eb000.elf"
+    }
+  ],
+  "rejected_magic_offsets": [
+    242727
+  ]
+}

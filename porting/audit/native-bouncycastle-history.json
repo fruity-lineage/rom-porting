@@ -1,0 +1,92 @@
+[
+  {
+    "sha": "56e5dac751581c7bd6dbe363d7ba3f8e8862c5bf",
+    "message": "[keybox] adding more providers for trickystore port\n\nChange-Id: I3a440b38f10a8aa9286405d1f7c32477f9f3c7b6\nSigned-off-by: Dmitrii <bankersenator@gmail.com>",
+    "author": {
+      "name": "rmp22",
+      "email": "195054967+rmp22@users.noreply.github.com",
+      "date": "2025-12-25T02:27:35Z"
+    }
+  },
+  {
+    "sha": "e75ae35c6171d391613a675bde54561965eefb1f",
+    "message": "bouncycastle: Add EC/ECDSA provider to get our keybox spoofing working\n\nSigned-off-by: Abhay Singh Gill <abhaygill017@gmail.com>\nSigned-off-by: Pranav Vashi <neobuddy89@gmail.com>",
+    "author": {
+      "name": "Abhay Singh Gill",
+      "email": "abhaygill017@gmail.com",
+      "date": "2025-05-31T05:32:28Z"
+    }
+  },
+  {
+    "sha": "be8cee029cb027b088be5d0adb826f090b991b55",
+    "message": "Revert^6 Merge remote-tracking branch 'aosp/upstream-master' into merge-177\n\nRevert submission 3478034-revert-3215983-revert-3212257-revert-3196210-bcupdate2-VNBDRWXRXJ-FQYZSGKMRP-SPJBRJXZGT\n\nReason for revert: Yet another attempt at submitting this. The failing test is passing now (https://android-build.corp.google.com/abtd/run/L92300030009476357/) after removing the new version of getServices from BouncyCastleProvider.java\n\nReverted changes: /q/submissionid:3478034-revert-3215983-revert-3212257-revert-3196210-bcupdate2-VNBDRWXRXJ-FQYZSGKMRP-SPJBRJXZGT\n\nChange-Id: Ibaa7f3cd1fcac8ecde700ed69d37d80a2ecf8254",
+    "author": {
+      "name": "Miguel Aranda",
+      "email": "miguelaranda@google.com",
+      "date": "2025-02-05T21:53:13Z"
+    }
+  },
+  {
+    "sha": "7d6028f6c4e47c1fa4f1abe27dc115423065a449",
+    "message": "Revert \"Revert \"Revert \"Revert \"Revert \"Merge remote-tracking br...\"\n\nRevert submission 3215983-revert-3212257-revert-3196210-bcupdate2-VNBDRWXRXJ-FQYZSGKMRP\n\nReason for revert:Droidmonitor created revert due to b/394621806. Will be verifying through ABTD before submission.\n\nReverted changes: /q/submissionid:3215983-revert-3212257-revert-3196210-bcupdate2-VNBDRWXRXJ-FQYZSGKMRP\n\nChange-Id: Icaf6c99797ad3bf139d210072e81e8487e3d210f",
+    "author": {
+      "name": "Priyanka Advani (xWF)",
+      "email": "padvani@google.com",
+      "date": "2025-02-05T19:43:06Z"
+    }
+  },
+  {
+    "sha": "bb881b7ca31cdb162a039b555c58d4d2eebc40bc",
+    "message": "Revert \"Revert \"Revert \"Revert \"Merge remote-tracking branch 'ao...\"\n\nWIP Revert submission 3212257-revert-3196210-bcupdate2-VNBDRWXRXJ\n\nReason for revert: resubmitting BC update\n\nReverted changes: /q/submissionid:3212257-revert-3196210-bcupdate2-VNBDRWXRXJ\n\nChange-Id: I12b8b90519670946d68f57de56fac8ccd7b4698f",
+    "author": {
+      "name": "Miguel Aranda",
+      "email": "miguelaranda@google.com",
+      "date": "2024-08-13T10:57:30Z"
+    }
+  },
+  {
+    "sha": "f5dc3a7a3e525ea219dd18c38f54a96d73eee689",
+    "message": "Revert \"Revert \"Revert \"Merge remote-tracking branch 'aosp/upstr...\"\n\nRevert submission 3196210-bcupdate2\n\nReason for revert: Reverting until we figure out a plan for minimization breakages like b/356844860\n\nReverted changes: /q/submissionid:3196210-bcupdate2\n\nChange-Id: Id33515cadc45a3321600ada1ad333cf162e4fca2",
+    "author": {
+      "name": "Miguel Aranda",
+      "email": "miguelaranda@google.com",
+      "date": "2024-08-08T10:52:40Z"
+    }
+  },
+  {
+    "sha": "101e7fdd60e08a3883c5e0f589ff98c42b5bc8ef",
+    "message": "Revert \"Revert \"Merge remote-tracking branch 'aosp/upstream-mast...\"\n\nRevert submission 3195752-revert-3061807-bcupdate-CHHXAMSFTB\n\nReason for revert: BouncyCastle update with errors fixed. A new frameworks cl has been added to fix the test that was failing.\n\nReverted changes: /q/submissionid:3195752-revert-3061807-bcupdate-CHHXAMSFTB\n\nChange-Id: Ia0db01091b24292c5c1a4c183db0e15e171ef999",
+    "author": {
+      "name": "Miguel Aranda",
+      "email": "miguelaranda@google.com",
+      "date": "2024-07-25T08:32:43Z"
+    }
+  },
+  {
+    "sha": "5137e35784d87e658c1eb3182ff07bd5db046754",
+    "message": "Revert \"Merge remote-tracking branch 'aosp/upstream-master' into...\"\n\nRevert submission 3061807-bcupdate\n\nReason for revert: <Droidmonitor created revert due to b/355328058. Will be verifying through ABTD before submission.>\n\nReverted changes: /q/submissionid:3061807-bcupdate\n\nChange-Id: I55bc6255665c6245b619ef4fe4388162de0ae0cd",
+    "author": {
+      "name": "PODISHETTY KUMAR",
+      "email": "podishettyk@google.com",
+      "date": "2024-07-25T03:02:25Z"
+    }
+  },
+  {
+    "sha": "2af0d7822a24d5209afbc749097e3a07c9bdcafc",
+    "message": "Merge remote-tracking branch 'aosp/upstream-master' into merge-177\n\nTest: atest CtsLibcoreTestCases\nTest: tests listed in https://g3doc.corp.google.com/third_party/java_src/conscrypt/g3doc/bouncy-castle.md?cl=head\nChange-Id: I4d5f4924ce75ba8ee745b778d77da7956737e7fe",
+    "author": {
+      "name": "Miguel",
+      "email": "miguelaranda@google.com",
+      "date": "2024-04-23T12:07:11Z"
+    }
+  },
+  {
+    "sha": "8162102f62a102f2a39f901aec1295579769d55c",
+    "message": "Generate additional repackaged BouncyCastle to be used by platform\n(separate from existing libcore version).\n\nEverything under repackaged_platform/ is autogenerated and difference with repackaged/* are namespace and annotations.\n\nBug: 154796679\nTest: srcgen/generate_android_src.sh and\nsrgen_platform/generate_android_src.sh\n\nChange-Id: Ie1ced2e21d59807f08633d87ee28f38a8095b262",
+    "author": {
+      "name": "Daulet Zhanguzin",
+      "email": "dauletz@google.com",
+      "date": "2021-01-20T18:28:41Z"
+    }
+  }
+]

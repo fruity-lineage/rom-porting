@@ -1,0 +1,99 @@
+[
+  {
+    "project": "external/bouncycastle",
+    "sha": "38ec66a303d02bb3a1967ce7c5626bc6391b1303",
+    "subject": "bouncycastle: Add EC/ECDSA provider to get our keybox spoofing working",
+    "author": "Abhay Singh Gill <abhaygill017@gmail.com>"
+  },
+  {
+    "project": "bionic",
+    "sha": "1cc5429a200f25a2042bc68a8bda192c6d191d7f",
+    "subject": "Add hooks for custom rom hide",
+    "author": "rmp22 <195054967+rmp22@users.noreply.github.com>"
+  },
+  {
+    "project": "bionic",
+    "sha": "f9af17ea14834116d9689fe54e597bf4cef46558",
+    "subject": "libc: Guard pathname inspection before readonly filtering",
+    "author": "fuzailmansuri <mfm9875@gmail.com>"
+  },
+  {
+    "project": "vendor/lineage",
+    "sha": "8c9e5f8ea343e0e2aaab001a8547a655d31a4d1c",
+    "subject": "soong: Conditionally spoof ro.product.first_api_level to 32 [1/2]",
+    "author": "AnierinB <anierin@evolution-x.org>"
+  },
+  {
+    "project": "system/core",
+    "sha": "f5278125f50e104cb2315d947c721957a6601d81",
+    "subject": "init: Conditionally spoof ro.product.first_api_level to 32 [2/2]",
+    "author": "AnierinB <anierin@evolution-x.org>"
+  },
+  {
+    "project": "device/lineage/sepolicy",
+    "sha": "2650f11ca9996f7f7faaa61acb14268bb7a60c51",
+    "subject": "sepolicy: Label the Play Integrity staging props",
+    "author": "Joey <joey@evolution-x.org>"
+  },
+  {
+    "project": "frameworks/base",
+    "sha": "b2cb692a58995923598768877c0397cdd980a166",
+    "subject": "core: Integrate spoofing services and guarded Duck RKP",
+    "author": "rmp22 <195054967+rmp22@users.noreply.github.com>"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "sha": "a2bc940f5c9089ea445f1baaacaa68e307456b45",
+    "subject": "Settings: Add spoofing controls and per-app Settings overrides",
+    "author": "Pranav Vashi <neobuddy89@gmail.com>"
+  },
+  {
+    "project": "system/security",
+    "sha": "cc1f9e42200d3e9c7a1aa47e433bd72023162002",
+    "parent": "123cc4af487922618cd99f28d05736e47eba7b00",
+    "subject": "keystore2: Honor attestation keys when importing keys",
+    "author": "fuzailmansuri <mfm9875@gmail.com>"
+  },
+  {
+    "project": "device/lineage/sepolicy",
+    "sha": "c9299e36c9738e4048bec188054ea0434e7b1798",
+    "parent": "2650f11ca9996f7f7faaa61acb14268bb7a60c51",
+    "subject": "sepolicy: Label the Duck import-backend property",
+    "author": "fuzailmansuri <mfm9875@gmail.com>"
+  },
+  {
+    "project": "frameworks/base",
+    "sha": "535d28c54c950b131550796c9829a4e572446df1",
+    "parent": "b2cb692a58995923598768877c0397cdd980a166",
+    "subject": "security: Add KeyMint import attestation for Duck",
+    "author": "fuzailmansuri <mfm9875@gmail.com>"
+  },
+  {
+    "project": "device/google/caimito",
+    "sha": "51ba2449f5180c93f6d2a7b4e6030a93034ed7f4",
+    "parent": "cceac3fb397ab27894c44ae30bb8894e64e64aff",
+    "subject": "tokay: Select KeyMint import attestation for Duck",
+    "author": "fuzailmansuri <mfm9875@gmail.com>"
+  },
+  {
+    "project": "device/google/muzel",
+    "sha": "2b195b35d051eb63c9dcc6b02ff66a9e5c1a6a61",
+    "subject": "frankel: Select KeyMint import attestation for Duck",
+    "author": "fuzailmansuri <mfm9875@gmail.com>",
+    "validation_checkout": "/tmp/frankel-duck-port"
+  },
+  {
+    "project": "device/google/caimito",
+    "sha": "2f7cc304134f77b3858da6e9d2390a5b22fbc467",
+    "subject": "device: Install Duck selection properties in the product partition",
+    "author": "fuzailmansuri <mfm9875@gmail.com>",
+    "validation_checkout": "/tmp/caimito-property-port"
+  },
+  {
+    "project": "device/google/muzel",
+    "sha": "9c4bad6692c8275790bff334263914ddbd2a59e5",
+    "subject": "device: Install Duck selection properties in the product partition",
+    "author": "fuzailmansuri <mfm9875@gmail.com>",
+    "validation_checkout": "/tmp/frankel-duck-port"
+  }
+]

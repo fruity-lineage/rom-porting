@@ -1,0 +1,41 @@
+{
+  "source": "/serverhive4/fruitzail/evox/vendor/google/tokay/radio/tzsw.img",
+  "sha256": "14b9ed8f8b1daf05c09092615ff2a4bd724b6a25bcc8fc552496de8ae766efd2",
+  "artifacts": [
+    {
+      "name_hint": "keymint",
+      "offset": 327680,
+      "size": 2503608,
+      "sha256": "19e3e7ea38dccd142bf3a09a6e8cf40f85609127040d7e2b2634b094ca67ce08",
+      "path": "/tmp/tokay-trusty-selected/keymint.elf"
+    },
+    {
+      "name_hint": "hwbcc",
+      "offset": 5996544,
+      "size": 433776,
+      "sha256": "52ef0192939b2c674205ba1743e430db35417dd7e999854673162fa65c198aca",
+      "path": "/tmp/tokay-trusty-selected/hwbcc.elf"
+    },
+    {
+      "name_hint": "apploader",
+      "offset": 5304320,
+      "size": 474592,
+      "sha256": "ef0fc083190f7679a2eb84681edc703461fa01f07bc760033c93445c9fd74a48",
+      "path": "/tmp/tokay-trusty-selected/apploader.elf"
+    },
+    {
+      "name_hint": "gsa-proxy",
+      "offset": 5861376,
+      "size": 56064,
+      "sha256": "c8482720b2da3a05cb9382b6ca96d6706350cbac48d765bdfa2eb7b76433cbb3",
+      "path": "/tmp/tokay-trusty-selected/gsa-proxy.elf"
+    },
+    {
+      "name_hint": "hwkey",
+      "offset": 6430720,
+      "size": 667752,
+      "sha256": "a8d5b4fa0120716aefbfea148b6ec8debb87ff62f2c4474cdaf3a6c3a7242a33",
+      "path": "/tmp/tokay-trusty-selected/hwkey.elf"
+    }
+  ]
+}

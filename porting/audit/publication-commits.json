@@ -1,0 +1,280 @@
+[
+  {
+    "project": "external/bouncycastle",
+    "upstream": "Evolution-X/external_bouncycastle",
+    "repository": "fruity-lineage/android_external_bouncycastle",
+    "branch": "main",
+    "local_tip": "38ec66a303d02bb3a1967ce7c5626bc6391b1303",
+    "published_tip": "6d01d24edd9e4838ddde5be7cbcfff7b1d4ea7bc",
+    "tree": "4216bd3ab659e3f31fcf5ad5b15e09c251d19d9f",
+    "backup_ref": "refs/heads/backup/pre-fruity-publication-20261108",
+    "commits": [
+      {
+        "local_commit": "38ec66a303d02bb3a1967ce7c5626bc6391b1303",
+        "published_commit": "6d01d24edd9e4838ddde5be7cbcfff7b1d4ea7bc",
+        "subject": "bouncycastle: Add EC/ECDSA provider to get our keybox spoofing working",
+        "author": "Abhay Singh Gill <abhaygill017@gmail.com>",
+        "references": [
+          "https://github.com/Evolution-X/external_bouncycastle/commit/e75ae35c6171d391613a675bde54561965eefb1f",
+          "https://github.com/Evolution-X/external_bouncycastle/commit/56e5dac751581c7bd6dbe363d7ba3f8e8862c5bf"
+        ]
+      }
+    ],
+    "published": true
+  },
+  {
+    "project": "bionic",
+    "upstream": "LineageOS/android_bionic",
+    "repository": "fruity-lineage/android_bionic",
+    "branch": "main",
+    "local_tip": "f9af17ea14834116d9689fe54e597bf4cef46558",
+    "published_tip": "32c175151d1b0fd666de2bfa70b32e246d26cbe8",
+    "tree": "5f06a2b1ab8f144a6783dac5dc250009d13bb6b7",
+    "backup_ref": "refs/heads/backup/pre-fruity-publication-20261108",
+    "commits": [
+      {
+        "local_commit": "1cc5429a200f25a2042bc68a8bda192c6d191d7f",
+        "published_commit": "d57e42b472d70a21dd4d2950ed591aa8cfab268a",
+        "subject": "Add hooks for custom rom hide",
+        "author": "rmp22 <195054967+rmp22@users.noreply.github.com>",
+        "references": [
+          "https://github.com/Evolution-X/bionic/commit/57ae6d98c1c1aec194cbe0cde12f55f6731e7523",
+          "https://github.com/Evolution-X/bionic/commit/3514d83d74e6d6483d533c391cf0c7adc19cd5c1",
+          "https://github.com/Evolution-X/bionic/commit/1773bf1e10796a0bd04a3ab4a5122a0921ac9bca"
+        ]
+      },
+      {
+        "local_commit": "f9af17ea14834116d9689fe54e597bf4cef46558",
+        "published_commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8",
+        "subject": "libc: Guard pathname inspection before readonly filtering",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/Evolution-X/bionic/commit/57ae6d98c1c1aec194cbe0cde12f55f6731e7523"
+        ]
+      }
+    ],
+    "published": true
+  },
+  {
+    "project": "vendor/lineage",
+    "upstream": "LineageOS/android_vendor_lineage",
+    "repository": "fruity-lineage/android_vendor_lineage",
+    "branch": "main",
+    "local_tip": "8c9e5f8ea343e0e2aaab001a8547a655d31a4d1c",
+    "published_tip": "887e8e0b3ae15e6c84de29953169392cd220a1c8",
+    "tree": "565399672310113808be796ddc922e9abe0fc049",
+    "backup_ref": "refs/heads/backup/pre-fruity-publication-20261108",
+    "commits": [
+      {
+        "local_commit": "8c9e5f8ea343e0e2aaab001a8547a655d31a4d1c",
+        "published_commit": "887e8e0b3ae15e6c84de29953169392cd220a1c8",
+        "subject": "soong: Conditionally spoof ro.product.first_api_level to 32 [1/2]",
+        "author": "AnierinB <anierin@evolution-x.org>",
+        "references": [
+          "https://github.com/Evolution-X/vendor_evolution/commit/c038ebc877323ba8ba70c4d70de6305e3510839b"
+        ]
+      }
+    ],
+    "published": true
+  },
+  {
+    "project": "system/core",
+    "upstream": "LineageOS/android_system_core",
+    "repository": "fruity-lineage/android_system_core",
+    "branch": "main",
+    "local_tip": "f5278125f50e104cb2315d947c721957a6601d81",
+    "published_tip": "19383c870279c12a823f1757ac455961b0973485",
+    "tree": "88286a85679865dae4a35548a1af0f59fb0b3a48",
+    "backup_ref": "refs/heads/backup/pre-fruity-publication-20261108",
+    "commits": [
+      {
+        "local_commit": "f5278125f50e104cb2315d947c721957a6601d81",
+        "published_commit": "19383c870279c12a823f1757ac455961b0973485",
+        "subject": "init: Conditionally spoof ro.product.first_api_level to 32 [2/2]",
+        "author": "AnierinB <anierin@evolution-x.org>",
+        "references": [
+          "https://github.com/Evolution-X/system_core/commit/3e62fd208f81cda79d9b43a999881fdfc7cdb0e4"
+        ]
+      }
+    ],
+    "published": true
+  },
+  {
+    "project": "device/lineage/sepolicy",
+    "upstream": "LineageOS/android_device_lineage_sepolicy",
+    "repository": "fruity-lineage/android_device_lineage_sepolicy",
+    "branch": "main",
+    "local_tip": "c9299e36c9738e4048bec188054ea0434e7b1798",
+    "published_tip": "7fc49f44fb98584fc3890f0e77609c246b19c126",
+    "tree": "c2b7ddcaf38f4c47cb6d5d04c7c9c13947c5f47a",
+    "backup_ref": "refs/heads/backup/pre-fruity-publication-20261108",
+    "commits": [
+      {
+        "local_commit": "2650f11ca9996f7f7faaa61acb14268bb7a60c51",
+        "published_commit": "fa89a9fbdfa58bf3b3d1211ddaf4b9e9a9a8da5c",
+        "subject": "sepolicy: Label the Play Integrity staging props",
+        "author": "Joey <joey@evolution-x.org>",
+        "references": [
+          "https://github.com/Evolution-X/device_evolution_sepolicy/commit/9803439b43b3970d66a88a96e045b91132dbb551"
+        ]
+      },
+      {
+        "local_commit": "c9299e36c9738e4048bec188054ea0434e7b1798",
+        "published_commit": "7fc49f44fb98584fc3890f0e77609c246b19c126",
+        "subject": "sepolicy: Label the Duck import-backend property",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/LineageOS/android_system_sepolicy/commit/d61fd80832f558d52de026097d30d695634e8b0f"
+        ]
+      }
+    ],
+    "published": true
+  },
+  {
+    "project": "frameworks/base",
+    "upstream": "LineageOS/android_frameworks_base",
+    "repository": "fruity-lineage/android_frameworks_base",
+    "branch": "main",
+    "local_tip": "535d28c54c950b131550796c9829a4e572446df1",
+    "published_tip": "474ebc595d120aa3025f6ec0e95acb9a2112e85e",
+    "tree": "60ac2574e42b052f80d4ed82c0f7fb9a7e3e471c",
+    "backup_ref": "refs/heads/backup/pre-fruity-publication-20261108",
+    "commits": [
+      {
+        "local_commit": "b2cb692a58995923598768877c0397cdd980a166",
+        "published_commit": "e2f24efe3b33840b0fee1128ebec0a4c4e0915a3",
+        "subject": "core: Integrate spoofing services and guarded Duck RKP",
+        "author": "rmp22 <195054967+rmp22@users.noreply.github.com>",
+        "references": [
+          "https://github.com/Evolution-X/frameworks_base/commit/ddce89c4142f89e85830bf3cd2980cf7f472f705",
+          "https://github.com/Evolution-X/frameworks_base/commit/afc187acf2791fb989a9471780c46cc21586f990",
+          "https://github.com/Evolution-X/frameworks_base/commit/cc7c326c0a974c6ef7cb416c9c6f393f0232b422",
+          "https://github.com/Evolution-X/vendor_extras/commit/9cc141509ce7907bee153c72ea2ab9b8050f7103",
+          "https://github.com/eltavine/Duck-ToolBox/commit/8d6a2470b1033c35946b72bb1f9bc56d8947dd63"
+        ]
+      },
+      {
+        "local_commit": "535d28c54c950b131550796c9829a4e572446df1",
+        "published_commit": "474ebc595d120aa3025f6ec0e95acb9a2112e85e",
+        "subject": "security: Add KeyMint import attestation for Duck",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/Evolution-X/frameworks_base/commit/ddce89c4142f89e85830bf3cd2980cf7f472f705",
+          "https://github.com/eltavine/Duck-ToolBox/commit/8d6a2470b1033c35946b72bb1f9bc56d8947dd63"
+        ]
+      }
+    ],
+    "published": true
+  },
+  {
+    "project": "packages/apps/Settings",
+    "upstream": "LineageOS/android_packages_apps_Settings",
+    "repository": "fruity-lineage/android_packages_apps_Settings",
+    "branch": "main",
+    "local_tip": "a2bc940f5c9089ea445f1baaacaa68e307456b45",
+    "published_tip": "19a7e7263ff77194412e7aff729ab3d9b924e6b3",
+    "tree": "dc807d6a9ef312ca71b115ff0750a5223926ffad",
+    "backup_ref": "refs/heads/backup/pre-fruity-publication-20261108",
+    "commits": [
+      {
+        "local_commit": "a2bc940f5c9089ea445f1baaacaa68e307456b45",
+        "published_commit": "19a7e7263ff77194412e7aff729ab3d9b924e6b3",
+        "subject": "Settings: Add spoofing controls and per-app Settings overrides",
+        "author": "Pranav Vashi <neobuddy89@gmail.com>",
+        "references": [
+          "https://github.com/Evolution-X/packages_apps_Evolver/commit/8503001d2a920c5047af9b6a3639ce66d983c4a6",
+          "https://github.com/Evolution-X/packages_apps_Evolver/commit/17ba8bbbc530c305efcc3c102bbc9d6f97e99f4d",
+          "https://github.com/Evolution-X/packages_apps_Sandbox/commit/db3d493ae3bd988e3df682c81941867c0f81b5b2"
+        ]
+      }
+    ],
+    "published": true
+  },
+  {
+    "project": "system/security",
+    "upstream": "LineageOS/android_system_security",
+    "repository": "fruity-lineage/android_system_security",
+    "branch": "main",
+    "local_tip": "cc1f9e42200d3e9c7a1aa47e433bd72023162002",
+    "published_tip": "52f9343c51950fcb5b10d0e485c7f044250cdc93",
+    "tree": "2c3d406570fd78d916309bd837a53fb3493dc48e",
+    "backup_ref": "refs/heads/backup/pre-fruity-publication-20261108",
+    "commits": [
+      {
+        "local_commit": "cc1f9e42200d3e9c7a1aa47e433bd72023162002",
+        "published_commit": "52f9343c51950fcb5b10d0e485c7f044250cdc93",
+        "subject": "keystore2: Honor attestation keys when importing keys",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/LineageOS/android_system_security/commit/123cc4af487922618cd99f28d05736e47eba7b00"
+        ]
+      }
+    ],
+    "published": true
+  },
+  {
+    "project": "device/google/caimito",
+    "upstream": "LineageOS/android_device_google_caimito",
+    "repository": "fruity-lineage/android_device_google_caimito",
+    "branch": "main",
+    "local_tip": "51ba2449f5180c93f6d2a7b4e6030a93034ed7f4",
+    "published_tip": "2f7cc304134f77b3858da6e9d2390a5b22fbc467",
+    "tree": "de14f764bf325ecfc181214052b0b7319337f0f1",
+    "backup_ref": "refs/heads/backup/pre-fruity-publication-20261108",
+    "commits": [
+      {
+        "local_commit": "51ba2449f5180c93f6d2a7b4e6030a93034ed7f4",
+        "published_commit": "a9c6eab8f37da789d4a66f849f7040d7515cc53d",
+        "subject": "tokay: Select KeyMint import attestation for Duck",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/LineageOS/android_device_google_zumapro/commit/c03df81e8fed84aeb4f2d26e9cef2ea5762d7c3f"
+        ]
+      },
+      {
+        "local_commit": "2f7cc304134f77b3858da6e9d2390a5b22fbc467",
+        "published_commit": "2f7cc304134f77b3858da6e9d2390a5b22fbc467",
+        "subject": "device: Install Duck selection properties in the product partition",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/LineageOS/android_build/commit/90d006387398ae6899145e6531a304500cfa0f70"
+        ]
+      }
+    ],
+    "published": true,
+    "worktree": "/tmp/caimito-property-port"
+  },
+  {
+    "project": "device/google/muzel",
+    "upstream": "LineageOS/android_device_google_muzel",
+    "repository": "fruity-lineage/android_device_google_muzel",
+    "branch": "main",
+    "local_tip": "2b195b35d051eb63c9dcc6b02ff66a9e5c1a6a61",
+    "published_tip": "9c4bad6692c8275790bff334263914ddbd2a59e5",
+    "tree": "1b89905adb299ff0f35a3744619d5b69cecaef4b",
+    "worktree": "/tmp/frankel-duck-port",
+    "active_checkout_tip": "60f3d1ade4062cec3609023357eba8fcccc9e74a",
+    "commits": [
+      {
+        "local_commit": "2b195b35d051eb63c9dcc6b02ff66a9e5c1a6a61",
+        "published_commit": "2b195b35d051eb63c9dcc6b02ff66a9e5c1a6a61",
+        "subject": "frankel: Select KeyMint import attestation for Duck",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/LineageOS/android_device_google_laguna/commit/7ef3601320418d70f25509f4f1dd4895b6937fd2",
+          "https://github.com/fruity-lineage/android_system_security/commit/52f9343c51950fcb5b10d0e485c7f044250cdc93"
+        ]
+      },
+      {
+        "local_commit": "9c4bad6692c8275790bff334263914ddbd2a59e5",
+        "published_commit": "9c4bad6692c8275790bff334263914ddbd2a59e5",
+        "subject": "device: Install Duck selection properties in the product partition",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/LineageOS/android_build/commit/90d006387398ae6899145e6531a304500cfa0f70"
+        ]
+      }
+    ],
+    "published": true
+  }
+]

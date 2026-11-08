@@ -1,0 +1,142 @@
+{
+  "image": "/serverhive4/fruitzail/evox/vendor/google/tokay/radio/gsa.img",
+  "size": 450560,
+  "sha256": "8996b3e57b460ce87a335cb62060ff0355286ef5b37ba24730b4bb343fc5d39d",
+  "payloads": [
+    {
+      "offset": 139264,
+      "size": 54472,
+      "class": 1,
+      "machine": 40,
+      "entry": 77829,
+      "sha256": "7f5bad09a543269f0bb4ddbfb4237d5a79a2cc28b97ef695d3f68af8e48b160a",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 65536,
+          "filesz": 11020,
+          "memsz": 11020,
+          "flags": 4
+        },
+        {
+          "file_offset": 12288,
+          "vaddr": 77824,
+          "filesz": 40392,
+          "memsz": 40392,
+          "flags": 5
+        },
+        {
+          "file_offset": 53248,
+          "vaddr": 118784,
+          "filesz": 777,
+          "memsz": 16512,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [],
+      "extracted_path": "/tmp/tokay-gsa-all/elf-00022000.elf"
+    },
+    {
+      "offset": 196608,
+      "size": 82548,
+      "class": 1,
+      "machine": 40,
+      "entry": 77829,
+      "sha256": "318b76675fad9890f55b6fae44a6a603a539b14d853c0d6a6abe10e3593eba35",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 65536,
+          "filesz": 8859,
+          "memsz": 8859,
+          "flags": 4
+        },
+        {
+          "file_offset": 12288,
+          "vaddr": 77824,
+          "filesz": 66370,
+          "memsz": 66370,
+          "flags": 5
+        },
+        {
+          "file_offset": 81920,
+          "vaddr": 147456,
+          "filesz": 180,
+          "memsz": 1996,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [],
+      "extracted_path": "/tmp/tokay-gsa-all/elf-00030000.elf"
+    },
+    {
+      "offset": 282624,
+      "size": 87156,
+      "class": 1,
+      "machine": 40,
+      "entry": 81925,
+      "sha256": "a4282a755747be37ab042feb739306bfa5ccb72c3989ca088d733992bd8cf3b3",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 65536,
+          "filesz": 14000,
+          "memsz": 14000,
+          "flags": 4
+        },
+        {
+          "file_offset": 16384,
+          "vaddr": 81920,
+          "filesz": 67526,
+          "memsz": 67526,
+          "flags": 5
+        },
+        {
+          "file_offset": 86016,
+          "vaddr": 151552,
+          "filesz": 692,
+          "memsz": 15530,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [],
+      "extracted_path": "/tmp/tokay-gsa-all/elf-00045000.elf"
+    },
+    {
+      "offset": 372736,
+      "size": 66192,
+      "class": 1,
+      "machine": 40,
+      "entry": 81921,
+      "sha256": "b1823ed1ad6d30ab0242e526adf4bd48e2fea0ecd82d0c6cae35404ffb553606",
+      "loads": [
+        {
+          "file_offset": 0,
+          "vaddr": 65536,
+          "filesz": 15122,
+          "memsz": 15122,
+          "flags": 4
+        },
+        {
+          "file_offset": 16384,
+          "vaddr": 81920,
+          "filesz": 45836,
+          "memsz": 45836,
+          "flags": 5
+        },
+        {
+          "file_offset": 65536,
+          "vaddr": 131072,
+          "filesz": 152,
+          "memsz": 1224,
+          "flags": 6
+        }
+      ],
+      "identity_hints": [],
+      "extracted_path": "/tmp/tokay-gsa-all/elf-0005b000.elf"
+    }
+  ],
+  "rejected_magic_offsets": [
+    130264
+  ]
+}

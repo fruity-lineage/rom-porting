@@ -1,0 +1,1346 @@
+{
+  "frameworks_base": {
+    "target": "frameworks/base",
+    "revision": "ddce89c4142f89e85830bf3cd2980cf7f472f705",
+    "changes": [
+      {
+        "path": "core/java/android/app/ActivityThread.java",
+        "new": false,
+        "matching_changes": [
+          "+import android.security.gameprops.GamePropsSpoofService;",
+          "+import android.security.pif.PlayIntegritySpoofService;",
+          "+        GamePropsSpoofService.getInstance().spoofForPackage(data.appInfo.packageName);",
+          "+        PlayIntegritySpoofService pifService = PlayIntegritySpoofService.getInstance();",
+          "+        if (pifService.shouldSpoof(data.processName)) {",
+          "+            pifService.spoofBuildFields(data.processName);",
+          "+            if (pifService.isSpoofProviderEnabled()) {",
+          "+                pifService.spoofProvider(data.processName);",
+          "+            if (pifService.isSpoofSignatureEnabled()) {",
+          "+                pifService.spoofSignature(data.processName);"
+        ]
+      },
+      {
+        "path": "core/java/android/app/ApplicationPackageManager.java",
+        "new": false,
+        "matching_changes": [
+          "+    // Spoof setting caches \u2014 refreshed by ContentObserver, avoids per-call Settings reads",
+          "+    private static volatile boolean sPhotosSpoofEnabled = true;",
+          "+    private static boolean sSpoofObserverRegistered = false;",
+          "+            final boolean photosSpoof = !Process.isIsolated()",
+          "+                && sPhotosSpoofEnabled",
+          "+            if (photosSpoof) {",
+          "+            registerSpoofSettingsObserver();",
+          "+    private void registerSpoofSettingsObserver() {",
+          "+            if (sSpoofObserverRegistered) return;",
+          "+            sSpoofObserverRegistered = true;",
+          "+                        cr, \"pi_tensor_spoof\", 0) == 1;",
+          "+                sPhotosSpoofEnabled = Settings.Secure.getInt(",
+          "+                        cr, Settings.Secure.PI_PHOTOS_SPOOF, 1) == 1;",
+          "+                    Settings.Secure.getUriFor(\"pi_tensor_spoof\"), false, observer);",
+          "+                    Settings.Secure.getUriFor(Settings.Secure.PI_PHOTOS_SPOOF), false, observer);"
+        ]
+      },
+      {
+        "path": "core/java/android/app/ContextImpl.java",
+        "new": false,
+        "matching_changes": [
+          "+            && !com.android.internal.util.evolution.PixelPropsUtils.shouldBypassTaskPermission(uid)) {"
+        ]
+      },
+      {
+        "path": "core/java/android/app/IActivityManager.aidl",
+        "new": false,
+        "matching_changes": [
+          "+    String getSpoofPifConfig();",
+          "+    String getSpoofGamePropsConfig();",
+          "+    boolean isSandboxSpoofSettingEnabled(String packageName, String settingKey, int userId);",
+          "+    void setSandboxSpoofSettingEnabled(String packageName, String settingKey, boolean enabled, int userId);",
+          "+    List<String> getSandboxEnabledSpoofSettings(String packageName, int userId);",
+          "+    String getSandboxSpoofedSetting(String callingPackage, String settingName, int userId);",
+          "+    String getSpoofTrickyStoreTarget();",
+          "+    String getSpoofTrickyStoreKeyBox();",
+          "+    String getSpoofTrickyStorePatch();",
+          "+    Bundle getDuckRkpState();",
+          "+    void setDuckRkpEnabled(boolean enabled);",
+          "+    void provisionDuckRkp();",
+          "+    void setSpoofTrickyStoreKeyBox(String keybox);"
+        ]
+      },
+      {
+        "path": "core/java/android/app/Instrumentation.java",
+        "new": false,
+        "matching_changes": [
+          "+import android.security.gameprops.GamePropsSpoofService;",
+          "+import com.android.internal.util.evolution.PixelPropsUtils;",
+          "+        PixelPropsUtils.setProps(context);",
+          "+        GamePropsSpoofService.getInstance().applyPerAppSpoofFromContext(context);",
+          "+        PixelPropsUtils.setProps(context);",
+          "+        GamePropsSpoofService.getInstance().applyPerAppSpoofFromContext(context);"
+        ]
+      },
+      {
+        "path": "core/java/android/provider/Settings.java",
+        "new": false,
+        "matching_changes": [
+          "+         * Per-apps device spoofing",
+          "+        public static final String PER_APPS_DEVICE_SPOOF = \"per_apps_device_spoof\";",
+          "+         * Custom device spoof profiles for per-app spoofing",
+          "+        public static final String CUSTOM_SPOOF_PROFILES = \"custom_spoof_profiles\";",
+          "+        public static final String PER_APPS_DEVICE_SPOOF_ENABLED = \"per_apps_device_spoof_enabled\";",
+          "+        public static final String PER_APPS_DEVICE_SPOOF_CACHE = \"per_apps_device_spoof_cache\";",
+          "+         * Whether to use PixelProps spoof for google apps",
+          "+        public static final String PI_PP_SPOOF = \"pi_pp_spoof\";",
+          "+         * Whether to use Tensor spoof for google apps",
+          "+        public static final String PI_TENSOR_SPOOF = \"pi_tensor_spoof\";",
+          "+         * Whether to use PIF spoof for Play store",
+          "+        public static final String PI_VENDING_SPOOF = \"pi_vending_spoof\";",
+          "+         * Whether to use spoof for photos",
+          "+        public static final String PI_PHOTOS_SPOOF = \"pi_photos_spoof\";",
+          "+         * Whether to use spoof for snapchat",
+          "+        public static final String PI_SNAPCHAT_SPOOF = \"pi_snapchat_spoof\";",
+          "+        public static final String SPOOF_PIF_CONFIG = \"spoof_pif_config\";",
+          "+        public static final String SPOOF_GAMEPROPS_CONFIG = \"spoof_gameprops_config\";",
+          "+        public static final String SPOOF_TRICKYSTORE_TARGET = \"spoof_trickystore_target\";",
+          "+        public static final String SPOOF_TRICKYSTORE_KEYBOX = \"spoof_trickystore_keybox\";",
+          "+        public static final String SPOOF_DUCK_RKP_ENABLED = \"spoof_duck_rkp_enabled\";",
+          "+        public static final String SPOOF_TRICKYSTORE_PATCH = \"spoof_trickystore_patch\";"
+        ]
+      },
+      {
+        "path": "core/java/android/security/gameprops/GamePropsSpoofService.java",
+        "new": true,
+        "matching_changes": [
+          "+package android.security.gameprops;",
+          "+ * Unified device-props spoofing service.",
+          "+ *      GamePropsSpoofService behaviour, keyed by package name with arbitrary Build field maps.",
+          "+ *   2. Per-app spoof map (stored in Settings.Secure.PER_APPS_DEVICE_SPOOF) \u2014 formerly",
+          "+ *      Requires a Context to read Settings.Secure at spoof time.",
+          "+public final class GamePropsSpoofService {",
+          "+    private static final String TAG = \"GameProps\";",
+          "+    /** Comma-separated \"pkg:profileId\" pairs for the active per-app spoof map. */",
+          "+    private static final String SETTING_PER_APPS         = \"per_apps_device_spoof\";",
+          "+    /** Master enable flag for per-app spoofing (int, default 1). */",
+          "+    private static final String SETTING_PER_APPS_ENABLED = \"per_apps_device_spoof_enabled\";",
+          "+    private static final String SETTING_CUSTOM_PROFILES  = \"custom_spoof_profiles\";",
+          "+    private static GamePropsSpoofService sInstance;",
+          "+    private GamePropsSpoofService() {}",
+          "+    public static GamePropsSpoofService getInstance() {",
+          "+        GamePropsSpoofService instance;",
+          "+        synchronized (GamePropsSpoofService.class) {",
+          "+                sInstance = new GamePropsSpoofService();",
+          "+     * UserSelectedAppSpoofSettings / PerAppsPropsUtils.",
+          "+            Log.w(TAG, \"ActivityManager not ready, skipping gameprops config load\");",
+          "+            content = am.getSpoofGamePropsConfig();",
+          "+            Log.e(TAG, \"Failed to fetch gameprops config from system_server\", e);",
+          "+            Log.d(TAG, \"No gameprops config in Settings.Secure\");",
+          "+            Map<String, String> gameProps = new HashMap<>();",
+          "+                    gameProps.put(reader.nextName(), reader.nextString());",
+          "+            if (!gameProps.isEmpty()) {",
+          "+                out.put(packageName, gameProps);",
+          "+                        + \": \" + gameProps.size() + \" props\");",
+          "+    // Public spoof entry points",
+          "+     * Apply game-props spoofing (source 1) for the given package.",
+          "+     * Per-app spoofing (source 2) is handled separately via",
+          "+     * applyPerAppSpoofFromContext() at Instrumentation time.",
+          "+    public void spoofForPackage(String packageName) {",
+          "+            Map<String, String> gameProps = mGameConfigs.get(packageName);",
+          "+            if (gameProps != null && !gameProps.isEmpty()) {",
+          "+                if (mDebug) Log.d(TAG, \"Spoofing via game-props for: \" + packageName);",
+          "+                for (Map.Entry<String, String> entry : gameProps.entrySet()) {",
+          "+                    spoofField(entry.getKey(), entry.getValue(), packageName);",
+          "+    public void applyPerAppSpoofFromContext(Context context) {",
+          "+        // Source 1 already applied \u2014 don't double-spoof",
+          "+        applyPerAppSpoof(packageName, context);",
+          "+    // Per-app spoof logic (source 2 \u2014 formerly PerAppsPropsUtils.setProps)",
+          "+    private void applyPerAppSpoof(String packageName, Context context) {",
+          "+        String spoofedApps;",
+          "+            spoofedApps = Settings.Secure.getString(",
+          "+        if (TextUtils.isEmpty(spoofedApps)) return;",
+          "+        for (String entry : spoofedApps.split(\",\")) {",
+          "+        if (mDebug) Log.d(TAG, \"Per-app spoof: \" + packageName + \" \u2192 \" + profileId);",
+          "+            if (v != null) spoofField(prop.getKey(), v.toString(), packageName);",
+          "+            Log.e(TAG, \"Failed to parse custom spoof profiles\", e);",
+          "+    private void spoofField(String fieldName, String value, String packageName) {",
+          "+            Log.e(TAG, \"Failed to spoof \" + fieldName + \" for \" + packageName, e);"
+        ]
+      },
+      {
+        "path": "core/java/android/security/pif/PlayIntegritySpoofService.java",
+        "new": true,
+        "matching_changes": [
+          "+public final class PlayIntegritySpoofService {",
+          "+    private static final String DROIDGUARD_PACKAGE = \"com.google.android.gms.unstable\";",
+          "+    private static PlayIntegritySpoofService sInstance;",
+          "+    private volatile boolean mSpoofBuild = true;",
+          "+    // DroidGuard's getCertificateChain() throw, which would bypass the keybox",
+          "+    private volatile boolean mSpoofProvider = false;",
+          "+    private volatile boolean mSpoofSignature = false;",
+          "+    // Replaces the old all-or-nothing \"spoofVendingBuild\" boolean. This now matches",
+          "+    // upstream PlayIntegrityFork semantics: \"0\"/empty = disabled (default), \"1\"/\"true\" =",
+          "+    // spoof the configured FINGERPRINT field only, or any other value = use that literal",
+          "+    // string as a custom FINGERPRINT to serve to Play Store instead of the DroidGuard one.",
+          "+    private volatile String mSpoofVendingFinger = \"0\";",
+          "+    // 0 = disabled, 1 = spoof Play Store's SDK_INT to 32, N > 1 = spoof it to N.",
+          "+    private volatile int mSpoofVendingSdk = 0;",
+          "+    // Set once spoofProvider() has armed the DroidGuard certificate-chain block in",
+          "+    private volatile boolean mSignatureSpoofed = false;",
+          "+    private PlayIntegritySpoofService() {}",
+          "+    public static synchronized PlayIntegritySpoofService getInstance() {",
+          "+            sInstance = new PlayIntegritySpoofService();",
+          "+     * leave the process unspoofed for its whole lifetime. In system_server it",
+          "+            content = am.getSpoofPifConfig();",
+          "+     * Without this DroidGuard sees the spoofed FINGERPRINT next to the ROM's own",
+          "+     * Keeps SECURITY_PATCH and DEVICE_INITIAL_SDK_INT in step with the spoofed",
+          "+     * profile, matching what AxSpoofManager stages for bionic. A missing patch is",
+          "+            case \"spoofBuild\":",
+          "+                mSpoofBuild = \"1\".equals(value) || \"true\".equalsIgnoreCase(value);",
+          "+            case \"spoofProps\":",
+          "+                // Read by AxSpoofManager, which stages the prop overrides for bionic.",
+          "+            case \"spoofProvider\":",
+          "+                mSpoofProvider = \"1\".equals(value) || \"true\".equalsIgnoreCase(value);",
+          "+            case \"spoofSignature\":",
+          "+                mSpoofSignature = \"1\".equals(value) || \"true\".equalsIgnoreCase(value);",
+          "+            case \"spoofVendingFinger\":",
+          "+                mSpoofVendingFinger = value;",
+          "+            case \"spoofVendingBuild\":",
+          "+                // FINGERPRINT-only vending spoof. Only honored as a fallback if",
+          "+                // spoofVendingFinger hasn't already been set by this config.",
+          "+                if (\"0\".equals(mSpoofVendingFinger)",
+          "+                    Log.w(TAG, \"spoofVendingBuild is deprecated, treating as spoofVendingFinger=1\");",
+          "+                    mSpoofVendingFinger = \"1\";",
+          "+            case \"spoofVendingSdk\":",
+          "+                mSpoofVendingSdk = parseVendingSdk(value);",
+          "+                // \"*.build.id\" style keys are system prop overrides. AxSpoofManager",
+          "+    public boolean shouldSpoof(String processName) {",
+          "+        if (!DROIDGUARD_PACKAGE.equals(processName) && !VENDING_PACKAGE.equals(processName)) {",
+          "+    public boolean isDroidGuard(String processName) {",
+          "+        return DROIDGUARD_PACKAGE.equals(processName);",
+          "+    public void spoofBuildFields(String processName) {",
+          "+        boolean isDroidGuard = isDroidGuard(processName);",
+          "+        if (!isDroidGuard && !isVending) return;",
+          "+            // Like upstream, spoofing the SDK level replaces the FINGERPRINT spoof",
+          "+            if (mSpoofVendingSdk > 0) {",
+          "+                spoofSdkInt();",
+          "+                if (mVerboseLogs > 0) Log.d(TAG, \"Vending FINGERPRINT spoofing disabled\");",
+          "+            spoofField(\"FINGERPRINT\", vendingFingerprint, \"PS\");",
+          "+        if (!mSpoofBuild) {",
+          "+            if (mVerboseLogs > 0) Log.d(TAG, \"Build spoofing disabled\");",
+          "+            spoofField(entry.getKey(), entry.getValue(), \"DG\");",
+          "+     * Resolves the FINGERPRINT value that should be spoofed to the Play Store",
+          "+     * (com.android.vending) process, based on the spoofVendingFinger setting.",
+          "+     * Returns null if vending fingerprint spoofing is disabled.",
+          "+     * spoofVendingFinger may be:",
+          "+     *   \"1\" / \"true\"          -> use the same FINGERPRINT configured for DroidGuard",
+          "+        String setting = mSpoofVendingFinger;",
+          "+     * Applies signature spoofing. Must be called with the current process name so",
+          "+     * this can be skipped for Play Store (com.android.vending); signature spoofing",
+          "+     * is only meaningful, and only safe, for DroidGuard's package-info checks.",
+          "+    public void spoofSignature(String processName) {",
+          "+            if (mVerboseLogs > 0) Log.d(TAG, \"Signature spoofing skipped for Vending\");",
+          "+        if (!mSpoofSignature || mSignatureSpoofed) return;",
+          "+        Signature spoofedSignature = new Signature(Base64.decode(ROM_SIGNATURE_DATA, Base64.DEFAULT));",
+          "+        Parcelable.Creator<PackageInfo> customCreator = new CustomPackageInfoCreator(originalCreator, spoofedSignature);",
+          "+        mSignatureSpoofed = true;",
+          "+        Log.i(TAG, \"Signature spoofing enabled via Parcelable.Creator\");",
+          "+    private void spoofSdkInt() {",
+          "+        // Only called for Play Store, driven by spoofVendingSdk. The value is not",
+          "+        // taken from the config's SDK_INT field: that one belongs to DroidGuard's",
+          "+        int requestedSdk = mSpoofVendingSdk == 1 ? 32 : mSpoofVendingSdk;",
+          "+            Log.e(TAG, \"Failed to spoof SDK_INT\", e);",
+          "+            Log.e(TAG, \"Failed to spoof SDK_INT\", e);",
+          "+    private void spoofField(String fieldName, String value, String logSuffix) {",
+          "+            Log.e(TAG, \"Failed to spoof \" + fieldName, e);",
+          "+    public boolean isSpoofSignatureEnabled() {",
+          "+        return mSpoofSignature && mConfigLoaded;",
+          "+    public boolean isSpoofProviderEnabled() {",
+          "+        return mSpoofProvider && mConfigLoaded;",
+          "+     * Arms the DroidGuard certificate-chain block for this process. Only takes",
+          "+     * effect in DroidGuard itself: Play Store and every other process keep their",
+          "+    public void spoofProvider(String processName) {",
+          "+        if (!isSpoofProviderEnabled() || !isDroidGuard(processName)) return;",
+          "+        Log.i(TAG, \"Certificate chain block enabled for DroidGuard\");",
+          "+     * should fail, so DroidGuard falls back to an attestation-free verdict. True",
+          "+     * only in a DroidGuard process armed by spoofProvider(), and only when",
+          "+     * DroidGuard is on the calling stack.",
+          "+            if (e.getClassName().toLowerCase(java.util.Locale.ROOT).contains(\"droidguard\")) {",
+          "+    public String getSpoofVendingFinger() {",
+          "+        return mSpoofVendingFinger;",
+          "+     * Whether DroidGuard-facing Build field spoofing (FINGERPRINT, BRAND,",
+          "+    public boolean isSpoofBuildEnabled() {",
+          "+        return mSpoofBuild && mConfigLoaded;",
+          "+        private final Signature spoofedSignature;",
+          "+        CustomPackageInfoCreator(Parcelable.Creator<PackageInfo> originalCreator, Signature spoofedSignature) {",
+          "+            this.spoofedSignature = spoofedSignature;",
+          "+                    packageInfo.signatures[0] = spoofedSignature;",
+          "+                        signaturesArray[0] = spoofedSignature;"
+        ]
+      },
+      {
+        "path": "core/java/android/security/trickystore/AttestationUtils.java",
+        "new": true,
+        "matching_changes": [
+          "+package android.security.trickystore;",
+          "+    private static final File CONFIG_DIR = new File(\"/data/adb/tricky_store\");",
+          "+            KeyBoxManager keyBoxManager = TrickyStoreService.getInstance().getKeyBoxManager();",
+          "+            KeyBoxManager keyBoxManager = TrickyStoreService.getInstance().getKeyBoxManager();",
+          "+        final String alias = \"trickystore_attestation_key\";",
+          "+        TrickyStoreService.CustomPatchLevel customLevel =",
+          "+                TrickyStoreService.getInstance().getCustomPatchLevelForPackage(packages);",
+          "+            TrickyStoreService.CustomPatchLevel level, boolean isLong) {",
+          "+            TrickyStoreService.CustomPatchLevel level, boolean isLong) {",
+          "+            TrickyStoreService.CustomPatchLevel level, boolean isLong) {",
+          "+                TrickyStoreService.getInstance().getCustomPatchLevelForPackage(packages), isLong);",
+          "+                TrickyStoreService.getInstance().getCustomPatchLevelForPackage(packages), isLong);",
+          "+                TrickyStoreService.getInstance().getCustomPatchLevelForPackage(packages), isLong);"
+        ]
+      },
+      {
+        "path": "core/java/android/security/trickystore/CertificateGenerator.java",
+        "new": true,
+        "matching_changes": [
+          "+package android.security.trickystore;",
+          "+        KeyBoxManager keyboxManager = TrickyStoreService.getInstance().getKeyBoxManager();"
+        ]
+      },
+      {
+        "path": "core/java/android/security/trickystore/CertificateHacker.java",
+        "new": true,
+        "matching_changes": [
+          "+package android.security.trickystore;",
+          "+import android.security.pif.PlayIntegritySpoofService;",
+          "+                    // Dropped here; the spoofed replacement is added back in",
+          "+            KeyBoxManager keyboxManager = TrickyStoreService.getInstance().getKeyBoxManager();",
+          "+     * the active PlayIntegritySpoofService profile, so that a Play Integrity",
+          "+     * two. Returns an empty map (no-op) when build spoofing isn't currently",
+          "+     * enabled/configured for this process, so unspoofed callers keep getting",
+          "+            PlayIntegritySpoofService pif = PlayIntegritySpoofService.getInstance();",
+          "+            if (!pif.isSpoofBuildEnabled()) {",
+          "+        // using the same certified profile PlayIntegritySpoofService serves",
+          "+        // to GMS/DroidGuard, so the attestation cert and the spoofed Build"
+        ]
+      },
+      {
+        "path": "core/java/android/security/trickystore/KeyBoxManager.java",
+        "new": true,
+        "matching_changes": [
+          "+package android.security.trickystore;",
+          "+     *               {@link TrickyStoreService#decodeKeybox} first",
+          "+        String problem = TrickyStoreService.keyboxProblem(rawXml);"
+        ]
+      },
+      {
+        "path": "core/java/android/security/trickystore/TrickyStoreService.java",
+        "new": true,
+        "matching_changes": [
+          "+package android.security.trickystore;",
+          "+public class TrickyStoreService {",
+          "+    private static final String TAG = \"TrickyStoreService\";",
+          "+    private static TrickyStoreService sInstance;",
+          "+        new java.io.File(\"/data/system/trickystore/revocation_cache.json\");",
+          "+    // auto-targeted by AxSpoofManager. Shared so the two can't drift apart.",
+          "+    // AxSpoofManager auto-targets a new install. Xposed managers are in XPOSED_PACKAGES.",
+          "+    // Default TrickyStore targets, in the same syntax as SPOOF_TRICKYSTORE_TARGET:",
+          "+    // AxSpoofManager writes this into a target setting that was never set, so a",
+          "+    private TrickyStoreService() {",
+          "+    public static synchronized TrickyStoreService getInstance() {",
+          "+            sInstance = new TrickyStoreService();",
+          "+        Log.i(TAG, \"TrickyStoreService initialized\");",
+          "+                Log.w(TAG, \"ActivityManager not ready, retaining last trickystore configuration\");",
+          "+            Log.e(TAG, \"Failed to fetch trickystore config; retaining existing values\", e);",
+          "+        FetchResult fetched = fetchFromAms(am -> am.getSpoofTrickyStoreTarget());",
+          "+        FetchResult fetched = fetchFromAms(am -> am.getSpoofTrickyStoreKeyBox());",
+          "+        FetchResult fetched = fetchFromAms(am -> am.getSpoofTrickyStorePatch());",
+          "+        }, \"TrickyStore-RevocationCheck\").start();",
+          "+        final String alias = \"TrickyStoreTeeCheck\";"
+        ]
+      },
+      {
+        "path": "core/java/android/view/ViewRootImpl.java",
+        "new": false,
+        "matching_changes": [
+          "+                            if (com.android.internal.util.evolution.PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {"
+        ]
+      },
+      {
+        "path": "core/java/com/android/internal/util/evolution/PixelDeviceRepository.java",
+        "new": true,
+        "matching_changes": [
+          "+    // The one device Play Integrity spoofing targets by default (and the only one",
+          "+    // from GENERATION_ORDER, which still drives the Pixel props spoof for other apps.",
+          "+     * spoofed device instead of claiming the Pixel 6a's for every codename.",
+          "+     * date doesn't show next to a spoofed fingerprint. Null if [buildId] has no",
+          "+     * Returns the codename Play Integrity spoofing should use: the Pixel 6a when it",
+          "+    // Shared default spoof target packages \u2014 single source of truth used by both",
+          "+    // PixelPropsUtils (runtime) and PixelPropsSettings (UI), rather than three",
+          "+     * factory-images page. PixelPropsSettings uses this instead of",
+          "+     * getProfiles() \u2014 spoofing device props as a canary/beta build is more",
+          "+     * likely to look anomalous than spoofing a real shipped build, so props",
+          "+     * spoofing should only ever offer stable fingerprints. PlayIntegrityFix",
+          "+     * feeds PixelPropsSettings (which only ever spoofs a stable, shipped"
+        ]
+      },
+      {
+        "path": "core/java/com/android/internal/util/evolution/PixelPropsUtils.java",
+        "new": true,
+        "matching_changes": [
+          "+public final class PixelPropsUtils {",
+          "+    private static final String TAG = PixelPropsUtils.class.getSimpleName();",
+          "+    // Pixel device codename (\"mustang\" = Pixel 10 Pro XL) used as the GMS spoof target",
+          "+    // source of truth shared with PixelPropsSettings.",
+          "+    private static volatile boolean sPhotosSpoofEnabled = true;",
+          "+    private static volatile boolean sSnapchatSpoofEnabled = false;",
+          "+    private static volatile boolean sPixelPropsSpoofEnabled = true;",
+          "+        registerSpoofSettingsObserver(context);",
+          "+    private static void registerSpoofSettingsObserver(Context context) {",
+          "+                sPhotosSpoofEnabled = Settings.Secure.getInt(",
+          "+                        cr, Settings.Secure.PI_PHOTOS_SPOOF, 1) == 1;",
+          "+                sSnapchatSpoofEnabled = Settings.Secure.getInt(",
+          "+                        cr, Settings.Secure.PI_SNAPCHAT_SPOOF, 0) == 1;",
+          "+                sPixelPropsSpoofEnabled = Settings.Secure.getInt(",
+          "+                        cr, Settings.Secure.PI_PP_SPOOF, 1) == 1;",
+          "+                    Settings.Secure.getUriFor(Settings.Secure.PI_PHOTOS_SPOOF), false, observer);",
+          "+                    Settings.Secure.getUriFor(Settings.Secure.PI_SNAPCHAT_SPOOF), false, observer);",
+          "+                    Settings.Secure.getUriFor(Settings.Secure.PI_PP_SPOOF), false, observer);",
+          "+            if (sPhotosSpoofEnabled) {",
+          "+                sPixelXLProps.forEach(PixelPropsUtils::setPropValue);",
+          "+            if (sSnapchatSpoofEnabled) {",
+          "+                sPixelXLProps.forEach(PixelPropsUtils::setPropValue);",
+          "+                && sPixelPropsSpoofEnabled) {",
+          "+                final boolean moseySpoofEnabled = sPpTargets != null",
+          "+                final String codename = (packageName.equals(PACKAGE_GMS) && moseySpoofEnabled)",
+          "+        synchronized (PixelPropsUtils.class) {",
+          "+        synchronized (PixelPropsUtils.class) {"
+        ]
+      },
+      {
+        "path": "keystore/java/android/security/keystore2/AndroidKeyStoreKeyPairGeneratorSpi.java",
+        "new": false,
+        "matching_changes": [
+          "+import android.security.trickystore.CertificateGenerator;",
+          "+import android.security.trickystore.TrickyStoreService;",
+          "+                    && !\"TrickyStoreTeeCheck\".equals(mEntryAlias)",
+          "+                    && !\"trickystore_attestation_key\".equals(mEntryAlias);",
+          "+                        TrickyStoreService service = TrickyStoreService.getInstance();",
+          "+                    Log.w(TAG, \"Failed to resolve TrickyStore key policy\", e);"
+        ]
+      },
+      {
+        "path": "keystore/java/android/security/keystore2/AndroidKeyStoreSpi.java",
+        "new": false,
+        "matching_changes": [
+          "+import android.security.pif.PlayIntegritySpoofService;",
+          "+import android.security.trickystore.TrickyStoreService;",
+          "+import android.security.trickystore.CertificateHacker;",
+          "+        if (PlayIntegritySpoofService.shouldBlockCertificateChain()) {",
+          "+                || \"TrickyStoreTeeCheck\".equals(alias)",
+          "+                || \"trickystore_attestation_key\".equals(alias)) {",
+          "+            TrickyStoreService service = TrickyStoreService.getInstance();",
+          "+                        Log.d(TAG, \"TrickyStore: Updated certificate chain for uid=\"",
+          "+            Log.e(TAG, \"TrickyStore: Failed to hack certificate chain\", e);"
+        ]
+      },
+      {
+        "path": "libs/WindowManager/Shell/src/com/android/wm/shell/common/ExternalInterfaceBinder.java",
+        "new": false,
+        "matching_changes": [
+          "+        if (!com.android.internal.util.evolution.PixelPropsUtils.shouldBypassManageActivityTaskPermission("
+        ]
+      },
+      {
+        "path": "packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java",
+        "new": false,
+        "matching_changes": [
+          "+            String spoofed = getSpoofedValue(name);",
+          "+            if (spoofed != null) {",
+          "+                return Bundle.forPair(Settings.NameValueTable.VALUE, spoofed);",
+          "+    private String getSpoofedValue(String name) {",
+          "+                settings = sandboxManager.getSpoofedSetting(callingPackage, name, UserHandle.getCallingUserId());",
+          "+            String spoofed = getSpoofedValue(args.name);",
+          "+            if (spoofed != null) {",
+          "+                    SettingsState.Setting s = state.new Setting(args.name, spoofed, true, null, null);"
+        ]
+      },
+      {
+        "path": "services/appprediction/java/com/android/server/appprediction/AppPredictionManagerService.java",
+        "new": false,
+        "matching_changes": [
+          "+                    || com.android.internal.util.evolution.PixelPropsUtils.isSystemLauncher(Binder.getCallingUid())"
+        ]
+      },
+      {
+        "path": "services/appwidget/java/com/android/server/appwidget/AppWidgetServiceImpl.java",
+        "new": false,
+        "matching_changes": [
+          "+        boolean isExemptLauncher = com.android.internal.util.evolution.PixelPropsUtils"
+        ]
+      },
+      {
+        "path": "services/core/Android.bp",
+        "new": false,
+        "matching_changes": [
+          "+        \"vendor.evo.duckrkp-V1-java\","
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/AxExtServiceFactory.java",
+        "new": true,
+        "matching_changes": [
+          "+import com.android.server.spoof.AxSpoofManager;",
+          "+import com.android.server.spoof.IAxSpoofManager;",
+          "+    private static volatile IAxSpoofManager sAxSpoofManager;",
+          "+            case AX_SPOOF_MANAGER:",
+          "+                if (sAxSpoofManager == null) {",
+          "+                        if (sAxSpoofManager == null) {",
+          "+                            sAxSpoofManager = new AxSpoofManager();",
+          "+                instance = sAxSpoofManager;",
+          "+        getSpoofManager().systemReady();",
+          "+    public static IAxSpoofManager getSpoofManager() {",
+          "+        return getOrCreate(IAxExtServiceFactory.ExtType.AX_SPOOF_MANAGER);"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/IAxExtServiceFactory.java",
+        "new": true,
+        "matching_changes": [
+          "+import com.android.server.spoof.IAxSpoofManager;",
+          "+        AX_SPOOF_MANAGER(IAxSpoofManager.class);"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+        "new": false,
+        "matching_changes": [
+          "+           || com.android.internal.util.evolution.PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+    public String getSpoofPifConfig() {",
+          "+        return AxExtServiceFactory.getSpoofManager().getPifConfig();",
+          "+    public String getSpoofGamePropsConfig() {",
+          "+        return AxExtServiceFactory.getSpoofManager().getGamePropsConfig();",
+          "+    public String getSpoofTrickyStoreTarget() {",
+          "+        return AxExtServiceFactory.getSpoofManager().getTrickyStoreTarget();",
+          "+    public String getSpoofTrickyStoreKeyBox() {",
+          "+        return AxExtServiceFactory.getSpoofManager().getTrickyStoreKeyBox();",
+          "+    public String getSpoofTrickyStorePatch() {",
+          "+        return AxExtServiceFactory.getSpoofManager().getTrickyStorePatch();",
+          "+    private void enforceDuckRkpPermission() {",
+          "+    public Bundle getDuckRkpState() {",
+          "+        enforceDuckRkpPermission();",
+          "+            return AxExtServiceFactory.getSpoofManager().getDuckRkpManager().getState();",
+          "+    public void setDuckRkpEnabled(boolean enabled) {",
+          "+        enforceDuckRkpPermission();",
+          "+            AxExtServiceFactory.getSpoofManager().getDuckRkpManager().setEnabled(enabled);",
+          "+    public void provisionDuckRkp() {",
+          "+        enforceDuckRkpPermission();",
+          "+            AxExtServiceFactory.getSpoofManager().getDuckRkpManager().provision();",
+          "+    public void setSpoofTrickyStoreKeyBox(String keybox) {",
+          "+        enforceDuckRkpPermission();",
+          "+            AxExtServiceFactory.getSpoofManager().getDuckRkpManager().setImportedKeybox(keybox);",
+          "+    public boolean isSandboxSpoofSettingEnabled(String packageName, String settingKey, int userId) {",
+          "+        return AxSandboxService.getInstance().isSpoofSettingEnabled(packageName, settingKey, userId);",
+          "+    public void setSandboxSpoofSettingEnabled(String packageName, String settingKey,",
+          "+        AxSandboxService.getInstance().setSpoofSettingEnabled(packageName, settingKey, enabled, userId);",
+          "+    public List<String> getSandboxEnabledSpoofSettings(String packageName, int userId) {",
+          "+        return AxSandboxService.getInstance().getEnabledSpoofSettings(packageName, userId);",
+          "+    public String getSandboxSpoofedSetting(String callingPackage, String settingName, int userId) {",
+          "+        return AxSandboxService.getInstance().getSpoofedSetting(callingPackage, settingName, userId);"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/am/BroadcastController.java",
+        "new": false,
+        "matching_changes": [
+          "+                    && !com.android.internal.util.evolution.PixelPropsUtils.shouldBypassBroadcastReceiverValidation(callerPackage)) {"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/am/UserController.java",
+        "new": false,
+        "matching_changes": [
+          "+        if (com.android.internal.util.evolution.PixelPropsUtils.isSystemLauncher(Binder.getCallingUid())) {"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/input/InputManagerService.java",
+        "new": false,
+        "matching_changes": [
+          "+        if (!com.android.internal.util.evolution.PixelPropsUtils.shouldBypassMonitorInputPermission(mContext) &&"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/pm/ComputerEngine.java",
+        "new": false,
+        "matching_changes": [
+          "+import android.security.pif.PlayIntegritySpoofService;",
+          "+    private static final int SPOOF_INSTALL_DISABLED = 0;",
+          "+    private static final int SPOOF_INSTALL_USER = 1;",
+          "+    private static final int SPOOF_INSTALL_SYSTEM = 2;",
+          "+    private int shouldSpoofInstallSource(int callingUid, String targetPackage, int targetUserId) {",
+          "+            return SPOOF_INSTALL_DISABLED;",
+          "+            return SPOOF_INSTALL_DISABLED;",
+          "+            return SPOOF_INSTALL_DISABLED;",
+          "+            return SPOOF_INSTALL_DISABLED;",
+          "+            return SPOOF_INSTALL_DISABLED;",
+          "+            return SPOOF_INSTALL_SYSTEM;",
+          "+        return SPOOF_INSTALL_USER;",
+          "+                    PlayIntegritySpoofService pifService = PlayIntegritySpoofService.getInstance();",
+          "+                    if (pifService.isSpoofSignatureEnabled()) {",
+          "+                            Slog.d(TAG, \"PIF: Spoofed ROM signature for 'android' package to GMS\");",
+          "+                    Slog.e(TAG, \"PIF: Failed to spoof ROM signature\", e);",
+          "+        int spoofResult = shouldSpoofInstallSource(callingUid, packageName, userId);",
+          "+        if (spoofResult == SPOOF_INSTALL_USER) return VENDING_PACKAGE;",
+          "+        if (spoofResult == SPOOF_INSTALL_SYSTEM) return null;",
+          "+        int spoofResult = shouldSpoofInstallSource(callingUid, packageName, userId);",
+          "+        if (spoofResult == SPOOF_INSTALL_USER) {",
+          "+        if (spoofResult == SPOOF_INSTALL_SYSTEM) {",
+          "+        if (shouldSpoofInstallSource(callingUid, pkg.getPackageName(), UserHandle.getUserId(callingUid)) != SPOOF_INSTALL_DISABLED) {"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/pm/LauncherAppsService.java",
+        "new": false,
+        "matching_changes": [
+          "+            if (com.android.internal.util.evolution.PixelPropsUtils.isSystemLauncher(callerUid)) {"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/security/rkp/DuckRkpCbor.java",
+        "new": true,
+        "matching_changes": [
+          "+final class DuckRkpCbor {",
+          "+    private DuckRkpCbor() {}"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/security/rkp/DuckRkpCertificates.java",
+        "new": true,
+        "matching_changes": [
+          "+import static com.android.server.security.rkp.DuckRkpCbor.array;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.bytes;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.decode;",
+          "+final class DuckRkpCertificates {",
+          "+    private DuckRkpCertificates() {}",
+          "+            if (unique.length + shared.length > DuckRkpCbor.LIMIT) {",
+          "+                .append(\"<Keybox DeviceID=\\\"DuckRkp\\\"><Key algorithm=\\\"ecdsa\\\">\")"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/security/rkp/DuckRkpManager.java",
+        "new": true,
+        "matching_changes": [
+          "+import android.security.trickystore.KeyBoxManager;",
+          "+import android.security.trickystore.TrickyStoreService;",
+          "+public final class DuckRkpManager {",
+          "+    private static final String TAG = \"DuckRkp\";",
+          "+    private static final String SOURCE_KEY = \"spoof_trickystore_keybox_source\";",
+          "+    private static final String MASTER_KEY = \"spoof_trickystore_enabled\";",
+          "+    private static final String AUTO_STATE_KEY = \"spoof_duck_rkp_auto_state\";",
+          "+            new File(Environment.getDataSystemDirectory(), \"duck_rkp.xml\"));",
+          "+            runnable -> new Thread(runnable, \"DuckRkp\"));",
+          "+    public DuckRkpManager(Context context, Handler handler, Runnable onChanged) {",
+          "+                        || mFailure.equals(\"hal_rejected\")) && DuckRkpNative.available()) {",
+          "+                    byte[] data = input.readNBytes(DuckRkpCbor.LIMIT + 1);",
+          "+                    if (data.length > DuckRkpCbor.LIMIT) throw new IllegalArgumentException();",
+          "+                && (ServiceManager.isDeclared(DuckRkpV1.SERVICE) || DuckRkpNative.available()));",
+          "+            DuckRkpCertificates.Result result = DuckRkpV1.provision(",
+          "+                    if (e instanceof DuckRkpV1.Failure) {",
+          "+                        mFailure = ((DuckRkpV1.Failure) e).code;",
+          "+                        mDetail = ((DuckRkpV1.Failure) e).detail;",
+          "+    private void saveGenerated(String xml) throws DuckRkpV1.Failure {",
+          "+            throw new DuckRkpV1.Failure(\"save_failed\");",
+          "+    private synchronized void progress(long generation, String stage) throws DuckRkpV1.Failure {",
+          "+            throw new DuckRkpV1.Failure(\"canceled\");",
+          "+            throw new DuckRkpV1.Failure(\"timeout\");",
+          "+            if (payload.length() > DuckRkpCbor.LIMIT) {",
+          "+            if (xml.contains(\"<!DOCTYPE\") || TrickyStoreService.keyboxProblem(xml) != null",
+          "+        if (!Settings.Secure.putStringForUser(mResolver, Settings.Secure.SPOOF_TRICKYSTORE_KEYBOX,",
+          "+                    || !(ServiceManager.isDeclared(DuckRkpV1.SERVICE)",
+          "+                            || DuckRkpNative.available())) return;",
+          "+                Settings.Secure.SPOOF_TRICKYSTORE_KEYBOX, UserHandle.USER_SYSTEM);",
+          "+     * was fetched in the background (AxSpoofManager) and is replaced, not protected.",
+          "+        return Settings.Secure.getIntForUser(mResolver, Settings.Secure.SPOOF_DUCK_RKP_ENABLED,",
+          "+        if (!Settings.Secure.putIntForUser(mResolver, Settings.Secure.SPOOF_DUCK_RKP_ENABLED,",
+          "+            Settings.Secure.putStringForUser(mResolver, \"spoof_trickystore_\" + suffix,",
+          "+        Settings.Secure.putLongForUser(mResolver, \"spoof_trickystore_last_revocation_check\",",
+          "+        byte[] challenge = \"TrickyStore key match\".getBytes(StandardCharsets.UTF_8);",
+          "+        long expiresAt = DuckRkpCertificates.validate(certificates);"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/security/rkp/DuckRkpNative.java",
+        "new": true,
+        "matching_changes": [
+          "+import static com.android.server.security.rkp.DuckRkpCbor.array;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.arrayOf;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.bytes;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.decode;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.encode;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.integer;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.map;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.number;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.text;",
+          "+import vendor.evo.duckrkp.IDuckRkp;",
+          "+final class DuckRkpNative {",
+          "+    private static final String SERVICE = \"vendor.evo.duckrkp.IDuckRkp/default\";",
+          "+    private DuckRkpNative() {}",
+          "+            throw new DuckRkpV1.Failure(\"invalid_hal_response\");",
+          "+            return DuckRkpV1.assemble(publicKey, challenge, tag, bytes(response.get(number(59))),",
+          "+        } catch (DuckRkpV1.Failure e) {",
+          "+            throw new DuckRkpV1.Failure(\"invalid_hal_response\");",
+          "+            throw new DuckRkpV1.Failure(\"invalid_hal_response\");",
+          "+        IDuckRkp service = IDuckRkp.Stub.asInterface(ServiceManager.checkService(SERVICE));",
+          "+        if (service == null) throw new DuckRkpV1.Failure(\"native_unavailable\");",
+          "+                throw new DuckRkpV1.Failure(\"invalid_hal_response\");",
+          "+                throw new DuckRkpV1.Failure(status == 5 ? \"native_timeout\"",
+          "+                throw new DuckRkpV1.Failure(\"invalid_hal_response\");",
+          "+            throw new DuckRkpV1.Failure(\"native_transport\");"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/security/rkp/DuckRkpV1.java",
+        "new": true,
+        "matching_changes": [
+          "+import static com.android.server.security.rkp.DuckRkpCbor.array;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.arrayOf;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.bytes;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.decode;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.encode;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.integer;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.map;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.number;",
+          "+import static com.android.server.security.rkp.DuckRkpCbor.text;",
+          "+final class DuckRkpV1 {",
+          "+    private DuckRkpV1() {}",
+          "+    static DuckRkpCertificates.Result provision(Progress progress) throws Exception {",
+          "+        boolean nativeAvailable = DuckRkpNative.available();",
+          "+                android.util.Slog.w(\"DuckRkp\", \"Backend \" + method[0] + \" curve \" + method[1]",
+          "+    private static DuckRkpCertificates.Result provision(Progress progress,",
+          "+            csr = DuckRkpNative.signV2(publicKey, challenge);",
+          "+                csr = DuckRkpNative.signV1(publicKey, challenge, eek, Build.FINGERPRINT);",
+          "+            return DuckRkpCertificates.verify(key, response);",
+          "+                .put(number(-2), bytes(DuckRkpCbor.coordinate(publicKey.getW().getAffineX())))",
+          "+                .put(number(-3), bytes(DuckRkpCbor.coordinate(publicKey.getW().getAffineY())));",
+          "+        if (csr.size() > DuckRkpCbor.LIMIT) throw new Failure(\"invalid_hal_response\");",
+          "+            if (connection.getContentLengthLong() > DuckRkpCbor.LIMIT) {",
+          "+                    if (count > DuckRkpCbor.LIMIT - output.size()) {"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/spoof/AxSpoofManager.java",
+        "new": true,
+        "matching_changes": [
+          "+package com.android.server.spoof;",
+          "+import android.security.pif.PlayIntegritySpoofService;",
+          "+import android.security.trickystore.TrickyStoreService;",
+          "+import com.android.server.security.rkp.DuckRkpManager;",
+          "+public class AxSpoofManager implements IAxSpoofManager {",
+          "+    private static final String TAG = \"AxSpoofManager\";",
+          "+            Settings.Secure.SPOOF_PIF_CONFIG,",
+          "+            Settings.Secure.SPOOF_GAMEPROPS_CONFIG,",
+          "+            Settings.Secure.SPOOF_TRICKYSTORE_TARGET,",
+          "+            Settings.Secure.SPOOF_TRICKYSTORE_KEYBOX,",
+          "+            Settings.Secure.SPOOF_TRICKYSTORE_PATCH,",
+          "+            Settings.Secure.SPOOF_DUCK_RKP_ENABLED,",
+          "+    // Spoofing stays off until the user opens Settings for the first time after",
+          "+    // setup. The flag is persisted, so later boots start spoofing straight away;",
+          "+    private static final String ACTIVATED_KEY = \"spoof_activated\";",
+          "+    private static final String PIF_ENABLED_KEY = \"spoof_pif_enabled\";",
+          "+    private static final String TRICKYSTORE_ENABLED_KEY = \"spoof_trickystore_enabled\";",
+          "+    private static final String LAST_AUTO_FETCH_KEY = \"spoof_pif_last_auto_fetch\";",
+          "+    private static final String KEYBOX_SOURCE_KEY = \"spoof_trickystore_keybox_source\";",
+          "+    // Staging props for bionic's custom_rom_hide_get_prop_override(), which serves",
+          "+    // *.security_patch and *api_level keys) \u2014 see libc/bionic/custom_rom_hide.cpp.",
+          "+    // applies them inside the DroidGuard process (com.google.android.gms.unstable),",
+          "+    // bionic's custom_rom_hide.cpp reads these with the same names and limits.",
+          "+    // Nothing spoof-related runs until the user first opens Settings (after setup):",
+          "+    // left alone. Set once by enableSpoofing() and persisted in ACTIVATED_KEY.",
+          "+    private volatile DuckRkpManager mDuckRkp;",
+          "+    public AxSpoofManager() {",
+          "+        mHandlerThread = new HandlerThread(\"AxSpoofManager\");",
+          "+        mDuckRkp = new DuckRkpManager(mContext, mHandler, this::onDuckRkpChanged);",
+          "+                if (TRICKYSTORE_ENABLED_KEY.equals(last)) {",
+          "+                    mDuckRkp.onSettingsChanged(true);",
+          "+                if (Settings.Secure.SPOOF_TRICKYSTORE_KEYBOX.equals(last)",
+          "+                        || Settings.Secure.SPOOF_DUCK_RKP_ENABLED.equals(last)) {",
+          "+                    mDuckRkp.onSettingsChanged(false);",
+          "+                if (Settings.Secure.SPOOF_PIF_CONFIG.equals(last)) {",
+          "+                Log.i(TAG, \"Spoof config refreshed: \" + last);",
+          "+        mResolver.registerContentObserver(Settings.System.getUriFor(TRICKYSTORE_ENABLED_KEY),",
+          "+            stagePifPropOverrides(getCached(Settings.Secure.SPOOF_PIF_CONFIG));",
+          "+            Log.i(TAG, \"Spoofing off until Settings is opened for the first time\");",
+          "+        Log.i(TAG, \"AxSpoofManager ready\");",
+          "+                    if (!mActivated && isDeviceProvisioned()) enableSpoofing();",
+          "+            Log.e(TAG, \"Failed to watch for Settings launch, spoofing stays off\", e);",
+          "+     * Flips spoofing on, reloads the configs system_server's own PIF and TrickyStore",
+          "+    private void enableSpoofing() {",
+          "+        Log.i(TAG, \"Settings opened, enabling spoofing\");",
+          "+        PlayIntegritySpoofService.getInstance().loadConfig();",
+          "+        TrickyStoreService.getInstance().initialize();",
+          "+        stagePifPropOverrides(getCached(Settings.Secure.SPOOF_PIF_CONFIG));",
+          "+    private void onDuckRkpChanged() {",
+          "+    private boolean isDuckRkpEnabled() {",
+          "+        return Settings.Secure.getIntForUser(mResolver, Settings.Secure.SPOOF_DUCK_RKP_ENABLED,",
+          "+     * Called after SPOOF_PIF_CONFIG changes. If the config was cleared (reset",
+          "+        final String config = getCached(Settings.Secure.SPOOF_PIF_CONFIG);",
+          "+     * but bionic's custom_rom_hide_get_prop_override() only applies a staging",
+          "+     * (TrickyStoreService ignores any package that isn't listed). Only a null",
+          "+                mResolver, Settings.Secure.SPOOF_TRICKYSTORE_TARGET, UserHandle.USER_SYSTEM);",
+          "+                mResolver, Settings.Secure.SPOOF_TRICKYSTORE_TARGET,",
+          "+                TrickyStoreService.DEFAULT_TARGET_LIST, UserHandle.USER_SYSTEM);",
+          "+        Log.i(TAG, \"Seeded default TrickyStore targets\");",
+          "+     * Adds a newly-installed package to the TrickyStore target list in AUTO",
+          "+        if (mResolver == null || TrickyStoreService.XPOSED_PACKAGES.contains(pkg)",
+          "+                || TrickyStoreService.UNNECESSARY_PACKAGES.contains(pkg)) {",
+          "+        // Spoofing being active isn't enough: with TrickyStore switched off its target list",
+          "+                mResolver, TRICKYSTORE_ENABLED_KEY, 1, UserHandle.USER_SYSTEM) == 0) return;",
+          "+                mResolver, Settings.Secure.SPOOF_TRICKYSTORE_TARGET, UserHandle.USER_SYSTEM);",
+          "+                mResolver, Settings.Secure.SPOOF_TRICKYSTORE_TARGET, updated, UserHandle.USER_SYSTEM);",
+          "+                        mResolver, Settings.Secure.SPOOF_PIF_CONFIG, UserHandle.USER_SYSTEM))",
+          "+        boolean keyboxMissing = !isDuckRkpEnabled()",
+          "+                        mResolver, Settings.Secure.SPOOF_TRICKYSTORE_KEYBOX, UserHandle.USER_SYSTEM))",
+          "+                        mResolver, TRICKYSTORE_ENABLED_KEY, 1, UserHandle.USER_SYSTEM) != 0;",
+          "+        String content = getCached(Settings.Secure.SPOOF_PIF_CONFIG);",
+          "+        // Start from the saved config so flags set elsewhere (spoofVendingFinger,",
+          "+        // spoofProps, ...) survive the refresh; PlayIntegritySpoofService falls back",
+          "+        // Per-device, so first_api_level agrees with the spoofed device. The api_level",
+          "+                mResolver, Settings.Secure.SPOOF_PIF_CONFIG, toSave.toString(2),",
+          "+     * parsing or revocation checking \u2014 TrickyStoreService.refreshKeyBox()",
+          "+     * SPOOF_TRICKYSTORE_KEYBOX, so this only needs to fetch and dedupe.",
+          "+                mResolver, TRICKYSTORE_ENABLED_KEY, 1, UserHandle.USER_SYSTEM) == 0) {",
+          "+        if (isDuckRkpEnabled()) {",
+          "+        String currentXml = decodeKeyboxXml(getCached(Settings.Secure.SPOOF_TRICKYSTORE_KEYBOX));",
+          "+                mResolver, Settings.Secure.SPOOF_TRICKYSTORE_KEYBOX, encoded, UserHandle.USER_SYSTEM);",
+          "+     * Keeps the TrickyStore attestation patch level in step with the fingerprint",
+          "+     * real patch while PIF spoofs the fingerprint's, and the two disagree. Same",
+          "+                mResolver, Settings.Secure.SPOOF_TRICKYSTORE_PATCH, UserHandle.USER_SYSTEM);",
+          "+                mResolver, Settings.Secure.SPOOF_TRICKYSTORE_PATCH, patch, UserHandle.USER_SYSTEM);",
+          "+        // Never touch GMS/GSF before spoofing is activated (first Settings launch),",
+          "+            Log.i(TAG, \"Spoofing not activated, skipping GMS restart\");",
+          "+     * Stages the spoofed product-identity, build id, security patch and initial",
+          "+     * custom_rom_hide_get_prop_override() to serve to DroidGuard in place of the",
+          "+     * real read-only values \u2014 closes the gap where DroidGuard reading via",
+          "+     * spoofProps=0 turns the prop overrides off, as it does in PIFork: nothing",
+          "+        if (!isSpoofPropsEnabled(fields)) {",
+          "+        // brand/product/device inside it, as PlayIntegritySpoofService does.",
+          "+        // agree with the spoofed fingerprint. An unofficial ROM reports test-keys on the",
+          "+     * Stages every other property entry of the config for DroidGuard, like PIFork's",
+          "+     * Same rule as PlayIntegritySpoofService: on unless the config sets spoofProps",
+          "+    private static boolean isSpoofPropsEnabled(Map<String, String> fields) {",
+          "+        final String value = fields.get(\"spoofProps\");",
+          "+     * PlayIntegritySpoofService accepts: JSON, or PIF's key=value lines with",
+          "+        return getCached(Settings.Secure.SPOOF_PIF_CONFIG);",
+          "+    public String getGamePropsConfig() {",
+          "+        return getCached(Settings.Secure.SPOOF_GAMEPROPS_CONFIG);",
+          "+    public String getTrickyStoreTarget() {",
+          "+        return getCached(Settings.Secure.SPOOF_TRICKYSTORE_TARGET);",
+          "+    public String getTrickyStoreKeyBox() {",
+          "+        if (!canReadTrickyStoreKeybox()) return null;",
+          "+        DuckRkpManager duck = mDuckRkp;",
+          "+        if (duck == null) return getCached(Settings.Secure.SPOOF_TRICKYSTORE_KEYBOX);",
+          "+    public DuckRkpManager getDuckRkpManager() {",
+          "+        DuckRkpManager duck = mDuckRkp;",
+          "+    private boolean canReadTrickyStoreKeybox() {",
+          "+            if (TrickyStoreService.XPOSED_PACKAGES.contains(pkg)) return false;",
+          "+        String targets = getCached(Settings.Secure.SPOOF_TRICKYSTORE_TARGET);",
+          "+    public String getTrickyStorePatch() {",
+          "+        return getCached(Settings.Secure.SPOOF_TRICKYSTORE_PATCH);"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/spoof/IAxSpoofManager.java",
+        "new": true,
+        "matching_changes": [
+          "+package com.android.server.spoof;",
+          "+public interface IAxSpoofManager {",
+          "+    String getGamePropsConfig();",
+          "+    String getTrickyStoreTarget();",
+          "+    String getTrickyStoreKeyBox();",
+          "+    String getTrickyStorePatch();",
+          "+    com.android.server.security.rkp.DuckRkpManager getDuckRkpManager();"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/wm/ActivityStarter.java",
+        "new": false,
+        "matching_changes": [
+          "+                || com.android.internal.util.evolution.PixelPropsUtils.isSystemLauncher(mCallingUid)) {"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/wm/ActivityTaskManagerService.java",
+        "new": false,
+        "matching_changes": [
+          "+import com.android.internal.util.evolution.PixelPropsUtils;",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+        if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {",
+          "+            if (!PixelPropsUtils.shouldBypassTaskPermission(Binder.getCallingUid())) {"
+        ]
+      },
+      {
+        "path": "services/core/java/com/android/server/wm/ActivityTaskSupervisor.java",
+        "new": false,
+        "matching_changes": [
+          "+        if (com.android.internal.util.evolution.PixelPropsUtils.shouldBypassTaskPermission(callingUid)) return true;"
+        ]
+      },
+      {
+        "path": "services/duck_rkp/Android.bp",
+        "new": true,
+        "matching_changes": [
+          "+    name: \"vendor.evo.duckrkp\",",
+          "+    srcs: [\"aidl/vendor/evo/duckrkp/*.aidl\"],"
+        ]
+      },
+      {
+        "path": "services/duck_rkp/aidl/vendor/evo/duckrkp/IDuckRkp.aidl",
+        "new": true,
+        "matching_changes": [
+          "+package vendor.evo.duckrkp;",
+          "+interface IDuckRkp {"
+        ]
+      },
+      {
+        "path": "services/duck_rkp/aidl_api/vendor.evo.duckrkp/1/vendor/evo/duckrkp/IDuckRkp.aidl",
+        "new": true,
+        "matching_changes": [
+          "+package vendor.evo.duckrkp;",
+          "+interface IDuckRkp {"
+        ]
+      },
+      {
+        "path": "services/duck_rkp/aidl_api/vendor.evo.duckrkp/current/vendor/evo/duckrkp/IDuckRkp.aidl",
+        "new": true,
+        "matching_changes": [
+          "+package vendor.evo.duckrkp;",
+          "+interface IDuckRkp {"
+        ]
+      },
+      {
+        "path": "services/java/com/android/server/SystemServer.java",
+        "new": false,
+        "matching_changes": [
+          "+            android.security.trickystore.AttestationUtils.initBootHash();"
+        ]
+      },
+      {
+        "path": "services/tests/RemoteProvisioningServiceTests/src/com/android/server/security/rkp/DuckRkpManagerTest.java",
+        "new": true,
+        "matching_changes": [
+          "+public class DuckRkpManagerTest {",
+          "+        assertThat(DuckRkpManager.renewalTime(start, expiry))",
+          "+        assertThat(DuckRkpManager.renewalTime(start, expiry))",
+          "+            assertThat(DuckRkpManager.retryDelay(i + 1))",
+          "+        assertThat(DuckRkpManager.retryDelay(Integer.MAX_VALUE))",
+          "+        assertThat(DuckRkpManager.isRetryable(\"network_error\", 0)).isTrue();",
+          "+        assertThat(DuckRkpManager.isRetryable(\"hal_unavailable\", 0)).isTrue();",
+          "+            assertThat(DuckRkpManager.isRetryable(\"http_error\", status)).isTrue();",
+          "+            assertThat(DuckRkpManager.isRetryable(error, 0)).isFalse();",
+          "+            assertThat(DuckRkpManager.isRetryable(\"http_error\", status)).isFalse();"
+        ]
+      },
+      {
+        "path": "services/tests/servicestests/src/com/android/server/security/rkp/DuckRkpNativeTest.java",
+        "new": true,
+        "matching_changes": [
+          "+import static com.android.server.security.rkp.DuckRkpCbor.*;",
+          "+public class DuckRkpNativeTest {",
+          "+            DuckRkpNative.verifyV2(csr, key, challenge);",
+          "+            DuckRkpNative.verifyV2(f.csr, f.target, CHALLENGE);",
+          "+            DuckRkpNative.verifyV2(f.csr, f.target, CHALLENGE);"
+        ]
+      }
+    ]
+  },
+  "bionic": {
+    "target": "bionic",
+    "revision": "57ae6d98c1c1aec194cbe0cde12f55f6731e7523",
+    "changes": [
+      {
+        "path": "libc/Android.bp",
+        "new": false,
+        "matching_changes": [
+          "+        \"bionic/custom_rom_hide.cpp\","
+        ]
+      },
+      {
+        "path": "libc/bionic/custom_rom_hide.cpp",
+        "new": true,
+        "matching_changes": [
+          "+#include \"custom_rom_hide.h\"",
+          "+void custom_rom_hide_unregister_fd(int fd) {",
+          "+void custom_rom_hide_transfer_fd(int old_fd, int new_fd) {",
+          "+        custom_rom_hide_unregister_fd(new_fd);",
+          "+// Dynamic prop overrides are only meant for DroidGuard, mirroring PIFork's scope.",
+          "+#define DROIDGUARD_PROCESS_NAME \"com.google.android.gms.unstable\"",
+          "+static bool compute_droidguard(bool* resolved) {",
+          "+    return strcmp(cmdline, DROIDGUARD_PROCESS_NAME) == 0;",
+          "+static bool is_droidguard_process() {",
+          "+    bool result = compute_droidguard(&resolved);",
+          "+bool custom_rom_hide_should_block(const char* path) {",
+          "+bool custom_rom_hide_should_block_at(int dirfd, const char* path) {",
+          "+bool custom_rom_hide_is_symlink(const char* path) {",
+          "+bool custom_rom_hide_should_filter_dirent(int dirfd, const char* name) {",
+          "+    if (!decoded) custom_rom_hide_unregister_fd(fd);",
+          "+ssize_t custom_rom_hide_readlinkat_post(int dirfd, const char* path, char* buf,",
+          "+    custom_rom_hide_unregister_fd(mem_fd);",
+          "+static bool write_spoofed_mount_line(int mem_fd, char* line, size_t line_len, void*) {",
+          "+int custom_rom_hide_filter_proc(const char* path) {",
+          "+                ? write_spoofed_mount_line : write_line_raw;",
+          "+        custom_rom_hide_unregister_fd(mem_fd);",
+          "+int custom_rom_hide_filter_sepolicy(const char* path) {",
+          "+#ifndef CUSTOM_ROM_HIDE_FILTER_VINTF",
+          "+#define CUSTOM_ROM_HIDE_FILTER_VINTF 1",
+          "+#if CUSTOM_ROM_HIDE_FILTER_VINTF",
+          "+int custom_rom_hide_filter_vintf(const char* path) {",
+          "+#if !CUSTOM_ROM_HIDE_FILTER_VINTF",
+          "+        custom_rom_hide_unregister_fd(mem_fd);",
+          "+static const char* const kSpoofedEmptyProps[] = {",
+          "+static const PropOverride kSpoofedValueProps[] = {",
+          "+// Read-only keys that mirror whatever AxSpoofManager staged into the matching",
+          "+// persist.sys.pif.* prop after a fingerprint refresh. Unlike kSpoofedValueProps",
+          "+// real device identity), and only served to the DroidGuard process.",
+          "+    // The build type and tags of the partitions kSpoofedValueProps doesn't pin (odm, product,",
+          "+// Fixed values served to DroidGuard only, as PIFork's property hook does. adbd",
+          "+static const PropOverride kDroidGuardValueProps[] = {",
+          "+// The staging props only exist to feed the DroidGuard overrides above. Hide them",
+          "+// lookup itself runs inside DroidGuard and still reads them.",
+          "+           !is_droidguard_process();",
+          "+// leading-* suffix wildcards, like PIFork's jsonProps. AxSpoofManager stages them as",
+          "+// in sync with AxSpoofManager.",
+          "+// DroidGuard process, and never for the staging props themselves.",
+          "+bool custom_rom_hide_should_spoof_prop(const char* name, char* value) {",
+          "+    for (const char* const* p = kSpoofedEmptyProps; *p; ++p) {",
+          "+    for (const PropOverride* o = kSpoofedValueProps; o->name; ++o) {",
+          "+bool custom_rom_hide_should_hide_prop(const char* name) {",
+          "+    for (const char* const* p = kSpoofedEmptyProps; *p; ++p) {",
+          "+const char* custom_rom_hide_get_prop_override(const char* name, char* buffer) {",
+          "+    // is_droidguard_process() is cached per pid once the process name is final.",
+          "+    const bool droidguard = is_droidguard_process();",
+          "+    if (droidguard) {",
+          "+    for (const PropOverride* o = kSpoofedValueProps; o->name; ++o) {",
+          "+            if (!droidguard) return nullptr;",
+          "+        if (!droidguard) return nullptr;",
+          "+        if (!droidguard) return nullptr;",
+          "+    for (const PropOverride* o = kDroidGuardValueProps; o->name; ++o) {",
+          "+            return droidguard ? o->value : nullptr;",
+          "+    if (droidguard) return find_custom_prop_override(name, buffer, true);",
+          "+bool custom_rom_hide_is_app_process() {",
+          "+void custom_rom_hide_spoof_stat(const char* path, struct stat* sb) {",
+          "+void custom_rom_hide_spoof_statx(const char* path, struct statx* sx) {",
+          "+void custom_rom_hide_spoof_statfs(const char* path, struct statfs* sf) {",
+          "+void custom_rom_hide_spoof_fd_stat(int fd, struct stat* sb) {",
+          "+            custom_rom_hide_spoof_stat(fd_path, sb);",
+          "+void custom_rom_hide_spoof_fd_statx(int fd, unsigned mask, struct statx* sx) {",
+          "+            custom_rom_hide_spoof_statx(fd_path, sx);",
+          "+void custom_rom_hide_spoof_fd_statfs(int fd, struct statfs* sf) {"
+        ]
+      },
+      {
+        "path": "libc/bionic/custom_rom_hide.h",
+        "new": true,
+        "matching_changes": [
+          "+bool custom_rom_hide_is_app_process();",
+          "+bool custom_rom_hide_should_block(const char* path);",
+          "+bool custom_rom_hide_should_block_at(int dirfd, const char* path);",
+          "+bool custom_rom_hide_should_filter_dirent(int dirfd, const char* name);",
+          "+bool custom_rom_hide_is_symlink(const char* path);",
+          "+void custom_rom_hide_spoof_stat(const char* path, struct stat* sb);",
+          "+void custom_rom_hide_spoof_statx(const char* path, struct statx* sx);",
+          "+void custom_rom_hide_spoof_statfs(const char* path, struct statfs* sf);",
+          "+void custom_rom_hide_spoof_fd_stat(int fd, struct stat* sb);",
+          "+void custom_rom_hide_spoof_fd_statx(int fd, unsigned mask, struct statx* sx);",
+          "+void custom_rom_hide_spoof_fd_statfs(int fd, struct statfs* sf);",
+          "+void custom_rom_hide_unregister_fd(int fd);",
+          "+void custom_rom_hide_transfer_fd(int old_fd, int new_fd);",
+          "+int custom_rom_hide_filter_vintf(const char* path);",
+          "+int custom_rom_hide_filter_proc(const char* path);",
+          "+int custom_rom_hide_filter_sepolicy(const char* path);",
+          "+bool custom_rom_hide_should_spoof_prop(const char* name, char* value);",
+          "+bool custom_rom_hide_should_hide_prop(const char* name);",
+          "+const char* custom_rom_hide_get_prop_override(const char* name, char* buffer);",
+          "+ssize_t custom_rom_hide_readlinkat_post(int dirfd, const char* path, char* buf,"
+        ]
+      },
+      {
+        "path": "libc/bionic/dirent.cpp",
+        "new": false,
+        "matching_changes": [
+          "+#include \"custom_rom_hide.h\"",
+          "+    if (!custom_rom_hide_should_filter_dirent(d->fd_, entry->d_name)) {"
+        ]
+      },
+      {
+        "path": "libc/bionic/dup.cpp",
+        "new": false,
+        "matching_changes": [
+          "+#include \"custom_rom_hide.h\"",
+          "+  custom_rom_hide_transfer_fd(old_fd, new_fd);",
+          "+  custom_rom_hide_transfer_fd(old_fd, rc);",
+          "+  custom_rom_hide_transfer_fd(old_fd, rc);"
+        ]
+      },
+      {
+        "path": "libc/bionic/faccessat.cpp",
+        "new": false,
+        "matching_changes": [
+          "+#include \"custom_rom_hide.h\"",
+          "+  if (custom_rom_hide_should_block_at(dirfd, pathname)) {"
+        ]
+      },
+      {
+        "path": "libc/bionic/fcntl.cpp",
+        "new": false,
+        "matching_changes": [
+          "+#include \"custom_rom_hide.h\"",
+          "+    custom_rom_hide_transfer_fd(fd, rc);",
+          "+    custom_rom_hide_transfer_fd(fd, rc);"
+        ]
+      },
+      {
+        "path": "libc/bionic/fdsan.cpp",
+        "new": false,
+        "matching_changes": [
+          "+#include \"custom_rom_hide.h\"",
+          "+  custom_rom_hide_unregister_fd(fd);"
+        ]
+      },
+      {
+        "path": "libc/bionic/lstat.cpp",
+        "new": false,
+        "matching_changes": [
+          "+#include \"custom_rom_hide.h\"",
+          "+  if (custom_rom_hide_should_block(path)) {",
+          "+    custom_rom_hide_spoof_stat(path, sb);"
+        ]
+      },
+      {
+        "path": "libc/bionic/open.cpp",
+        "new": false,
+        "matching_changes": [
+          "+#include \"custom_rom_hide.h\"",
+          "+  int fd = custom_rom_hide_filter_proc(path);",
+          "+  if (fd < 0) fd = custom_rom_hide_filter_vintf(path);",
+          "+  if (fd < 0) fd = custom_rom_hide_filter_sepolicy(path);",
+          "+  if (fd >= 0 && (flags & O_NOFOLLOW) && custom_rom_hide_is_symlink(path)) {",
+          "+  if (custom_rom_hide_should_block(pathname)) {",
+          "+  if (custom_rom_hide_should_block(pathname)) {",
+          "+  if (custom_rom_hide_should_block_at(fd, pathname)) {",
+          "+  if (custom_rom_hide_should_block_at(fd, pathname)) {"
+        ]
+      },
+      {
+        "path": "libc/bionic/readlink.cpp",
+        "new": false,
+        "matching_changes": [
+          "+#include \"custom_rom_hide.h\"",
+          "+  if (custom_rom_hide_should_block(path)) {",
+          "+  if (custom_rom_hide_should_block_at(dirfd, path)) {",
+          "+  return custom_rom_hide_readlinkat_post(dirfd, path, buf, size, ret);"
+        ]
+      },
+      {
+        "path": "libc/bionic/stat.cpp",
+        "new": false,
+        "matching_changes": [
+          "+#include \"custom_rom_hide.h\"",
+          "+    custom_rom_hide_spoof_fd_stat(fd, sb);",
+          "+  if (custom_rom_hide_should_block_at(dirfd, path)) {",
+          "+      custom_rom_hide_spoof_fd_stat(dirfd, sb);",
+          "+      custom_rom_hide_spoof_stat(path, sb);",
+          "+  if (custom_rom_hide_should_block(path)) {",
+          "+    custom_rom_hide_spoof_stat(path, sb);",
+          "+  if (custom_rom_hide_should_block_at(dirfd, path)) {",
+          "+      custom_rom_hide_spoof_fd_statx(dirfd, mask, buf);",
+          "+      custom_rom_hide_spoof_statx(path, buf);"
+        ]
+      },
+      {
+        "path": "libc/bionic/sys_statfs.cpp",
+        "new": false,
+        "matching_changes": [
+          "+#include \"custom_rom_hide.h\"",
+          "+  custom_rom_hide_spoof_fd_statfs(fd, result);",
+          "+  if (custom_rom_hide_should_block(path)) {",
+          "+  custom_rom_hide_spoof_statfs(path, result);"
+        ]
+      },
+      {
+        "path": "libc/bionic/system_property_api.cpp",
+        "new": false,
+        "matching_changes": [
+          "+#include \"custom_rom_hide.h\"",
+          "+  if (custom_rom_hide_should_hide_prop(name)) {",
+          "+  if (prop_name && custom_rom_hide_should_spoof_prop(prop_name, value)) {",
+          "+    if (!custom_rom_hide_is_app_process()) {",
+          "+    if (custom_rom_hide_should_hide_prop(name)) {",
+          "+    const char* override_val = custom_rom_hide_get_prop_override(name, override_buffer);",
+          "+  if (custom_rom_hide_should_spoof_prop(name, value)) {",
+          "+  if (!custom_rom_hide_is_app_process()) return real_serial;",
+          "+  if (custom_rom_hide_should_hide_prop(name)) {",
+          "+  const char* override_val = custom_rom_hide_get_prop_override(name, override_buffer);",
+          "+    if (custom_rom_hide_should_hide_prop(name)) {"
+        ]
+      }
+    ]
+  },
+  "vendor_evolution": {
+    "target": "vendor/lineage",
+    "revision": "4d2922ad10997b31aaa6bec9eada2222e1b96e4a",
+    "changes": [
+      {
+        "path": "build/soong/Android.bp",
+        "new": false,
+        "matching_changes": [
+          "+    name: \"spoof_first_api_level_32\",",
+          "+    bool_variables: [\"spoof_first_api_level_32\"],",
+          "+spoof_first_api_level_32 {",
+          "+    name: \"spoof_first_api_level_32_defaults\",",
+          "+        spoof_first_api_level_32: {",
+          "+            cppflags: [\"-DSPOOF_FIRST_API_LEVEL_32\"],"
+        ]
+      },
+      {
+        "path": "config/BoardConfigSoong.mk",
+        "new": false,
+        "matching_changes": [
+          "+    spoof_first_api_level_32",
+          "+SOONG_CONFIG_lineageGlobalVars_spoof_first_api_level_32 := $(SPOOF_FIRST_API_LEVEL_32)"
+        ]
+      },
+      {
+        "path": "config/evolution.mk",
+        "new": true,
+        "matching_changes": [
+          "+# BuildFingerprint spoof to fix RCS/Wallet"
+        ]
+      }
+    ]
+  },
+  "system_core": {
+    "target": "system/core",
+    "revision": "ea0752d2d09c1fffdb4e40c048735b1a0a28fd95",
+    "changes": [
+      {
+        "path": "init/Android.bp",
+        "new": false,
+        "matching_changes": [
+          "+        \"-DSPOOF_SAFETYNET=1\",",
+          "+                \"-USPOOF_SAFETYNET\",",
+          "+                \"-DSPOOF_SAFETYNET=0\",",
+          "+        \"spoof_first_api_level_32_defaults\",",
+          "+        \"-DSPOOF_SAFETYNET=1\",",
+          "+                \"-USPOOF_SAFETYNET\",",
+          "+                \"-DSPOOF_SAFETYNET=0\","
+        ]
+      },
+      {
+        "path": "init/property_service.cpp",
+        "new": false,
+        "matching_changes": [
+          "+static void SetSafetyNetProps() {",
+          "+#ifdef SPOOF_FIRST_API_LEVEL_32",
+          "+    // Report a valid verified boot chain to make Google SafetyNet integrity",
+          "+    if (SPOOF_SAFETYNET) {",
+          "+        SetSafetyNetProps();"
+        ]
+      },
+      {
+        "path": "rootdir/init.rc",
+        "new": false,
+        "matching_changes": [
+          "+on early-init && property:persist.sys.evox.spoof.migrated=",
+          "+    setprop persist.sys.evox.spoof.migrated 0",
+          "+on post-fs-data && property:persist.sys.evox.spoof.migrated=0",
+          "+    exec - root root -- /system/bin/rm -rf /data/adb/tricky_store /data/adb/playintegrityfix /data/adb/gameprops /data/adb/.custom_rom_hide_allowlist",
+          "+    setprop persist.sys.evox.spoof.migrated 1"
+        ]
+      }
+    ]
+  },
+  "device_evolution_sepolicy": {
+    "target": "device/lineage/sepolicy",
+    "revision": "4b8d3e4437e40df5eed0e3c6013bde2161f2d424",
+    "changes": [
+      {
+        "path": "common/private/gmscore_app.te",
+        "new": true,
+        "matching_changes": [
+          "+# DroidGuard reads the staged Play Integrity props through bionic"
+        ]
+      },
+      {
+        "path": "common/private/property.te",
+        "new": false,
+        "matching_changes": [
+          "+# Play Integrity staging props, served to DroidGuard by bionic"
+        ]
+      },
+      {
+        "path": "common/private/property_contexts",
+        "new": false,
+        "matching_changes": [
+          "+# Play Integrity staging props read by bionic in DroidGuard"
+        ]
+      },
+      {
+        "path": "common/private/system_server.te",
+        "new": false,
+        "matching_changes": [
+          "+# Stage the Play Integrity props that bionic serves to DroidGuard"
+        ]
+      }
+    ]
+  },
+  "packages_apps_Settings": {
+    "target": "packages/apps/Settings",
+    "revision": "2b1b584855717b32dff2e3b33fb422b1adede1c6",
+    "changes": []
+  },
+  "frameworks_native": {
+    "target": "frameworks/native",
+    "revision": "cb8303a432fc2eb4ea3bf57ec450501e18f2cced",
+    "changes": []
+  },
+  "frameworks_av": {
+    "target": "frameworks/av",
+    "revision": "2dc99a751a66141e3b5a24ae53fee412cb29a3ff",
+    "changes": []
+  },
+  "system_sepolicy": {
+    "target": "system/sepolicy",
+    "revision": "dd9d56abe0590484ae145337ae1e728db9b2d57a",
+    "changes": []
+  },
+  "libcore": {
+    "target": "libcore",
+    "revision": "45606a215025ddad56fbb088fc1f0124ffc82413",
+    "changes": []
+  },
+  "lineage-sdk": {
+    "target": "lineage-sdk",
+    "revision": "a870f420bd1495160c83e0dcf0309c2a366b196f",
+    "changes": []
+  },
+  "packages_apps_LineageParts": {
+    "target": "packages/apps/LineageParts",
+    "revision": "21f90730a8de06e9275e82e270a5808503a2c296",
+    "changes": []
+  }
+}

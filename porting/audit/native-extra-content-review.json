@@ -1,0 +1,3328 @@
+[
+  {
+    "repo": "build",
+    "path": "core/Makefile",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/core/Makefile",
+    "sha": "282785053948e5704867bfb7ead1422d3c2c6c9e",
+    "line_count": 8310,
+    "diff_line_count": 72,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "core/binary.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/core/binary.mk",
+    "sha": "b9f2aaaf11be7ee71cf889984826ea76d70979f0",
+    "line_count": 1934,
+    "diff_line_count": 36,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "core/combo/TARGET_linux-arm.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/core/combo/TARGET_linux-arm.mk",
+    "sha": "160b4a1aef326bd75d05cf748d758fad7c6c7d6c",
+    "line_count": 76,
+    "diff_line_count": 27,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "core/config.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/core/config.mk",
+    "sha": "b355696f3a48741e9cf593d1e13a1406fadc1ce5",
+    "line_count": 1489,
+    "diff_line_count": 11,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "core/dex_preopt_odex_install.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/core/dex_preopt_odex_install.mk",
+    "sha": "f852e06a4d5be0af43549ad0ec1430426fe46b6e",
+    "line_count": 580,
+    "diff_line_count": 14,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "core/generate_enforce_rro.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/core/generate_enforce_rro.mk",
+    "sha": "ba590c14f653419fdacb85085c4055464cd45c83",
+    "line_count": 65,
+    "diff_line_count": 12,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "core/main.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/core/main.mk",
+    "sha": "3896f8ae59689378060222173088288b8ea464d9",
+    "line_count": 1952,
+    "diff_line_count": 11,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "core/product_config.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/core/product_config.mk",
+    "sha": "d3f9ba5510f6681bf8b4f3e14e4ee1342bb3e65d",
+    "line_count": 762,
+    "diff_line_count": 31,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "core/sysprop.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/core/sysprop.mk",
+    "sha": "9e32f14caa70fdc74428483f9893d4dc342c0ad0",
+    "line_count": 291,
+    "diff_line_count": 24,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "core/sysprop_config.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/core/sysprop_config.mk",
+    "sha": "1ac40e56bb1f4a4cd8201ac53e5682f1f217cbe6",
+    "line_count": 172,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "core/version_util.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/core/version_util.mk",
+    "sha": "c6ac37007635aac9b0d00f0bd12cfd35694d1da5",
+    "line_count": 254,
+    "diff_line_count": 20,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "envsetup.sh",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/envsetup.sh",
+    "sha": "4aa723e2e7bf0b589f78a8aaaaf3b5b98e415924",
+    "line_count": 1373,
+    "diff_line_count": 160,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "target/product/aosp_product.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/target/product/aosp_product.mk",
+    "sha": "99a3759180fcddff56bd798c82e0b1dcd04992d0",
+    "line_count": 46,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "target/product/handheld_product.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/target/product/handheld_product.mk",
+    "sha": "ee489bb741fd0ca96118342552aef2328ab158c7",
+    "line_count": 41,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "target/product/memtag-common.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/target/product/memtag-common.mk",
+    "sha": "71dd59286c2c7b262ab307bb7249179c24b564d2",
+    "line_count": 33,
+    "diff_line_count": 9,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "tools/envsetup/spam_for_lunch",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/tools/envsetup/spam_for_lunch",
+    "sha": "1296adb68fd94ef9a6bddc132640a5ca7ac8e081",
+    "line_count": 18,
+    "diff_line_count": 22,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "tools/post_process_props.py",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/tools/post_process_props.py",
+    "sha": "66518f9dc7f13bfa51aac968c51c02e41b392228",
+    "line_count": 267,
+    "diff_line_count": 11,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "tools/releasetools/common.py",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/tools/releasetools/common.py",
+    "sha": "89a7abb2d4ab6aef37374f9e294c5dbebd39e8dc",
+    "line_count": 4405,
+    "diff_line_count": 162,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "tools/releasetools/make_recovery_patch.py",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/tools/releasetools/make_recovery_patch.py",
+    "sha": "b52289b8a2f05ed64626ddee55033a729abf4d43",
+    "line_count": 73,
+    "diff_line_count": 25,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build",
+    "path": "tools/releasetools/non_ab_ota.py",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build/75f33f854b8f750c46b5fd666457cea5c3636a65/tools/releasetools/non_ab_ota.py",
+    "sha": "82efdb22ed11d3dcaad24228eaa725e31829f99f",
+    "line_count": 728,
+    "diff_line_count": 32,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "android/arch_list.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/android/arch_list.go",
+    "sha": "8360c1fc90b31cd5e54f6d3b105368d587674e20",
+    "line_count": 578,
+    "diff_line_count": 55,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "android/config.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/android/config.go",
+    "sha": "a52caf00d2cdfda6f6753b7a0416918e76d6449c",
+    "line_count": 2784,
+    "diff_line_count": 11,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "cc/config/arm64_device.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/cc/config/arm64_device.go",
+    "sha": "4b68377306bf4b5fac67bbc194553dd9216bd2a0",
+    "line_count": 269,
+    "diff_line_count": 108,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "cc/config/arm_device.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/cc/config/arm_device.go",
+    "sha": "11274c4d74633f05dfde7235df3ff6bcb5805774",
+    "line_count": 325,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "cc/library.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/cc/library.go",
+    "sha": "b509448e32cea24aded32acd83762914c31beeef",
+    "line_count": 2686,
+    "diff_line_count": 56,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "cc/lto.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/cc/lto.go",
+    "sha": "6bf1dc90e673740e3732742ec1c7ed7e1df5ba83",
+    "line_count": 275,
+    "diff_line_count": 43,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "filesystem/vbmeta.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/filesystem/vbmeta.go",
+    "sha": "7b910aa4a4520d38e7c70a0b66fbc066e1290741",
+    "line_count": 541,
+    "diff_line_count": 11,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "fsgen/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/fsgen/Android.bp",
+    "sha": "9d9b948f393c6a43077d3b6a9a292c8df09b1825",
+    "line_count": 44,
+    "diff_line_count": 8,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "java/app.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/java/app.go",
+    "sha": "b2f1e6da6bfc05e70c7db6b8ff54443c8bbd5845",
+    "line_count": 2450,
+    "diff_line_count": 13,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "java/droiddoc.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/java/droiddoc.go",
+    "sha": "adb0a403b4a0092fe4099d0aa21216f7bc02aa27",
+    "line_count": 971,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "java/droidstubs.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/java/droidstubs.go",
+    "sha": "4c81d2ea1b413d31b7a369ba8df4fdd5ffce15d2",
+    "line_count": 1813,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "scripts/check_boot_jars/package_allowed_list.txt",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/scripts/check_boot_jars/package_allowed_list.txt",
+    "sha": "37b4a38b8900799e82df05846f92e38b4d1e9c32",
+    "line_count": 279,
+    "diff_line_count": 49,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "scripts/gen_build_prop.py",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/scripts/gen_build_prop.py",
+    "sha": "fe5eded3d5104594d7c0f972a07c7ed9cc52f199",
+    "line_count": 689,
+    "diff_line_count": 122,
+    "matching_changed_lines": [
+      "     if config[\"ProductModelForAttestation\"]:"
+    ],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "ui/build/androidmk_denylist.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/ui/build/androidmk_denylist.go",
+    "sha": "f80ea0f6dafb6c2bced7b9e7d90501b66bb7023e",
+    "line_count": 142,
+    "diff_line_count": 21,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "ui/build/build.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/ui/build/build.go",
+    "sha": "cf7ab3bba7447fe864ce320809e5002929a9a9f1",
+    "line_count": 595,
+    "diff_line_count": 13,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "ui/build/cleanbuild.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/ui/build/cleanbuild.go",
+    "sha": "eccef80bed467299fc10cf5184d8425e3cba1a06",
+    "line_count": 385,
+    "diff_line_count": 11,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "ui/build/config.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/ui/build/config.go",
+    "sha": "38da0500ca426144830a362878465af1cf46e3d3",
+    "line_count": 2311,
+    "diff_line_count": 26,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "ui/build/dumpvars.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/ui/build/dumpvars.go",
+    "sha": "57bd43109249a1bd90006e5f3f1c888de031866f",
+    "line_count": 423,
+    "diff_line_count": 24,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "ui/build/paths/config.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/ui/build/paths/config.go",
+    "sha": "cb70a1a41577b8d3be2054c2eade8438467d87f2",
+    "line_count": 153,
+    "diff_line_count": 22,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "build_soong",
+    "path": "ui/build/sandbox_linux.go",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/build_soong/541d7c2ccbb7c6cfdf370da58314a8dd03607a5f/ui/build/sandbox_linux.go",
+    "sha": "4554fe74850a3c6d41c59814e74cf8553fb11009",
+    "line_count": 386,
+    "diff_line_count": 38,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "external_bouncycastle",
+    "path": "repackaged_platform/bcprov/src/main/java/com/android/internal/org/bouncycastle/jcajce/provider/asymmetric/EC.java",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/external_bouncycastle/56e5dac751581c7bd6dbe363d7ba3f8e8862c5bf/repackaged_platform/bcprov/src/main/java/com/android/internal/org/bouncycastle/jcajce/provider/asymmetric/EC.java",
+    "sha": "3b945f6e8d146db94250975eef11f4415818bf8d",
+    "line_count": 321,
+    "diff_line_count": 23,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_google_pixel",
+    "path": "thermal/thermal-helper.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_google_pixel/8e3a91851a182c6be19cd9d8809ec636b77e179e/thermal/thermal-helper.cpp",
+    "sha": "717154bb87b29e47bc86b86925e0b7478a99ddb2",
+    "line_count": 1864,
+    "diff_line_count": 72,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_google_pixel",
+    "path": "thermal/utils/thermal_watcher.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_google_pixel/8e3a91851a182c6be19cd9d8809ec636b77e179e/thermal/utils/thermal_watcher.cpp",
+    "sha": "7959e03b697642225062e3349abee515b1143b9d",
+    "line_count": 537,
+    "diff_line_count": 38,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_google_pixel",
+    "path": "thermal/utils/thermal_watcher.h",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_google_pixel/8e3a91851a182c6be19cd9d8809ec636b77e179e/thermal/utils/thermal_watcher.h",
+    "sha": "cf5ca428c58ca4ae7405ad5ae03de0b20c9c9d9b",
+    "line_count": 120,
+    "diff_line_count": 21,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "audio/aidl/default/EffectConfig.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/audio/aidl/default/EffectConfig.cpp",
+    "sha": "bf492a2189bebbf425240ef1f2df6f1c3c299955",
+    "line_count": 378,
+    "diff_line_count": 38,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "audio/aidl/default/EffectFactory.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/audio/aidl/default/EffectFactory.cpp",
+    "sha": "3f56cb5e0cb0450a8201f4e25356d49595db0ecf",
+    "line_count": 352,
+    "diff_line_count": 66,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "audio/aidl/default/include/effectFactory-impl/EffectConfig.h",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/audio/aidl/default/include/effectFactory-impl/EffectConfig.h",
+    "sha": "42d3786bce52d9619e1c94f0917834edb04a5cb5",
+    "line_count": 145,
+    "diff_line_count": 37,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "audio/aidl/default/include/effectFactory-impl/EffectFactory.h",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/audio/aidl/default/include/effectFactory-impl/EffectFactory.h",
+    "sha": "a93581955ba258d4f0d5a903c2a99f4bfb8f64d5",
+    "line_count": 155,
+    "diff_line_count": 46,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "audio/aidl/default/viper/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/audio/aidl/default/viper/Android.bp",
+    "sha": "8548a7d1a180158cc4baaf03a6aa73fa824bda8a",
+    "line_count": 38,
+    "diff_line_count": 41,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "audio/aidl/default/viper/ViperEffect.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/audio/aidl/default/viper/ViperEffect.cpp",
+    "sha": "ec2b6c4d73496588c67fd2abeee57a32368324a0",
+    "line_count": 279,
+    "diff_line_count": 282,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "audio/aidl/default/viper/ViperEffect.h",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/audio/aidl/default/viper/ViperEffect.h",
+    "sha": "3acadbaf4faba738769586927456cc8c1d1f8135",
+    "line_count": 81,
+    "diff_line_count": 84,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "camera/common/default/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/camera/common/default/Android.bp",
+    "sha": "37c19a44a76d28ecac07d155a98ac1466d9242f6",
+    "line_count": 49,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "camera/common/default/CameraModule.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/camera/common/default/CameraModule.cpp",
+    "sha": "5b8c30c37936f9970a64bb34ac8341f03fc293ca",
+    "line_count": 612,
+    "diff_line_count": 65,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "camera/device/3.2/default/CameraDeviceSession.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/camera/device/3.2/default/CameraDeviceSession.cpp",
+    "sha": "552402902bfbacbd96a759ce99c8553ecc3eb5c8",
+    "line_count": 1649,
+    "diff_line_count": 20,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "compatibility_matrices/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/compatibility_matrices/Android.bp",
+    "sha": "7da5fd968a8052a456887f53cb52efac7645cf48",
+    "line_count": 161,
+    "diff_line_count": 38,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "compatibility_matrices/compatibility_matrix.6.android17.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/compatibility_matrices/compatibility_matrix.6.android17.xml",
+    "sha": "e8028a4d82b34a6a1babbcfd1cb82a4c3cceaa0e",
+    "line_count": 44,
+    "diff_line_count": 47,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "compatibility_matrices/compatibility_matrix.7.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/compatibility_matrices/compatibility_matrix.7.xml",
+    "sha": "2e709cdd6cee2ea83b8e10ca2d63563ce708a5e5",
+    "line_count": 838,
+    "diff_line_count": 11,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "health/aidl/default/Health.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/health/aidl/default/Health.cpp",
+    "sha": "b2cd8af4525984cb6739d68ca974e8d81d31c6a5",
+    "line_count": 435,
+    "diff_line_count": 11,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "health/aidl/default/include/health-impl/Health.h",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/health/aidl/default/include/health-impl/Health.h",
+    "sha": "16ae06d7dc92ceeda3fedd7f01957e51049ebd73",
+    "line_count": 122,
+    "diff_line_count": 22,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "health/utils/libhealthloop/HealthLoop.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/health/utils/libhealthloop/HealthLoop.cpp",
+    "sha": "e4b1728d70c4a46bd073f7ee106f99e9fd9c0eda",
+    "line_count": 353,
+    "diff_line_count": 56,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "health/utils/libhealthloop/include/health/HealthLoop.h",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/health/utils/libhealthloop/include/health/HealthLoop.h",
+    "sha": "8662989afa11916f78c76692e692acaf251d4f7a",
+    "line_count": 124,
+    "diff_line_count": 22,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "light/2.0/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/light/2.0/Android.bp",
+    "sha": "95eb5ae896bf4a948a4d82116e92f5376a4053b5",
+    "line_count": 23,
+    "diff_line_count": 26,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "light/2.0/ILight.hal",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/light/2.0/ILight.hal",
+    "sha": "a7cd6846eeb32450eccdfa316e4054d616ccb76e",
+    "line_count": 37,
+    "diff_line_count": 40,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "light/2.0/default/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/light/2.0/default/Android.bp",
+    "sha": "2745f3d8be6df2f57f8aee4b03097faa28efa8cd",
+    "line_count": 72,
+    "diff_line_count": 75,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "light/2.0/default/Light.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/light/2.0/default/Light.cpp",
+    "sha": "3febf6b183eb1f6a367ed4d8718707d9026a4a39",
+    "line_count": 184,
+    "diff_line_count": 187,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "light/2.0/default/Light.h",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/light/2.0/default/Light.h",
+    "sha": "8851461de18aa0abe513cd78cf1db8135f4fb048",
+    "line_count": 62,
+    "diff_line_count": 65,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "light/2.0/default/android.hardware.light@2.0-service-lazy.rc",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/light/2.0/default/android.hardware.light@2.0-service-lazy.rc",
+    "sha": "8a3a59c26ac2544616f2f67fa4c337c649211ad2",
+    "line_count": 9,
+    "diff_line_count": 12,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "light/2.0/default/android.hardware.light@2.0-service.rc",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/light/2.0/default/android.hardware.light@2.0-service.rc",
+    "sha": "b54ca95a05d435f56aded010aa872b17571d2bcf",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "light/2.0/default/service.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/light/2.0/default/service.cpp",
+    "sha": "20f0578f02e46e4795db5162d3ed22d655eddd4e",
+    "line_count": 25,
+    "diff_line_count": 28,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "light/2.0/default/serviceLazy.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/light/2.0/default/serviceLazy.cpp",
+    "sha": "5324f465b3c416643ca746ac6beac7673a160191",
+    "line_count": 25,
+    "diff_line_count": 28,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "light/2.0/types.hal",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/light/2.0/types.hal",
+    "sha": "27b67e0aa601e2b3ebdb41755a108766f43858a2",
+    "line_count": 134,
+    "diff_line_count": 137,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "light/2.0/vts/functional/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/light/2.0/vts/functional/Android.bp",
+    "sha": "53e544623a19dbdcdd9c1633a30012dda13bcb12",
+    "line_count": 33,
+    "diff_line_count": 36,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "light/2.0/vts/functional/VtsHalLightV2_0TargetTest.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/light/2.0/vts/functional/VtsHalLightV2_0TargetTest.cpp",
+    "sha": "f65005ef63613f7bde4417db41bcdeaf478932f6",
+    "line_count": 157,
+    "diff_line_count": 160,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "light/utils/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/light/utils/Android.bp",
+    "sha": "927394e763b39dfe65de7f1c58ffe301741b64b7",
+    "line_count": 42,
+    "diff_line_count": 13,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "light/utils/main.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/light/utils/main.cpp",
+    "sha": "b9b6489eec1218997e2e4a9a3bb8fdabc29c55fa",
+    "line_count": 120,
+    "diff_line_count": 88,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "wifi/aidl/default/wifi_chip.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/wifi/aidl/default/wifi_chip.cpp",
+    "sha": "e4725130addb2ae644ca6fd747552bc7a6461d47",
+    "line_count": 2029,
+    "diff_line_count": 26,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "hardware_interfaces",
+    "path": "wifi/aidl/default/wifi_legacy_hal.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/hardware_interfaces/c626eb9ba04891cb0f7248251b84bd7fbd4afcf2/wifi/aidl/default/wifi_legacy_hal.cpp",
+    "sha": "ef5c86d32d7862d85bffabf7816add0a9c87ed4f",
+    "line_count": 2256,
+    "diff_line_count": 13,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "system_fs_fs_mgr",
+    "path": "fs_mgr.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/system_fs_fs_mgr/0472f120038c831c27eed7fbd3745131ce18a74c/fs_mgr.cpp",
+    "sha": "afe06196966ee8dd941a8c1bfecade35e3279172",
+    "line_count": 2531,
+    "diff_line_count": 11,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "system_fs_fs_mgr",
+    "path": "fs_mgr_remount.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/system_fs_fs_mgr/0472f120038c831c27eed7fbd3745131ce18a74c/fs_mgr_remount.cpp",
+    "sha": "d3025c2602d1081c166d28c0300dffe4a82fcdd6",
+    "line_count": 704,
+    "diff_line_count": 16,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "system_fs_fs_mgr",
+    "path": "libfs_avb/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/system_fs_fs_mgr/0472f120038c831c27eed7fbd3745131ce18a74c/libfs_avb/Android.bp",
+    "sha": "81c1028fc8afd9492367328513ddd5ebeb290b14",
+    "line_count": 177,
+    "diff_line_count": 13,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "system_fs_fs_mgr",
+    "path": "libfs_avb/util.cpp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/system_fs_fs_mgr/0472f120038c831c27eed7fbd3745131ce18a74c/libfs_avb/util.cpp",
+    "sha": "13629616c79293158713c7853fd1ba80acae2efb",
+    "line_count": 152,
+    "diff_line_count": 15,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "apex/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/apex/Android.bp",
+    "sha": "af5cc1e33a6765d627c4c7a926133132e7047bc5",
+    "line_count": 12,
+    "diff_line_count": 15,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "apex/apps/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/apex/apps/Android.bp",
+    "sha": "1b100f19dc315cbfd60740cb74ac20efde280a10",
+    "line_count": 4,
+    "diff_line_count": 7,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "apex/apps/AndroidManifest.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/apex/apps/AndroidManifest.xml",
+    "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "line_count": 0,
+    "diff_line_count": 0,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "gms_full.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/gms_full.mk",
+    "sha": "850d1b8dbadd2d080665ab0a2c65e3c21e5b093a",
+    "line_count": 195,
+    "diff_line_count": 198,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "gms_full_tablet_wifionly.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/gms_full_tablet_wifionly.mk",
+    "sha": "a23a46093c2aae5f1e03e488e204d5c5abac00f2",
+    "line_count": 168,
+    "diff_line_count": 171,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "gms_mini.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/gms_mini.mk",
+    "sha": "28aa0f02177ed0aea49b81c91c7ff2b46adebc15",
+    "line_count": 145,
+    "diff_line_count": 148,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "gms_pico.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/gms_pico.mk",
+    "sha": "7f7e9ce24d3b18753ebfd1bb5e2f1f8a4360cedd",
+    "line_count": 115,
+    "diff_line_count": 118,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/Android.bp",
+    "sha": "06d30cdf2de9213d9b485e4a1386c57e511c75d0",
+    "line_count": 12,
+    "diff_line_count": 15,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/Android.bp",
+    "sha": "1ecb9500c8e628169f00fbd70a407a2086fa9f69",
+    "line_count": 143,
+    "diff_line_count": 146,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/default-permissions-com.google.android.apps.pixel.agent.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/default-permissions-com.google.android.apps.pixel.agent.xml",
+    "sha": "d3931697ca13eee55f28eefaffb10448f4b58172",
+    "line_count": 8,
+    "diff_line_count": 11,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/default-permissions-com.google.android.apps.pixel.psi.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/default-permissions-com.google.android.apps.pixel.psi.xml",
+    "sha": "ba88fe5916b8dedb5dfe6d2da09a06ab21cf79e7",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/default-permissions-safetyhub.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/default-permissions-safetyhub.xml",
+    "sha": "aedeeb3c6c913682365bf6c477c7d4c3287d4429",
+    "line_count": 25,
+    "diff_line_count": 28,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/default-permissions-stargate.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/default-permissions-stargate.xml",
+    "sha": "24606817976e16462769be092ad66566ca9f6856",
+    "line_count": 23,
+    "diff_line_count": 26,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/default-permissions-verifier.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/default-permissions-verifier.xml",
+    "sha": "6b4e9239e76d7cf423800cbe6323ad88e3a0b193",
+    "line_count": 38,
+    "diff_line_count": 41,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/default-permissions.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/default-permissions.xml",
+    "sha": "8b398e0764f844c855217a7539c18f1b85e02892",
+    "line_count": 188,
+    "diff_line_count": 191,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/default-permissions_aiicons.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/default-permissions_aiicons.xml",
+    "sha": "2cdf64aecf0ff4c054903c41af7d1d2eee67d906",
+    "line_count": 38,
+    "diff_line_count": 41,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/default-permissions_com.google.ambient.streaming.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/default-permissions_com.google.ambient.streaming.xml",
+    "sha": "4bea664c2370fa2ba4bf0cf03c7cb4874cad8c52",
+    "line_count": 49,
+    "diff_line_count": 52,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/default-permissions_crossdeviceaccessservice.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/default-permissions_crossdeviceaccessservice.xml",
+    "sha": "3ee5d9c572be352010e47cb9eb97de3b087123b8",
+    "line_count": 24,
+    "diff_line_count": 27,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/default-permissions_customizationbundle.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/default-permissions_customizationbundle.xml",
+    "sha": "ecabcebf67d4694383f2d51ced18e38944df12b6",
+    "line_count": 39,
+    "diff_line_count": 42,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/default-permissions_diagnostictool.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/default-permissions_diagnostictool.xml",
+    "sha": "bf2a1d5218a55ab1d3f1a56513f9ebd94b5dd5ed",
+    "line_count": 54,
+    "diff_line_count": 57,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/default-permissions_nowplaying.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/default-permissions_nowplaying.xml",
+    "sha": "2586e91f345bce2a6b2ef6c0ab65fe99c90b8746",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/default-permissions_pixelsupport.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/default-permissions_pixelsupport.xml",
+    "sha": "54c97b91ed605c723aaabe2a57c5373750583255",
+    "line_count": 10,
+    "diff_line_count": 13,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/default-permissions_pixelweather.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/default-permissions_pixelweather.xml",
+    "sha": "9de088167e407e538a046bf6d391c5fc82a80510",
+    "line_count": 40,
+    "diff_line_count": 43,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/default-permissions_talkback.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/default-permissions_talkback.xml",
+    "sha": "0bc6c1b6a955aefdbd5114bbe18d419f4f51ab84",
+    "line_count": 32,
+    "diff_line_count": 35,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/default-permissions/default-permissions_wallpapereffect.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/default-permissions/default-permissions_wallpapereffect.xml",
+    "sha": "e89793f64d343fda59eb79e8898ba2635a9754d0",
+    "line_count": 23,
+    "diff_line_count": 26,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/Android.bp",
+    "sha": "d0f04d04c1ec6c96b636abc1af3839ff5b07b72f",
+    "line_count": 151,
+    "diff_line_count": 154,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/com.google.SSRestartDetector.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/com.google.SSRestartDetector.xml",
+    "sha": "260365b9a5ca399d47f12fde8ced2d57ce1bdeb4",
+    "line_count": 24,
+    "diff_line_count": 27,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/com.google.android.aicore.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/com.google.android.aicore.xml",
+    "sha": "60ff72f6003c3885ccfd9312c46b0c8f8aa3f119",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/com.google.android.apps.diagnosticstool.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/com.google.android.apps.diagnosticstool.xml",
+    "sha": "2e2a3695167000105540decb9125504d2002d7c9",
+    "line_count": 10,
+    "diff_line_count": 13,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/com.google.android.apps.dreamliner.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/com.google.android.apps.dreamliner.xml",
+    "sha": "bb6bce702490d471b4f6a1c1fcf2d50151e8a606",
+    "line_count": 12,
+    "diff_line_count": 15,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/com.google.android.apps.pixel.familyspace.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/com.google.android.apps.pixel.familyspace.xml",
+    "sha": "ce185615306623110449be866d0ed75c85fe33e9",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/com.google.android.apps.setupwizard.searchselector.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/com.google.android.apps.setupwizard.searchselector.xml",
+    "sha": "b7a1ea31816e9934576d4d7b689545eaf454fbef",
+    "line_count": 9,
+    "diff_line_count": 12,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/com.google.android.apps.stargate.support.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/com.google.android.apps.stargate.support.xml",
+    "sha": "77960d6732c954979c12f65b2d8f91505bbeb899",
+    "line_count": 4,
+    "diff_line_count": 7,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/com.google.android.apps.stargate.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/com.google.android.apps.stargate.xml",
+    "sha": "56165b45b4b0d37296e30864b9ea6c42bb419145",
+    "line_count": 17,
+    "diff_line_count": 20,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/com.google.android.dialer.support.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/com.google.android.dialer.support.xml",
+    "sha": "87e627d0579f443e8bd3357ad9b310437d2a2671",
+    "line_count": 11,
+    "diff_line_count": 14,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/com.google.android.odad.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/com.google.android.odad.xml",
+    "sha": "15f3a0ac93aef297c50ae01bde1d83fcd309a793",
+    "line_count": 19,
+    "diff_line_count": 22,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/com.google.android.verifier.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/com.google.android.verifier.xml",
+    "sha": "053d774373799f8b1a58d23bfaa61ffd0c396be6",
+    "line_count": 24,
+    "diff_line_count": 27,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/privapp-permissions-glasses-core.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/privapp-permissions-glasses-core.xml",
+    "sha": "92da6b5ee768f9263e924d4f2342862f4c0ed763",
+    "line_count": 60,
+    "diff_line_count": 63,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/privapp-permissions-google-p.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/privapp-permissions-google-p.xml",
+    "sha": "2a2837f9ac8688176211df9c3a369b8432f891de",
+    "line_count": 1152,
+    "diff_line_count": 1155,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/privapp-permissions-google-pearl.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/privapp-permissions-google-pearl.xml",
+    "sha": "d72ac8735ff111a72a42f3b9f2d30cff8e1704e1",
+    "line_count": 25,
+    "diff_line_count": 28,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/privapp-permissions-google-spoon.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/privapp-permissions-google-spoon.xml",
+    "sha": "df5661f13c82f93dee2bc8d37b49b8c1c7fda5c7",
+    "line_count": 33,
+    "diff_line_count": 36,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/split-permissions-google.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/split-permissions-google.xml",
+    "sha": "f4ab9792a6883f61508c767bf9d3d59416a308d1",
+    "line_count": 21,
+    "diff_line_count": 24,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/permissions/velvet_app-privapp-permissions.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/permissions/velvet_app-privapp-permissions.xml",
+    "sha": "33c565ced1b0c6e40155a445a5bc7b36b4ef26d5",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/preferred-apps/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/preferred-apps/Android.bp",
+    "sha": "8d99716e0f9e2889d4640ddeaa97b61558b9edf7",
+    "line_count": 24,
+    "diff_line_count": 27,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/preferred-apps/google.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/preferred-apps/google.xml",
+    "sha": "3b236f1ac28a294437fcf5487b1b5cbdeabf4e03",
+    "line_count": 125,
+    "diff_line_count": 128,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/Android.bp",
+    "sha": "51f424b8296b095fcd73109476890c8a291bfedf",
+    "line_count": 502,
+    "diff_line_count": 505,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/allowed_apex_com.google.android.gmssystem.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/allowed_apex_com.google.android.gmssystem.xml",
+    "sha": "ec73da97add42ad19b9a20531f0ef961dcea0101",
+    "line_count": 5,
+    "diff_line_count": 8,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/ambient_data.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/ambient_data.xml",
+    "sha": "e1d48e703bcba4c07128498599bf00fa678d5f99",
+    "line_count": 6,
+    "diff_line_count": 9,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/app-lock-exempt-pixel.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/app-lock-exempt-pixel.xml",
+    "sha": "b495e85c974e90f2ec9189772b50dfbaf28d9e4b",
+    "line_count": 33,
+    "diff_line_count": 36,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/call_recording_audio.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/call_recording_audio.xml",
+    "sha": "3d85195d7e631735d96d994ffdf4507db801e389",
+    "line_count": 19,
+    "diff_line_count": 22,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/contextual_search.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/contextual_search.xml",
+    "sha": "6c14f035926621fdbd30296db1ac42c8776e16bf",
+    "line_count": 8,
+    "diff_line_count": 11,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/dreamliner.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/dreamliner.xml",
+    "sha": "c05cbc4f3883ea093fd29d52b40b956490e7dab6",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/felica_feature.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/felica_feature.xml",
+    "sha": "0db68ba8b954064e63a4de6bb9d1e898a3f90d9a",
+    "line_count": 5,
+    "diff_line_count": 8,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/game_service.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/game_service.xml",
+    "sha": "3fbc025a9779acc5127e5c1f9c2f309cf28a36ba",
+    "line_count": 13,
+    "diff_line_count": 16,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/gemini_experience.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/gemini_experience.xml",
+    "sha": "ba3e8d14edb26edf69001e3f9a0777930cd8bcfa",
+    "line_count": 9,
+    "diff_line_count": 12,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/gemini_intelligence_device.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/gemini_intelligence_device.xml",
+    "sha": "f79fd432ccf632c09fdab59b6b27036b89541779",
+    "line_count": 4,
+    "diff_line_count": 7,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/google-hiddenapi-package-whitelist.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/google-hiddenapi-package-whitelist.xml",
+    "sha": "298819428b14a8c9f1ffcf38b3250640b5ae41fa",
+    "line_count": 115,
+    "diff_line_count": 118,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/google-initial-package-stopped-states.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/google-initial-package-stopped-states.xml",
+    "sha": "d705fd14944dfa2268bdca4480376c6fbdc217f9",
+    "line_count": 52,
+    "diff_line_count": 55,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/google-install-constraints-package-allowlist.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/google-install-constraints-package-allowlist.xml",
+    "sha": "0e75ea2d2627bed3204f188482fa558b6f7a1ee6",
+    "line_count": 55,
+    "diff_line_count": 58,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/google-staged-installer-whitelist.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/google-staged-installer-whitelist.xml",
+    "sha": "da772d2791da86fd4cc927ba0ddcca97332de57c",
+    "line_count": 10,
+    "diff_line_count": 13,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/google-system-apps-update-ownership.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/google-system-apps-update-ownership.xml",
+    "sha": "df2b4996602bf47a1199785f08910e11035fca2a",
+    "line_count": 19,
+    "diff_line_count": 22,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/google.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/google.xml",
+    "sha": "4e018363c1238f1ad69832280509b902c7f0971c",
+    "line_count": 157,
+    "diff_line_count": 160,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/google_build.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/google_build.xml",
+    "sha": "076061fdcfdd9c90307012286724864ac6085580",
+    "line_count": 24,
+    "diff_line_count": 27,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/google_fi.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/google_fi.xml",
+    "sha": "a7a1ae0d8b372ebe2b6a455d5ef79dbe7e6f696e",
+    "line_count": 13,
+    "diff_line_count": 16,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/google_xr_projected.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/google_xr_projected.xml",
+    "sha": "1ab7d8d1a02410eab2578e349dbd3a5dab78b390",
+    "line_count": 12,
+    "diff_line_count": 15,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/nexus.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/nexus.xml",
+    "sha": "bc79413d61accd63a63a88494be061257979bbbd",
+    "line_count": 78,
+    "diff_line_count": 81,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/nga.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/nga.xml",
+    "sha": "b742577a705821773736519a88841b43f84ae9b9",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/nowplaying.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/nowplaying.xml",
+    "sha": "8542717c7b924354ed597896ceec2efc3803c4d7",
+    "line_count": 25,
+    "diff_line_count": 28,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/nowplaying_app_26q1.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/nowplaying_app_26q1.xml",
+    "sha": "d63a1990b3e2662f0503dde2b6153cc8794a2d98",
+    "line_count": 4,
+    "diff_line_count": 7,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_2017-initial-package-stopped-states.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_2017-initial-package-stopped-states.xml",
+    "sha": "8acdf2804f9fa667f5b6c413ca1d988ded1525b4",
+    "line_count": 47,
+    "diff_line_count": 50,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2017.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2017.xml",
+    "sha": "9ee04d25367210299e0d4bbe9a9d2f9340cd2a52",
+    "line_count": 82,
+    "diff_line_count": 85,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2018.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2018.xml",
+    "sha": "fc2e8fc629f1bb1bcc8d45e435199929bc4e872e",
+    "line_count": 27,
+    "diff_line_count": 30,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2019.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2019.xml",
+    "sha": "78cf8cb288eb4d684937c948fbe575593a4abf3d",
+    "line_count": 10,
+    "diff_line_count": 13,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2019_midyear.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2019_midyear.xml",
+    "sha": "69a6a55acf9a5aa3924c370ee06f336261f0fbc0",
+    "line_count": 10,
+    "diff_line_count": 13,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2020.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2020.xml",
+    "sha": "d2bdc4f8e2622becb9daa8b37d7f7094886a4c6c",
+    "line_count": 13,
+    "diff_line_count": 16,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2020_midyear.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2020_midyear.xml",
+    "sha": "c055557e80532a90961477034e990765bbab37aa",
+    "line_count": 10,
+    "diff_line_count": 13,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2021.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2021.xml",
+    "sha": "908060b86a9fc1b0ab8189314fe7b7c6fb6a1532",
+    "line_count": 13,
+    "diff_line_count": 16,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2021_midyear.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2021_midyear.xml",
+    "sha": "51a1a1cc019f57d6b0a7213de8d9763936128bd4",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2022.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2022.xml",
+    "sha": "23343bd878606aa30c7034a1bd5a1e9b7bae51b8",
+    "line_count": 13,
+    "diff_line_count": 16,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2022_midyear.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2022_midyear.xml",
+    "sha": "e8ce0be98ed864ec534fa5c08a31a15404b022e2",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2023.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2023.xml",
+    "sha": "27ae83d60b32f115f0f1072ae8ee076a73c053a6",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2023_midyear.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2023_midyear.xml",
+    "sha": "7cef881172826431b74c7199b1a43884cc372253",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2024.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2024.xml",
+    "sha": "1580b079c750ca2219f5cdebac497abe07989cf2",
+    "line_count": 8,
+    "diff_line_count": 11,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2024_midyear.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2024_midyear.xml",
+    "sha": "e52eb03d001fc836e75294e00258d905da1a4896",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2025.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2025.xml",
+    "sha": "83d924e8b621d6f04391ed671af7a943687afcc7",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2025_midyear.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2025_midyear.xml",
+    "sha": "f5eff8535b0ebcb12f1680b60a0af356d017c116",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2026.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2026.xml",
+    "sha": "f6679add6c6c5f29d85d137d93c6167327cd0faf",
+    "line_count": 11,
+    "diff_line_count": 14,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/pixel_experience_2026_midyear.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/pixel_experience_2026_midyear.xml",
+    "sha": "395edb60123412067492033ffd3e85b8586ebf2b",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/preinstalled-packages-glasses-core-pixel-common.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/preinstalled-packages-glasses-core-pixel-common.xml",
+    "sha": "5228f9908739b0aae9dfdd19df9ec263223673c9",
+    "line_count": 25,
+    "diff_line_count": 28,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/preinstalled-packages-pixel-2025-common.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/preinstalled-packages-pixel-2025-common.xml",
+    "sha": "2360bc3aa64aa4b43b28debd071b47827eb86f4a",
+    "line_count": 20,
+    "diff_line_count": 23,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/preinstalled-packages-pixel-2026-common.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/preinstalled-packages-pixel-2026-common.xml",
+    "sha": "2f6407a6724f5d7167c6cd282b050efedc6845bf",
+    "line_count": 15,
+    "diff_line_count": 18,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/preinstalled-packages-pixel-experience-2023-midyear-and-newer.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/preinstalled-packages-pixel-experience-2023-midyear-and-newer.xml",
+    "sha": "7b6c16271c0637cabed9f071d6c52f3cc9c1024d",
+    "line_count": 10,
+    "diff_line_count": 13,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2017-and-newer.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2017-and-newer.xml",
+    "sha": "a7cb88641025913caa305064c92609646c707493",
+    "line_count": 387,
+    "diff_line_count": 390,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2018-and-newer.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2018-and-newer.xml",
+    "sha": "f3398a2dc0d952042076d167c5675ee24d08c75c",
+    "line_count": 47,
+    "diff_line_count": 50,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2019-and-newer.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2019-and-newer.xml",
+    "sha": "7eade76f97255231dfec483bcc708e2d9c22a58b",
+    "line_count": 34,
+    "diff_line_count": 37,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2020-and-newer.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2020-and-newer.xml",
+    "sha": "d5f5c3295b2b4d20b14763a36c2dae1697b5c64f",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2022-and-newer.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2022-and-newer.xml",
+    "sha": "ec23f3dc2815fdc6c0bedbb5e25da2bd34dd1385",
+    "line_count": 147,
+    "diff_line_count": 150,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2023-and-newer.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2023-and-newer.xml",
+    "sha": "015fe61ba36efb42b732ab9b6f2f67003f4e2bc8",
+    "line_count": 24,
+    "diff_line_count": 27,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2024-and-newer.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2024-and-newer.xml",
+    "sha": "91061b55294110ff0d5418897acde1a2b1c15422",
+    "line_count": 13,
+    "diff_line_count": 16,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2025-and-newer.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2025-and-newer.xml",
+    "sha": "172154c750750f665de2a0e8e0e81a80239ad559",
+    "line_count": 6,
+    "diff_line_count": 9,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2026-and-newer.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/preinstalled-packages-product-pixel-2026-and-newer.xml",
+    "sha": "907f13c741f996819862ad444bc7b2ad9463b7cb",
+    "line_count": 6,
+    "diff_line_count": 9,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/preinstalled_packages_pixel_experience_2017_and_newer.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/preinstalled_packages_pixel_experience_2017_and_newer.xml",
+    "sha": "d127d6ee7ba18eeee3ea6ed8ae482b3c32cea1ce",
+    "line_count": 144,
+    "diff_line_count": 147,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/preinstalled_packages_pixel_experience_2021_and_newer.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/preinstalled_packages_pixel_experience_2021_and_newer.xml",
+    "sha": "83f57d2c188ffbf707d128c186082267e62aaac8",
+    "line_count": 33,
+    "diff_line_count": 36,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/preinstalled_packages_repair_mode.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/preinstalled_packages_repair_mode.xml",
+    "sha": "4933b9e2c8185d4a01e5adbf51dd938bdb0fa8cc",
+    "line_count": 23,
+    "diff_line_count": 26,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/quick_tap.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/quick_tap.xml",
+    "sha": "445f43a299173aede6dcea3f59d8383760a014fe",
+    "line_count": 9,
+    "diff_line_count": 12,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/satellite_sos.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/satellite_sos.xml",
+    "sha": "428e503c7e1a5bbd0c8dcaa98cf971e69edee18c",
+    "line_count": 5,
+    "diff_line_count": 8,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/etc/sysconfig/spoon.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/etc/sysconfig/spoon.xml",
+    "sha": "46c6e0cc802eda1eec2e8037fd0cd83243fe87c1",
+    "line_count": 37,
+    "diff_line_count": 40,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/framework/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/framework/Android.mk",
+    "sha": "ba919bbb30e7188eef13f585ccddefb01f2265fc",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/product_blobs.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/product_blobs.mk",
+    "sha": "368bc884f66ad454f4550535fea69b2cee7b5f09",
+    "line_count": 284,
+    "diff_line_count": 287,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/security/fsverity/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/security/fsverity/Android.bp",
+    "sha": "c6cd9451d0436fa35c1238526733e76b8531445f",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/usr/srec/en-US/context_prebuilt/apps.txt",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/usr/srec/en-US/context_prebuilt/apps.txt",
+    "sha": "97aa3545ae9aa6c55c0afefcf4c6dffca921046d",
+    "line_count": 459,
+    "diff_line_count": 462,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/usr/srec/en-US/context_prebuilt/contacts.txt",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/usr/srec/en-US/context_prebuilt/contacts.txt",
+    "sha": "f0434da24347040653bbb98f81d166ab8d05b689",
+    "line_count": 2024,
+    "diff_line_count": 2027,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/blobs/usr/srec/en-US/context_prebuilt/songs.txt",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/blobs/usr/srec/en-US/context_prebuilt/songs.txt",
+    "sha": "81e315c9725c318440851bac30ab0de87980e13f",
+    "line_count": 45,
+    "diff_line_count": 48,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/AiIconsPrebuilt_20260121/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/AiIconsPrebuilt_20260121/Android.mk",
+    "sha": "4783b48461521e12787c0aab7fb65b1a4c22a948",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/CalculatorGooglePrebuilt_85011599/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/CalculatorGooglePrebuilt_85011599/Android.mk",
+    "sha": "794c77ba8ebc0d2bfed24708b9072cb2293910e4",
+    "line_count": 32,
+    "diff_line_count": 35,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/CalendarGooglePrebuilt/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/CalendarGooglePrebuilt/Android.mk",
+    "sha": "2bdea0d6d727a896118c1735b1e474cadbd3c34c",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/Chrome-Stub/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/Chrome-Stub/Android.mk",
+    "sha": "5b4cdeb4edd7d3f4db480ec1a8d8779f2d0c1534",
+    "line_count": 32,
+    "diff_line_count": 35,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/Chrome/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/Chrome/Android.mk",
+    "sha": "307886774cbcfa84fdd614f003144417722302e1",
+    "line_count": 26,
+    "diff_line_count": 29,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/DevicePolicyPrebuilt-v10572820/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/DevicePolicyPrebuilt-v10572820/Android.mk",
+    "sha": "33e36a70eb804f549627d6f2526c68f9706d57a6",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/GoogleContacts/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/GoogleContacts/Android.mk",
+    "sha": "f0d2e73ff5ce43e64e95c765f58cb984cb0a161e",
+    "line_count": 32,
+    "diff_line_count": 35,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/GoogleTTS/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/GoogleTTS/Android.mk",
+    "sha": "a333ee2ddcc49b74d25d2dcf0fcf3a317c1d4098",
+    "line_count": 32,
+    "diff_line_count": 35,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/LatinIMEGooglePrebuilt/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/LatinIMEGooglePrebuilt/Android.mk",
+    "sha": "88d149164268cb9c8d8ab0d8e1acecf53a9a1c75",
+    "line_count": 32,
+    "diff_line_count": 35,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/LocationHistoryPrebuilt/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/LocationHistoryPrebuilt/Android.mk",
+    "sha": "3d30a77a2621428961ad8e7fd72b103f6f3c0247",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/Maps/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/Maps/Android.mk",
+    "sha": "2567fe412d72b119505c5555085a12a8bdbfe461",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/MarkupGoogle_v2/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/MarkupGoogle_v2/Android.mk",
+    "sha": "e5cb01475062e80783646c8715da09ab90ab7aba",
+    "line_count": 29,
+    "diff_line_count": 32,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/NgaResources/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/NgaResources/Android.mk",
+    "sha": "f0926799c6d74d7f95fb7234c5bc5b4cdc2ecab8",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/Photos/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/Photos/Android.mk",
+    "sha": "71f14cbf591e3ade93778d5a765d13b0cf1f10f5",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/PixelThemesStub2026/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/PixelThemesStub2026/Android.mk",
+    "sha": "9e2079b5c3add95c2f6f141c1a9977ccf4b02778",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/PixelWallpapers2026/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/PixelWallpapers2026/Android.mk",
+    "sha": "a483df8aa3ba0791129fb0f255b847b913c7e6ee",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/PrebuiltGoogleAdservicesTvp/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/PrebuiltGoogleAdservicesTvp/Android.mk",
+    "sha": "cf86c37b492baf6d457003f2e0ab4128ccc85285",
+    "line_count": 29,
+    "diff_line_count": 32,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/PrebuiltGoogleTelemetryTvp/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/PrebuiltGoogleTelemetryTvp/Android.mk",
+    "sha": "126de7d37956007863af4bb6deecc380d34407ca",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/SoundAmplifierPrebuilt_v4.91.886631805/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/SoundAmplifierPrebuilt_v4.91.886631805/Android.mk",
+    "sha": "5beb01dcefd76ec1085a59a687ab3e0c3276a805",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/SoundPickerPrebuilt_3.4/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/SoundPickerPrebuilt_3.4/Android.mk",
+    "sha": "636e5ad862c5a84fd5dace891abb3f4860b03615",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/SwitchAccessPrebuilt_1.17.0.877181440/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/SwitchAccessPrebuilt_1.17.0.877181440/Android.mk",
+    "sha": "9c54e973937e8398df705c6a538a281dedb2f10c",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/TrichromeLibrary-Stub/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/TrichromeLibrary-Stub/Android.mk",
+    "sha": "fdb0b399e64faeb3f0fde69625c02f64cd182a22",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/TrichromeLibrary/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/TrichromeLibrary/Android.mk",
+    "sha": "c0f2469d1f1aaa645886ea70db764c8c475d6604",
+    "line_count": 26,
+    "diff_line_count": 29,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/Tycho/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/Tycho/Android.mk",
+    "sha": "15fb50d9c97ae4e6118597953c9850b136ddef29",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/VoiceAccessPrebuilt/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/VoiceAccessPrebuilt/Android.mk",
+    "sha": "c6b9fbc91c4cbe90a330684d0a4fd2d08ce34795",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/WallpaperAIPrebuilt_10000372/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/WallpaperAIPrebuilt_10000372/Android.mk",
+    "sha": "d2ff48d0b956bfc9ee6142d739d78e9cf29fcf61",
+    "line_count": 28,
+    "diff_line_count": 31,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/WallpaperEmojiPrebuilt-p26-foldable-wallpaper/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/WallpaperEmojiPrebuilt-p26-foldable-wallpaper/Android.mk",
+    "sha": "07e2ac543a3d086d78236b9b665f219dec3b1ec5",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/WebViewGoogle-Stub/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/WebViewGoogle-Stub/Android.mk",
+    "sha": "6a9d02534fe43884830304f796548fd06c667692",
+    "line_count": 32,
+    "diff_line_count": 35,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/WebViewGoogle/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/WebViewGoogle/Android.mk",
+    "sha": "9345b7343a1cd0b471bf17f05bf42d3e258c400d",
+    "line_count": 26,
+    "diff_line_count": 29,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/arcore/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/arcore/Android.mk",
+    "sha": "6a561376cc37be0ee4805070920c3ce21faaa6ae",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/apps/talkback/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/apps/talkback/Android.mk",
+    "sha": "4584cf5894b46ec6b3b523ec99b31d79c0c60cc2",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/AdaptiveVPNPrebuilt-111042/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/AdaptiveVPNPrebuilt-111042/Android.mk",
+    "sha": "aa96412515cf79858182b9b22a95fc2001b0d406",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/AndroidAutoStubPrebuilt/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/AndroidAutoStubPrebuilt/Android.mk",
+    "sha": "7166fd93231155e0c23142cdc2385aa9ec3c9381",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/AndroidGlassesCoreStub/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/AndroidGlassesCoreStub/Android.mk",
+    "sha": "1c09cf8f91e94804f20fc4bd155cbe6406bb751b",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/CarrierLocation/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/CarrierLocation/Android.mk",
+    "sha": "0c2dbae8ebe74399b236d0d24f34bde21f7095ef",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/CarrierMetrics/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/CarrierMetrics/Android.mk",
+    "sha": "7722832ed7eda0caf444b105a6d7cdffb826a58f",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/CbrsNetworkMonitor/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/CbrsNetworkMonitor/Android.mk",
+    "sha": "3781610133b6d00635c2d3f12c62655f881d1da7",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/ConfigUpdater/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/ConfigUpdater/Android.mk",
+    "sha": "66e082febddecb01ab462ea40e2574e3e32472e9",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/CustomizationBundlePrebuiltFullVersion/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/CustomizationBundlePrebuiltFullVersion/Android.mk",
+    "sha": "553169f09bc0b29ddf963c0790af2dbcf9e32382",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/DeviceIntelligenceNetworkPrebuiltAstrea/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/DeviceIntelligenceNetworkPrebuiltAstrea/Android.mk",
+    "sha": "a9bf6df5eda61abeb4ed25ba10b572fae2c86513",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/DevicePersonalizationAiAiPrebuiltPixel2026/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/DevicePersonalizationAiAiPrebuiltPixel2026/Android.mk",
+    "sha": "405ac1e52feceefc1c9437d04eae33d579262078",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/DevicePersonalizationPrebuiltPixel2020/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/DevicePersonalizationPrebuiltPixel2020/Android.mk",
+    "sha": "d0f66672004089f0f88e6c1bbe1c60f6fbff0710",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/DreamlinerDreamsPrebuilt_100894/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/DreamlinerDreamsPrebuilt_100894/Android.mk",
+    "sha": "18cf68584da3273410211f11d17b04219109403c",
+    "line_count": 34,
+    "diff_line_count": 37,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/DreamlinerPrebuilt_22000020/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/DreamlinerPrebuilt_22000020/Android.mk",
+    "sha": "b06d4312ce9cffdcbd1bef4d7f05c86e239eefa1",
+    "line_count": 34,
+    "diff_line_count": 37,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/DreamlinerUpdater/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/DreamlinerUpdater/Android.mk",
+    "sha": "9d89fbe596d0f1e1dec4af02ac9be50bed13acd7",
+    "line_count": 33,
+    "diff_line_count": 36,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/FamilySpacePrebuilt-v2026/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/FamilySpacePrebuilt-v2026/Android.mk",
+    "sha": "2c065f27c95ddb6a675ab3c5c49062b7e0d33b93",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/FilesPrebuilt/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/FilesPrebuilt/Android.mk",
+    "sha": "b90472982c3ce0d3ffeb57fa92875cb6f82fe175",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/GeminiShell_227/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/GeminiShell_227/Android.mk",
+    "sha": "b5131a5eec7aa50c8c7e5df18d169c7da39e0dc4",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/GoogleDialer/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/GoogleDialer/Android.mk",
+    "sha": "715a9599c9efdbb777d3590bb2b5ce5dbf4183df",
+    "line_count": 33,
+    "diff_line_count": 36,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/GoogleRestorePrebuilt-v1054408/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/GoogleRestorePrebuilt-v1054408/Android.mk",
+    "sha": "5f2040d160b1d160d381c1683fba50016d0720ee",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/KidsSupervisionStub/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/KidsSupervisionStub/Android.mk",
+    "sha": "45e3f9dab67918f04e48a4a81e32b0bfc88dfffb",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/OdadPrebuilt/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/OdadPrebuilt/Android.mk",
+    "sha": "8f447198e33473092c1bfd77155ffc8e306a1e5e",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/PartnerSetupPrebuilt/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/PartnerSetupPrebuilt/Android.mk",
+    "sha": "a3f901dd2cc9ae6c7c7e32afdb6d39ea044136e2",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/Phonesky/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/Phonesky/Android.mk",
+    "sha": "eacc95f62b2783027f1b935614158f71ae6718ac",
+    "line_count": 32,
+    "diff_line_count": 35,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/PixelLiveWallpaperPrebuilt-27000055/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/PixelLiveWallpaperPrebuilt-27000055/Android.mk",
+    "sha": "00e0e5923869767041435a1d4e6e67d737e6b572",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/PrebuiltBugle/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/PrebuiltBugle/Android.mk",
+    "sha": "6b4e09e502a7f7f801af6831a2a26bb7af0f7510",
+    "line_count": 33,
+    "diff_line_count": 36,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/PrebuiltDeskClockGoogle_76060331/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/PrebuiltDeskClockGoogle_76060331/Android.mk",
+    "sha": "34b75e3b2af0d721bdc60ce4622cbfbcb75ba39a",
+    "line_count": 33,
+    "diff_line_count": 36,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/PrebuiltGmsCore/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/PrebuiltGmsCore/Android.mk",
+    "sha": "0c3607322b780ffaa8d65ad977e6010904fd4e2d",
+    "line_count": 188,
+    "diff_line_count": 191,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/PrebuiltPixelCoreServices/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/PrebuiltPixelCoreServices/Android.mk",
+    "sha": "747230457b7932aeac637f26dde8d4c3c4a9288a",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/PulsePrebuilt/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/PulsePrebuilt/Android.mk",
+    "sha": "383c7b02859d040adef2b318ac5bfdbcfe42c038",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/RelationshipsPrebuilt-301/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/RelationshipsPrebuilt-301/Android.mk",
+    "sha": "c50aa8c8a67f242a750f8e1f5f4c01ed51b06ec8",
+    "line_count": 29,
+    "diff_line_count": 32,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/SCONE-v77459/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/SCONE-v77459/Android.mk",
+    "sha": "2b986cf5a43e85c7db5ff8f339daefbf5350f3e7",
+    "line_count": 34,
+    "diff_line_count": 37,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/SafetyHubPrebuilt/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/SafetyHubPrebuilt/Android.mk",
+    "sha": "c0e749222c8145967eba29715eb8790bf34f18c6",
+    "line_count": 32,
+    "diff_line_count": 35,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/ScribePrebuilt_v8.7.880674799/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/ScribePrebuilt_v8.7.880674799/Android.mk",
+    "sha": "da272443470d6fca5bfe88367ad51491359e2b93",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/SearchSelectorPrebuilt/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/SearchSelectorPrebuilt/Android.mk",
+    "sha": "7a00550cd8ba5b8133d1463b4dd430db8e879356",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/SettingsIntelligenceGooglePrebuilt/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/SettingsIntelligenceGooglePrebuilt/Android.mk",
+    "sha": "8b41c1fff30201ee7189953f4432b02965e04e48",
+    "line_count": 32,
+    "diff_line_count": 35,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/SetupWizardPrebuilt_cd1a/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/SetupWizardPrebuilt_cd1a/Android.mk",
+    "sha": "58ef042a9fc3e0b5f46d8f8d56ef185941f7ca12",
+    "line_count": 32,
+    "diff_line_count": 35,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/TurboPrebuilt/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/TurboPrebuilt/Android.mk",
+    "sha": "86763604140786a7288795d78042fc41c0324c50",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/Velvet/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/Velvet/Android.mk",
+    "sha": "b26398a09232339fc01c51d2717dfdc8f5141145",
+    "line_count": 35,
+    "diff_line_count": 38,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/VelvetGo/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/VelvetGo/Android.mk",
+    "sha": "9760aa13643fb68aebe59a9885171ecc20417a11",
+    "line_count": 35,
+    "diff_line_count": 38,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/VerifierPrebuiltClassic/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/VerifierPrebuiltClassic/Android.mk",
+    "sha": "a228f5f2b6bcdf785f3610e25cb030b8baf2cc27",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/WallpaperEffect/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/WallpaperEffect/Android.mk",
+    "sha": "c6eb4d0435f8ee8debb7b62ab9458c1a2aa1872c",
+    "line_count": 29,
+    "diff_line_count": 32,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/WeatherPixelPrebuilt_10008663/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/WeatherPixelPrebuilt_10008663/Android.mk",
+    "sha": "49c637e465c89cc11a98acd5c0a903fbd3641c27",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "product/packages/privileged_apps/WellbeingPrebuilt/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/product/packages/privileged_apps/WellbeingPrebuilt/Android.mk",
+    "sha": "e631fe05033d85e4184ec2d495c4a3261430db92",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system/blobs/etc/permissions/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system/blobs/etc/permissions/Android.bp",
+    "sha": "1ce7cf1333ccfd046d74d1b0af240c61b4ca7f14",
+    "line_count": 22,
+    "diff_line_count": 25,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system/blobs/etc/permissions/privapp-permissions-google.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system/blobs/etc/permissions/privapp-permissions-google.xml",
+    "sha": "c3e190eda11d88d4e0c3a9db30e21e5dd0588278",
+    "line_count": 58,
+    "diff_line_count": 61,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system/blobs/system_blobs.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system/blobs/system_blobs.mk",
+    "sha": "1c629bb5455796c40fccb73786a0e5b584926199",
+    "line_count": 24,
+    "diff_line_count": 27,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system/packages/apps/GoogleExtShared/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system/packages/apps/GoogleExtShared/Android.mk",
+    "sha": "4dd559ad8b3e2938411284ee504bb54af93897ce",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system/packages/apps/GooglePrintRecommendationService/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system/packages/apps/GooglePrintRecommendationService/Android.mk",
+    "sha": "eb78bdcbde94ae8154ef98f2da269f09c3df235d",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system/packages/privileged_apps/DocumentsUIGoogle/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system/packages/privileged_apps/DocumentsUIGoogle/Android.mk",
+    "sha": "a815879b5b417c9ec2b45d3dc9e6976705696332",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system/packages/privileged_apps/GooglePackageInstaller/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system/packages/privileged_apps/GooglePackageInstaller/Android.mk",
+    "sha": "6b3e516a8f2d4de8a9f626358b966c66226a56c0",
+    "line_count": 32,
+    "diff_line_count": 35,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system/packages/privileged_apps/TagGoogle/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system/packages/privileged_apps/TagGoogle/Android.mk",
+    "sha": "caa9b60ffb545dfa9b284a110afe9bb28d4aceda",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/default-permissions/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/default-permissions/Android.bp",
+    "sha": "7f77260d9cb61f789070effe640bf34036ece353",
+    "line_count": 55,
+    "diff_line_count": 58,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/default-permissions/default-permissions-com.google.android.apps.pixel.dcservice.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/default-permissions/default-permissions-com.google.android.apps.pixel.dcservice.xml",
+    "sha": "80e070eee5fd61d684a046bb2c689e309ee2ced2",
+    "line_count": 27,
+    "diff_line_count": 30,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/default-permissions/default-permissions-com.google.android.apps.pixel.launcherconnector.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/default-permissions/default-permissions-com.google.android.apps.pixel.launcherconnector.xml",
+    "sha": "3e33f1678d50670356d80cc626f0af58ba17984d",
+    "line_count": 25,
+    "diff_line_count": 28,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/default-permissions/default-permissions-com.google.android.mosey.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/default-permissions/default-permissions-com.google.android.mosey.xml",
+    "sha": "443555dccddc094982ea3e59d8be2ce03c553814",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/default-permissions/default-permissions-com.google.android.pixel.setupwizard.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/default-permissions/default-permissions-com.google.android.pixel.setupwizard.xml",
+    "sha": "7c9864018802c8e8792bae3ce4b68809a85b5388",
+    "line_count": 23,
+    "diff_line_count": 26,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/default-permissions/default-permissions_tachyon.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/default-permissions/default-permissions_tachyon.xml",
+    "sha": "b45294e98ccfebe2e7ffa76c3b83e2a274a58baf",
+    "line_count": 23,
+    "diff_line_count": 26,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/permissions/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/permissions/Android.bp",
+    "sha": "2ccf683515f2852d174a9ace778e5ac8e2b3ea17",
+    "line_count": 55,
+    "diff_line_count": 58,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/permissions/com.google.android.apps.pixel.dcservice.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/permissions/com.google.android.apps.pixel.dcservice.xml",
+    "sha": "5c1edc92338cb677bbfdc3c4fd3c9438b9b0a4a1",
+    "line_count": 32,
+    "diff_line_count": 35,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/permissions/com.google.android.apps.pixel.launcherconnector.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/permissions/com.google.android.apps.pixel.launcherconnector.xml",
+    "sha": "de3aecbb9c944be66b5862804d45c54d690cfa90",
+    "line_count": 14,
+    "diff_line_count": 17,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/permissions/privapp-permissions-com.google.android.apps.pixel.tabby.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/permissions/privapp-permissions-com.google.android.apps.pixel.tabby.xml",
+    "sha": "3e82e45f39a12b02f34b5570d694381aa96a478c",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/permissions/privapp-permissions-com.google.android.mosey.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/permissions/privapp-permissions-com.google.android.mosey.xml",
+    "sha": "5d2ed1420e4fe2917cc508e61504f7e956550de4",
+    "line_count": 32,
+    "diff_line_count": 35,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/permissions/privapp-permissions-google-se.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/permissions/privapp-permissions-google-se.xml",
+    "sha": "d764e84965ed28990e538ae7244da32716e0e640",
+    "line_count": 313,
+    "diff_line_count": 316,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/sysconfig/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/sysconfig/Android.bp",
+    "sha": "edba8764672b4e458471afb68b4ff7ce3d8d64e3",
+    "line_count": 47,
+    "diff_line_count": 50,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/sysconfig/preinstalled-packages-com.google.android.apps.pixel.tabby.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/sysconfig/preinstalled-packages-com.google.android.apps.pixel.tabby.xml",
+    "sha": "fab00e222bea4718e031d3a89cb738d1fa7b8947",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/sysconfig/preinstalled-packages-pixelsupport.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/sysconfig/preinstalled-packages-pixelsupport.xml",
+    "sha": "0f569382865e7232d0ac3f48c2ac062fc41cb5cc",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/sysconfig/preinstalled-packages-pixelsystemservice.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/sysconfig/preinstalled-packages-pixelsystemservice.xml",
+    "sha": "17ec67ecec675926d6d0ac06b05d002d35a3e8bf",
+    "line_count": 23,
+    "diff_line_count": 26,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/etc/sysconfig/staged-installer-whitelist-com.google.android.apps.pixel.tabby.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/etc/sysconfig/staged-installer-whitelist-com.google.android.apps.pixel.tabby.xml",
+    "sha": "ee838f39f1dd071431feb9cf49d368f7d504a2e6",
+    "line_count": 5,
+    "diff_line_count": 8,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/lib64/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/lib64/Android.bp",
+    "sha": "ac36bac0cef9c41f923b4921281cf5ee1b91d9de",
+    "line_count": 42,
+    "diff_line_count": 45,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/blobs/system-ext_blobs.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/blobs/system-ext_blobs.mk",
+    "sha": "01f0b0d4894745a8866b400fbb01698522286467",
+    "line_count": 40,
+    "diff_line_count": 43,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/packages/apps/CrossDeviceAccessServicePrimary/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/packages/apps/CrossDeviceAccessServicePrimary/Android.mk",
+    "sha": "4a6befa7fc3d89f147bb82f9b434f1bd0cd42f16",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/packages/apps/EmergencyInfoGoogleNoUi/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/packages/apps/EmergencyInfoGoogleNoUi/Android.mk",
+    "sha": "dc4ae1c27a40e64db729438f8809c83bec421712",
+    "line_count": 29,
+    "diff_line_count": 32,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/packages/apps/Flipendo/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/packages/apps/Flipendo/Android.mk",
+    "sha": "10ee1474ba24f8ae77e2f35298376e5753356ba9",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/packages/privileged_apps/AvatarPickerGoogle/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/packages/privileged_apps/AvatarPickerGoogle/Android.mk",
+    "sha": "0f1d6722a438d80daf41f3dcfe2c430be942a824",
+    "line_count": 32,
+    "diff_line_count": 35,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/packages/privileged_apps/DeviceConnectivityServicePrebuilt_26.01.00/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/packages/privileged_apps/DeviceConnectivityServicePrebuilt_26.01.00/Android.mk",
+    "sha": "ccc2b0a02433754043edd9c3d5522886a0b982da",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/packages/privileged_apps/GoogleFeedback/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/packages/privileged_apps/GoogleFeedback/Android.mk",
+    "sha": "71fbb3cdb1fdc3c0c44ac85f0f54baeac6827c5f",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/packages/privileged_apps/GoogleServicesFramework/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/packages/privileged_apps/GoogleServicesFramework/Android.mk",
+    "sha": "a98d804dafec63cf99c3431e3b21556c8f830404",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/packages/privileged_apps/MagicPortraitWallpapers/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/packages/privileged_apps/MagicPortraitWallpapers/Android.mk",
+    "sha": "5389e1d95813d15fa0f72b7d7208c5e5979bb813",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/packages/privileged_apps/MoseyApp/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/packages/privileged_apps/MoseyApp/Android.mk",
+    "sha": "fe58e65b4e17896e4169361d79b481c9c4a6cb96",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/packages/privileged_apps/NexusLauncherRelease/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/packages/privileged_apps/NexusLauncherRelease/Android.mk",
+    "sha": "d478586ccf789dfc76702c4b8914aa164715c877",
+    "line_count": 33,
+    "diff_line_count": 36,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/packages/privileged_apps/PixelSearchPrebuilt_26.02.00/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/packages/privileged_apps/PixelSearchPrebuilt_26.02.00/Android.mk",
+    "sha": "b0e287f3c5d23c94bcb8647f0240905894aecf72",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/packages/privileged_apps/SetupWizardPixelPrebuilt_cd1a/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/packages/privileged_apps/SetupWizardPixelPrebuilt_cd1a/Android.mk",
+    "sha": "101ab5a6d3cc43c5fae39961be0e07b06e30bea0",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/packages/privileged_apps/StorageManagerGoogle/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/packages/privileged_apps/StorageManagerGoogle/Android.mk",
+    "sha": "c81de3391c0f56fd80c8b9a0c0b0e335301f8bc1",
+    "line_count": 33,
+    "diff_line_count": 36,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/packages/privileged_apps/TurboAdapter/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/packages/privileged_apps/TurboAdapter/Android.mk",
+    "sha": "e04d255fbf486250e047d5a4149e17bfef8b671e",
+    "line_count": 35,
+    "diff_line_count": 38,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/packages/privileged_apps/WallpaperPickerGoogleRelease/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/packages/privileged_apps/WallpaperPickerGoogleRelease/Android.mk",
+    "sha": "e309cca07da08698118a9cc576c60ac135eb29b3",
+    "line_count": 32,
+    "diff_line_count": 35,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms",
+    "path": "system_ext/packages/privileged_apps/YourWidgetsStub/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms/e059bf57756d7d8e814cd152b13d4d51a9e0bb9e/system_ext/packages/privileged_apps/YourWidgetsStub/Android.mk",
+    "sha": "b40abd43561386e7630fc05dcf6293bc7c92cd08",
+    "line_count": 31,
+    "diff_line_count": 34,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms-mosey",
+    "path": "mosey/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms-mosey/931dc880a8f4c76b6a55a37cf53b7fd449094e24/mosey/Android.bp",
+    "sha": "d84a0338c95ec8403a1ac9bc7099e8ec5eaed9c7",
+    "line_count": 92,
+    "diff_line_count": 95,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms-mosey",
+    "path": "mosey/Android.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms-mosey/931dc880a8f4c76b6a55a37cf53b7fd449094e24/mosey/Android.mk",
+    "sha": "af6e7d8bef39dcc1e64ecd41b390cf7182e3cc73",
+    "line_count": 5,
+    "diff_line_count": 8,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms-mosey",
+    "path": "mosey/BoardConfigVendor.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms-mosey/931dc880a8f4c76b6a55a37cf53b7fd449094e24/mosey/BoardConfigVendor.mk",
+    "sha": "3b29feaf055629c1decda620bded4c376e2c5413",
+    "line_count": 3,
+    "diff_line_count": 6,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms-mosey",
+    "path": "mosey/etc/init/mosey.rc",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms-mosey/931dc880a8f4c76b6a55a37cf53b7fd449094e24/mosey/etc/init/mosey.rc",
+    "sha": "c53c96e2ebb1ff99f5de8fd68c80cd5b61eb14e3",
+    "line_count": 8,
+    "diff_line_count": 11,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms-mosey",
+    "path": "mosey/etc/sysconfig/initial-package-stopped-states-mosey.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms-mosey/931dc880a8f4c76b6a55a37cf53b7fd449094e24/mosey/etc/sysconfig/initial-package-stopped-states-mosey.xml",
+    "sha": "f649bd28b84adc7b22adaa31d30a925c85cada34",
+    "line_count": 11,
+    "diff_line_count": 14,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms-mosey",
+    "path": "mosey/etc/sysconfig/locked-components-mosey.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms-mosey/931dc880a8f4c76b6a55a37cf53b7fd449094e24/mosey/etc/sysconfig/locked-components-mosey.xml",
+    "sha": "a6cffe490f6afd45c3acfb2f88e58588bec5b5c3",
+    "line_count": 14,
+    "diff_line_count": 17,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms-mosey",
+    "path": "mosey/etc/vintf/manifest/manifest_mosey.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms-mosey/931dc880a8f4c76b6a55a37cf53b7fd449094e24/mosey/etc/vintf/manifest/manifest_mosey.xml",
+    "sha": "c905914dc0446cc318a6aa7d0c5c04b1dd0df039",
+    "line_count": 10,
+    "diff_line_count": 13,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms-mosey",
+    "path": "mosey/mosey-vendor.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms-mosey/931dc880a8f4c76b6a55a37cf53b7fd449094e24/mosey/mosey-vendor.mk",
+    "sha": "1a12b75b21eb905dd479159fe0b61253223b5522",
+    "line_count": 18,
+    "diff_line_count": 21,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms-mosey",
+    "path": "mosey_nopauth/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms-mosey/931dc880a8f4c76b6a55a37cf53b7fd449094e24/mosey_nopauth/Android.bp",
+    "sha": "61873bcadd231a7980589877767024ec3e3ae1cd",
+    "line_count": 16,
+    "diff_line_count": 19,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_gms-mosey",
+    "path": "mosey_nopauth/mosey-vendor.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_gms-mosey/931dc880a8f4c76b6a55a37cf53b7fd449094e24/mosey_nopauth/mosey-vendor.mk",
+    "sha": "be652ea48cf22657967456afc55244a6fd564017",
+    "line_count": 6,
+    "diff_line_count": 9,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "packages_apps_Pif",
+    "path": "Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/packages_apps_Pif/fc1a93ac0a9657aea358f8fd61bed4305eebbad2/Android.bp",
+    "sha": "7c8cbb9c123891c407ed61e2547cedde55570d80",
+    "line_count": 28,
+    "diff_line_count": 31,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "packages_apps_Pif",
+    "path": "AndroidManifest.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/packages_apps_Pif/fc1a93ac0a9657aea358f8fd61bed4305eebbad2/AndroidManifest.xml",
+    "sha": "3815e7867e857f97d48adb2216f8cf310a4b74e8",
+    "line_count": 29,
+    "diff_line_count": 32,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "packages_apps_Pif",
+    "path": "proguard.flags",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/packages_apps_Pif/fc1a93ac0a9657aea358f8fd61bed4305eebbad2/proguard.flags",
+    "sha": "d62161ee67df7aa7042e1b0afe17ac2fd6fab3b5",
+    "line_count": 3,
+    "diff_line_count": 6,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "packages_apps_Pif",
+    "path": "res/values/arrays.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/packages_apps_Pif/fc1a93ac0a9657aea358f8fd61bed4305eebbad2/res/values/arrays.xml",
+    "sha": "4d1942e3938336938b8e870f0eeefb02b35187bd",
+    "line_count": 30,
+    "diff_line_count": 33,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "packages_apps_Pif",
+    "path": "res/values/strings.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/packages_apps_Pif/fc1a93ac0a9657aea358f8fd61bed4305eebbad2/res/values/strings.xml",
+    "sha": "4567388bb422b9192812f5d9000c8147d87a63b4",
+    "line_count": 24,
+    "diff_line_count": 27,
+    "matching_changed_lines": [
+      "+    <string name=\"pif_title\">Play integrity fix</string>"
+    ],
+    "blob_verified": true
+  },
+  {
+    "repo": "packages_apps_Pif",
+    "path": "res/xml/main.xml",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/packages_apps_Pif/fc1a93ac0a9657aea358f8fd61bed4305eebbad2/res/xml/main.xml",
+    "sha": "6f8542f1a6c7022346ddd1ffb704cc36acd19741",
+    "line_count": 76,
+    "diff_line_count": 79,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "packages_apps_Pif",
+    "path": "src/com/goolag/pif/Pif.java",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/packages_apps_Pif/fc1a93ac0a9657aea358f8fd61bed4305eebbad2/src/com/goolag/pif/Pif.java",
+    "sha": "06c89fed662b1c9479e328c8ec0b62ce609157a2",
+    "line_count": 91,
+    "diff_line_count": 94,
+    "matching_changed_lines": [
+      "+                getContext().getContentResolver(), Settings.System.PPU_SPOOF_BUILD_GMS_ARRAY);"
+    ],
+    "blob_verified": true
+  },
+  {
+    "repo": "packages_apps_Pif",
+    "path": "src/com/goolag/pif/PifActivity.java",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/packages_apps_Pif/fc1a93ac0a9657aea358f8fd61bed4305eebbad2/src/com/goolag/pif/PifActivity.java",
+    "sha": "f45af8d6a8b33a67d8bcb443e72d9c3650c5cf1d",
+    "line_count": 23,
+    "diff_line_count": 26,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_certification",
+    "path": "PifPrebuilt/Android.bp",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_certification/91bbc30a9457a0b7b805b2883aec8718380cfe47/PifPrebuilt/Android.bp",
+    "sha": "b5e87be6f6a8e31eff427a1e2d898a3086cf07e6",
+    "line_count": 9,
+    "diff_line_count": 12,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_certification",
+    "path": "README.md",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_certification/91bbc30a9457a0b7b805b2883aec8718380cfe47/README.md",
+    "sha": "58cb947e30db69e23c3bb19ab8af7903907a2e2b",
+    "line_count": 7,
+    "diff_line_count": 10,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  },
+  {
+    "repo": "vendor_certification",
+    "path": "config.mk",
+    "source_url": "https://raw.githubusercontent.com/Evolution-X/vendor_certification/91bbc30a9457a0b7b805b2883aec8718380cfe47/config.mk",
+    "sha": "604155f030d89738ff7a71b58b8612a5793bb23a",
+    "line_count": 3,
+    "diff_line_count": 6,
+    "matching_changed_lines": [],
+    "blob_verified": true
+  }
+]

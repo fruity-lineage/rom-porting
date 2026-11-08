@@ -1,0 +1,10 @@
+{
+  "sha": "8d6a2470b1033c35946b72bb1f9bc56d8947dd63",
+  "author": {
+    "name": "eltavine",
+    "email": "me@eltavine.com",
+    "date": "2026-11-02T13:38:23Z"
+  },
+  "message": "feat: attest release ZIPs and publish SPDX inventories\n\nGenerate validated SPDX inventories from pinned application lockfiles, embedded components and delivered archive contents. Preserve Cargo source revisions and hashes, and gate missing dependency evidence or mismatched payloads.\n\nSeparate read-only packaging from trusted main publication. Verify provenance and SBOM attestations before publishing complete draft releases, preserve retriable canary tags, and select notification assets by exact ZIP filename. Pin release workflow Actions and pass signing permissions through the Stable caller.\n\nValidation: 24 supply-chain tests, 32 existing notification/packaging/installer tests, the Canary updater regression test, actionlint, Python and Rust formatting, and the source line-limit gate passed. Generated and validated an inventory against a complete published module ZIP without changing its bytes.",
+  "url": "https://github.com/eltavine/Duck-ToolBox/commit/8d6a2470b1033c35946b72bb1f9bc56d8947dd63"
+}

@@ -1,0 +1,712 @@
+[
+  {
+    "sha": "9937b3386ca84ed115d8eeebd0f6003ef76c0c18",
+    "subject": "custom_rom_hide: Hide ROM packages on core UIDs from unprivileged apps",
+    "author": {
+      "name": "Pranav Vashi",
+      "email": "neobuddy89@gmail.com",
+      "date": "2026-10-03T19:20:27Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "5d0749b93bacc19b049c3b3adb322e9c8eda5ebd",
+    "subject": "custom_rom_hide: Adding apps filter hooks",
+    "author": {
+      "name": "rmp22",
+      "email": "195054967+rmp22@users.noreply.github.com",
+      "date": "2026-03-16T10:29:41Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "ff6f93c85283ca9fd73dabd712722d6ea9cb44a0",
+    "subject": "core: adding axion sandbox support",
+    "author": {
+      "name": "rmp22",
+      "email": "195054967+rmp22@users.noreply.github.com",
+      "date": "2026-06-26T07:11:44Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "e8cd9edffe15c4152277618e2ea671a5018deab5",
+    "subject": "base: mitigate system_server boot OOM on 512 MB heaps",
+    "author": {
+      "name": "Quince",
+      "email": "quinceroms@gmail.com",
+      "date": "2026-03-10T23:24:28Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "7d156a96a091774afb8abd77b0ba54aef264b2d2",
+    "subject": "Use visilibty of app uids for pcc uids",
+    "author": {
+      "name": "Omar Eissa",
+      "email": "oeissa@google.com",
+      "date": "2025-12-18T13:23:44Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "ce9ba5e68894b97bca1e6ba15af69cfddb3e181d",
+    "subject": "Rename PCC APIs.",
+    "author": {
+      "name": "Martijn Coenen",
+      "email": "maco@google.com",
+      "date": "2025-11-14T10:34:30Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "edc03821eae0c83f636e74275d26683b5d2f2b42",
+    "subject": "Allow PCC processes to see their own application components.",
+    "author": {
+      "name": "Martijn Coenen",
+      "email": "maco@google.com",
+      "date": "2025-10-07T11:58:19Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "576167f5f4c462b2d8a7f3c259d2d03faf9ebce2",
+    "subject": "Flag removal: allow_sdk_sandbox_query_intent_activities",
+    "author": {
+      "name": "TYM Tsai",
+      "email": "tymtsai@google.com",
+      "date": "2025-04-10T15:08:55Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "90c0ffb7be26426152ba342fb37d2a7d43c49c77",
+    "subject": "Allow sandbox sdk to query intent activities of the client app",
+    "author": {
+      "name": "TYM Tsai",
+      "email": "tymtsai@google.com",
+      "date": "2024-01-23T23:38:30Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "33d94a81877f80ec36668289703f16aed156d7f6",
+    "subject": "Mark single-assignment fields in PM server as \"final\".",
+    "author": {
+      "name": "Mateus Azis",
+      "email": "azis@google.com",
+      "date": "2023-10-20T15:58:00Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "c4791feb464e60cf66bc3409c00e0c544adc4940",
+    "subject": "Optimize updating caches in AppsFilter",
+    "author": {
+      "name": "Jeongsik Mun",
+      "email": "jeongsik.mun@samsung.corp-partner.google.com",
+      "date": "2023-06-05T11:39:27Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "af5f0c40f16c393491e9d548ac787d7a7a84a47c",
+    "subject": "Improve the cache rebuild latency of AppsFilter on boot #3",
+    "author": {
+      "name": "Rhed Jao",
+      "email": "rhedjao@google.com",
+      "date": "2022-12-30T09:39:32Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "0931466b55413901ee3d21dba0b3958fde702b39",
+    "subject": "Improve the cache rebuild latency of AppsFilter on boot #2",
+    "author": {
+      "name": "Rhed Jao",
+      "email": "rhedjao@google.com",
+      "date": "2022-12-22T08:18:21Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "c285dbe125008819cb08af6f74acd8815f17a9fc",
+    "subject": "Improve the cache rebuild latency of AppsFilter on boot",
+    "author": {
+      "name": "Rhed Jao",
+      "email": "rhedjao@google.com",
+      "date": "2022-12-21T07:06:27Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "da0b92b1abdd642f642f641c1e636779f123d78d",
+    "subject": "Replace often searched ArrayList with ArraySet",
+    "author": {
+      "name": "Yurii Zubrytskyi",
+      "email": "zyy@google.com",
+      "date": "2022-11-11T23:41:23Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "efb6b0e65c62616d09d7fe884e938f1fe06b57ef",
+    "subject": "Merge \"Use uid to query list of implicitly queryable packages\" into tm-qpr-dev am: 9c0d01990e am: 0e69c416c2",
+    "author": {
+      "name": "Sanjana Sunil",
+      "email": "sanjanasunil@google.com",
+      "date": "2022-09-23T07:39:01Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "9edad83f3ccde21438a86b496c51e3b8559d258f",
+    "subject": "[AppsFilter] read sysprop only when it's changed",
+    "author": {
+      "name": "Songchun Fan",
+      "email": "schfan@google.com",
+      "date": "2022-09-21T22:04:37Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "ba3df5d89e437f3be0ce9a7d82db88526bc7e828",
+    "subject": "Use uid to query list of implicitly queryable packages",
+    "author": {
+      "name": "Sanjana Sunil",
+      "email": "sanjanasunil@google.com",
+      "date": "2022-09-21T11:33:15Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "ee11a9ceb317143fab6f3c3e8db05d95fd4f061e",
+    "subject": "Rename AndroidPackageApi to AndroidPackage",
+    "author": {
+      "name": "Winson Chiu",
+      "email": "chiuwinson@google.com",
+      "date": "2022-08-03T17:22:26Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "3cea5c5741968c934e272e54647906c1b47fb769",
+    "subject": "Add an option to test with and without AppVisibility cache.",
+    "author": {
+      "name": "Alex Buynytskyy",
+      "email": "alexbuy@google.com",
+      "date": "2022-08-18T18:09:06Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "a9d522f43ce64f66de149ec3b9cf43aa2bf9dfc8",
+    "subject": "Fix the visibility check for sdk_sandbox processes",
+    "author": {
+      "name": "Nikita Ioffe",
+      "email": "ioffe@google.com",
+      "date": "2022-07-06T02:27:03Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "3fd950c54cc387402253a9623249aab467a9fce0",
+    "subject": "Add a permissions filter in AppsFilter",
+    "author": {
+      "name": "Sumedh Sen",
+      "email": "sumedhsen@google.com",
+      "date": "2022-06-01T22:05:49Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "5a1cba22d1e6a4cc9fd549ef1f9216f38bfdc601",
+    "subject": "Fix the visibility check for sdk_sandbox processes",
+    "author": {
+      "name": "Nikita Ioffe",
+      "email": "ioffe@google.com",
+      "date": "2022-07-06T02:27:03Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "697894bbd4a7fdd8108a11231c693f552e4e2c3f",
+    "subject": "Remove contents from PackageDataSnapshot",
+    "author": {
+      "name": "Winson Chiu",
+      "email": "chiuwinson@google.com",
+      "date": "2022-06-13T16:40:46Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "c06ace7acc0fd909d86e9bf5a7caa0f6686e6d69",
+    "subject": "Add visibility special casing for sdk sandbox",
+    "author": {
+      "name": "Patrick Baumann",
+      "email": "patb@google.com",
+      "date": "2022-05-27T18:35:17Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "b9b16f3a01c99c7368abb5e85d1707e7c19ed447",
+    "subject": "[AppsFilter] fix cache lock and rebuild cache if needed",
+    "author": {
+      "name": "Songchun Fan",
+      "email": "schfan@google.com",
+      "date": "2022-05-12T18:19:15Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "46037fa4d81b211a3f447c03f9830039bc7b0657",
+    "subject": "Revert \"Synchronize cache-is-ready boolean with cache readiness.\"",
+    "author": {
+      "name": "Alex Buynytskyy",
+      "email": "alexbuy@google.com",
+      "date": "2022-05-13T23:40:42Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "db9ae43ac51796574830da1a70a954d548fc61e6",
+    "subject": "Synchronize cache-is-ready boolean with cache readiness.",
+    "author": {
+      "name": "Alex Buynytskyy",
+      "email": "alexbuy@google.com",
+      "date": "2022-05-10T18:31:59Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "6b941dcc3b5b3613d2d7b0581e1133db00568220",
+    "subject": "[AppsFilter] separate classes for read and write",
+    "author": {
+      "name": "Songchun Fan",
+      "email": "schfan@google.com",
+      "date": "2022-04-22T23:42:04Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "bd93ed30f31a3965ec2087191a24787296996f5b",
+    "subject": "sandbox: Adding multi user support",
+    "author": {
+      "name": "rmp22",
+      "email": "195054967+rmp22@users.noreply.github.com",
+      "date": "2026-09-16T06:45:09Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "8f0e914905b9d74e4e42c1c400fe46a2f7b58db4",
+    "subject": "sandbox: Refactor for sdk migration",
+    "author": {
+      "name": "rmp22",
+      "email": "195054967+rmp22@users.noreply.github.com",
+      "date": "2026-09-13T07:33:15Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "cfc61294374887d034c509b2efd8b0818d049b18",
+    "subject": "Set FakeStore/PlayStore as Aurora Store installer package name",
+    "author": {
+      "name": "Oliver Scott",
+      "email": "olivercscott@gmail.com",
+      "date": "2023-01-06T03:37:42Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "afc187acf2791fb989a9471780c46cc21586f990",
+    "subject": "core: Add play integrity spoofing",
+    "author": {
+      "name": "rmp22",
+      "email": "195054967+rmp22@users.noreply.github.com",
+      "date": "2025-12-25T05:15:12Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "d9c14c420da011ab5c504ef9af404f21768a0f5b",
+    "subject": "Only spoof packages installed by Aurora Store and modify new API",
+    "author": {
+      "name": "Vincent Vidal",
+      "email": "vincent@vidal.pm",
+      "date": "2022-06-20T20:38:43Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "edf62f61952970128847369c897d8f5cf172800c",
+    "subject": "PM: Force all packages as installed via Google Play Store",
+    "author": {
+      "name": "Dylanger Daly",
+      "email": "dylanger@diagnostix.io",
+      "date": "2022-04-06T01:58:34Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "ebadaccf306604a266b0bdfd8496584d0fe9f7b0",
+    "subject": "fix handling of MATCH_ARCHIVED_PACKAGES flag in getPackageUidInternal()",
+    "author": {
+      "name": "Dmitry Muhomor",
+      "email": "muhomor.dmitry@gmail.com",
+      "date": "2024-11-04T16:23:17Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "3404c6f978ffb0cb0673a1efa3ab691ea101ff67",
+    "subject": "Deduplicate microG signature spoofing checks",
+    "author": {
+      "name": "LuK1337",
+      "email": "priv.luk@gmail.com",
+      "date": "2026-11-03T20:37:31Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "3a64f36bbee0b5935d1363d51add8a70af7828a1",
+    "subject": "webkit: WebViewUpdateServiceImpl2: Use compile time debuggable check",
+    "author": {
+      "name": "LuK1337",
+      "email": "priv.luk@gmail.com",
+      "date": "2026-07-10T16:37:34Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "198fa72864710315a791ca620ffb2f6c823b6054",
+    "subject": "Allow signature spoofing for microG Companion/Services",
+    "author": {
+      "name": "LuK1337",
+      "email": "priv.luk@gmail.com",
+      "date": "2024-02-19T15:20:04Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "4c0d2ba9c4d02e155acdf1cd22993b3619f3c83b",
+    "subject": "[pm] Log flags in getInstalledPackages",
+    "author": {
+      "name": "Song Chun Fan",
+      "email": "schfan@google.com",
+      "date": "2026-03-25T22:36:28Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "47ff560b972c9e921d1ab7a41ccbe8babfc176b1",
+    "subject": "Add PCC UID support to KillAppBlocker",
+    "author": {
+      "name": "Nikhar Agrawal",
+      "email": "niagra@google.com",
+      "date": "2026-03-19T21:33:16Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "27dac8e830ac86a7b55babe9838ccdcf88a932a4",
+    "subject": "Merge \"Revert \"Prevent unintended sign extension in LauncherAppsService\"\" into main",
+    "author": {
+      "name": "Uwais Ashraf",
+      "email": "uwaisashraf@google.com",
+      "date": "2026-03-05T23:24:15Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "4149c0948771cd4c1ac86159ac3157ff87a89bb4",
+    "subject": "Revert \"Prevent unintended sign extension in LauncherAppsService\"",
+    "author": {
+      "name": "Uwais Ashraf",
+      "email": "uwaisashraf@google.com",
+      "date": "2026-03-05T14:43:53Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "4bc746ce0d28707cdd330205a06df47386a2978d",
+    "subject": "Merge \"[pm] enable string dedup for getInstalledPackages parcel list\" into main",
+    "author": {
+      "name": "Treehugger Robot",
+      "email": "android-test-infra-autosubmit@system.gserviceaccount.com",
+      "date": "2026-03-03T19:15:46Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "d695f8f792a142c6b4df87fa716544055d5378b5",
+    "subject": "Prevent unintended sign extension in LauncherAppsService",
+    "author": {
+      "name": "Jacob Hobbie",
+      "email": "jacobhobbie@google.com",
+      "date": "2026-02-13T17:05:32Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "02b4950f77c77acf23a161cc2ddff6f52e01ff1a",
+    "subject": "[pm] enable string dedup for getInstalledPackages parcel list",
+    "author": {
+      "name": "Song Chun Fan",
+      "email": "schfan@google.com",
+      "date": "2026-02-26T19:03:58Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "4a89f37bfb916e9d79c6af1d5a7e183ba24562fc",
+    "subject": "Merge \"[pm]: Use packageManagerInternal.isSameApp and computer.isCallerSameApp for UID checks in files under pm folder.\" into main",
+    "author": {
+      "name": "Navin G V",
+      "email": "navingv@google.com",
+      "date": "2026-02-12T15:36:15Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "66191ddda2ed205bc1fde5528c6db9217e58bd51",
+    "subject": "Better handling of sign extension and GET_APP_LOCK_INFO",
+    "author": {
+      "name": "Jacob Hobbie",
+      "email": "jacobhobbie@google.com",
+      "date": "2026-02-09T21:30:57Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "2fa0ed66b71d41d6017a00bda4ea134859cbaeeb",
+    "subject": "[pm]: Use packageManagerInternal.isSameApp and computer.isCallerSameApp",
+    "author": {
+      "name": "Navin G V",
+      "email": "navingv@google.com",
+      "date": "2026-02-07T08:47:20Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "57eaa465cabb9a74cc57cbb16657c36ad9fc2d58",
+    "subject": "Checking userId in com.android.server.pm.ComputerEngine#resolveContentProvider",
+    "author": {
+      "name": "h00013079",
+      "email": "huangdezhi@hihonor.com",
+      "date": "2026-01-13T00:18:04Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "57844b9fc899bd839f8c371b4aed12ca133de5c9",
+    "subject": "Wait for Isolated UID when stopping package during package installation",
+    "author": {
+      "name": "Samiul Islam",
+      "email": "samiul@google.com",
+      "date": "2025-12-08T11:52:21Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "42e1199e2bc877b9b1f0ae6d1a8bd3a3549cdcc8",
+    "subject": "Merge \"Revert^2 \"Restrict App Lock ApplicationInfo bits to permission holders.\"\" into main",
+    "author": {
+      "name": "Treehugger Robot",
+      "email": "android-test-infra-autosubmit@system.gserviceaccount.com",
+      "date": "2025-12-03T19:47:34Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "0e4fa13dcce26d8297061e394bda657f8de5a1b8",
+    "subject": "Merge \"Rename PCC APIs.\" into main",
+    "author": {
+      "name": "Martijn Coenen",
+      "email": "maco@google.com",
+      "date": "2025-11-18T09:34:19Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "a99731b9452453d39d762f32012ff4a0f704a16f",
+    "subject": "Revert^2 \"Restrict App Lock ApplicationInfo bits to permission holders.\"",
+    "author": {
+      "name": "Jacob Hobbie",
+      "email": "jacobhobbie@google.com",
+      "date": "2025-11-18T00:52:14Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "6d7f194ce6a014951e7fb4a6e14cc9c8f3a441bd",
+    "subject": "Merge \"Revert \"Restrict App Lock ApplicationInfo bits to permission holders.\"\" into main",
+    "author": {
+      "name": "Liana Kazanova (xWF)",
+      "email": "lkazanova@google.com",
+      "date": "2025-11-14T23:40:01Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "be28a0103b4125a4d3862759ef204d5c3cb26bb4",
+    "subject": "Revert \"Restrict App Lock ApplicationInfo bits to permission holders.\"",
+    "author": {
+      "name": "Liana Kazanova (xWF)",
+      "email": "lkazanova@google.com",
+      "date": "2025-11-14T20:22:17Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "a6cac1b5a68b7ec0c04f0e9f9a32d7963595ca07",
+    "subject": "core: pif: Keep the numeric release when the fingerprint says CANARY",
+    "author": {
+      "name": "Saikiran",
+      "email": "bjsaikiran@gmail.com",
+      "date": "2026-11-02T10:32:59Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "0dc95b52bebc405cb348b134e736fc90adb0c920",
+    "subject": "core: spoof: Port TrickyStore, PIF and canary fetch fixes",
+    "author": {
+      "name": "Pranav Vashi",
+      "email": "neobuddy89@gmail.com",
+      "date": "2026-10-27T08:51:28Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "417d5b0defd79cf3f36bda8d35aefc9a0c778648",
+    "subject": "core: pif: Log early config fetch failure once without a stack",
+    "author": {
+      "name": "Pranav Vashi",
+      "email": "neobuddy89@gmail.com",
+      "date": "2026-10-13T15:16:34Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "cbcf722eeb7008eb9cce3f36c0f1c45629d352d8",
+    "subject": "core: pif: Fix writes to static final Build fields",
+    "author": {
+      "name": "Pranav Vashi",
+      "email": "neobuddy89@gmail.com",
+      "date": "2026-10-13T15:16:33Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "fae99b931fd7573b921998597bc8b2ad06a21533",
+    "subject": "spoof: Rework PIF and TrickyStore, add native refresh",
+    "author": {
+      "name": "Joey",
+      "email": "joey@evolution-x.org",
+      "date": "2026-07-14T06:19:21Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "98064a96df0deb1fbcbbf15d14e8722661db7125",
+    "subject": "security: pif/trickystore: align vending spoof with upstream, harden reflection and keybox validation",
+    "author": {
+      "name": "Joey",
+      "email": "joey@evolution-x.org",
+      "date": "2026-05-27T14:05:06Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "ada7e199889bbef978d0220373aa4929abdfb002",
+    "subject": "core: Fixing spoofing issues",
+    "author": {
+      "name": "rmp22",
+      "email": "195054967+rmp22@users.noreply.github.com",
+      "date": "2026-04-26T10:43:58Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "9b1cb0daa31a38ca628b5d9c711b2d6761211926",
+    "subject": "core: PIF: align spoofing behavior with upstream PlayIntegrityFix",
+    "author": {
+      "name": "Joey",
+      "email": "joey@evolution-x.org",
+      "date": "2026-04-23T06:18:07Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "899cea0823ddd6ca1e5479450e176d7ba7ab60ae",
+    "subject": "core: Fix spoofing structure",
+    "author": {
+      "name": "rmp22",
+      "email": "195054967+rmp22@users.noreply.github.com",
+      "date": "2026-04-18T07:03:23Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "eba94ae7cfe8515a782b2fc46f15716c4745f520",
+    "subject": "core: pif: skip SDK_INT spoofing for vending process",
+    "author": {
+      "name": "Joey",
+      "email": "joey@evolution-x.org",
+      "date": "2026-04-15T15:02:16Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "8c60aa848005ec146bb3cbbdd6bc3cd9a5f200de",
+    "subject": "core: Fix json parsing non-string values in PIF",
+    "author": {
+      "name": "Pranav Vashi",
+      "email": "neobuddy89@gmail.com",
+      "date": "2026-04-14T04:53:50Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "2143bd58f7a50be37141fe72c00c2542bc7a4a5e",
+    "subject": "core: Move trickystore, pif and game props spoof",
+    "author": {
+      "name": "Pranav Vashi",
+      "email": "neobuddy89@gmail.com",
+      "date": "2026-04-14T04:26:06Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "4af5df8a93ce04ef83292cc0e66ae9114cf9de77",
+    "subject": "core: Drop redundant Photos spoof",
+    "author": {
+      "name": "Joey",
+      "email": "joey@evolution-x.org",
+      "date": "2026-04-13T15:27:16Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "e802bc2218e812fede65f4c94382c51ea6b1f64a",
+    "subject": "core: Improve spoofs entry point",
+    "author": {
+      "name": "rmp22",
+      "email": "195054967+rmp22@users.noreply.github.com",
+      "date": "2026-03-27T07:45:27Z"
+    },
+    "repository": "Evolution-X/frameworks_base"
+  },
+  {
+    "sha": "9cc141509ce7907bee153c72ea2ab9b8050f7103",
+    "subject": "extras: sdk: Refactor sandbox for migration",
+    "author": {
+      "name": "rmp22",
+      "email": "195054967+rmp22@users.noreply.github.com",
+      "date": "2026-09-14T01:11:14Z"
+    },
+    "repository": "Evolution-X/vendor_extras"
+  }
+]

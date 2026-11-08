@@ -1,0 +1,131 @@
+[
+  {
+    "project": "bionic",
+    "files": [
+      "libc/Android.bp",
+      "libc/SYSCALLS.TXT",
+      "libc/bionic/custom_rom_hide.cpp",
+      "libc/bionic/custom_rom_hide.h",
+      "libc/bionic/dirent.cpp",
+      "libc/bionic/dup.cpp",
+      "libc/bionic/faccessat.cpp",
+      "libc/bionic/fcntl.cpp",
+      "libc/bionic/fdsan.cpp",
+      "libc/bionic/lstat.cpp",
+      "libc/bionic/open.cpp",
+      "libc/bionic/readlink.cpp",
+      "libc/bionic/stat.cpp",
+      "libc/bionic/sys_statfs.cpp",
+      "libc/bionic/system_property_api.cpp",
+      "tests/fcntl_test.cpp"
+    ]
+  },
+  {
+    "project": "frameworks/base",
+    "files": [
+      "NOTICE",
+      "config/preloaded-classes-denylist",
+      "core/java/android/app/ActivityThread.java",
+      "core/java/android/app/ApplicationPackageManager.java",
+      "core/java/android/app/AxSettingsSpoofManager.java",
+      "core/java/android/app/IActivityManager.aidl",
+      "core/java/android/app/Instrumentation.java",
+      "core/java/android/provider/Settings.java",
+      "core/java/android/security/gameprops/GamePropsSpoofService.java",
+      "core/java/android/security/pif/PlayIntegritySpoofService.java",
+      "core/java/android/security/trickystore/AttestationUtils.java",
+      "core/java/android/security/trickystore/CertificateGenerator.java",
+      "core/java/android/security/trickystore/CertificateHacker.java",
+      "core/java/android/security/trickystore/KeyBoxManager.java",
+      "core/java/android/security/trickystore/TrickyStoreService.java",
+      "core/java/com/android/internal/util/evolution/PixelDeviceRepository.java",
+      "core/java/com/android/internal/util/evolution/PixelPropsUtils.java",
+      "core/tests/coretests/src/android/security/trickystore/KeyBoxManagerTest.java",
+      "keystore/java/android/security/keystore2/AndroidKeyStoreKeyPairGeneratorSpi.java",
+      "keystore/java/android/security/keystore2/AndroidKeyStoreSpi.java",
+      "packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java",
+      "services/core/Android.bp",
+      "services/core/java/com/android/server/AxExtServiceFactory.java",
+      "services/core/java/com/android/server/IAxExtServiceFactory.java",
+      "services/core/java/com/android/server/NtServiceInjector.java",
+      "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "services/core/java/com/android/server/pm/AppsFilterBase.java",
+      "services/core/java/com/android/server/pm/Computer.java",
+      "services/core/java/com/android/server/pm/ComputerEngine.java",
+      "services/core/java/com/android/server/security/rkp/DuckRkpCbor.java",
+      "services/core/java/com/android/server/security/rkp/DuckRkpCertificates.java",
+      "services/core/java/com/android/server/security/rkp/DuckRkpManager.java",
+      "services/core/java/com/android/server/security/rkp/DuckRkpNative.java",
+      "services/core/java/com/android/server/security/rkp/DuckRkpV1.java",
+      "services/core/java/com/android/server/spoof/AxSpoofManager.java",
+      "services/core/java/com/android/server/spoof/IAxSpoofManager.java",
+      "services/core/java/com/android/server/wm/sandbox/SandboxConfigStorage.java",
+      "services/core/java/com/android/server/wm/sandbox/spoof/SettingsSpoofRepository.java",
+      "services/core/java/com/android/server/wm/sandbox/spoof/SettingsSpoofService.java",
+      "services/duck_rkp/Android.bp",
+      "services/duck_rkp/aidl/vendor/evo/duckrkp/IDuckRkp.aidl",
+      "services/duck_rkp/aidl_api/vendor.evo.duckrkp/1/.hash",
+      "services/duck_rkp/aidl_api/vendor.evo.duckrkp/1/vendor/evo/duckrkp/IDuckRkp.aidl",
+      "services/duck_rkp/aidl_api/vendor.evo.duckrkp/current/vendor/evo/duckrkp/IDuckRkp.aidl",
+      "services/java/com/android/server/SystemServer.java",
+      "services/tests/PackageManagerServiceTests/server/src/com/android/server/pm/AppsFilterImplTest.java",
+      "services/tests/RemoteProvisioningServiceTests/src/com/android/server/security/rkp/DuckRkpManagerTest.java",
+      "services/tests/servicestests/src/com/android/server/security/rkp/DuckRkpNativeTest.java"
+    ]
+  },
+  {
+    "project": "packages/apps/Settings",
+    "files": [
+      "res/values/spoofing.xml",
+      "res/xml/spoofing.xml",
+      "res/xml/system_dashboard_fragment.xml",
+      "src/com/android/settings/core/gateway/SettingsGateway.java",
+      "src/com/android/settings/spoof/AppPickerItem.kt",
+      "src/com/android/settings/spoof/AppPickerSearchField.kt",
+      "src/com/android/settings/spoof/ExpressiveUi.kt",
+      "src/com/android/settings/spoof/InsetFocusRing.kt",
+      "src/com/android/settings/spoof/PixelPropsSettings.kt",
+      "src/com/android/settings/spoof/PlayIntegrityFix.kt",
+      "src/com/android/settings/spoof/PlayIntegrityFixContent.kt",
+      "src/com/android/settings/spoof/SettingsValueSpoofSettings.kt",
+      "src/com/android/settings/spoof/Spoofing.kt",
+      "src/com/android/settings/spoof/SpoofingSharedUi.kt",
+      "src/com/android/settings/spoof/TensorTargetsSettings.kt",
+      "src/com/android/settings/spoof/TrickyStore.kt",
+      "src/com/android/settings/spoof/TrickyStoreAppSettings.kt",
+      "src/com/android/settings/spoof/TrickyStoreContent.kt",
+      "src/com/android/settings/spoof/UserSelectedAppSpoofSettings.kt",
+      "src/com/android/settings/widget/Scrollbar.kt"
+    ]
+  },
+  {
+    "project": "system/core",
+    "files": [
+      "init/Android.bp",
+      "init/property_service.cpp"
+    ]
+  },
+  {
+    "project": "vendor/lineage",
+    "files": [
+      "build/soong/Android.bp",
+      "config/BoardConfigSoong.mk"
+    ]
+  },
+  {
+    "project": "device/lineage/sepolicy",
+    "files": [
+      "common/private/gmscore_app.te",
+      "common/private/property.te",
+      "common/private/property_contexts",
+      "common/private/shell.te",
+      "common/private/system_server.te"
+    ]
+  },
+  {
+    "project": "external/bouncycastle",
+    "files": [
+      "repackaged_platform/bcprov/src/main/java/com/android/internal/org/bouncycastle/jcajce/provider/asymmetric/EC.java"
+    ]
+  }
+]

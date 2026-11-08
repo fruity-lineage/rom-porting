@@ -1,0 +1,30 @@
+[
+  {
+    "project": "device/google/caimito",
+    "repository": "fruity-lineage/android_device_google_caimito",
+    "local_commit": "2f7cc304134f77b3858da6e9d2390a5b22fbc467",
+    "published_commit": "2f7cc304134f77b3858da6e9d2390a5b22fbc467",
+    "parent": "a9c6eab8f37da789d4a66f849f7040d7515cc53d",
+    "tree": "de14f764bf325ecfc181214052b0b7319337f0f1",
+    "worktree": "/tmp/caimito-property-port",
+    "subject": "device: Install Duck selection properties in the product partition",
+    "author": "fuzailmansuri <mfm9875@gmail.com>",
+    "references": [
+      "https://github.com/LineageOS/android_build/commit/90d006387398ae6899145e6531a304500cfa0f70"
+    ]
+  },
+  {
+    "project": "device/google/muzel",
+    "repository": "fruity-lineage/android_device_google_muzel",
+    "local_commit": "9c4bad6692c8275790bff334263914ddbd2a59e5",
+    "published_commit": "9c4bad6692c8275790bff334263914ddbd2a59e5",
+    "parent": "2b195b35d051eb63c9dcc6b02ff66a9e5c1a6a61",
+    "tree": "1b89905adb299ff0f35a3744619d5b69cecaef4b",
+    "worktree": "/tmp/frankel-duck-port",
+    "subject": "device: Install Duck selection properties in the product partition",
+    "author": "fuzailmansuri <mfm9875@gmail.com>",
+    "references": [
+      "https://github.com/LineageOS/android_build/commit/90d006387398ae6899145e6531a304500cfa0f70"
+    ]
+  }
+]

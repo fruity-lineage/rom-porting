@@ -1,0 +1,91 @@
+[
+  {
+    "name": "fstatat64",
+    "func": "__fstatat64",
+    "aliases": [],
+    "params": [
+      "int",
+      " const char*",
+      " struct stat*",
+      " int"
+    ],
+    "socketcall_id": -1,
+    "arm": true,
+    "x86": true
+  },
+  {
+    "name": "newfstatat",
+    "func": "__fstatat",
+    "aliases": [],
+    "params": [
+      "int",
+      " const char*",
+      " struct stat*",
+      " int"
+    ],
+    "socketcall_id": -1,
+    "arm64": true,
+    "riscv64": true,
+    "x86_64": true
+  },
+  {
+    "name": "readlinkat",
+    "func": "__readlinkat",
+    "aliases": [],
+    "params": [
+      "int",
+      " const char*",
+      " char*",
+      " size_t"
+    ],
+    "socketcall_id": -1,
+    "arm": true,
+    "arm64": true,
+    "riscv64": true,
+    "x86": true,
+    "x86_64": true
+  },
+  {
+    "name": "fstat64",
+    "func": "__fstat64",
+    "aliases": [],
+    "params": [
+      "int",
+      " struct stat*"
+    ],
+    "socketcall_id": -1,
+    "arm": true,
+    "x86": true
+  },
+  {
+    "name": "fstat",
+    "func": "__fstat",
+    "aliases": [],
+    "params": [
+      "int",
+      " struct stat*"
+    ],
+    "socketcall_id": -1,
+    "arm64": true,
+    "riscv64": true,
+    "x86_64": true
+  },
+  {
+    "name": "statx",
+    "func": "__statx",
+    "aliases": [],
+    "params": [
+      "int",
+      " const char*",
+      " int",
+      " unsigned",
+      " struct statx*"
+    ],
+    "socketcall_id": -1,
+    "arm": true,
+    "arm64": true,
+    "riscv64": true,
+    "x86": true,
+    "x86_64": true
+  }
+]

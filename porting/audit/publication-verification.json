@@ -1,0 +1,243 @@
+{
+  "date": "2026-11-08",
+  "repositories": [
+    {
+      "repository": "fruity-lineage/android_external_bouncycastle",
+      "fork_parent": "Evolution-X/external_bouncycastle",
+      "default_branch": "main",
+      "tip": "6d01d24edd9e4838ddde5be7cbcfff7b1d4ea7bc",
+      "description": "LineageOS 24 spoofing and Duck integration. Reference: https://github.com/Evolution-X/external_bouncycastle/commit/e75ae35c6171d391613a675bde54561965eefb1f"
+    },
+    {
+      "repository": "fruity-lineage/android_bionic",
+      "fork_parent": "LineageOS/android_bionic",
+      "default_branch": "main",
+      "tip": "32c175151d1b0fd666de2bfa70b32e246d26cbe8",
+      "description": "LineageOS 24 spoofing and Duck integration. Reference: https://github.com/Evolution-X/bionic/commit/57ae6d98c1c1aec194cbe0cde12f55f6731e7523"
+    },
+    {
+      "repository": "fruity-lineage/android_vendor_lineage",
+      "fork_parent": "LineageOS/android_vendor_lineage",
+      "default_branch": "main",
+      "tip": "887e8e0b3ae15e6c84de29953169392cd220a1c8",
+      "description": "LineageOS 24 spoofing and Duck integration. Reference: https://github.com/Evolution-X/vendor_evolution/commit/c038ebc877323ba8ba70c4d70de6305e3510839b"
+    },
+    {
+      "repository": "fruity-lineage/android_system_core",
+      "fork_parent": "LineageOS/android_system_core",
+      "default_branch": "main",
+      "tip": "19383c870279c12a823f1757ac455961b0973485",
+      "description": "LineageOS 24 spoofing and Duck integration. Reference: https://github.com/Evolution-X/system_core/commit/3e62fd208f81cda79d9b43a999881fdfc7cdb0e4"
+    },
+    {
+      "repository": "fruity-lineage/android_device_lineage_sepolicy",
+      "fork_parent": "LineageOS/android_device_lineage_sepolicy",
+      "default_branch": "main",
+      "tip": "7fc49f44fb98584fc3890f0e77609c246b19c126",
+      "description": "LineageOS 24 spoofing and Duck integration. Reference: https://github.com/Evolution-X/device_evolution_sepolicy/commit/9803439b43b3970d66a88a96e045b91132dbb551"
+    },
+    {
+      "repository": "fruity-lineage/android_frameworks_base",
+      "fork_parent": "LineageOS/android_frameworks_base",
+      "default_branch": "main",
+      "tip": "474ebc595d120aa3025f6ec0e95acb9a2112e85e",
+      "description": "LineageOS 24 spoofing and Duck integration. Reference: https://github.com/Evolution-X/frameworks_base/commit/ddce89c4142f89e85830bf3cd2980cf7f472f705"
+    },
+    {
+      "repository": "fruity-lineage/android_packages_apps_Settings",
+      "fork_parent": "LineageOS/android_packages_apps_Settings",
+      "default_branch": "main",
+      "tip": "19a7e7263ff77194412e7aff729ab3d9b924e6b3",
+      "description": "LineageOS 24 spoofing and Duck integration. Reference: https://github.com/Evolution-X/packages_apps_Evolver/commit/8503001d2a920c5047af9b6a3639ce66d983c4a6"
+    },
+    {
+      "repository": "fruity-lineage/android_system_security",
+      "fork_parent": "LineageOS/android_system_security",
+      "default_branch": "main",
+      "tip": "52f9343c51950fcb5b10d0e485c7f044250cdc93",
+      "description": "LineageOS 24 spoofing and Duck integration. Reference: https://github.com/LineageOS/android_system_security/commit/123cc4af487922618cd99f28d05736e47eba7b00"
+    },
+    {
+      "repository": "fruity-lineage/android_device_google_caimito",
+      "fork_parent": "LineageOS/android_device_google_caimito",
+      "default_branch": "main",
+      "tip": "2f7cc304134f77b3858da6e9d2390a5b22fbc467",
+      "description": "LineageOS 24 spoofing and Duck integration. Reference: https://github.com/LineageOS/android_device_google_zumapro/commit/c03df81e8fed84aeb4f2d26e9cef2ea5762d7c3f"
+    },
+    {
+      "repository": "fruity-lineage/android_device_google_muzel",
+      "fork_parent": "LineageOS/android_device_google_muzel",
+      "default_branch": "main",
+      "tip": "9c4bad6692c8275790bff334263914ddbd2a59e5",
+      "description": "Pixel device configuration for KeyMint import attestation. Reference: https://github.com/LineageOS/android_device_google_laguna/commit/7ef3601320418d70f25509f4f1dd4895b6937fd2"
+    }
+  ],
+  "commits": [
+    {
+      "repository": "fruity-lineage/android_external_bouncycastle",
+      "commit": "6d01d24edd9e4838ddde5be7cbcfff7b1d4ea7bc",
+      "author": "Abhay Singh Gill <abhaygill017@gmail.com>",
+      "tree_identical": true,
+      "credit_verified": true,
+      "references": [
+        "https://github.com/Evolution-X/external_bouncycastle/commit/e75ae35c6171d391613a675bde54561965eefb1f",
+        "https://github.com/Evolution-X/external_bouncycastle/commit/56e5dac751581c7bd6dbe363d7ba3f8e8862c5bf"
+      ]
+    },
+    {
+      "repository": "fruity-lineage/android_bionic",
+      "commit": "d57e42b472d70a21dd4d2950ed591aa8cfab268a",
+      "author": "rmp22 <195054967+rmp22@users.noreply.github.com>",
+      "tree_identical": true,
+      "credit_verified": true,
+      "references": [
+        "https://github.com/Evolution-X/bionic/commit/57ae6d98c1c1aec194cbe0cde12f55f6731e7523",
+        "https://github.com/Evolution-X/bionic/commit/3514d83d74e6d6483d533c391cf0c7adc19cd5c1",
+        "https://github.com/Evolution-X/bionic/commit/1773bf1e10796a0bd04a3ab4a5122a0921ac9bca"
+      ]
+    },
+    {
+      "repository": "fruity-lineage/android_bionic",
+      "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8",
+      "author": "fuzailmansuri <mfm9875@gmail.com>",
+      "tree_identical": true,
+      "credit_verified": true,
+      "references": [
+        "https://github.com/Evolution-X/bionic/commit/57ae6d98c1c1aec194cbe0cde12f55f6731e7523"
+      ]
+    },
+    {
+      "repository": "fruity-lineage/android_vendor_lineage",
+      "commit": "887e8e0b3ae15e6c84de29953169392cd220a1c8",
+      "author": "AnierinB <anierin@evolution-x.org>",
+      "tree_identical": true,
+      "credit_verified": true,
+      "references": [
+        "https://github.com/Evolution-X/vendor_evolution/commit/c038ebc877323ba8ba70c4d70de6305e3510839b"
+      ]
+    },
+    {
+      "repository": "fruity-lineage/android_system_core",
+      "commit": "19383c870279c12a823f1757ac455961b0973485",
+      "author": "AnierinB <anierin@evolution-x.org>",
+      "tree_identical": true,
+      "credit_verified": true,
+      "references": [
+        "https://github.com/Evolution-X/system_core/commit/3e62fd208f81cda79d9b43a999881fdfc7cdb0e4"
+      ]
+    },
+    {
+      "repository": "fruity-lineage/android_device_lineage_sepolicy",
+      "commit": "fa89a9fbdfa58bf3b3d1211ddaf4b9e9a9a8da5c",
+      "author": "Joey <joey@evolution-x.org>",
+      "tree_identical": true,
+      "credit_verified": true,
+      "references": [
+        "https://github.com/Evolution-X/device_evolution_sepolicy/commit/9803439b43b3970d66a88a96e045b91132dbb551"
+      ]
+    },
+    {
+      "repository": "fruity-lineage/android_device_lineage_sepolicy",
+      "commit": "7fc49f44fb98584fc3890f0e77609c246b19c126",
+      "author": "fuzailmansuri <mfm9875@gmail.com>",
+      "tree_identical": true,
+      "credit_verified": true,
+      "references": [
+        "https://github.com/LineageOS/android_system_sepolicy/commit/d61fd80832f558d52de026097d30d695634e8b0f"
+      ]
+    },
+    {
+      "repository": "fruity-lineage/android_frameworks_base",
+      "commit": "e2f24efe3b33840b0fee1128ebec0a4c4e0915a3",
+      "author": "rmp22 <195054967+rmp22@users.noreply.github.com>",
+      "tree_identical": true,
+      "credit_verified": true,
+      "references": [
+        "https://github.com/Evolution-X/frameworks_base/commit/ddce89c4142f89e85830bf3cd2980cf7f472f705",
+        "https://github.com/Evolution-X/frameworks_base/commit/afc187acf2791fb989a9471780c46cc21586f990",
+        "https://github.com/Evolution-X/frameworks_base/commit/cc7c326c0a974c6ef7cb416c9c6f393f0232b422",
+        "https://github.com/Evolution-X/vendor_extras/commit/9cc141509ce7907bee153c72ea2ab9b8050f7103",
+        "https://github.com/eltavine/Duck-ToolBox/commit/8d6a2470b1033c35946b72bb1f9bc56d8947dd63"
+      ]
+    },
+    {
+      "repository": "fruity-lineage/android_frameworks_base",
+      "commit": "474ebc595d120aa3025f6ec0e95acb9a2112e85e",
+      "author": "fuzailmansuri <mfm9875@gmail.com>",
+      "tree_identical": true,
+      "credit_verified": true,
+      "references": [
+        "https://github.com/Evolution-X/frameworks_base/commit/ddce89c4142f89e85830bf3cd2980cf7f472f705",
+        "https://github.com/eltavine/Duck-ToolBox/commit/8d6a2470b1033c35946b72bb1f9bc56d8947dd63"
+      ]
+    },
+    {
+      "repository": "fruity-lineage/android_packages_apps_Settings",
+      "commit": "19a7e7263ff77194412e7aff729ab3d9b924e6b3",
+      "author": "Pranav Vashi <neobuddy89@gmail.com>",
+      "tree_identical": true,
+      "credit_verified": true,
+      "references": [
+        "https://github.com/Evolution-X/packages_apps_Evolver/commit/8503001d2a920c5047af9b6a3639ce66d983c4a6",
+        "https://github.com/Evolution-X/packages_apps_Evolver/commit/17ba8bbbc530c305efcc3c102bbc9d6f97e99f4d",
+        "https://github.com/Evolution-X/packages_apps_Sandbox/commit/db3d493ae3bd988e3df682c81941867c0f81b5b2"
+      ]
+    },
+    {
+      "repository": "fruity-lineage/android_system_security",
+      "commit": "52f9343c51950fcb5b10d0e485c7f044250cdc93",
+      "author": "fuzailmansuri <mfm9875@gmail.com>",
+      "tree_identical": true,
+      "credit_verified": true,
+      "references": [
+        "https://github.com/LineageOS/android_system_security/commit/123cc4af487922618cd99f28d05736e47eba7b00"
+      ]
+    },
+    {
+      "repository": "fruity-lineage/android_device_google_caimito",
+      "commit": "a9c6eab8f37da789d4a66f849f7040d7515cc53d",
+      "author": "fuzailmansuri <mfm9875@gmail.com>",
+      "tree_identical": true,
+      "credit_verified": true,
+      "references": [
+        "https://github.com/LineageOS/android_device_google_zumapro/commit/c03df81e8fed84aeb4f2d26e9cef2ea5762d7c3f"
+      ]
+    },
+    {
+      "repository": "fruity-lineage/android_device_google_caimito",
+      "commit": "2f7cc304134f77b3858da6e9d2390a5b22fbc467",
+      "author": "fuzailmansuri <mfm9875@gmail.com>",
+      "tree_identical": true,
+      "credit_verified": true,
+      "references": [
+        "https://github.com/LineageOS/android_build/commit/90d006387398ae6899145e6531a304500cfa0f70"
+      ]
+    },
+    {
+      "repository": "fruity-lineage/android_device_google_muzel",
+      "commit": "2b195b35d051eb63c9dcc6b02ff66a9e5c1a6a61",
+      "author": "fuzailmansuri <mfm9875@gmail.com>",
+      "tree_identical": true,
+      "credit_verified": true,
+      "references": [
+        "https://github.com/LineageOS/android_device_google_laguna/commit/7ef3601320418d70f25509f4f1dd4895b6937fd2",
+        "https://github.com/fruity-lineage/android_system_security/commit/52f9343c51950fcb5b10d0e485c7f044250cdc93"
+      ]
+    },
+    {
+      "repository": "fruity-lineage/android_device_google_muzel",
+      "commit": "9c4bad6692c8275790bff334263914ddbd2a59e5",
+      "author": "fuzailmansuri <mfm9875@gmail.com>",
+      "tree_identical": true,
+      "credit_verified": true,
+      "references": [
+        "https://github.com/LineageOS/android_build/commit/90d006387398ae6899145e6531a304500cfa0f70"
+      ]
+    }
+  ],
+  "source_trees_identical": true,
+  "scope": "Ported work only; active build and pre-existing Soong changes preserved",
+  "handoff_repository": "fruity-lineage/rom-porting",
+  "hardware_acceptance": "pending for both targets",
+  "transport": "Initial uploads used HTTPS Git; product corrections used Git data APIs after HTTP 403"
+}

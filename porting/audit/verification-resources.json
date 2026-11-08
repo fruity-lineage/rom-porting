@@ -1,0 +1,17 @@
+{
+  "parsed_changed_xml": 3,
+  "references_checked": 353,
+  "missing_resources": [],
+  "unique_imported_names": 244,
+  "destinations_checked": [
+    "com.android.settings.spoof.PixelPropsSettings",
+    "com.android.settings.spoof.PlayIntegrityFix",
+    "com.android.settings.spoof.SettingsValueSpoofSettings",
+    "com.android.settings.spoof.Spoofing",
+    "com.android.settings.spoof.TensorTargetsSettings",
+    "com.android.settings.spoof.TrickyStore",
+    "com.android.settings.spoof.TrickyStoreAppSettings",
+    "com.android.settings.spoof.UserSelectedAppSpoofSettings"
+  ],
+  "missing_destinations": []
+}
