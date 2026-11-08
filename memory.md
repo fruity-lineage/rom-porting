@@ -200,6 +200,11 @@ records the unchanged firmware constraint. No hardware signing success is claime
 
 ## Scoped validation commands
 
+For the device checks, use the saved
+[Tokay runtime verification prompt](porting/audit/tokay-runtime-verification-prompt.md).
+It covers ADB access, provisioning, chain validation, actual signing and regressions;
+preparing the prompt does not establish a hardware result.
+
 Run from the Android root:
 
 - PYTHONDONTWRITEBYTECODE=1 python3 porting/tools/preflight-tokay.py

@@ -50,3 +50,6 @@ Read the [Tokay adapter audit](porting/audit/tokay-duck-import.md) and
 [Frankel source audit](porting/audit/frankel-import.md). Tokay's compiled outputs are
 recorded separately from the initial static checks. Complete the recorded device checks
 before claiming successful signing or consumer acceptance.
+
+The [Tokay runtime verification prompt](porting/audit/tokay-runtime-verification-prompt.md)
+can be passed to an AI CLI with access to the workspace and device.

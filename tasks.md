@@ -39,6 +39,7 @@ Updated 2026-11-08 UTC after verifying Tokay build outputs and publishing the mi
 - [x] Resolved build blockers: keystore2 Rust closure type mismatch, Settings InsetFocusRing widget restoration, and caimito PRODUCT_PRODUCT_PROPERTIES partition placement.
 - [x] Publish the two missing fixes as separate fast-forward commits; preserve the helper's upstream author.
 - [x] Match all 101 current source snapshot files to public trees and preserve active checkouts.
+- [x] Save the AI CLI runtime verification prompt in Markdown, linked from the handoff.
 
 The initial nine projects were clean at verification. Current publication contains
 seventeen source commits in ten forks. The active security, Settings and caimito
