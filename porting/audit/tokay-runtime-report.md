@@ -5,6 +5,11 @@ hardware evidence, not an independently repeated device test on this SSH server.
 Device identifiers, intermediate certificate serials and private key material
 are omitted. Frankel has no corresponding hardware result.
 
+The user's later targeted-app follow-up supersedes the initial Stage 5 gap below.
+It reports the expected five-certificate injected chain and issuer binding; online
+RKP and persistent selection still fail. The user subsequently reports an unspecified
+checker showing all crosses. Its app name, labels and actual errors are needed.
+
 ## Observations and qualifications
 
 | Stage | Reported observation | Evidence assessment |
@@ -58,7 +63,7 @@ loading problem or different build inputs remain hypotheses, not diagnosed cause
 The reported display ID differs from local source overrides; identity overrides
 make that insufficient by itself to identify the flashed source revision.
 
-## Why Stage 5 does not yet prove Duck use
+## Initial Stage 5 gap
 
 The probe ran through app_process. AndroidKeyStoreSpi resolves Process.myUid()
 to packages and only hooks requests selected by TrickyStoreService.needHack().
@@ -79,12 +84,60 @@ chain including CA path lengths. Preserve an untargeted control and test the
 application's real package/UID path. Read-only source restrictions alone do not
 prove secondary-user behavior.
 
+## Later targeted-app and RKPD follow-up
+
+The user reports a disposable installed probe using package
+`io.github.vvb2060.keyattestation`. When targeted, it returned five certificates.
+Cert[1] exactly matched the active imported Duck certificate by DER SHA-256:
+`e4a2f89e86f6ae27e4f7a8d9fa7499dc5e518d3b7d2d206e152906622d144ab9`.
+The fresh app leaf reportedly verified with that issuer's public key and retained
+the exact requested challenge. All reported signatures verified to the Google root.
+The leaf was an end entity and the remaining four certificates were CAs with
+Certificate Sign usage. Complete path-length values were not included in the summary.
+
+An untargeted control returned the four-certificate native factory chain. Its
+attestation reported UNVERIFIED/unlocked; the targeted leaf reported VERIFIED/locked
+after framework rewriting. These results establish reported injection and issuer
+binding for the probe. They do not change actual verified boot state or establish
+Play Integrity/other consumer acceptance.
+
+The RKP request was reproduced with `cmd remote_provisioning certify default`.
+The reported signCertificates server response was INVALID_ARGUMENT, HTTP 400:
+"Invalid request payload: Couldn't parse boot_patch_level `20000000` of the
+format YYYYMMDD or YYYYMM as a valid date."
+The rejected field is now identified. The claim that a bootloader/header supplies
+it still needs tracing. Current caimito source sets BOOT_SECURITY_PATCH to
+2026-10-05, and build/make adds it as an AVB boot security-patch property.
+The available KeyMint TA source encodes this CSR field from boot_info.boot_patchlevel;
+that does not prove where the shipped Pixel firmware obtains its value.
+
+The user also reports a secondary-user control returning the native chain,
+enable/disable toggling, import-alias cleanup and test APK removal. The summary
+uses "UID 10" for the secondary user; collect the actual process UID and Android
+user ID before interpreting that as proof of the intended user isolation.
+Cancellation of an in-flight provisioning call and renewal remain distinct tests.
+
+The runtime property override remains volatile. Public/active source already has
+the property; the flashed OTA and mounted product image have not been reconciled.
+
+## Unspecified checker failure
+
+The user reports that a checker still shows all crosses. Its identity and failed
+labels have not been supplied. Do not equate the injected-chain probe with the
+checker's verdict. Settings' Duck UI reads provisioning state and certificate
+status; it does not calculate Play Integrity BASIC/DEVICE/STRONG results.
+For a remote verdict, collect the actual sanitized response/error and distinguish
+an API failure from a valid response rejecting device integrity. For a local
+checker, collect its precise failing chain, validation or revocation fields.
+
 ## Remaining checks
 
 1. Reconcile the phone's missing property with its exact OTA and product image;
    verify persistence across a user-controlled reboot without the runtime override.
-2. Demonstrate Duck keybox use through a targeted app with the issuer binding above.
-3. Diagnose RKPD's HTTP 400 and test a successfully remote-provisioned issuer.
+2. Independently review the reported targeted-app issuer proof and test the actual
+   failing checker/consumer, including its effective package/UID policy.
+3. Trace the invalid boot patch value, fix its genuine source and test a successfully
+   remote-provisioned issuer; do not replace it with a fabricated patch date.
 4. Exercise cancellation, failure cleanup, renewal, real secondary-user restrictions
    and state restoration. Record precise results rather than marking unrun cases pass.
 5. Test intended consumers separately from cryptographic issuance.

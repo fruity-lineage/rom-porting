@@ -162,8 +162,9 @@ unverified. This route adds an imported CA certificate with actual imported orig
 boot state; it is not equivalent to Duck's direct external-key CSR protocol. Existing
 RKPD hybrid/factory fallback behavior is retained. Full certificate validation rejects
 unusable chains. [tokay-backend-investigation.md](porting/audit/tokay-backend-investigation.md)
-records the unchanged firmware constraint. A later user report records factory-backed
-TEE import success after a runtime override; RKPD and actual app keybox use remain pending.
+records the unchanged firmware constraint. Later user reports record factory-backed
+TEE import and targeted-app keybox use after a runtime override. RKPD still fails;
+the actual checker/consumer acceptance remains unresolved.
 
 ## User build output verification (2026-11-08)
 
@@ -195,9 +196,15 @@ TEE import success after a runtime override; RKPD and actual app keybox use rema
   import attestation and ordinary Keystore success with factory fallback. RKPD returned
   HTTP 400. The installed selection property was missing despite its presence in source
   and local product/target-files outputs. The flashed OTA/product hashes are needed.
-- A targeted app must prove its fresh leaf is signed by the imported Duck keybox;
-  the reported four-certificate app_process chain does not establish that binding.
-  [Follow-up prompt](porting/audit/tokay-runtime-followup-prompt.md) records the exact checks.
+- The follow-up reports a five-certificate targeted-app chain with exact Duck issuer
+  binding and a four-certificate native control. The initial app_process proof gap
+  is closed by that reported probe. Public-chain/probe evidence is not available here.
+- RKPD's reported server reason rejects boot_patch_level=20000000 as an invalid date.
+  Its bootloader/header origin is unproven; caimito source has a valid 2026-10-05
+  BOOT_SECURITY_PATCH. Trace the actual boot-info source before proposing a fix.
+- The user reports an unspecified checker showing all crosses. App/labels and actual
+  errors are pending. Targeted injection success does not establish remote acceptance.
+  [Follow-up prompt](porting/audit/tokay-runtime-followup-prompt.md) records the checks.
 
 - Android/bionic regressions and hardware acceptance are pending. Tokay build outputs
   provide compilation/linking and compiled-policy evidence; Frankel compilation is pending.

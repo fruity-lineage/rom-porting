@@ -44,6 +44,8 @@ Updated 2026-11-08 UTC after reviewing the user's local Tokay runtime report.
   Keystore tests pass after an override; RKPD HTTP 400 and keybox-consumer proof remain open.
 - [x] Verify the selection property already exists in public/active caimito and local
   product/target-files outputs; prepare the targeted follow-up prompt.
+- [x] Record the later targeted-app five-certificate issuer proof and native control,
+  plus RKPD's invalid boot_patch_level=20000000 server response.
 
 The initial nine projects were clean at verification. Current publication contains
 seventeen source commits in ten forks. The active security, Settings and caimito
@@ -61,8 +63,9 @@ and [spoofing-inventory.md](spoofing-inventory.md).
 - [ ] Connect Tokay through an ADB server reachable from this remote SSH server.
 - [ ] Compare the flashed OTA/product hashes and active slot; fix persistent selection
   only after reconciling the missing phone property with the already-correct source setting.
-- [ ] Demonstrate fresh targeted-app issuance using the imported Duck certificate as issuer.
-- [ ] Resolve RKPD HTTP 400 and validate a successfully remote-provisioned import chain.
+- [ ] Independently review the reported targeted-app public chain/probe and test actual consumers.
+- [ ] Identify the checker showing crosses, its failed labels and actual sanitized verdict/error.
+- [ ] Trace the invalid boot patch value, resolve RKPD HTTP 400 and validate a remote-provisioned chain.
 - [ ] Independently review public-chain/probe evidence for the reported factory import success.
 - [ ] Validate the produced keybox with Tokay consumers, renewal and secondary users.
 - [ ] Resolve direct external-key CSR signing if exact original Duck protocol support is required;
@@ -80,8 +83,9 @@ validated on hardware and does not establish remote integrity acceptance.
 The original Duck CSR protocols require Qualcomm firmware. Tokay now selects the
 standard import-attestation adapter, and the frontend becomes available when its
 hostname and platform services are declared. Its master setting is still opt-in.
-The source integration is committed. The user reports factory-backed import success;
-remote-provisioned issuance and actual app keybox use are unverified. Direct HWBCC
+The source integration is committed. The user reports factory-backed import and
+targeted-app injection success; remote-provisioned issuance and checker acceptance
+are unverified. Direct HWBCC
 access remains rejected by shipped firmware. See
 [tokay-duck-import.md](porting/audit/tokay-duck-import.md) for implementation and acceptance steps.
 

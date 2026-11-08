@@ -57,3 +57,5 @@ can be passed to an AI CLI with access to the workspace and device.
 The user's [runtime report](porting/audit/tokay-runtime-report.md) records factory-backed
 import success after an override. Use the [follow-up prompt](porting/audit/tokay-runtime-followup-prompt.md)
 to resolve the missing installed property, prove targeted-app keybox use and diagnose RKPD HTTP 400.
+The later report supplies targeted-app issuer binding; remaining work is persistent
+configuration, the invalid RKP boot patch date and the actual checker's failed verdicts.

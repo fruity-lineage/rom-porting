@@ -10,6 +10,15 @@ then porting/audit/tokay-runtime-report.md and the initial verification prompt.
 The earlier report established factory-backed TEE import attestation after a
 runtime property override. RKPD failed with HTTP 400. Ordinary app_process
 Keystore tests did not establish that an app used the imported Duck keybox.
+The later installed-app probe reports the expected five-certificate chain
+and exact Duck issuer binding. Focus now on the actual checker showing crosses,
+configuration persistence and the invalid boot patch date.
+
+First identify the failing app/screen and every failed label. If it is Play
+Integrity, capture the sanitized actual verdict/error and distinguish an API
+request failure from a valid integrity rejection. If it is a certificate
+checker, capture its failed validation/revocation fields. Do not infer remote
+acceptance from the local injected-chain probe or identify a cause from icons alone.
 
 1. Diagnose the missing persistent selection property before changing source.
    Record the exact flashed OTA SHA-256, active boot slot, mounted product path,
@@ -50,6 +59,13 @@ Keystore tests did not establish that an app used the imported Duck keybox.
    Use the standard remote_provisioning diagnostics to distinguish an RKP
    service failure from import/signing failure. Preserve factory fallback
    and certificate validation. Do not call factory fallback an RKPD pass.
+   The supplied signCertificates error already identifies
+   boot_patch_level=20000000 as an invalid date. Trace the actual boot-info
+   source in the shipped firmware/boot flow. Current caimito source sets
+   BOOT_SECURITY_PATCH=2026-10-05 and adds an AVB boot security-patch property.
+   Compare the installed boot image and metadata rather than assuming the
+   bootloader/header hypothesis is proven. Do not fabricate a date or edit
+   a CSR to hide the failure.
 
 4. Exercise cancellation, failure cleanup, temporary alias cleanup,
    actual secondary-user restrictions and renewal where practical.

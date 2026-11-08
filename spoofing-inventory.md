@@ -13,8 +13,10 @@ compiled Settings, Keystore2, runtime libc and policy outputs are verified. Duck
 device behavior, Android tests and Frankel compilation remain unverified.
 The user's later [runtime report](porting/audit/tokay-runtime-report.md) records
 factory-backed TEE import and ordinary Keystore success after a runtime property
-override. RKPD HTTP 400, persistent device configuration and actual targeted-app
-Duck keybox use remain unresolved; these results do not apply to Frankel.
+override. The follow-up reports targeted-app Duck issuer binding and the expected
+five-certificate chain versus a native four-certificate control. RKPD HTTP 400
+is linked to an invalid boot patch date; its source, persistent device configuration
+and the actual checker's acceptance remain unresolved. These results do not apply to Frankel.
 
 ## Supplied device references
 
