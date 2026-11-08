@@ -1,6 +1,6 @@
 # Workspace memory
 
-Updated 2026-11-08 UTC after verifying the user's Tokay build outputs and publishing its follow-up fixes.
+Updated 2026-11-08 UTC after reviewing the user's local Tokay runtime report.
 
 ## Setup
 
@@ -12,6 +12,8 @@ Updated 2026-11-08 UTC after verifying the user's Tokay build outputs and publis
 - The user connects over remote SSH. ADB network access is permitted, but configured
   and default local endpoints refused connections; no device enumeration succeeded.
   Hardware validation requires a reachable ADB server or tunnel to the local device host.
+  The user subsequently supplied a local USB/root runtime report. This SSH server's
+  configured endpoint still refuses connections; the report was not independently repeated here.
 - User Git identity: fuzailmansuri <mfm9875@gmail.com>.
 - Publication authorized under fruity-lineage, limited to ported work. Ten source forks
   now have verified main tips and default branch main. Original authors and user coauthor
@@ -160,7 +162,8 @@ unverified. This route adds an imported CA certificate with actual imported orig
 boot state; it is not equivalent to Duck's direct external-key CSR protocol. Existing
 RKPD hybrid/factory fallback behavior is retained. Full certificate validation rejects
 unusable chains. [tokay-backend-investigation.md](porting/audit/tokay-backend-investigation.md)
-records the unchanged firmware constraint. No hardware signing success is claimed.
+records the unchanged firmware constraint. A later user report records factory-backed
+TEE import success after a runtime override; RKPD and actual app keybox use remain pending.
 
 ## User build output verification (2026-11-08)
 
@@ -187,6 +190,14 @@ records the unchanged firmware constraint. No hardware signing success is claime
   [tokay-build-followups.md](porting/audit/tokay-build-followups.md) and its verification JSON.
 
 ## Known acceptance limits
+
+- The user's [runtime report](porting/audit/tokay-runtime-report.md) records TEE
+  import attestation and ordinary Keystore success with factory fallback. RKPD returned
+  HTTP 400. The installed selection property was missing despite its presence in source
+  and local product/target-files outputs. The flashed OTA/product hashes are needed.
+- A targeted app must prove its fresh leaf is signed by the imported Duck keybox;
+  the reported four-certificate app_process chain does not establish that binding.
+  [Follow-up prompt](porting/audit/tokay-runtime-followup-prompt.md) records the exact checks.
 
 - Android/bionic regressions and hardware acceptance are pending. Tokay build outputs
   provide compilation/linking and compiled-policy evidence; Frankel compilation is pending.

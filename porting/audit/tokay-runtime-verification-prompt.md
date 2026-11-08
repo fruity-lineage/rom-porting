@@ -4,6 +4,9 @@ Copy the following prompt into the AI CLI on the SSH server. The phone must be
 reachable through ADB; the prompt includes diagnosing a missing connection.
 This is a verification plan, not a record of completed hardware tests.
 
+After the initial test, consult the [runtime report](tokay-runtime-report.md) and
+[follow-up prompt](tokay-runtime-followup-prompt.md) for the observed gaps.
+
 ```text
 Verify the Duck RKP integration on my Tokay using actual device tests.
 
@@ -46,7 +49,12 @@ the original Qualcomm external-key CSR protocol is unresolved.
 
 5. Demonstrate actual use of the resulting keybox: issue a fresh test
    attestation and independently verify its certificate signatures,
-   challenge and chain. Separately test ordinary Android Keystore
+   challenge and chain through an installed, targeted app. Record its
+   package, UID and effective policy. Require the app chain's issuer
+   certificate to match the active Duck keybox certificate by public DER
+   hash, and verify the new leaf with that issuer's public key. An ordinary
+   app_process attestation chain alone does not prove keybox use.
+   Separately test ordinary Android Keystore
    generation/signing to detect regressions. Check failure handling,
    temporary alias cleanup and cancellation. Test secondary-user
    restrictions and renewal where practical; mark untested cases honestly.

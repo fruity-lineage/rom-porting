@@ -53,3 +53,7 @@ before claiming successful signing or consumer acceptance.
 
 The [Tokay runtime verification prompt](porting/audit/tokay-runtime-verification-prompt.md)
 can be passed to an AI CLI with access to the workspace and device.
+
+The user's [runtime report](porting/audit/tokay-runtime-report.md) records factory-backed
+import success after an override. Use the [follow-up prompt](porting/audit/tokay-runtime-followup-prompt.md)
+to resolve the missing installed property, prove targeted-app keybox use and diagnose RKPD HTTP 400.

@@ -1,6 +1,6 @@
 # Evolution X spoofing and Duck RKP port inventory
 
-Updated 2026-11-08 UTC after Tokay build-output verification and publication of the build fixes.
+Updated 2026-11-08 UTC after recording and qualifying the user's local runtime results.
 
 Targets: LineageOS lineage-24.0 / Android 17, Pixel 9 (tokay, zumapro) and
 Pixel 10 (frankel, laguna).
@@ -11,6 +11,10 @@ Seventeen source commits cover the shared stack and device import configuration.
 the qualifications in [verification.md](porting/audit/verification.md). The user's Tokay OTA,
 compiled Settings, Keystore2, runtime libc and policy outputs are verified. Duck signing,
 device behavior, Android tests and Frankel compilation remain unverified.
+The user's later [runtime report](porting/audit/tokay-runtime-report.md) records
+factory-backed TEE import and ordinary Keystore success after a runtime property
+override. RKPD HTTP 400, persistent device configuration and actual targeted-app
+Duck keybox use remain unresolved; these results do not apply to Frankel.
 
 ## Supplied device references
 
