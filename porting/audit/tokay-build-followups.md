@@ -58,7 +58,9 @@ not captured before the build, so this is build-output evidence rather than a
 reproducible-build assertion. Signing-key identity and OTA signature verification
 were not checked.
 
-Boot, ordinary Keystore behavior, imported ATTEST_KEY support, successful Duck
-signing, production CA constraints and consumers remain unverified. The alternative
+At this build-output checkpoint hardware behavior was unverified. The later
+[live investigation](tokay-live-integrity-investigation.md) now verifies boot, ordinary
+TEE signing, imported ATTEST_KEY issuance and its production CA path after the AVB fix.
+Actual Play Integrity acceptance still fails; broader consumers remain unverified. The alternative
 import adapter does not resolve the original external-key CSR transport. Added
 Android/bionic tests and runtime Settings keyboard-focus checks remain unexecuted.

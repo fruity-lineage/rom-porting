@@ -300,5 +300,30 @@
       }
     ],
     "published": true
+  },
+  {
+    "project": "device/google/zumapro",
+    "upstream": "LineageOS/android_device_google_zumapro",
+    "repository": "fruity-lineage/android_device_google_zumapro",
+    "branch": "main",
+    "local_tip": "13f60c3e3a84ace1a311082f134d4a0ab3ae0abd",
+    "published_tip": "13f60c3e3a84ace1a311082f134d4a0ab3ae0abd",
+    "tree": "c34fad6d450868770415b14fc3027c68ee993bb0",
+    "worktree": "/tmp/tokay-avb-port",
+    "active_checkout_tip": "c03df81e8fed84aeb4f2d26e9cef2ea5762d7c3f",
+    "commits": [
+      {
+        "local_commit": "13f60c3e3a84ace1a311082f134d4a0ab3ae0abd",
+        "published_commit": "13f60c3e3a84ace1a311082f134d4a0ab3ae0abd",
+        "subject": "zumapro: Preserve AVB boot metadata when disabling verity",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/LineageOS/android_device_google_zumapro/commit/c03df81e8fed84aeb4f2d26e9cef2ea5762d7c3f",
+          "https://github.com/LineageOS/android_external_avb/blob/01ecfc9c3df4fbe3e785185742f3313252e70a18/libavb/avb_slot_verify.c",
+          "https://source.android.com/docs/core/architecture/bootloader/boot-image-header"
+        ]
+      }
+    ],
+    "published": true
   }
 ]

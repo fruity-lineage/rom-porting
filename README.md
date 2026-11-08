@@ -9,8 +9,9 @@ Read [AGENTS.md](AGENTS.md), [taste.md](taste.md), [memory.md](memory.md),
 and source references. Keep incomplete work and validation limits visible.
 
 The shared stack is committed. Device configuration is available for Pixel 9
-(tokay/caimito/zumapro) and Pixel 10 (frankel/muzel/laguna). Imported-key signing,
-production CA constraints and consumer acceptance remain unverified on hardware.
+(tokay/caimito/zumapro) and Pixel 10 (frankel/muzel/laguna). Tokay remote provisioning,
+imported-key signing and the returned production CA path are now verified on hardware.
+Actual Play Integrity labels still fail; Frankel hardware remains unverified.
 The original direct external-key CSR protocol remains unresolved on these targets.
 Tokay's user build produced a verified OTA after the recorded
 [build fixes](porting/audit/tokay-build-followups.md), now published as follow-up
@@ -54,13 +55,19 @@ before claiming successful signing or consumer acceptance.
 The [Tokay runtime verification prompt](porting/audit/tokay-runtime-verification-prompt.md)
 can be passed to an AI CLI with access to the workspace and device.
 
-The user's [runtime report](porting/audit/tokay-runtime-report.md) records factory-backed
-import success after an override. Use the [follow-up prompt](porting/audit/tokay-runtime-followup-prompt.md)
-to resolve the missing installed property, prove targeted-app keybox use and diagnose RKPD HTTP 400.
-The later report supplies targeted-app issuer binding. The
+The user's [runtime report](porting/audit/tokay-runtime-report.md) records the earlier
+factory-backed import and targeted-app issuer proof. The
 [direct ADB investigation](porting/audit/tokay-live-integrity-investigation.md) now
-confirms installed properties/image provenance and reproduces the invalid RKP date.
-A signed metadata-verification experiment is prepared and awaits approval; no phone
-partition has been changed. Actual checker JSON, reboot persistence and Google acceptance
-remain pending. The [read-only collector](porting/tools/check-play-integrity.py)
-summarizes configuration and supplied decoded responses without exporting keyboxes.
+confirms property persistence and resolves RKPD's invalid boot patch date: original
+vbmeta flags 3 skipped chained boot metadata; a signed flags-1 derivative restores
+boot_patch_level=20261005. RKPD and fresh Duck provisioning succeed; the production
+chain and ordinary TEE sign/verify pass. The shared Zumapro source fix is published
+on main and included in the Tokay/combined overlays. Active build inputs were preserved.
+
+A fresh checker request after provisioning still returns no BASIC/DEVICE/STRONG
+labels. Hardware remains unlocked/orange. The
+[verification JSON](porting/audit/tokay-avb-fix-verification.json) separates these
+outcomes and records the remaining checks. Keep the vbmeta and on-phone keybox backups;
+the ADB bridge does not provide fastboot recovery. Temporary stay-awake was restored.
+The [read-only collector](porting/tools/check-play-integrity.py) retains selected
+configuration/verdict fields without copying private keys or raw request material.

@@ -1,0 +1,202 @@
+{
+  "date": "2026-11-08",
+  "source": {
+    "project": "device/google/zumapro",
+    "upstream": "LineageOS/android_device_google_zumapro",
+    "repository": "fruity-lineage/android_device_google_zumapro",
+    "branch": "main",
+    "local_tip": "13f60c3e3a84ace1a311082f134d4a0ab3ae0abd",
+    "published_tip": "13f60c3e3a84ace1a311082f134d4a0ab3ae0abd",
+    "tree": "c34fad6d450868770415b14fc3027c68ee993bb0",
+    "worktree": "/tmp/tokay-avb-port",
+    "active_checkout_tip": "c03df81e8fed84aeb4f2d26e9cef2ea5762d7c3f",
+    "commits": [
+      {
+        "local_commit": "13f60c3e3a84ace1a311082f134d4a0ab3ae0abd",
+        "published_commit": "13f60c3e3a84ace1a311082f134d4a0ab3ae0abd",
+        "subject": "zumapro: Preserve AVB boot metadata when disabling verity",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/LineageOS/android_device_google_zumapro/commit/c03df81e8fed84aeb4f2d26e9cef2ea5762d7c3f",
+          "https://github.com/LineageOS/android_external_avb/blob/01ecfc9c3df4fbe3e785185742f3313252e70a18/libavb/avb_slot_verify.c",
+          "https://source.android.com/docs/core/architecture/bootloader/boot-image-header"
+        ]
+      }
+    ],
+    "published": true
+  },
+  "source_sha256": "d6d3e4936a9a131c4c8c843fc46340f5d8560073738ee6071d0352751a2dbb0a",
+  "validation": {
+    "scoped_make_cases": [
+      "unset",
+      "false",
+      "true"
+    ],
+    "default_vbmeta_flags": 1,
+    "with_avb_true_normal_avb": true,
+    "tokay_preflight_errors": 0,
+    "tokay_preflight_warnings": 0,
+    "normal_manifests": 76,
+    "recovery_manifests": 2,
+    "commit_whitespace": true,
+    "active_sources_and_manifests_preserved": true,
+    "rom_or_kernel_build_run": false
+  },
+  "metadata": {
+    "original_sha256": "09729d5d0d93ab5717b743d56e1901fa03582a28da69d8cfbccf3adef2c07fb1",
+    "candidate_sha256": "54e76b6dbda4c6aaba87e564505083dbc27413ae83491d57b04bba5d1c506502",
+    "original_flags": 3,
+    "candidate_flags": 1,
+    "descriptors_semantically_equal": true,
+    "descriptor_order": "avbtool reordered existing descriptors",
+    "same_public_key": true,
+    "same_rollback_index": true,
+    "same_rollback_index_location": true,
+    "signatures_and_root_descriptors_verified": true,
+    "device_flashing_performed": true,
+    "installed_padded_sha256": "777f68b817b2f4d77fa0a37c99bc2ced3d209fc2044af4caa40be5a03b822616"
+  },
+  "post_boot": {
+    "boot_completed": true,
+    "candidate_partition_hash_verified": true,
+    "properties": {
+      "ro.lineage.duckrkp.trusty_import": "true",
+      "ro.boot.verifiedbootstate": "orange",
+      "ro.boot.flash.locked": "0",
+      "ro.boot.vbmeta.size": "19776",
+      "ro.boot.vbmeta.hash_alg": "sha256",
+      "ro.boot.veritymode": "disabled",
+      "sys.boot_completed": "1"
+    },
+    "csr_device_information": [
+      {
+        "vb_state": "orange",
+        "os_version": "170000",
+        "security_level": "tee",
+        "boot_patch_level": 20261005,
+        "bootloader_state": "unlocked",
+        "system_patch_level": 202611,
+        "vendor_patch_level": 20261005
+      }
+    ]
+  },
+  "rkpd": {
+    "operation": "certify default",
+    "exit_code": 0,
+    "certificate_count": 4,
+    "diagnostics": [],
+    "certificate_der_sha256": [
+      "b46b81fa471e2f2d57b392555528720eb7fa574b8c72e5d276424be9afe9c1f2",
+      "26fa9600149b2842b3c60ff77e298110909bd22f8c827c03858f959c0f72d410",
+      "b8b0741e7a5ad98c996cf81eb46ac2d3fb1c28a3bdb2b89eaa930a64ad871632",
+      "6d9db4ce6c5c0b293166d08986e05774a8776ceb525d9e4329520de12ba4bcc0"
+    ]
+  },
+  "ordinary_keystore": {
+    "generate_tee_rsa2048": true,
+    "alias_deleted": true,
+    "alias_absent": true,
+    "sha256_sign_verify": true
+  },
+  "duck_public_chain": {
+    "public_certificates_only": true,
+    "certificate_count": 5,
+    "certificates": [
+      {
+        "index": 0,
+        "der_sha256": "f0d95fa094aee809b7598376856c97a012f89bec96b958f97266a58fcbfdb55f",
+        "not_before": "Nov  7 23:02:03 2026 GMT",
+        "not_after": "Dec  8 23:02:03 2026 GMT",
+        "ca": true,
+        "certificate_sign": true
+      },
+      {
+        "index": 1,
+        "der_sha256": "6fc6894eaac5a04e307e4bde8dc668bd1105aaf0abb89a592eb0e830c70854e3",
+        "not_before": "Nov  6 23:04:37 2026 GMT",
+        "not_after": "Nov 20 09:46:07 2026 GMT",
+        "ca": true,
+        "certificate_sign": true
+      },
+      {
+        "index": 2,
+        "der_sha256": "26fa9600149b2842b3c60ff77e298110909bd22f8c827c03858f959c0f72d410",
+        "not_before": "Oct 28 02:36:53 2026 GMT",
+        "not_after": "Jan  6 02:36:52 2027 GMT",
+        "ca": true,
+        "certificate_sign": true
+      },
+      {
+        "index": 3,
+        "der_sha256": "b8b0741e7a5ad98c996cf81eb46ac2d3fb1c28a3bdb2b89eaa930a64ad871632",
+        "not_before": "Feb  9 19:59:18 2026 GMT",
+        "not_after": "Feb  8 19:59:18 2029 GMT",
+        "ca": true,
+        "certificate_sign": true
+      },
+      {
+        "index": 4,
+        "der_sha256": "6d9db4ce6c5c0b293166d08986e05774a8776ceb525d9e4329520de12ba4bcc0",
+        "not_before": "Jul 17 22:32:18 2025 GMT",
+        "not_after": "Jul 15 22:32:18 2035 GMT",
+        "ca": true,
+        "certificate_sign": true
+      }
+    ],
+    "cryptographic_chain_verification": true,
+    "root_self_signature_checked": true,
+    "import_attestation": {
+      "attestation_version": 500,
+      "attestation_security_level": 1,
+      "keymint_version": 500,
+      "keymint_security_level": 1,
+      "tee_key_purposes": [
+        7
+      ],
+      "tee_key_origin": 2,
+      "root_of_trust": {
+        "device_locked": false,
+        "verified_boot_state": 2
+      },
+      "os_version": 170000,
+      "os_patch_level": 202611,
+      "vendor_patch_level": 20261005,
+      "boot_patch_level": 20261005
+    },
+    "earliest_expiry_utc": "2026-11-20T09:46:07Z"
+  },
+  "play_integrity": {
+    "verdict_available": true,
+    "labels": {
+      "MEETS_BASIC_INTEGRITY": false,
+      "MEETS_DEVICE_INTEGRITY": false,
+      "MEETS_STRONG_INTEGRITY": false
+    },
+    "app_licensing": "UNEVALUATED",
+    "app_recognition": "UNEVALUATED",
+    "server_sdk_version": null,
+    "authenticity": "Decoded input supplied by operator; token authenticity not verified here",
+    "label_semantics": "Flags show presence in the response; optional labels also depend on requester settings and licensing",
+    "after_avb_and_completed_duck_provisioning": true,
+    "device_recognition_verdict_present": false,
+    "displayed_icons": [
+      "Fail",
+      "Fail",
+      "Fail"
+    ],
+    "request_timestamp_changed": true
+  },
+  "temporary_stay_awake_restored": 0,
+  "limits": [
+    "No Play Integrity label passes",
+    "Checker token authenticity was not independently verified",
+    "Frankel hardware not tested",
+    "Flags-1 metadata derivative was tested; no rebuilt OTA with the source fix was made",
+    "No post-fix targeted-app chain, secondary-user or renewal probe was run"
+  ],
+  "root_provenance": {
+    "url": "https://android.googleapis.com/attestation/root",
+    "der_sha256": "6d9db4ce6c5c0b293166d08986e05774a8776ceb525d9e4329520de12ba4bcc0",
+    "existing_duck_pin": true
+  }
+}

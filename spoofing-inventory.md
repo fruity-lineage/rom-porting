@@ -1,30 +1,26 @@
 # Evolution X spoofing and Duck RKP port inventory
 
-Updated 2026-11-08 UTC after direct ADB configuration, image and RKP checks.
+Updated 2026-11-08 UTC after the authorized AVB test and source fix.
 
 Targets: LineageOS lineage-24.0 / Android 17, Pixel 9 (tokay, zumapro) and
 Pixel 10 (frankel, laguna).
 Source: [Evolution X repositories](https://github.com/orgs/Evolution-X/repositories),
 active cnb sources and the supplied device commits.
 
-Seventeen source commits cover the shared stack and device import configuration. Static checks pass with
-the qualifications in [verification.md](porting/audit/verification.md). The user's Tokay OTA,
-compiled Settings, Keystore2, runtime libc and policy outputs are verified. Duck signing,
-device behavior, Android tests and Frankel compilation remain unverified.
-The user's later [runtime report](porting/audit/tokay-runtime-report.md) records
-factory-backed TEE import and ordinary Keystore success after a runtime property
-override. The follow-up reports targeted-app Duck issuer binding and the expected
-five-certificate chain versus a native four-certificate control. RKPD HTTP 400
-is linked to an invalid boot patch date; its source, persistent device configuration
-and the actual checker's acceptance remain unresolved. Direct ADB now confirms installed
-selection properties and image provenance and independently reproduces RKPD's invalid date.
-These results do not apply to Frankel.
+Eighteen source commits in eleven forks cover the shared stack, import configuration
+and AVB metadata correction. Earlier static/build evidence remains in the recorded
+checkpoints. Tokay now directly passes RKPD certify default, imported ATTEST_KEY
+issuance with a five-CA production path and ordinary TEE signing after the authorized
+flags-1 vbmeta reboot. The selection property persists. Fresh checker BASIC/DEVICE/STRONG
+still fail, with recognition/licensing UNEVALUATED. These hardware results do not apply
+to Frankel; its compilation and device checks remain pending.
 
-The [live investigation](porting/audit/tokay-live-integrity-investigation.md) records
-the existing WITH_AVB gate and libavb verification-disabled behavior, inspected pins,
-image hashes and a signed metadata experiment awaiting approval. Nine collector tests
-pass. No new Android source commit or manifest change was made; the seventeen published
-source commits remain unchanged. No real Play Integrity verdict has been obtained here.
+The [live investigation](porting/audit/tokay-live-integrity-investigation.md) and
+[AVB verification](porting/audit/tokay-avb-fix-verification.json) record before/after
+boot metadata, certificate fingerprints, actual verdicts and recovery backups.
+The Zumapro source fix is published from an isolated worktree; handoff overlays select
+its main branch. Active build sources/manifests remain unchanged. No rebuilt OTA with
+this source fix was made; the signed metadata derivative was tested on the phone.
 
 ## Supplied device references
 
@@ -88,6 +84,7 @@ No upstream PR was opened.
 | device/google/muzel | 9c4bad6692c8275790bff334263914ddbd2a59e5 | Product-partition placement for Frankel |
 | system/security | a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8 | Concrete Keystore error type for generation/import callbacks |
 | packages/apps/Settings | 233ff319af4e0eb8369b4f1a5f976b3205a591e9 | Missing shared Compose focus-ring dependency; Joey's upstream helper |
+| device/google/zumapro | 13f60c3e3a84ace1a311082f134d4a0ab3ae0abd | Preserve chained AVB boot metadata while retaining disabled dm-verity |
 
 Evolution vendor coverage: vendor/lineage contains the optional API-32 Soong change.
 The audited global Pixel Beta fingerprint override explicitly excludes Tokay upstream
@@ -96,7 +93,7 @@ The import adapter uses the existing Trusty HAL selected by the shared device pr
 
 ## Published forks
 
-All ten forks are public under fruity-lineage, with verified main tips and default
+All eleven forks are public under fruity-lineage, with verified main tips and default
 branch main. Local topic branches and backup refs retain the original checkpoints.
 Every published change contains implementation/source references; adapted upstream
 ports retain their author and fuzailmansuri's coauthor credit. Locally written fixes
@@ -114,12 +111,13 @@ retain their actual author.
 | system/security | [android_system_security](https://github.com/fruity-lineage/android_system_security/commit/a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8) |
 | device/google/caimito | [android_device_google_caimito](https://github.com/fruity-lineage/android_device_google_caimito/commit/2f7cc304134f77b3858da6e9d2390a5b22fbc467) |
 | device/google/muzel | [android_device_google_muzel](https://github.com/fruity-lineage/android_device_google_muzel/commit/9c4bad6692c8275790bff334263914ddbd2a59e5) |
+| device/google/zumapro | [android_device_google_zumapro](https://github.com/fruity-lineage/android_device_google_zumapro/commit/13f60c3e3a84ace1a311082f134d4a0ab3ae0abd) |
 
 Bouncy Castle is a fork of Evolution-X/external_bouncycastle, which contains the
 verified Android 17 base. LineageOS's GitHub Bouncy Castle mirror stops at older
-Android branches. The other nine forks use their corresponding LineageOS parents.
+Android branches. The other ten forks use their corresponding LineageOS parents.
 
-[publication-commits.json](porting/audit/publication-commits.json) maps all seventeen local
+[publication-commits.json](porting/audit/publication-commits.json) maps all eighteen local
 and public commits. Only ported code was uploaded; pre-existing build/soong edits remain
 outside publication. The handoff repository is
 [rom-porting](https://github.com/fruity-lineage/rom-porting); its manifest
@@ -171,8 +169,9 @@ The initial static checks did not establish compilation. The user's subsequent T
 and installed compiled outputs provide build evidence after the three fixes above.
 All 101 current source snapshot files match public trees; 99 prior hashes are unchanged.
 See [tokay-build-followups.md](porting/audit/tokay-build-followups.md) for provenance,
-artifact hashes and acceptance limits. Hardware signing and remote acceptance remain
-unverified. Android/bionic tests remain unexecuted. C++ parser
+artifact hashes and acceptance limits. Tokay hardware import and production chain verification now pass as recorded in
+the live audit. Actual Play Integrity acceptance still fails; Frankel remains unverified.
+Android/bionic tests remain unexecuted. C++ parser
 limitations, non-transactional imports/reset, refresh races and the native invalid-pointer
 edge case are detailed in the verification report.
 
@@ -198,8 +197,8 @@ and signing-key policy checks also prevent assuming a rebuilt trusted app can lo
 the inspected source revisions, artifact identities, exact addresses and validation.
 
 Standard imported-key attestation is now a committed alternative adapter, with Keystore's
-RKPD import gap fixed and the existing service/init/VINTF/policy traced. Production CA
-constraints, firmware import support and consumer behavior remain unverified. It adds
+RKPD import gap fixed and the existing service/init/VINTF/policy traced. Tokay firmware import and its returned production CA path are now directly verified.
+Broader consumer behavior and Frankel hardware remain unverified. It adds
 an imported CA, not direct external-key CSR certification. See
 [tokay-duck-import.md](porting/audit/tokay-duck-import.md) and
 [tokay-duck-import-verification.json](porting/audit/tokay-duck-import-verification.json).

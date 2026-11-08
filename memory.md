@@ -1,6 +1,7 @@
 # Workspace memory
 
-Updated 2026-11-08 UTC after direct ADB configuration, image and RKP checks.
+Updated 2026-11-08 UTC after the authorized AVB test, successful RKPD/import
+verification and a fresh failing Play Integrity request.
 
 ## Setup
 
@@ -13,7 +14,7 @@ Updated 2026-11-08 UTC after direct ADB configuration, image and RKP checks.
   Tokay and provides root access. This was independently verified here. Forwarding
   is for ADB only, not USB fastboot recovery. Keep serials and credentials out of notes.
 - User Git identity: fuzailmansuri <mfm9875@gmail.com>.
-- Publication authorized under fruity-lineage, limited to ported work. Ten source forks
+- Publication authorized under fruity-lineage, limited to ported work. Eleven source forks
   now have verified main tips and default branch main. Original authors and user coauthor
   credit are retained; publication messages include references and omit Gerrit Change-Id.
   Source trees are identical to the local topic commits. The mapping is in
@@ -70,8 +71,8 @@ frameworks/base, packages/apps/Settings, system/security and device/google/caimi
 All nine were clean at that checkpoint. The user's build fixes were subsequently
 amended into three local topic tips; those active checkouts remain untouched.
 The same source trees are published through separate follow-up commits and isolated
-worktrees. Pre-existing build/soong changes remain outside the port. There are now seventeen source commits
-across ten published forks; original checkpoint hashes remain recorded below.
+worktrees. Pre-existing build/soong changes remain outside the port. There are now eighteen source commits
+across eleven published forks; original checkpoint hashes remain recorded below.
 
 The port includes PIF, TrickyStore, game/device identity, package visibility, Aurora
 installer reporting, per-app Settings-value overrides, their Settings UI, native hooks,
@@ -89,13 +90,13 @@ Review closed missing EC provider registration, direct Duck gate bypass, destruc
 malformed-config updates, unbounded network reads, unchecked refresh writes and stale
 background downloads. Added Android/bionic tests remain unexecuted. The subsequent
 user build provides Tokay compilation and compiled-policy evidence, recorded below;
-hardware behavior remains pending.
+hardware behavior was pending at that checkpoint; later direct results are below.
 
 [verification.md](porting/audit/verification.md) records exact checks and limitations.
 [spoofing-inventory.md](spoofing-inventory.md) contains source pins and all commit hashes.
 Published revisions differ from local hashes because commit metadata was cleaned. Local
 topic branches and backup/pre-fruity-publication-20261108 remain available. The overlay
-at porting/manifests/tokay.xml selects all nine main forks, four unchanged Tokay dependencies
+at porting/manifests/tokay.xml selects the shared/device main forks, three unchanged Tokay dependencies
 and the handoff repository, linking the root notes and porting tools into the workspace.
 
 ## Frankel and active build checkpoint
@@ -155,13 +156,15 @@ The Duck master setting remains opt-in. No new HAL daemon or Trusty command is n
 for this route; existing init, VINTF and service policy are traced in
 [tokay-duck-import.md](porting/audit/tokay-duck-import.md).
 
-Production CA constraints, firmware import acceptance and consumer compatibility remain
-unverified. This route adds an imported CA certificate with actual imported origin and
+Tokay firmware import and the returned production CA path are now directly verified
+after correcting AVB boot metadata. General consumer compatibility remains unverified.
+This route adds an imported CA certificate with actual imported origin and
 boot state; it is not equivalent to Duck's direct external-key CSR protocol. Existing
 RKPD hybrid/factory fallback behavior is retained. Full certificate validation rejects
 unusable chains. [tokay-backend-investigation.md](porting/audit/tokay-backend-investigation.md)
 records the unchanged firmware constraint. Later user reports record factory-backed
-TEE import and targeted-app keybox use after a runtime override. RKPD still fails;
+TEE import and targeted-app keybox use after a runtime override. The initial RKPD
+failure is resolved by the later AVB experiment;
 the actual checker/consumer acceptance remains unresolved.
 
 ## User build output verification (2026-11-08)
@@ -190,59 +193,60 @@ the actual checker/consumer acceptance remains unresolved.
 
 ## Known acceptance limits
 
-- The user's [runtime report](porting/audit/tokay-runtime-report.md) records TEE
-  import attestation and ordinary Keystore success with factory fallback. RKPD returned
-  HTTP 400. The installed selection property was missing despite its presence in source
-  and local product/target-files outputs. Direct ADB now confirms the property in
-  the mounted product file, whose hash matches those outputs; reboot validation remains.
-- The follow-up reports a five-certificate targeted-app chain with exact Duck issuer
-  binding and a four-certificate native control. The initial app_process proof gap
-  is closed by that reported probe. Public-chain/probe evidence is not available here.
-- RKPD's reported server reason rejects boot_patch_level=20000000 as an invalid date.
-  Its bootloader/header origin is unproven; caimito source has a valid 2026-10-05
-  BOOT_SECURITY_PATCH. Trace the actual boot-info source before proposing a fix.
-- The reported checker is now identified as gr.nikolasspyr.integritycheck 2.2,
-  installed through Play Store. Decoded verdict/licensing and actual labels are
-  pending: the phone remained locked during the direct session. Targeted injection
-  success does not establish remote acceptance.
-  [Follow-up prompt](porting/audit/tokay-runtime-followup-prompt.md) records the checks.
-
-- Android/bionic regressions and hardware acceptance are pending. Tokay build outputs
-  provide compilation/linking and compiled-policy evidence; Frankel compilation is pending.
+- Direct ADB and the authorized reboot confirm persistent Duck selection and the
+  production hostname; the original missing-property discrepancy is closed.
+- Fresh remote provisioning and hardware import now pass. The current five-CA
+  imported chain verifies to Google's current root, with IMPORTED/ATTEST_KEY and
+  the actual unlocked/orange boot state. This verifies this chain, not all consumers.
+- A sequential fresh Play Integrity Checker 2.2 request after provisioning finishes
+  still shows BASIC/DEVICE/STRONG Fail. deviceRecognitionVerdict is omitted;
+  recognition/licensing are UNEVALUATED. Checker token authenticity was not verified.
+- The user's earlier targeted-app issuer proof and secondary-user checks remain
+  reported evidence. A targeted chain using the new remotely provisioned keybox,
+  renewal and independent secondary-user checks have not been repeated here.
+- Frankel has source configuration only; its vendor/kernel dependencies, compilation
+  and hardware acceptance remain pending. Do not transfer Tokay hardware conclusions.
+- Android/bionic regressions remain unexecuted. Tokay's earlier user build provides
+  compilation/linking and compiled-policy evidence; no rebuilt OTA with the AVB fix exists.
 - Arbitrary unmapped pathname pointers can still crash the imported native app hooks;
   the committed guard fixes low pointers and non-app inspection only.
 - Imports/reset span individual Binder/settings writes and can partially apply on failure.
-- Background refresh rechecks edits after downloads, but the settings provider offers no
-  cross-process compare-and-swap transaction; a final narrow race remains.
-- This configuration does not inherit vendor/gms; direct checks confirm installed
-  GMS 26.11.36, Play Store 53.9.23-34 and GSF 17. Runtime hook behavior is pending.
+- Background refresh still has a narrow final cross-process settings race.
+- GMS 26.11.36, Play Store 53.9.23-34 and GSF 17 are installed. DroidGuard logs show
+  configuration/keybox load; this does not prove its returned certificate chain.
 - Coverage is bounded to recorded connected sources/history, not every org repo/branch.
 
-## Direct RKP investigation
+## Direct RKP investigation and source fix
 
-- See [tokay-live-integrity-investigation.md](porting/audit/tokay-live-integrity-investigation.md).
-  Active slot is _a. Boot exactly matches the build, init_boot matches the packaged
-  target-files image, and vbmeta matches target-files plus zero partition padding.
-  The compared abl prefix matches checked-in firmware. No flashing/reboot occurred.
-- Mounted product properties match the recorded hash. Duck's read-only state is
-  available/enabled/active, ready, revision 3, with no error. Signing/injection
-  reports have not been independently repeated by this session.
-- RKPD HTTP 400 and boot_patch_level=20000000 are independently reproduced.
-  A fresh CSR contains that date, orange/unlocked state, system patch 202611 and
-  vendor patch 20261005. Only selected fields are retained; CSR signatures were
-  not independently verified in the decoding check.
-- Installed vbmeta flags 3 disable descriptor verification. libavb then skips
-  chained boot metadata and AVB boot parameters. Zumapro already provides the
-  WITH_AVB=true option. The bootloader's exact date fallback remains unproven.
-  AOSP requires GKI v4's zero legacy OS/version word, so do not patch it blindly.
-- A signed flags-1 vbmeta candidate and active-slot backup are prepared under
-  out/porting-tests/tokay-avb-metadata. Signatures, original key, rollback fields
-  and all descriptors verify/match; descriptor order was regenerated. The local
-  packaged image set also passes recursive AVB verification. No ROM/kernel build
-  or Android source change was made. Candidate flashing/reboot awaits approval
-  and local USB recovery access; it has no runtime result or proven PI benefit.
-- The collector's nine unit tests pass. Actual checker JSON and all three verdicts
-  remain pending. DEVICE/STRONG acceptance cannot be inferred from injected claims.
+- See [tokay-live-integrity-investigation.md](porting/audit/tokay-live-integrity-investigation.md)
+  and [verification JSON](porting/audit/tokay-avb-fix-verification.json).
+- Original vbmeta flags 3 skipped chained AVB metadata. With the required zero GKI v4
+  header word, fresh CSR boot_patch_level was 20000000 and RKPD rejected it with HTTP 400.
+- The user explicitly authorized the signed flags-1 metadata write/reboot. The phone
+  booted successfully; read-back matches the candidate; boot_patch_level is now 20261005.
+  vbmeta size/hash properties return. Bootloader remains unlocked/orange; verity disabled.
+- certify default now succeeds with four certificates and a verified Google root.
+  Fresh Duck provisioning succeeds, ready/not busy/no error, revision 1 since reboot.
+  Its imported five-CA chain and root self-signature verify; earliest expiry is Nov 20.
+- Ordinary TEE RSA-2048 generation and SHA-256 sign/verify pass. The unique temporary
+  probe alias was deleted and confirmed absent. No private keybox material was exported.
+- Clean source fix: device/google/zumapro 13f60c3e3a84ace1a311082f134d4a0ab3ae0abd, published in
+  fruity-lineage/android_device_google_zumapro/main. Use --set_hashtree_disabled_flag
+  instead of --flags 3 when WITH_AVB is not true; normal AVB stays selectable.
+  Make cases unset/false/true, scoped Tokay preflight and commit whitespace pass.
+- The fix was committed in /tmp/tokay-avb-port; active sources/manifests remain untouched.
+  Tokay/combined handoff overlays now select this eleventh fork. Frankel's Laguna tree
+  was not changed. No ROM/kernel build or firmware modification was performed.
+- Keep server backups in out/porting-tests/tokay-avb-metadata and the on-phone original
+  vbmeta backup under /data/local/tmp. The full installed partition hash is
+  777f68b817b2f4d77fa0a37c99bc2ced3d209fc2044af4caa40be5a03b822616.
+  Keep the pre-renewal keybox backup on the phone only. The ADB tunnel has no fastboot
+  recovery capability. No relock, wipe or slot change occurred.
+- Temporary USB stay-awake was restored to its original global setting 0. The checker
+  JSON dialog was closed and the temporary UI dump removed. Partition/keybox backups remain.
+- Actual Play Integrity labels still fail. DEVICE on Android 13+ requires a locked,
+  manufacturer-certified boot state; STRONG also imposes update requirements.
+  Successful certificate issuance alone does not establish those verdicts.
 
 ## Scoped validation commands
 

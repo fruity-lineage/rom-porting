@@ -1,6 +1,6 @@
 # Task state
 
-Updated 2026-11-08 UTC after direct ADB configuration, image and RKP checks.
+Updated 2026-11-08 UTC after successful AVB/RKPD validation; Play Integrity still fails.
 
 ## Completed
 
@@ -52,9 +52,20 @@ Updated 2026-11-08 UTC after direct ADB configuration, image and RKP checks.
 - [x] Trace the existing WITH_AVB gate and libavb's verification-disabled metadata skip.
 - [x] Prepare and verify a signed flags-1 vbmeta experiment and save the active-slot backup.
 - [x] Test the read-only integrity collector: nine unit tests pass.
+- [x] Obtain fresh checker JSON before the metadata test; all three labels absent,
+  recognition/licensing UNEVALUATED. DroidGuard restart does not change the result.
+- [x] Obtain explicit authorization, write/read-back verify flags-1 vbmeta on slot _a,
+  preserve the original backup and complete a successful reboot.
+- [x] Verify post-reboot property persistence and corrected CSR boot_patch_level=20261005.
+- [x] Confirm RKPD certify default succeeds and its production certificate chain verifies.
+- [x] Confirm fresh imported Duck CA issuance, all five signatures and actual boot-state fields.
+- [x] Verify ordinary TEE Keystore RSA-2048 generation/sign/verify and temporary alias cleanup.
+- [x] Repeat the real checker request after provisioning; all labels still fail.
+- [x] Commit/publish the isolated Zumapro AVB metadata fix and update handoff overlays.
+- [x] Restore temporary USB stay-awake to 0 and retain recovery/keybox backups.
 
 The initial nine projects were clean at verification. Current publication contains
-seventeen source commits in ten forks. The active security, Settings and caimito
+eighteen source commits in eleven forks. The active security, Settings and caimito
 build fixes are committed in their local topic tips. Their trees match public main;
 publication used isolated worktrees and did not switch or edit active source inputs.
 Pre-existing build/soong
@@ -66,22 +77,17 @@ and [spoofing-inventory.md](spoofing-inventory.md).
 - [ ] Sync Frankel's proprietary vendor/kernel dependencies and complete full device preflight.
 - [ ] Validate Frankel compilation and compiled SELinux after integrating the shared build fixes.
 - [ ] Validate Frankel firmware import signing, production CA constraints and consumers.
-- [ ] Check selection-property persistence after an authorized reboot; mounted product
-  now matches the build and contains the setting, so no duplicate source edit is needed.
-- [ ] Independently review the reported targeted-app public chain/probe and test actual consumers.
-- [ ] Obtain fresh JSON/licensing/labels from the identified Play Integrity API Checker
-  2.2; phone unlock and the checker request are pending.
-- [ ] Trace the invalid boot patch value, resolve RKPD HTTP 400 and validate a remote-provisioned chain.
-- [ ] If approved, test the prepared metadata-verification candidate with local USB
-  recovery available. Do not flash/reboot from diagnostic-access authorization alone.
-  Verify CSR/RKPD, ordinary Keystore and real verdicts afterward; restore on failure.
+- [ ] Establish actual Play Integrity acceptance. Latest fresh request has no labels;
+  do not mark BASIC/DEVICE/STRONG complete from certificate-chain checks.
+- [ ] Independently review targeted-app use of the new remotely provisioned keybox.
+- [ ] Verify an OTA built with the committed AVB source fix; live validation used a signed derivative.
 - [ ] Independently review public-chain/probe evidence for the reported factory import success.
 - [ ] Validate the produced keybox with Tokay consumers, renewal and secondary users.
 - [ ] Resolve direct external-key CSR signing if exact original Duck protocol support is required;
   the imported-CA route is an alternative, not that protocol's implementation.
 - [ ] Execute the added Android/bionic regressions and exercise Settings/Binder flows.
 - [ ] Address or accept the imported native pathname-pointer limitation.
-- [ ] Verify Tokay hardware behavior, ordinary keystore operations and secondary users.
+- [ ] Complete Tokay renewal, secondary-user and broader consumer/regression checks.
 - [ ] Verify GMS availability and consumers on the intended installation.
 
 No agent-run build was used, following the applicable ROM skills' static-only workflow.
@@ -93,8 +99,8 @@ The original Duck CSR protocols require Qualcomm firmware. Tokay now selects the
 standard import-attestation adapter, and the frontend becomes available when its
 hostname and platform services are declared. Its master setting is still opt-in.
 The source integration is committed. The user reports factory-backed import and
-targeted-app injection success; remote-provisioned issuance and checker acceptance
-are unverified. Direct HWBCC
+targeted-app injection success. Remote-provisioned issuance and CA-chain validation
+now pass directly; checker acceptance still fails. Direct HWBCC
 access remains rejected by shipped firmware. See
 [tokay-duck-import.md](porting/audit/tokay-duck-import.md) for implementation and acceptance steps.
 

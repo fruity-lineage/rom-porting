@@ -1,7 +1,9 @@
 # Tokay KeyMint import-attestation adapter
 
 Updated 2026-11-08 UTC. The source adapter is committed and statically checked.
-Tokay signing, production CA constraints and consumer acceptance remain unverified.
+At this initial source checkpoint hardware signing was unverified. The later
+[live investigation](tokay-live-integrity-investigation.md) verifies Tokay import and
+its production CA path after the AVB correction. Play Integrity labels still fail.
 
 ## Implementation
 
@@ -92,8 +94,10 @@ A lost Binder reply or service termination may leave a temporary alias until a l
 attempt deletes it. A stuck Binder request cannot be forcibly cancelled by the framework;
 the existing single worker, timeout state and generation check prevent a stale save.
 
-Hardware access remains unavailable: both configured and default ADB endpoints refused
-connections. Forward a working local ADB server from the computer with Tokay attached:
+Hardware access was unavailable at the initial source checkpoint. It is now verified
+through the forwarded ADB server; the [live investigation](tokay-live-integrity-investigation.md)
+confirms imported CA issuance and production-chain validation after correcting AVB
+metadata. Play Integrity labels still fail. To establish the same kind of ADB transport:
 
 ```sh
 adb devices -l
