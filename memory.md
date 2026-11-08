@@ -1,6 +1,6 @@
 # Workspace memory
 
-Updated 2026-11-08 UTC after reviewing the user's local Tokay runtime report.
+Updated 2026-11-08 UTC after direct ADB configuration, image and RKP checks.
 
 ## Setup
 
@@ -9,11 +9,9 @@ Updated 2026-11-08 UTC after reviewing the user's local Tokay runtime report.
 - Device: Pixel 9, tokay, platform zumapro.
 - Network source downloads succeeded.
 - Workspace create/read/delete and GitHub HTTPS passed after access was restored.
-- The user connects over remote SSH. ADB network access is permitted, but configured
-  and default local endpoints refused connections; no device enumeration succeeded.
-  Hardware validation requires a reachable ADB server or tunnel to the local device host.
-  The user subsequently supplied a local USB/root runtime report. This SSH server's
-  configured endpoint still refuses connections; the report was not independently repeated here.
+- The user connects over remote SSH. Forwarded ADB at 127.0.0.1:50096 now enumerates
+  Tokay and provides root access. This was independently verified here. Forwarding
+  is for ADB only, not USB fastboot recovery. Keep serials and credentials out of notes.
 - User Git identity: fuzailmansuri <mfm9875@gmail.com>.
 - Publication authorized under fruity-lineage, limited to ported work. Ten source forks
   now have verified main tips and default branch main. Original authors and user coauthor
@@ -195,15 +193,18 @@ the actual checker/consumer acceptance remains unresolved.
 - The user's [runtime report](porting/audit/tokay-runtime-report.md) records TEE
   import attestation and ordinary Keystore success with factory fallback. RKPD returned
   HTTP 400. The installed selection property was missing despite its presence in source
-  and local product/target-files outputs. The flashed OTA/product hashes are needed.
+  and local product/target-files outputs. Direct ADB now confirms the property in
+  the mounted product file, whose hash matches those outputs; reboot validation remains.
 - The follow-up reports a five-certificate targeted-app chain with exact Duck issuer
   binding and a four-certificate native control. The initial app_process proof gap
   is closed by that reported probe. Public-chain/probe evidence is not available here.
 - RKPD's reported server reason rejects boot_patch_level=20000000 as an invalid date.
   Its bootloader/header origin is unproven; caimito source has a valid 2026-10-05
   BOOT_SECURITY_PATCH. Trace the actual boot-info source before proposing a fix.
-- The user reports an unspecified checker showing all crosses. App/labels and actual
-  errors are pending. Targeted injection success does not establish remote acceptance.
+- The reported checker is now identified as gr.nikolasspyr.integritycheck 2.2,
+  installed through Play Store. Decoded verdict/licensing and actual labels are
+  pending: the phone remained locked during the direct session. Targeted injection
+  success does not establish remote acceptance.
   [Follow-up prompt](porting/audit/tokay-runtime-followup-prompt.md) records the checks.
 
 - Android/bionic regressions and hardware acceptance are pending. Tokay build outputs
@@ -213,8 +214,35 @@ the actual checker/consumer acceptance remains unresolved.
 - Imports/reset span individual Binder/settings writes and can partially apply on failure.
 - Background refresh rechecks edits after downloads, but the settings provider offers no
   cross-process compare-and-swap transaction; a final narrow race remains.
-- This configuration does not inherit vendor/gms; runtime GMS availability must be verified.
+- This configuration does not inherit vendor/gms; direct checks confirm installed
+  GMS 26.11.36, Play Store 53.9.23-34 and GSF 17. Runtime hook behavior is pending.
 - Coverage is bounded to recorded connected sources/history, not every org repo/branch.
+
+## Direct RKP investigation
+
+- See [tokay-live-integrity-investigation.md](porting/audit/tokay-live-integrity-investigation.md).
+  Active slot is _a. Boot exactly matches the build, init_boot matches the packaged
+  target-files image, and vbmeta matches target-files plus zero partition padding.
+  The compared abl prefix matches checked-in firmware. No flashing/reboot occurred.
+- Mounted product properties match the recorded hash. Duck's read-only state is
+  available/enabled/active, ready, revision 3, with no error. Signing/injection
+  reports have not been independently repeated by this session.
+- RKPD HTTP 400 and boot_patch_level=20000000 are independently reproduced.
+  A fresh CSR contains that date, orange/unlocked state, system patch 202611 and
+  vendor patch 20261005. Only selected fields are retained; CSR signatures were
+  not independently verified in the decoding check.
+- Installed vbmeta flags 3 disable descriptor verification. libavb then skips
+  chained boot metadata and AVB boot parameters. Zumapro already provides the
+  WITH_AVB=true option. The bootloader's exact date fallback remains unproven.
+  AOSP requires GKI v4's zero legacy OS/version word, so do not patch it blindly.
+- A signed flags-1 vbmeta candidate and active-slot backup are prepared under
+  out/porting-tests/tokay-avb-metadata. Signatures, original key, rollback fields
+  and all descriptors verify/match; descriptor order was regenerated. The local
+  packaged image set also passes recursive AVB verification. No ROM/kernel build
+  or Android source change was made. Candidate flashing/reboot awaits approval
+  and local USB recovery access; it has no runtime result or proven PI benefit.
+- The collector's nine unit tests pass. Actual checker JSON and all three verdicts
+  remain pending. DEVICE/STRONG acceptance cannot be inferred from injected claims.
 
 ## Scoped validation commands
 

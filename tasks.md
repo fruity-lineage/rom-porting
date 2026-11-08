@@ -1,6 +1,6 @@
 # Task state
 
-Updated 2026-11-08 UTC after reviewing the user's local Tokay runtime report.
+Updated 2026-11-08 UTC after direct ADB configuration, image and RKP checks.
 
 ## Completed
 
@@ -46,6 +46,12 @@ Updated 2026-11-08 UTC after reviewing the user's local Tokay runtime report.
   product/target-files outputs; prepare the targeted follow-up prompt.
 - [x] Record the later targeted-app five-certificate issuer proof and native control,
   plus RKPD's invalid boot_patch_level=20000000 server response.
+- [x] Verify forwarded root ADB access and mounted product selection/hostname properties.
+- [x] Match active boot, packaged init_boot/vbmeta and the compared bootloader prefix.
+- [x] Independently reproduce RKPD HTTP 400 and decode selected fresh CSR fields.
+- [x] Trace the existing WITH_AVB gate and libavb's verification-disabled metadata skip.
+- [x] Prepare and verify a signed flags-1 vbmeta experiment and save the active-slot backup.
+- [x] Test the read-only integrity collector: nine unit tests pass.
 
 The initial nine projects were clean at verification. Current publication contains
 seventeen source commits in ten forks. The active security, Settings and caimito
@@ -60,12 +66,15 @@ and [spoofing-inventory.md](spoofing-inventory.md).
 - [ ] Sync Frankel's proprietary vendor/kernel dependencies and complete full device preflight.
 - [ ] Validate Frankel compilation and compiled SELinux after integrating the shared build fixes.
 - [ ] Validate Frankel firmware import signing, production CA constraints and consumers.
-- [ ] Connect Tokay through an ADB server reachable from this remote SSH server.
-- [ ] Compare the flashed OTA/product hashes and active slot; fix persistent selection
-  only after reconciling the missing phone property with the already-correct source setting.
+- [ ] Check selection-property persistence after an authorized reboot; mounted product
+  now matches the build and contains the setting, so no duplicate source edit is needed.
 - [ ] Independently review the reported targeted-app public chain/probe and test actual consumers.
-- [ ] Identify the checker showing crosses, its failed labels and actual sanitized verdict/error.
+- [ ] Obtain fresh JSON/licensing/labels from the identified Play Integrity API Checker
+  2.2; phone unlock and the checker request are pending.
 - [ ] Trace the invalid boot patch value, resolve RKPD HTTP 400 and validate a remote-provisioned chain.
+- [ ] If approved, test the prepared metadata-verification candidate with local USB
+  recovery available. Do not flash/reboot from diagnostic-access authorization alone.
+  Verify CSR/RKPD, ordinary Keystore and real verdicts afterward; restore on failure.
 - [ ] Independently review public-chain/probe evidence for the reported factory import success.
 - [ ] Validate the produced keybox with Tokay consumers, renewal and secondary users.
 - [ ] Resolve direct external-key CSR signing if exact original Duck protocol support is required;

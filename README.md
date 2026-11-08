@@ -57,5 +57,10 @@ can be passed to an AI CLI with access to the workspace and device.
 The user's [runtime report](porting/audit/tokay-runtime-report.md) records factory-backed
 import success after an override. Use the [follow-up prompt](porting/audit/tokay-runtime-followup-prompt.md)
 to resolve the missing installed property, prove targeted-app keybox use and diagnose RKPD HTTP 400.
-The later report supplies targeted-app issuer binding; remaining work is persistent
-configuration, the invalid RKP boot patch date and the actual checker's failed verdicts.
+The later report supplies targeted-app issuer binding. The
+[direct ADB investigation](porting/audit/tokay-live-integrity-investigation.md) now
+confirms installed properties/image provenance and reproduces the invalid RKP date.
+A signed metadata-verification experiment is prepared and awaits approval; no phone
+partition has been changed. Actual checker JSON, reboot persistence and Google acceptance
+remain pending. The [read-only collector](porting/tools/check-play-integrity.py)
+summarizes configuration and supplied decoded responses without exporting keyboxes.

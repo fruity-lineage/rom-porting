@@ -1,6 +1,6 @@
 # Evolution X spoofing and Duck RKP port inventory
 
-Updated 2026-11-08 UTC after recording and qualifying the user's local runtime results.
+Updated 2026-11-08 UTC after direct ADB configuration, image and RKP checks.
 
 Targets: LineageOS lineage-24.0 / Android 17, Pixel 9 (tokay, zumapro) and
 Pixel 10 (frankel, laguna).
@@ -16,7 +16,15 @@ factory-backed TEE import and ordinary Keystore success after a runtime property
 override. The follow-up reports targeted-app Duck issuer binding and the expected
 five-certificate chain versus a native four-certificate control. RKPD HTTP 400
 is linked to an invalid boot patch date; its source, persistent device configuration
-and the actual checker's acceptance remain unresolved. These results do not apply to Frankel.
+and the actual checker's acceptance remain unresolved. Direct ADB now confirms installed
+selection properties and image provenance and independently reproduces RKPD's invalid date.
+These results do not apply to Frankel.
+
+The [live investigation](porting/audit/tokay-live-integrity-investigation.md) records
+the existing WITH_AVB gate and libavb verification-disabled behavior, inspected pins,
+image hashes and a signed metadata experiment awaiting approval. Nine collector tests
+pass. No new Android source commit or manifest change was made; the seventeen published
+source commits remain unchanged. No real Play Integrity verdict has been obtained here.
 
 ## Supplied device references
 
