@@ -1,6 +1,6 @@
 # Task state
 
-Updated 2026-11-08 UTC after committing the Tokay import-attestation adapter.
+Updated 2026-11-08 UTC after verifying source forks and publishing the shared handoff.
 
 ## Completed
 
@@ -32,6 +32,9 @@ Updated 2026-11-08 UTC after committing the Tokay import-attestation adapter.
 - [x] Commit and publish the isolated Frankel product configuration in android_device_google_muzel/main.
 - [x] Use device-neutral GitHub descriptions and prepare a shared rom-porting handoff.
 - [x] Publish both product-partition corrections from isolated worktrees through GitHub APIs.
+- [x] Publish AGENTS.md, memory, inventory, audits and all three manifest overlays in rom-porting/main.
+- [x] Verify all ten source fork tips and all 57 initial handoff files against their local commits.
+- [x] Publish the device-neutral organization profile with the required AI-assistance note.
 
 The initial nine projects were clean at verification. Current publication contains
 fifteen source commits in ten forks. The active caimito product-property edit is
@@ -42,7 +45,6 @@ and [spoofing-inventory.md](spoofing-inventory.md).
 
 ## Remaining acceptance work
 
-- [ ] Publish AGENTS.md, memory, inventory and the fork manifest in a handoff repository.
 - [ ] Collect the result of the user's currently running Tokay build; no compiler result is recorded.
 - [ ] Sync Frankel's proprietary vendor/kernel dependencies and complete full device preflight.
 - [ ] Validate Frankel firmware import signing, production CA constraints and consumers.

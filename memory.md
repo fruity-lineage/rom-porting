@@ -1,6 +1,6 @@
 # Workspace memory
 
-Updated 2026-11-08 UTC after source publication and isolated Pixel product-property fixes.
+Updated 2026-11-08 UTC after source and handoff publication and isolated Pixel property fixes.
 
 ## Setup
 
@@ -18,6 +18,12 @@ Updated 2026-11-08 UTC after source publication and isolated Pixel product-prope
   credit are retained; publication messages include references and omit Gerrit Change-Id.
   Source trees are identical to the local topic commits. The mapping is in
   porting/audit/publication-commits.json. Handoff repository: fruity-lineage/rom-porting.
+- The complete initial handoff is published on main at d6a940198b57eedadb5333ad2a7a940626d14c1e.
+  All 57 tracked files and the tree match the local commit; all ten source fork tips
+  were rechecked at that point. See porting/audit/handoff-publication-verification.json.
+  Subsequent documentation commits record publication status without altering source forks.
+- fruity-lineage/.github/main contains a device-neutral organization profile linking
+  the handoff and disclosing AI assistance, as required by the ROM development skill.
 - Read taste.md, tasks.md, spoofing-inventory.md and the final verification report before continuing.
 
 ## Tokay sources

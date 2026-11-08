@@ -31,8 +31,9 @@ The handoff is published in fruity-lineage/rom-porting on main. In a synced
 Android workspace, agent-memory is its Git checkout and root notes/porting can be
 links into it. If opened alone, this repository is documentation and tools, not the
 Android source workspace. Run source Git commands in the actual Android projects.
-Read porting/audit/publication-commits.json and porting/manifests/tokay.xml for the
-published revisions. Preserve upstream authors and fuzailmansuri's coauthor credit.
+Read porting/audit/publication-commits.json for the published revisions. Choose one
+overlay from porting/manifests for either device family or both. Preserve upstream
+authors and fuzailmansuri's coauthor credit.
 Only ported work is authorized for publication; unrelated pre-existing edits are excluded.
 Preserve a running build's inputs. Use isolated worktrees for additional device work,
 and do not switch the active workspace's manifests or source revisions during a build.

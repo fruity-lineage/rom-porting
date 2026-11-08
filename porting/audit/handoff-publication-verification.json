@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-08",
+  "repository": "fruity-lineage/rom-porting",
+  "branch": "main",
+  "initial_handoff_commit": "d6a940198b57eedadb5333ad2a7a940626d14c1e",
+  "tree": "8987c48f645bab0c05e5d62bd1f82df91cee279f",
+  "tracked_files": 57,
+  "remote_files_identical": true,
+  "verified_source_forks": [
+    "fruity-lineage/android_external_bouncycastle",
+    "fruity-lineage/android_bionic",
+    "fruity-lineage/android_vendor_lineage",
+    "fruity-lineage/android_system_core",
+    "fruity-lineage/android_device_lineage_sepolicy",
+    "fruity-lineage/android_frameworks_base",
+    "fruity-lineage/android_packages_apps_Settings",
+    "fruity-lineage/android_system_security",
+    "fruity-lineage/android_device_google_caimito",
+    "fruity-lineage/android_device_google_muzel"
+  ],
+  "build_inputs": "No active source checkout or manifest mutations performed",
+  "hardware_acceptance": "Pending for both targets",
+  "organization_profile": {
+    "repository": "fruity-lineage/.github",
+    "branch": "main",
+    "commit": "8e6a3e10b04ae67f0c1b112f86400c2b927b3f54",
+    "profile_blob": "e62f89604870b1a093727127d22e575a4d80270b",
+    "verified": true
+  },
+  "scope": "Initial complete handoff snapshot; later documentation commits record publication status"
+}

@@ -110,6 +110,15 @@ overlay selects these forks and the unchanged Tokay dependencies.
 Individual or combined overlays also include Frankel's unchanged dependencies.
 GitHub descriptions are device-neutral; implementation details remain in the device audits.
 
+The initial complete handoff is published at
+[d6a9401](https://github.com/fruity-lineage/rom-porting/commit/d6a940198b57eedadb5333ad2a7a940626d14c1e).
+Its 57 tracked files and tree match the local commit, including AGENTS.md, persistent
+notes, audits, tools and all three manifest overlays. All ten source fork tips were
+rechecked against the inventory. The organization profile is on .github/main at
+[8e6a3e1](https://github.com/fruity-lineage/.github/commit/8e6a3e10b04ae67f0c1b112f86400c2b927b3f54).
+See [handoff-publication-verification.json](porting/audit/handoff-publication-verification.json).
+Publication did not modify the active build's source checkouts or manifests.
+
 ## Frankel source integration
 
 The shared stack carries over. Its device product is in muzel, with Laguna selecting
@@ -123,7 +132,8 @@ compilation, firmware behavior and CA acceptance remain pending. See
 
 - The baseline 94 files were checked at the initial checkpoint. The follow-up verifies
   all 99 combined files, including 88 unchanged baseline files, against committed trees.
-- All nine port working trees are clean; commit whitespace and attribution checked.
+- The initial nine port working trees were clean at verification; commit whitespace and
+  attribution were checked. The current active caimito property edit is preserved.
 - 41 Java and 16 Kotlin sources parse without syntax errors.
 - 353 resource references resolve; 244 imported names are unique; eight destinations exist.
 - All 276 prior ActivityManager signatures remain; all 15 additions have implementations.
