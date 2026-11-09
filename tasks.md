@@ -226,3 +226,21 @@ No build or new device verdict was produced by these checks.
 
 The [Soong verification](porting/audit/hardened-malloc-soong-availability.json)
 records the narrower validation scope. No passing integrity verdict is implied.
+
+## Tokay boot failure recovery (2026-11-09)
+
+- [x] Prove the new packaged FIPS/GKI CRC mismatch and audit all 340 distribution modules.
+- [x] Publish and activate source FIPS selection and kernel-directory fixes.
+- [x] Verify source/prebuilt Bazel selection with zero compilation actions.
+- [x] Read current recovery and identify independently displaced DLKM filesystems.
+- [x] Honor the requested five-minute hold and preserve build/device inputs.
+- [ ] Obtain the exact reset/flash history and fresh post-restoration failure log.
+- [ ] Build/repackage the corrected coordinated image set after the build override,
+  or inspect the user's completed rebuild; the current images remain incompatible.
+- [ ] Validate FIPS CRCs and every packaged module; repair the complete installed
+  partition/image set with a concrete reviewed flash procedure.
+- [ ] Demonstrate successful recovery and normal Android boots, allocator/module
+  regressions and actual requested integrity acceptance.
+
+See porting/audit/tokay-boot-kmi.md and JSON. The source fix is complete;
+artifact production and hardware recovery are not.

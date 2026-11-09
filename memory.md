@@ -432,3 +432,24 @@ successfully; its graph retains Linux HMallocTest and arm64 memtag_test.
 Only graph generation was executed in this follow-up; native/Java compilation,
 final image success and device validation remain pending. See
 porting/audit/hardened-malloc-soong-availability.json.
+
+## Tokay FIPS and installed-layout failure (2026-11-09)
+
+The new packaged GKI exports module_layout CRC 0x248147a7; its packaged FIPS
+module expects 0xea759d7f and has 68 mismatched GKI imports. The other 339
+distribution modules pass the scoped GKI-import CRC comparison. The source-GKI
+switch had retained an independent downloaded FIPS binary. Source fixes are
+active/published: common/gki 86f19d582a316c70816d8beb5bcebb3398f20caf and
+private/devices 4161bff14a5405e22de9921a83f556153d28a867. Configured Bazel
+analysis selects source FIPS correctly and preserves the prebuilt path; no native
+compilation or repair image was produced.
+
+Live recovery B uses the old GKI/ramdisk while mounted system is new incremental
+1794246017. Both mapped module partitions lack the expected primary ext4 header;
+matching filesystem headers occur 512 KiB later than the mapping expects. Their
+current LP and device-mapper tables agree. The reason for that displacement and
+the precise reset/flash history remain unknown. Merely restoring boot.img does
+not repair these module partitions. No device writes/reboots/wipes were performed.
+The requested five-minute build hold was observed; outputs remained unchanged
+and no active Tokay builder was visible afterward. A build-rule override remains
+unanswered. Read porting/audit/tokay-boot-kmi.md and JSON before further flashing.

@@ -1,0 +1,543 @@
+{
+  "date_utc": "2026-11-09T18:48:36.784584+00:00",
+  "device": "tokay",
+  "status": "source fixes published; repair images not built or installed",
+  "source_fixes": [
+    {
+      "project": "out-kernel/google/gs-6.1/common/gki",
+      "repository": "fruity-lineage/android_kernel_common_gs-6.1",
+      "commit": "86f19d582a316c70816d8beb5bcebb3398f20caf",
+      "parent": "128e563a7b841cdee51ce79669fee61c99cd0890",
+      "tree": "fad697a5764d2638860c3aabacd9cd0f81a67a5b",
+      "subject": "malloc: Preserve the selected kernel directory for FIPS",
+      "author": "fuzailmansuri <mfm9875@gmail.com>",
+      "files": [
+        {
+          "path": "build.config.gki.aarch64.fips140",
+          "sha256": "f4160a6ff930e4354f9b1c12f7f64540c20ef41e256aae2c71d08d7d9a34b3cd"
+        }
+      ],
+      "published": true,
+      "active": true
+    },
+    {
+      "project": "out-kernel/google/gs-6.1/private/devices",
+      "repository": "fruity-lineage/android_kernel_google_gs-6.1_devices",
+      "commit": "4161bff14a5405e22de9921a83f556153d28a867",
+      "parent": "62e7ed384bc4a3ca22b0c2fc1eab1475ada35e2a",
+      "tree": "c74b75940b20df3261156a6e6ab18e69354ffe3f",
+      "subject": "malloc: Pair FIPS with the selected source GKI",
+      "author": "fuzailmansuri <mfm9875@gmail.com>",
+      "files": [
+        {
+          "path": "google/common/BUILD.bazel",
+          "sha256": "e86613ff0b20ec3d8942da8d6b4a22b4e0edbddc5ffc39003d6fe9f727c9ed4b"
+        },
+        {
+          "path": "google/common/workspace/common.BUILD.bazel",
+          "sha256": "4cfd3aa8d830825ea9c981970754e0a3219ccacefae3a0e0019c822a27285baa"
+        }
+      ],
+      "published": true,
+      "active": true
+    }
+  ],
+  "artifacts_inspected": [
+    {
+      "path": "out/target/product/tokay/boot.img",
+      "bytes": 67108864,
+      "sha256": "8ff18ac1e7e691468e4a0f235ff85249a6db58a5d43a525bd679dd2b4901976f"
+    },
+    {
+      "path": "out/target/product/tokay/vendor_kernel_boot.img",
+      "bytes": 67108864,
+      "sha256": "8d6072d657761da3319090f7bda78317b9107a5ed010798e451ad774b48d79b4"
+    },
+    {
+      "path": "device/google/caimito-kernels/6.1/fips140.ko",
+      "bytes": 441720,
+      "sha256": "31570c8e479dd9356992b6354dcd18c2ee2dd2959146a94ea080b07b783e00bc"
+    },
+    {
+      "path": "out-kernel/google/gs-6.1/out/caimito/dist/Image",
+      "bytes": 35707392,
+      "sha256": "fddabb4cb945a4fa28fb32bc1f4c35f449cfa74330559342303c38a8f8db216c"
+    },
+    {
+      "path": "out-kernel/google/gs-6.1/out/caimito/dist/kernel_aarch64_Module.symvers",
+      "bytes": 530641,
+      "sha256": "a9a714df2c74236ae2a5c530b85b62c5109cfb6668fbde2629712c48be7df49b"
+    }
+  ],
+  "kernel_image_matches_packaged_boot": true,
+  "kernel_va_bits": 48,
+  "kernel_module_layout_crc": "0x248147a7",
+  "packaged_fips_module_layout_crc": "0xea759d7f",
+  "packaged_fips_matches_staged_binary": true,
+  "gki_import_crc_audit": {
+    "modules_checked": 340,
+    "modules_without_gki_import_mismatches": 339,
+    "import_comparisons": 18426,
+    "mismatched_modules": [
+      {
+        "name": "fips140.ko",
+        "rc": 0,
+        "module_layout": "0xea759d7f",
+        "matched_gki_imports": 68,
+        "non_gki_imports": 0,
+        "mismatches": [
+          {
+            "symbol": "crypto_register_alg",
+            "module": "0x4a1204f0",
+            "kernel": "0x4dc89eae"
+          },
+          {
+            "symbol": "crypto_register_aead",
+            "module": "0xbfb4e84e",
+            "kernel": "0x76ea8abb"
+          },
+          {
+            "symbol": "crypto_register_ahash",
+            "module": "0x0f57885d",
+            "kernel": "0x5284e58d"
+          },
+          {
+            "symbol": "crypto_register_rng",
+            "module": "0x831afad2",
+            "kernel": "0x64f1baf5"
+          },
+          {
+            "symbol": "crypto_register_shash",
+            "module": "0x1d386050",
+            "kernel": "0xd2d8c1d2"
+          },
+          {
+            "symbol": "crypto_register_skcipher",
+            "module": "0x70b27b3c",
+            "kernel": "0x0c394a36"
+          },
+          {
+            "symbol": "aead_register_instance",
+            "module": "0x84356a92",
+            "kernel": "0xa224b100"
+          },
+          {
+            "symbol": "ahash_register_instance",
+            "module": "0x1787bb48",
+            "kernel": "0x5db17771"
+          },
+          {
+            "symbol": "shash_register_instance",
+            "module": "0xbb0c990d",
+            "kernel": "0x3ce91ae1"
+          },
+          {
+            "symbol": "skcipher_register_instance",
+            "module": "0xd2b42989",
+            "kernel": "0x90639bdc"
+          },
+          {
+            "symbol": "crypto_register_algs",
+            "module": "0xb028a93c",
+            "kernel": "0x998ba98a"
+          },
+          {
+            "symbol": "crypto_register_aeads",
+            "module": "0xe7bb04d1",
+            "kernel": "0xa8bf432d"
+          },
+          {
+            "symbol": "crypto_register_ahashes",
+            "module": "0x1ad832bb",
+            "kernel": "0xa4c72224"
+          },
+          {
+            "symbol": "crypto_register_rngs",
+            "module": "0xef36cc45",
+            "kernel": "0x7b8ffe52"
+          },
+          {
+            "symbol": "crypto_register_shashes",
+            "module": "0x4579a957",
+            "kernel": "0x4fa294b1"
+          },
+          {
+            "symbol": "crypto_register_skciphers",
+            "module": "0x1e086325",
+            "kernel": "0xcb8c5db2"
+          },
+          {
+            "symbol": "crypto_remove_spawns",
+            "module": "0x02da53a2",
+            "kernel": "0xd39765b5"
+          },
+          {
+            "symbol": "crypto_alloc_shash",
+            "module": "0x5b3ecf50",
+            "kernel": "0x792a0afd"
+          },
+          {
+            "symbol": "crypto_shash_setkey",
+            "module": "0x72a3fb20",
+            "kernel": "0xacb529a9"
+          },
+          {
+            "symbol": "crypto_shash_update",
+            "module": "0xd0b8754a",
+            "kernel": "0xb7c3eb15"
+          },
+          {
+            "symbol": "crypto_shash_finup",
+            "module": "0xced3ee9b",
+            "kernel": "0x5e764cd3"
+          },
+          {
+            "symbol": "crypto_shash_tfm_digest",
+            "module": "0xd395e8c3",
+            "kernel": "0x8612d128"
+          },
+          {
+            "symbol": "crypto_alloc_skcipher",
+            "module": "0xb786e327",
+            "kernel": "0x7616379c"
+          },
+          {
+            "symbol": "crypto_skcipher_setkey",
+            "module": "0x26a098fc",
+            "kernel": "0x53f3fe1f"
+          },
+          {
+            "symbol": "crypto_skcipher_encrypt",
+            "module": "0xcfad4135",
+            "kernel": "0x3546e61d"
+          },
+          {
+            "symbol": "crypto_skcipher_decrypt",
+            "module": "0x5528f6cb",
+            "kernel": "0x57a399ec"
+          },
+          {
+            "symbol": "crypto_alloc_aead",
+            "module": "0xbfb0935d",
+            "kernel": "0xda5ec9a2"
+          },
+          {
+            "symbol": "crypto_aead_setkey",
+            "module": "0x3de7f547",
+            "kernel": "0xf0ebac82"
+          },
+          {
+            "symbol": "crypto_aead_setauthsize",
+            "module": "0x5de839de",
+            "kernel": "0x2075f0eb"
+          },
+          {
+            "symbol": "crypto_aead_encrypt",
+            "module": "0x3d564936",
+            "kernel": "0x7c877c31"
+          },
+          {
+            "symbol": "crypto_aead_decrypt",
+            "module": "0x80c539ad",
+            "kernel": "0xe15e429e"
+          },
+          {
+            "symbol": "crypto_alloc_rng",
+            "module": "0x440e70bc",
+            "kernel": "0x803beed8"
+          },
+          {
+            "symbol": "crypto_rng_reset",
+            "module": "0x9bf39d8d",
+            "kernel": "0x28221906"
+          },
+          {
+            "symbol": "crypto_unregister_rngs",
+            "module": "0x5f5a140e",
+            "kernel": "0xde17f5f5"
+          },
+          {
+            "symbol": "kmalloc_caches",
+            "module": "0x0f15b38a",
+            "kernel": "0xb534eada"
+          },
+          {
+            "symbol": "kmalloc_trace",
+            "module": "0xb78e7543",
+            "kernel": "0x9ec14e48"
+          },
+          {
+            "symbol": "crypto_shash_final",
+            "module": "0xee0bf3c2",
+            "kernel": "0xb7b54026"
+          },
+          {
+            "symbol": "crypto_unregister_template",
+            "module": "0xd6fa098b",
+            "kernel": "0x43f5e958"
+          },
+          {
+            "symbol": "crypto_register_template",
+            "module": "0xf1da2be6",
+            "kernel": "0x8682fb7e"
+          },
+          {
+            "symbol": "skcipher_alloc_instance_simple",
+            "module": "0xae8e9e95",
+            "kernel": "0xdc8331bb"
+          },
+          {
+            "symbol": "skcipher_walk_virt",
+            "module": "0xa1045e95",
+            "kernel": "0x6549361b"
+          },
+          {
+            "symbol": "skcipher_walk_done",
+            "module": "0xe799e196",
+            "kernel": "0xb9604abc"
+          },
+          {
+            "symbol": "crypto_unregister_templates",
+            "module": "0xd45dcc00",
+            "kernel": "0x37ac0037"
+          },
+          {
+            "symbol": "crypto_register_templates",
+            "module": "0x887cfd9b",
+            "kernel": "0xdfbe8dea"
+          },
+          {
+            "symbol": "crypto_grab_skcipher",
+            "module": "0xfa3b917d",
+            "kernel": "0xa09d4799"
+          },
+          {
+            "symbol": "crypto_drop_spawn",
+            "module": "0x64cf94b4",
+            "kernel": "0x25d0a920"
+          },
+          {
+            "symbol": "crypto_spawn_tfm2",
+            "module": "0x9d1482f0",
+            "kernel": "0x8471dc1e"
+          },
+          {
+            "symbol": "crypto_inst_setname",
+            "module": "0xfa76cf97",
+            "kernel": "0x7032a533"
+          },
+          {
+            "symbol": "crypto_grab_aead",
+            "module": "0xc704e06c",
+            "kernel": "0xad39871c"
+          },
+          {
+            "symbol": "crypto_grab_ahash",
+            "module": "0x815c2a4d",
+            "kernel": "0xd6c10b74"
+          },
+          {
+            "symbol": "crypto_ahash_setkey",
+            "module": "0xdb0fc569",
+            "kernel": "0x4591873c"
+          },
+          {
+            "symbol": "crypto_ahash_finup",
+            "module": "0x095c49bc",
+            "kernel": "0xeb6c420d"
+          },
+          {
+            "symbol": "crypto_get_default_null_skcipher",
+            "module": "0x9b19163b",
+            "kernel": "0xb801f9c8"
+          },
+          {
+            "symbol": "crypto_grab_shash",
+            "module": "0x8abafd8b",
+            "kernel": "0xfb51f4ff"
+          },
+          {
+            "symbol": "shash_free_singlespawn_instance",
+            "module": "0x4a31048c",
+            "kernel": "0x4bb81ac5"
+          },
+          {
+            "symbol": "crypto_shash_alg_has_setkey",
+            "module": "0x9bfa0162",
+            "kernel": "0xd3c1fc2c"
+          },
+          {
+            "symbol": "crypto_shash_digest",
+            "module": "0x5dd4ac73",
+            "kernel": "0x960bf97b"
+          },
+          {
+            "symbol": "crypto_grab_spawn",
+            "module": "0x8fdd4639",
+            "kernel": "0xcfb90f48"
+          },
+          {
+            "symbol": "crypto_spawn_tfm",
+            "module": "0xa7ebc330",
+            "kernel": "0x2bdb82e6"
+          },
+          {
+            "symbol": "crypto_unregister_alg",
+            "module": "0xa0dbb600",
+            "kernel": "0x4f25eacc"
+          },
+          {
+            "symbol": "crypto_unregister_rng",
+            "module": "0xcb43b1a7",
+            "kernel": "0x61a4e4ed"
+          },
+          {
+            "symbol": "crypto_unregister_shash",
+            "module": "0xc2b4eed1",
+            "kernel": "0x0efe1541"
+          },
+          {
+            "symbol": "crypto_unregister_shashes",
+            "module": "0x60168197",
+            "kernel": "0x2cd17486"
+          },
+          {
+            "symbol": "crypto_unregister_aead",
+            "module": "0x27a735da",
+            "kernel": "0x27705e1e"
+          },
+          {
+            "symbol": "skcipher_walk_aead_encrypt",
+            "module": "0x4e121a7c",
+            "kernel": "0x22e9a261"
+          },
+          {
+            "symbol": "skcipher_walk_aead_decrypt",
+            "module": "0x9356d0fe",
+            "kernel": "0xd55780d5"
+          },
+          {
+            "symbol": "crypto_unregister_skciphers",
+            "module": "0x625ccc14",
+            "kernel": "0x839e70ad"
+          },
+          {
+            "symbol": "module_layout",
+            "module": "0xea759d7f",
+            "kernel": "0x248147a7"
+          }
+        ]
+      }
+    ],
+    "scope": "Imported symbols present in the selected GKI Module.symvers; non-GKI imports, signatures and runtime loading are not validated by this comparison."
+  },
+  "validation": {
+    "source_fips_query": {
+      "command": "tools/bazel cquery --config=caimito \"labels(srcs, //private/devices/google/common:fips140)\" --output=label",
+      "exit_code": 0,
+      "selected": "//common:fips140/fips140.ko",
+      "actions_executed": 0
+    },
+    "prebuilt_fips_query": {
+      "command": "tools/bazel cquery --config=caimito --use_prebuilt_kernel \"labels(srcs, //private/devices/google/common:fips140)\" --output=label",
+      "exit_code": 0,
+      "selected": "@gki_prebuilt_fips140//fips140.ko:fips140.ko",
+      "actions_executed": 0
+    },
+    "fips_config_resolves_kernel_dir": "common/gki",
+    "git_diff_check": "pass",
+    "published_commit_and_tree_verified": true,
+    "native_compilation_executed": false,
+    "device_flash_executed": false,
+    "device_reboot_executed": false
+  },
+  "installed_recovery": {
+    "slot": "b",
+    "kernel": "6.1.162-android14-11-g7b58131aec77-ab16736902",
+    "recovery_incremental": "1794188022",
+    "mounted_system_incremental": "1794246017",
+    "loaded_ramdisk_module_layout_crc": "0xea759d7f",
+    "raw_system_dlkm_contains_current_build_rfkill": {
+      "sha256": "065c8eda7be6a2e01e225c3ee8654f94e1e8a0072a0b97524389912fabc0576b",
+      "offset": 10432512,
+      "module_layout_crc": "0x248147a7",
+      "scope": "Exact module bytes recovered from the raw partition; not proof that a mounted filesystem resolves this file."
+    },
+    "pstore_empty": true,
+    "normal_boot_failure_log_after_old_image_restore": "not available"
+  },
+  "installed_dlkm_layout": {
+    "device_mapper_targets": "linear; same sectors as slot-1 LP metadata",
+    "system_dlkm_b": {
+      "start_sector_in_super": 2176000,
+      "bytes": 11730944,
+      "sha256": "c00ee9ada6adba5d937dc0e2f91de97421103b20f374d03f1f45088e12afdefe"
+    },
+    "vendor_dlkm_b": {
+      "start_sector_in_super": 10272768,
+      "bytes": 25448448,
+      "sha256": "92e85525401cdbd3190b949ad9a745802579dbeab7f918460d322896eef5cfc7"
+    },
+    "filesystem_headers": {
+      "system_dlkm": [
+        {
+          "name": "build",
+          "offset": 1024,
+          "magic": "0xef53",
+          "blocks": 2797,
+          "block_size": 4096,
+          "uuid": "8c89e3e0-c088-54ba-b15a-9b006ded80d0",
+          "volume": "system_dlkm"
+        },
+        {
+          "name": "installed_primary",
+          "offset": 1024,
+          "magic": "0x0"
+        },
+        {
+          "name": "installed_later",
+          "offset": 525312,
+          "magic": "0xef53",
+          "blocks": 2797,
+          "block_size": 4096,
+          "uuid": "8c89e3e0-c088-54ba-b15a-9b006ded80d0",
+          "volume": "system_dlkm"
+        }
+      ],
+      "vendor_dlkm": [
+        {
+          "name": "build",
+          "offset": 1024,
+          "magic": "0xef53",
+          "blocks": 6095,
+          "block_size": 4096,
+          "uuid": "9afde35e-a332-5efb-9f7f-0f31b8d9cca3",
+          "volume": "vendor_dlkm"
+        },
+        {
+          "name": "installed_primary",
+          "offset": 1024,
+          "magic": "0xf4c"
+        },
+        {
+          "name": "installed_later",
+          "offset": 525312,
+          "magic": "0xef53",
+          "blocks": 6095,
+          "block_size": 4096,
+          "uuid": "9afde35e-a332-5efb-9f7f-0f31b8d9cca3",
+          "volume": "vendor_dlkm"
+        }
+      ]
+    },
+    "finding": "Both mapped module partitions lack an ext4 primary superblock at byte 1024. A superblock with the expected volume name, UUID and block count is present at byte 525312, displaced by 524288 bytes. Host debugfs rejects both current mappings. The fstab requires both as first-stage ext4 mounts.",
+    "cause": "Unknown; precise reset/flash history and a fresh normal-boot log were requested. Do not infer a snapshot-loss cause from formatting alone."
+  },
+  "remaining": [
+    "Build FIPS and regenerate a coordinated Tokay image/OTA set, then repeat artifact CRC checks.",
+    "Verify and repair the installed dynamic partition layout through a complete matched installation.",
+    "Capture fresh boot logs and validate ordinary Android startup and module loading.",
+    "Allocator/MTE behavior and BASIC/DEVICE/STRONG integrity acceptance remain unverified."
+  ],
+  "build_hold": "User requested a five-minute hold. After the hold, no active Tokay builder was visible and the inspected output files were unchanged. The ROM skill build override request has not been answered."
+}

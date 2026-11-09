@@ -451,7 +451,7 @@
     "worktree": "/tmp/malloc-gs6.1-gki",
     "commit": "128e563a7b841cdee51ce79669fee61c99cd0890",
     "base_tree": "98fe2e0436faf0d5102a97f75e9151dc5d4c27ef",
-    "tree": "0b58b4e189a2edb1f2efb2f305501fc5eac570b4",
+    "tree": "fad697a5764d2638860c3aabacd9cd0f81a67a5b",
     "files": [
       "arch/arm64/Kconfig"
     ],
@@ -474,8 +474,8 @@
     "github_mirror": "https://github.com/aosp-mirror-neo/kernel_common",
     "repository": "fruity-lineage/android_kernel_common_gs-6.1",
     "branch": "main",
-    "local_tip": "128e563a7b841cdee51ce79669fee61c99cd0890",
-    "published_tip": "128e563a7b841cdee51ce79669fee61c99cd0890",
+    "local_tip": "86f19d582a316c70816d8beb5bcebb3398f20caf",
+    "published_tip": "86f19d582a316c70816d8beb5bcebb3398f20caf",
     "commits": [
       {
         "local_commit": "128e563a7b841cdee51ce79669fee61c99cd0890",
@@ -486,11 +486,22 @@
           "https://github.com/GrapheneOS/kernel_common-6.1/commit/8007d2d1579a3c85446996b654045bea07b8b44e",
           "https://github.com/GrapheneOS/kernel_common-6.1/commit/6d9f73de39563946bcfc565d8bc15c896daa37b2"
         ]
+      },
+      {
+        "local_commit": "86f19d582a316c70816d8beb5bcebb3398f20caf",
+        "published_commit": "86f19d582a316c70816d8beb5bcebb3398f20caf",
+        "subject": "malloc: Preserve the selected kernel directory for FIPS",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/fruity-lineage/android_kernel_common_gs-6.1/commit/128e563a7b841cdee51ce79669fee61c99cd0890"
+        ],
+        "validation": "Source/prebuilt configured Bazel analysis and shell path resolution pass; repair compilation and device boot pending."
       }
     ],
     "published": true,
     "verified": true,
-    "fork_source": "aosp-mirror-neo/kernel_common"
+    "fork_source": "aosp-mirror-neo/kernel_common",
+    "active_checkout_tip": "86f19d582a316c70816d8beb5bcebb3398f20caf"
   },
   {
     "project": "out-kernel/google/gs-6.1/private/devices",
@@ -498,7 +509,7 @@
     "worktree": "/tmp/malloc-gs6.1-devices",
     "commit": "62e7ed384bc4a3ca22b0c2fc1eab1475ada35e2a",
     "base_tree": "867164c979055edd5c901d0b302d03b3e2991931",
-    "tree": "dbcac31ac026c831cc1cc0b9e8fc7fccd6f4022e",
+    "tree": "c74b75940b20df3261156a6e6ab18e69354ffe3f",
     "files": [
       "google/caimito/device.bazelrc"
     ],
@@ -520,8 +531,8 @@
     },
     "repository": "fruity-lineage/android_kernel_google_gs-6.1_devices",
     "branch": "main",
-    "local_tip": "62e7ed384bc4a3ca22b0c2fc1eab1475ada35e2a",
-    "published_tip": "62e7ed384bc4a3ca22b0c2fc1eab1475ada35e2a",
+    "local_tip": "4161bff14a5405e22de9921a83f556153d28a867",
+    "published_tip": "4161bff14a5405e22de9921a83f556153d28a867",
     "commits": [
       {
         "local_commit": "62e7ed384bc4a3ca22b0c2fc1eab1475ada35e2a",
@@ -531,11 +542,22 @@
         "references": [
           "https://github.com/LineageOS/android_kernel_google_gs-6.1_devices/commit/ec1bafc7ddc9a92937bd110f0b47dc069217ae50"
         ]
+      },
+      {
+        "local_commit": "4161bff14a5405e22de9921a83f556153d28a867",
+        "published_commit": "4161bff14a5405e22de9921a83f556153d28a867",
+        "subject": "malloc: Pair FIPS with the selected source GKI",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/fruity-lineage/android_kernel_google_gs-6.1_devices/commit/62e7ed384bc4a3ca22b0c2fc1eab1475ada35e2a"
+        ],
+        "validation": "Source/prebuilt configured Bazel analysis and shell path resolution pass; repair compilation and device boot pending."
       }
     ],
     "published": true,
     "verified": true,
-    "fork_source": "LineageOS/android_kernel_google_gs-6.1_devices"
+    "fork_source": "LineageOS/android_kernel_google_gs-6.1_devices",
+    "active_checkout_tip": "4161bff14a5405e22de9921a83f556153d28a867"
   },
   {
     "project": "out-kernel/google/gs-6.6/common/gki",

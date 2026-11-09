@@ -334,3 +334,23 @@ Linux HMallocTest and arm64 memtag_test; Windows HMallocTest is absent. GitHub m
 commit/tree match the clean active project. The two new file hashes supersede the
 earlier allocator snapshot entries for these paths. Full compilation and hardware
 validation remain pending. See [verification](porting/audit/hardened-malloc-soong-availability.json).
+
+## Tokay FIPS source pairing and boot failure audit (2026-11-09)
+
+| Project | Active/published commit | Change |
+| --- | --- | --- |
+| out-kernel/google/gs-6.1/common/gki | 86f19d582a316c70816d8beb5bcebb3398f20caf | Preserve the selected source directory in the existing FIPS target |
+| out-kernel/google/gs-6.1/private/devices | 4161bff14a5405e22de9921a83f556153d28a867 | Select source FIPS alongside source GKI; retain the prebuilt path |
+
+Both malloc: commits use the configured user identity, preserve inherited source
+history, and have verified fruity-lineage main commit/tree objects. The nested
+Tokay overlay already consumes these branches. Configured source/prebuilt Bazel
+queries, shell configuration resolution and whitespace checks pass. No compiler
+or device boot was run for these fixes.
+
+The inspected existing images remain incompatible: FIPS has 68 differing GKI
+symbol CRCs; the other 339 modules pass the scoped import comparison. Recovery
+reads also establish displaced primary DLKM filesystem headers and mixed old/new
+module content. Exact reset/flash provenance and fresh normal-boot logs remain
+pending. Artifact hashes, source hashes and limitations are recorded in
+[boot audit](porting/audit/tokay-boot-kmi.md) and its JSON.
