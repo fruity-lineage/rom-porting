@@ -412,3 +412,12 @@ production compilation/hardware validation remain pending. Installed ROM and
 allocator/GKI still belong to the prior build. Full integrity is not achieved,
 and no supported Tensor signing alternative was established.
 Read porting/audit/tokay-integrity-runtime.md and its scoped JSON reports.
+
+## Tokay validation readiness (2026-11-09)
+
+133 Tokay source files match recorded SHA-256 values and active Git contents across
+16 projects. Scoped preflight reports zero errors/warnings; nine host collector
+regressions pass. Android compilation and hardware execution remain pending.
+Both local ADB endpoints tested now reset the protocol, despite accepting TCP.
+Build-rule override and restored device access were requested. No new build or
+integrity verdict was produced. See porting/audit/tokay-confidence-readiness.md.

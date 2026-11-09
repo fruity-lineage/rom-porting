@@ -201,3 +201,17 @@ Details: [tokay-integrity-parity.md](porting/audit/tokay-integrity-parity.md).
 
 This supersedes the earlier unreachable-tunnel task. The imported-key backend still
 contains actual unlocked/orange BootInfo. Source fixes alone do not prove acceptance.
+
+## Tokay confidence validation checkpoint (2026-11-09)
+
+- [x] Verify 133 active Tokay file hashes and committed contents across 16 projects.
+- [x] Pass scoped preflight and nine existing evidence-collector tests.
+- [x] Confirm the Android regression files belong to their existing test modules.
+- [ ] Receive the requested override of the ROM skill's no-build rule, then build
+  the coordinated Android/GS 6.1/module set and compile/run the Android regressions.
+- [ ] Restore ADB access; both checked local server ports reset the protocol.
+- [ ] Establish a working signing path and fresh authenticated BASIC/DEVICE/STRONG
+  results after repeated boots without manual Settings intervention.
+
+Details: [validation readiness](porting/audit/tokay-confidence-readiness.md).
+No build or new device verdict was produced by these checks.

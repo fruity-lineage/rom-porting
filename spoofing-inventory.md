@@ -310,3 +310,12 @@ restored, probe alias deleted and probe jars removed. Exact server rejection rem
 unknown. Reports: porting/audit/tokay-integrity-runtime.md and
 tokay-integrity-live-20261109.json, tokay-pif-*-verification.json,
 tokay-pif-source-activation.json.
+
+## Tokay confidence validation (2026-11-09)
+
+The [readiness audit](porting/audit/tokay-confidence-readiness.md) verifies 133
+Tokay files against recorded hashes and active commits in 16 projects. Scoped
+preflight and nine host evidence-collector tests pass. There are no new source
+commits in this check; the existing publication-map revisions remain active.
+Compilation, Android regressions and hardware acceptance remain pending. Both
+checked ADB endpoints reset the protocol; no fresh STRONG result was obtained.

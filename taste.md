@@ -33,3 +33,6 @@ and `spoofing-inventory.md`.
 - Tokay completion requires actual BASIC, DEVICE and STRONG Play Integrity passing,
   matching the requested behavior on supported Snapdragon devices. Duck Ready and
   successful certificate issuance do not satisfy that acceptance target.
+
+- High confidence in Tokay integrity must be supported by measured results after
+  boot without manual Settings intervention; source review alone is insufficient.
