@@ -10,8 +10,14 @@ and source references. Keep incomplete work and validation limits visible.
 
 The shared stack is committed. Device configuration is available for Pixel 9
 (tokay/caimito/zumapro) and Pixel 10 (frankel/muzel/laguna). Tokay remote provisioning,
-imported-key signing and the returned production CA path are now verified on hardware.
+imported-key attestation and the returned production CA path are now verified on hardware.
 Actual Play Integrity labels still fail; Frankel hardware remains unverified.
+The subsequent [parallel review](porting/audit/rkp-integration-review.md) fixes an
+obsolete Qualcomm-only Settings description and a recoverable-error renewal pause.
+The boot follow-up also resumes known temporary legacy pauses and defers import
+until eager Keystore2 is ready; normal enabled startup already restores without Settings.
+Live checks again confirm Ready and a valid stored certificate path. The new fixes
+need rebuilt-device tests. Checker label omission also requires requester/licensing validation.
 The original direct external-key CSR protocol remains unresolved on these targets.
 Tokay's user build produced a verified OTA after the recorded
 [build fixes](porting/audit/tokay-build-followups.md), now published as follow-up

@@ -1,0 +1,614 @@
+[
+  {
+    "project": "bionic",
+    "path": "libc/Android.bp",
+    "sha256": "266dbd85750b8f47dd337a70d4f33f7b95109e03b651b02ab8a5757594cc15b7",
+    "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/SYSCALLS.TXT",
+    "sha256": "5a0225038cd83e0b4261aaf05fc9fe0c1f8280474da6d929a1a6693453d61a70",
+    "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/custom_rom_hide.cpp",
+    "sha256": "245bfe40e14f44107a441de8fc413a3980ab65f3fd41b021042ed1ae03bd015f",
+    "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/custom_rom_hide.h",
+    "sha256": "d8b476df8909e631e827d9cb6dcc4a380af351c618e446d4995e6955f472f957",
+    "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/dirent.cpp",
+    "sha256": "c486198d5089bf1cedd3c809c17f44c6a9314ac0c7924339f43223ed709c34c1",
+    "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/dup.cpp",
+    "sha256": "d2cdcb5a34a6fdcf7a235cca40baed29e4393b03ccd39339f6d5bbf928873bfe",
+    "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/faccessat.cpp",
+    "sha256": "24b5f58ac2e3e46804b8a168cf53ab8ef8e56ebb7103d3e4e6b8165e115b48f5",
+    "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/fcntl.cpp",
+    "sha256": "f813f25f93e25b625ee5c8b1dbb10f38b2aeebf715639fb5e8c6772f5aa09ec1",
+    "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/fdsan.cpp",
+    "sha256": "85f8b28828e14edf65cecf8c87d8d8eb5c058756783caea0eb2ccaad00aa6cc2",
+    "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/lstat.cpp",
+    "sha256": "cdd855b7b2eeff23d77fd915a2c14b2d7f4ebdc31821f401a5cfa0bf20586918",
+    "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/open.cpp",
+    "sha256": "3ecf6f1e80f13a1febbb3507be556ca49f06c7a593b67e3c75eaac903973ebdf",
+    "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/readlink.cpp",
+    "sha256": "bb7594eaad87e8863ffb706d0fdd18c342bc32320da599fadfd30d669999fb93",
+    "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/stat.cpp",
+    "sha256": "80ad912f4c1a8ebe247da20f74ed97b9b98e41678a94bf5a20e9c793e55720b8",
+    "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/sys_statfs.cpp",
+    "sha256": "d82d8852240f7b96616fe39218c371032e6e35ebf9f8b42ccd092916065668c2",
+    "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/system_property_api.cpp",
+    "sha256": "81e84dc0b629f2ac14a1c73fca642658fbf8b7a67f5bf0cb5261ad423e8173c3",
+    "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8"
+  },
+  {
+    "project": "bionic",
+    "path": "tests/fcntl_test.cpp",
+    "sha256": "2e83a24066f525a4c051d9b0c94ea3dd7fada73a9b6f2024ed504fd55e92070e",
+    "commit": "32c175151d1b0fd666de2bfa70b32e246d26cbe8"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "NOTICE",
+    "sha256": "761c4c9027839fcfdafbd2ca5e862076a40e377f0c246483c2ff3a70462ab04d",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "config/preloaded-classes-denylist",
+    "sha256": "cec1b60de8d8d2bbc1e4997e3637c492aded1da9bbfc3807182706c9b528e37c",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "core/java/android/app/ActivityThread.java",
+    "sha256": "48594d0c31939f5872e3d14ef9cd8ee68b3f227587aead0faccb4376b3a6a055",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "core/java/android/app/ApplicationPackageManager.java",
+    "sha256": "1acfc8bf9077632efcde2eb98e70a3c20bac3374013ff14fdb6f0ee6781f1f39",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "core/java/android/app/AxSettingsSpoofManager.java",
+    "sha256": "f3dabcb7e47d42379ea4067607bc63a49e2f1695c598427e6d81f612d49fea1b",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "core/java/android/app/IActivityManager.aidl",
+    "sha256": "c4a68206a67be6fe4d5074964f11d41b16b5e41ac278ea51b7d068689f3d214d",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "core/java/android/app/Instrumentation.java",
+    "sha256": "b6200cb4f16722f8f5859a1beebde13927a3956da3a7c8b65cb511503b4c1228",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "core/java/android/provider/Settings.java",
+    "sha256": "c615e3c63b737584266c4c5744dcf5f6d32f9b8c24f85c5d1b4ed2062b5f6499",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "core/java/android/security/gameprops/GamePropsSpoofService.java",
+    "sha256": "de4ffba15227d7938117cd7c385832055a555c63ca639caadd4a5e0f478c5a06",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "core/java/android/security/pif/PlayIntegritySpoofService.java",
+    "sha256": "3c16f82f9ddcc86318a99e4248174ad2d977b44f2a760785d88356a0542f0a77",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "core/java/android/security/trickystore/AttestationUtils.java",
+    "sha256": "bc8391c19950efc1276de379ab33a475f810e5f8f3b8bfcd3861acc45b232938",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "core/java/android/security/trickystore/CertificateGenerator.java",
+    "sha256": "57e2020bc7b8b34e3ad157ca24db18d78ef46790155b659786783314096bd258",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "core/java/android/security/trickystore/CertificateHacker.java",
+    "sha256": "8a999475fbf50d22adddda360ef7e0685ef44f338070ec2eb86dac473905638a",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "core/java/android/security/trickystore/KeyBoxManager.java",
+    "sha256": "82c6209c699f1f8c88500c8810fa2fb9bffeb55ae2b2e32a51b8ddbae197c40a",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "core/java/android/security/trickystore/TrickyStoreService.java",
+    "sha256": "7026ac2968da9669b4a5a6945340cdab4c6b4ed26183cf09769af0e1e06faecc",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "core/java/com/android/internal/util/evolution/PixelDeviceRepository.java",
+    "sha256": "840596ed7cb670af9514abfd8ea5df235c37af5b6b8c968744f36a032873afc4",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "core/java/com/android/internal/util/evolution/PixelPropsUtils.java",
+    "sha256": "37c14d6b7e35e9bfa78869d10533bf6315e864bbcca701410b0a9bccaf68cdac",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "core/tests/coretests/src/android/security/trickystore/KeyBoxManagerTest.java",
+    "sha256": "ca69868b9ad7425545729b096f96adc4286eb09416db6e862d42b953a30bdc21",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "keystore/java/android/security/keystore2/AndroidKeyStoreKeyPairGeneratorSpi.java",
+    "sha256": "4aeb31cdc6ab93473ae5102b93c24f64bd7b8152d6d9a9c64d11214b343dd70e",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "keystore/java/android/security/keystore2/AndroidKeyStoreSpi.java",
+    "sha256": "2e9fdb5cd6580baf2babdabc86f023f441878f0cdff729553def2b4368d2be48",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java",
+    "sha256": "d462ffdfc91d20923297295459a5db84d4992c3184158e0fbf27324f3e8f91f4",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/Android.bp",
+    "sha256": "7b71267b987e1ab3b2ccb0f353c69fdd0cf7308e2a35a37b1c8c5f5d07693c86",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/AxExtServiceFactory.java",
+    "sha256": "308095e4fa6859e14485e0ec4c4ecdbc69fb0e16a2d157e52aa6d39aaf29ffde",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/IAxExtServiceFactory.java",
+    "sha256": "3e0337a5693daa24ebb5d6e35365390dabc62964704d90665074eb37bf632bb2",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/NtServiceInjector.java",
+    "sha256": "009e7fdc4b8b049492278a9d2b818073838cc21ae3d0367824df515e1cde64d5",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+    "sha256": "d104a7d6d7742bf915cf7cb9334861b6a64d917639f3339c28ca1e8084f418cf",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/pm/AppsFilterBase.java",
+    "sha256": "ef4d913fff7beb88557ef001755027b18907fec5af72992fc73328d117f42cc3",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/pm/Computer.java",
+    "sha256": "0b47e62ec2f7346a1321d38437e31248b4377c063f74937f0486773de67d8810",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/pm/ComputerEngine.java",
+    "sha256": "2f4e3f5cf8cf1f212c7bc53e9dc09f579274c4a535672fd9b2b2e9371bd1c35a",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/security/rkp/DuckRkpCbor.java",
+    "sha256": "0f3cf81ac0973ba983eaf679d8044b4c0c20e6410d7b7756a60da279b28a9abc",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/security/rkp/DuckRkpCertificates.java",
+    "sha256": "2cd1be6fbf7ff849bf2f15891354b229c21a1a1de15233cdd6c3038a75b96f89",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/security/rkp/DuckRkpManager.java",
+    "sha256": "2d46de83a94b7264ec0dcdfa83c761eef97f29380f389a13811179c06bacfacc",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/security/rkp/DuckRkpNative.java",
+    "sha256": "05ab4ba7702241674644fff83a4135e5630f4915c2011e440e601af568f4a948",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/security/rkp/DuckRkpV1.java",
+    "sha256": "0ec8c2b67eb78559892a894a197c129867633e9ccf7767f2ab16312c5195fd3c",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/spoof/AxSpoofManager.java",
+    "sha256": "1d82a8117c79d2c61601d6f7238e9d172365ac59d2aeef66d298db2785baf2c6",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/spoof/IAxSpoofManager.java",
+    "sha256": "4ae1d67660cb8c11f5668c09b4112ce1c04771143c409e06f9dc20d5be9e56d9",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/wm/sandbox/SandboxConfigStorage.java",
+    "sha256": "7343b3539ceb72a5906df27ff8b612a2a1835f1af2f9c02af4536064da0359fc",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/wm/sandbox/spoof/SettingsSpoofRepository.java",
+    "sha256": "446b8b2bfc2546ce953ac19c9bdb2ce47f00a1ca3f74f06bc7c801c485a3cbc0",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/wm/sandbox/spoof/SettingsSpoofService.java",
+    "sha256": "c9a822b98cee0093dc38eacdcd3daae90e1e87dac4f1cc3d597ce8cb980524a3",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/duck_rkp/Android.bp",
+    "sha256": "74cfa4582b77b9ddcd7ab97672bdb21614bda51df8d107c0ffc8f4dd4f3f2128",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/duck_rkp/aidl/vendor/evo/duckrkp/IDuckRkp.aidl",
+    "sha256": "374c304da3e91b494df919bc764ec70fbbcc4549a249fda53afa85be84d73276",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/duck_rkp/aidl_api/vendor.evo.duckrkp/1/.hash",
+    "sha256": "4e19e49ab5ca5907fd969db145f36eaa7c0b5f293f1549dfd99f1c2434b6b3e0",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/duck_rkp/aidl_api/vendor.evo.duckrkp/1/vendor/evo/duckrkp/IDuckRkp.aidl",
+    "sha256": "bb8bcb52c376a3fc8f2c0584b027237ba853a639a9a1e5aa9c30c7f956f3dd14",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/duck_rkp/aidl_api/vendor.evo.duckrkp/current/vendor/evo/duckrkp/IDuckRkp.aidl",
+    "sha256": "bb8bcb52c376a3fc8f2c0584b027237ba853a639a9a1e5aa9c30c7f956f3dd14",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/java/com/android/server/SystemServer.java",
+    "sha256": "f7e3eebd511a4d8966564657b8f2e3b027492e940d0232c2f5be787661107e13",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/tests/PackageManagerServiceTests/server/src/com/android/server/pm/AppsFilterImplTest.java",
+    "sha256": "0842875c6dafcf20d313a4f95baa70e60876e8264f5b99537111c0e20cd03dab",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/tests/RemoteProvisioningServiceTests/src/com/android/server/security/rkp/DuckRkpManagerTest.java",
+    "sha256": "68caefcbd89e28ba4d7578fad90931ce6742d02e38f75cbb4f88ab9287575a40",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/tests/servicestests/src/com/android/server/security/rkp/DuckRkpNativeTest.java",
+    "sha256": "10658d3df9a1a7984224a4a0e90841a7bfb6af766b230780d6534beb788b12f9",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "res/values/spoofing.xml",
+    "sha256": "2393fe8544aaad4f42744764a3c12817bbd32ae6c15c1a262f5d804ff61045a3",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "res/xml/spoofing.xml",
+    "sha256": "4222e032d165e2cd4871f6decf81e6379e681708f13ba4060db37f24563f605a",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "res/xml/system_dashboard_fragment.xml",
+    "sha256": "e5b485b56c4c441c6cd62156028560e20121207c17b6f5c734518ea033864129",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/core/gateway/SettingsGateway.java",
+    "sha256": "3b0dfe42b5ea8490252d50eeb17a0dbcf5d0feb0d4e6f5e71aba4a8cbd4ed034",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/spoof/AppPickerItem.kt",
+    "sha256": "321d5f0e5003af203a6f6ee3eac42373afe379a73a144bad56d015e835474a1b",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/spoof/AppPickerSearchField.kt",
+    "sha256": "59124b83860ce0cad892b068e09ec8e53a9c3b13b8ba6fc4a4d818ef807b21e2",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/spoof/ExpressiveUi.kt",
+    "sha256": "62bb386dfbb2ca446c419adc3630eeb85016b5f373604184529b25f5deb2633f",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/spoof/InsetFocusRing.kt",
+    "sha256": "f7adff5b9f61932eac22b6928cfa99c05b0ac1254ccb828e94ff75ef77f51be7",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/spoof/PixelPropsSettings.kt",
+    "sha256": "d56f6edd042c7ce1be4434e83e1b4bb632111519b300618481d1fd8a6f4a83c4",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/spoof/PlayIntegrityFix.kt",
+    "sha256": "33883d21f55e73e80479aaaf225966939e212ba8c5e4ad3e0e1fc3c3749173d9",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/spoof/PlayIntegrityFixContent.kt",
+    "sha256": "686b25ffffa01106966af3d4764c177b0001c48fae489be676227f478d3c8894",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/spoof/SettingsValueSpoofSettings.kt",
+    "sha256": "2f03bc9a19f40873e02a90c143d879719c75760c1ee6420d3766bd865ae23e79",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/spoof/Spoofing.kt",
+    "sha256": "ea7edc3823fe5d78e2b9555393e1a762865463b2f792ac4bf4f9a282ff16c181",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/spoof/SpoofingSharedUi.kt",
+    "sha256": "8ea614a623230c1fd04c3633014118eaede8776353c1131cb3cb949c00c8a410",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/spoof/TensorTargetsSettings.kt",
+    "sha256": "d68a880b83642cf86388767494fa5a1abcbf4678e93a7a3e34b6632520a9f76b",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/spoof/TrickyStore.kt",
+    "sha256": "0b764b34a9adbba93a92ff1e720927dff99a27bd2ad2b6ba69b440477d7b396f",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/spoof/TrickyStoreAppSettings.kt",
+    "sha256": "c05c6cd15b9c8b8046966e59c00744ad07deae36bd533309d2d61f0c21f9aa57",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/spoof/TrickyStoreContent.kt",
+    "sha256": "ccf36b3d6daad8c73eeb1a1f5bebb9668d579b2f0975c1210f9b580f87a71fd7",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/spoof/UserSelectedAppSpoofSettings.kt",
+    "sha256": "c3e5b82d607c8b25f8ac6a5518485c36288610e823a19d6864506059235d3756",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/widget/Scrollbar.kt",
+    "sha256": "78b8ef7b655ca37b863398ae1ff31a5110b5cd3314c5a02a311b32ccd561aaf3",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "system/core",
+    "path": "init/Android.bp",
+    "sha256": "e1d9111fd218c9a35ee07a5904544881fb85950a528cbc9d275bcfd21e2c4f96",
+    "commit": "19383c870279c12a823f1757ac455961b0973485"
+  },
+  {
+    "project": "system/core",
+    "path": "init/property_service.cpp",
+    "sha256": "058571018b07d0b24d79e74ee4b1ff29530bafbb95dc2516af970573e5df703b",
+    "commit": "19383c870279c12a823f1757ac455961b0973485"
+  },
+  {
+    "project": "vendor/lineage",
+    "path": "build/soong/Android.bp",
+    "sha256": "4c5219079f1b01686fef3ad0c2bcd9a6566b7ba2dbe9198709cea7b25640eaf2",
+    "commit": "887e8e0b3ae15e6c84de29953169392cd220a1c8"
+  },
+  {
+    "project": "vendor/lineage",
+    "path": "config/BoardConfigSoong.mk",
+    "sha256": "142fe10922419d1e10857541bc26ff4ecdf7bcf25e5c48aa3e27d2b87b23ced0",
+    "commit": "887e8e0b3ae15e6c84de29953169392cd220a1c8"
+  },
+  {
+    "project": "device/lineage/sepolicy",
+    "path": "common/private/gmscore_app.te",
+    "sha256": "8ee1e3cd1329cc3613adff3c24fbf654257a73b3182f954ffbefd36627b1c50a",
+    "commit": "7fc49f44fb98584fc3890f0e77609c246b19c126"
+  },
+  {
+    "project": "device/lineage/sepolicy",
+    "path": "common/private/property.te",
+    "sha256": "81dad3ac1c6c841b16fd54630368c2dc07e8fa504330b9162018e7c23285e677",
+    "commit": "7fc49f44fb98584fc3890f0e77609c246b19c126"
+  },
+  {
+    "project": "device/lineage/sepolicy",
+    "path": "common/private/property_contexts",
+    "sha256": "8b479c81134b8621fc77e1d108d591437074811b33e78291973735f6aa3895b9",
+    "commit": "7fc49f44fb98584fc3890f0e77609c246b19c126"
+  },
+  {
+    "project": "device/lineage/sepolicy",
+    "path": "common/private/shell.te",
+    "sha256": "83d5c550ce1a7b1ac956ee1e55d3fc94e42d5ee8fa0f912f6feb0a120c511250",
+    "commit": "7fc49f44fb98584fc3890f0e77609c246b19c126"
+  },
+  {
+    "project": "device/lineage/sepolicy",
+    "path": "common/private/system_server.te",
+    "sha256": "bbc69498a74e83aeae16ceeff40e360a29651034e9a5e08b8c4b9ed482a1a653",
+    "commit": "7fc49f44fb98584fc3890f0e77609c246b19c126"
+  },
+  {
+    "project": "external/bouncycastle",
+    "path": "repackaged_platform/bcprov/src/main/java/com/android/internal/org/bouncycastle/jcajce/provider/asymmetric/EC.java",
+    "sha256": "cf1f69a10d06ee27fc411cb121e6cfcfd8d4c98f056967530478846901030f3e",
+    "commit": "6d01d24edd9e4838ddde5be7cbcfff7b1d4ea7bc"
+  },
+  {
+    "project": "system/security",
+    "path": "keystore2/src/security_level.rs",
+    "sha256": "55bd199f074112bf3f9b0263ad36c605f294517efd4c3e7f19c52a2df2474962",
+    "commit": "a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8"
+  },
+  {
+    "project": "system/security",
+    "path": "keystore2/tests/import_keys.rs",
+    "sha256": "a8639e053e419ba2504b7e8b14352021878fa3cc2719ecc43376b09877aa7602",
+    "commit": "a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/core/java/com/android/server/security/rkp/DuckRkpTrusty.java",
+    "sha256": "ac14776cb67723074c3b9709c74317e402ba8cbd8bd7f2cbe6cda99bfaffff46",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "frameworks/base",
+    "path": "services/tests/servicestests/src/com/android/server/security/rkp/DuckRkpTrustyTest.java",
+    "sha256": "31353402fc44d4db657c4ff05ce6a34777e9b6d17694dc8e9f6c7a2fddbd1c3f",
+    "commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89"
+  },
+  {
+    "project": "device/google/caimito",
+    "path": "device-tokay.mk",
+    "sha256": "d59a6d8c18868ebe84ea86c324561d3f15b1e40ef23f7747cd18181622c283b2",
+    "commit": "2f7cc304134f77b3858da6e9d2390a5b22fbc467"
+  },
+  {
+    "project": "device/google/muzel",
+    "path": "device-frankel.mk",
+    "sha256": "0c6bd07d92000edceee9041f878e05dc3312b32f0e5bdee9c09938865645aa6a",
+    "commit": "9c4bad6692c8275790bff334263914ddbd2a59e5"
+  },
+  {
+    "project": "packages/apps/Settings",
+    "path": "src/com/android/settings/widget/InsetFocusRing.kt",
+    "sha256": "2eb5aa694500aa69230a76d5ee6ba9240f9e21d806f17f50ecba45ea251cf549",
+    "commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c"
+  },
+  {
+    "project": "device/google/zumapro",
+    "path": "BoardConfig-common.mk",
+    "sha256": "d6d3e4936a9a131c4c8c843fc46340f5d8560073738ee6071d0352751a2dbb0a",
+    "commit": "13f60c3e3a84ace1a311082f134d4a0ab3ae0abd"
+  }
+]

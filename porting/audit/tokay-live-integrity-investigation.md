@@ -65,7 +65,8 @@ implications are explained. At 22:56:40 UTC, the candidate is written to vbmeta_
 and read back exactly before reboot. Android boots and the installed candidate is
 verified again. Only HASHTREE_DISABLED remains; signing public key, rollback fields
 and all 15 descriptors are preserved. avbtool reorders descriptors without changing
-content. No relock, wipe, slot change or firmware modification occurs.
+content. No relock, wipe, slot change or vendor/Trusty firmware modification occurs;
+the experiment changes vbmeta boot metadata.
 
 | Selected state | Original flags 3 | Installed flags 1 |
 | --- | --- | --- |

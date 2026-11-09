@@ -1,6 +1,7 @@
 # Task state
 
-Updated 2026-11-08 UTC after successful AVB/RKPD validation; Play Integrity still fails.
+Updated 2026-11-09 UTC after the live review and Settings/renewal/boot fixes. The checker
+still has no established passing labels; omitted optional labels need requester validation.
 
 ## Completed
 
@@ -38,7 +39,7 @@ Updated 2026-11-08 UTC after successful AVB/RKPD validation; Play Integrity stil
 - [x] Collect the user's Tokay OTA and verify its SHA-256, ZIP CRC, metadata and installed port artifacts.
 - [x] Resolved build blockers: keystore2 Rust closure type mismatch, Settings InsetFocusRing widget restoration, and caimito PRODUCT_PRODUCT_PROPERTIES partition placement.
 - [x] Publish the two missing fixes as separate fast-forward commits; preserve the helper's upstream author.
-- [x] Match all 101 current source snapshot files to public trees and preserve active checkouts.
+- [x] Match all 101 build-followup source snapshot files to public trees and preserve active checkouts.
 - [x] Save the AI CLI runtime verification prompt in Markdown, linked from the handoff.
 - [x] Record and qualify the user's local runtime report: factory TEE import and ordinary
   Keystore tests pass after an override; RKPD HTTP 400 and keybox-consumer proof remain open.
@@ -63,24 +64,46 @@ Updated 2026-11-08 UTC after successful AVB/RKPD validation; Play Integrity stil
 - [x] Repeat the real checker request after provisioning; all labels still fail.
 - [x] Commit/publish the isolated Zumapro AVB metadata fix and update handoff overlays.
 - [x] Restore temporary USB stay-awake to 0 and retain recovery/keybox backups.
+- [x] Complete three parallel reviews of Settings wording, genuine RKP wiring/status,
+  and source-fork/overlay/device dependencies; no missing import-route dependency found.
+- [x] Remove the obsolete Qualcomm-only generation description in an isolated Settings
+  follow-up; verify XML/resources/caller/whitespace and publish identical objects on main.
+- [x] Restore live phone access for read-only checks; confirm Ready/no error, expected
+  services/policy, persistent properties and a valid stored five-CA/root signature path.
+- [x] Fix permanent renewal pause on documented recoverable import errors, including
+  cleanup-failure precedence; complete peer/static checks and publish on main.
+- [x] Trace checker icon/request/decode behavior and official optional-label/licensing rules.
+- [x] Trace systemReady startup and saved-state restoration; publish the boot recovery
+  migration and pre-import Keystore2 readiness deferral with peer/static checks.
 
 The initial nine projects were clean at verification. Current publication contains
-eighteen source commits in eleven forks. The active security, Settings and caimito
-build fixes are committed in their local topic tips. Their trees match public main;
-publication used isolated worktrees and did not switch or edit active source inputs.
+21 source commits in eleven forks. The active security, Settings and caimito
+build fixes are committed in their local topic tips. Their trees match the public
+build-fix checkpoint except for the newly observed unstaged Keystore2 reversal.
+The later Settings/renewal/boot corrections remain isolated from active sources.
+Publication used isolated worktrees and did not switch or edit active source inputs.
 Pre-existing build/soong
 changes remain outside the port commits. See [verification.md](porting/audit/verification.md)
 and [spoofing-inventory.md](spoofing-inventory.md).
 
 ## Remaining acceptance work
 
-- [ ] Identify the user-reported Duck failure: fresh backend state is Ready/no error;
+- [ ] Verify the corrected Settings description in a rebuilt UI on hardware.
+- [ ] Execute the five new import retry/cleanup regressions and live renewal fault injection.
+- [ ] Execute the four persisted-state regressions and test cold boot/OTA restoration
+  without opening Settings, including missing-key generation after services/network are ready.
+- [ ] Reconnect the device for further hardware tests after the authorized disconnect.
+- [ ] Reconcile the unexpected active memory/tasks and Keystore2 edits with the published handoff;
+  the isolated documentation update preserves them rather than overwriting them.
+- [ ] Identify the user-reported Duck failure: last recorded backend state is Ready/no error;
   exact Settings/provisioning symptom is pending. Do not equate Ready with consumer success.
 - [ ] Sync Frankel's proprietary vendor/kernel dependencies and complete full device preflight.
 - [ ] Validate Frankel compilation and compiled SELinux after integrating the shared build fixes.
 - [ ] Validate Frankel firmware import signing, production CA constraints and consumers.
 - [ ] Establish actual Play Integrity acceptance. Latest fresh request has no labels;
   do not mark BASIC/DEVICE/STRONG complete from certificate-chain checks.
+- [ ] Verify a trusted requester/backend's request binding, recognition/licensing and
+  optional-label configuration before interpreting omitted BASIC/STRONG as device failure.
 - [ ] Independently review targeted-app use of the new remotely provisioned keybox.
 - [ ] Verify an OTA built with the committed AVB source fix; live validation used a signed derivative.
 - [ ] Independently review public-chain/probe evidence for the reported factory import success.

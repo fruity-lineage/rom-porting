@@ -1,7 +1,7 @@
 # Workspace memory
 
-Updated 2026-11-08 UTC after the authorized AVB test, successful RKPD/import
-verification and a fresh failing Play Integrity request.
+Updated 2026-11-09 UTC after the parallel review, live Tokay checks and publication
+of Settings, renewal and boot-resume fixes. No passing Play Integrity labels have been established.
 
 ## Setup
 
@@ -10,8 +10,8 @@ verification and a fresh failing Play Integrity request.
 - Device: Pixel 9, tokay, platform zumapro.
 - Network source downloads succeeded.
 - Workspace create/read/delete and GitHub HTTPS passed after access was restored.
-- The user connects over remote SSH. Forwarded ADB at 127.0.0.1:50096 now enumerates
-  Tokay and provides root access. This was independently verified here. Forwarding
+- The user connects over remote SSH. At the last live check, forwarded ADB at
+  127.0.0.1:50096 enumerated Tokay and provided root access. Forwarding
   is for ADB only, not USB fastboot recovery. Keep serials and credentials out of notes.
 - User Git identity: fuzailmansuri <mfm9875@gmail.com>.
 - Publication authorized under fruity-lineage, limited to ported work. Eleven source forks
@@ -71,7 +71,7 @@ frameworks/base, packages/apps/Settings, system/security and device/google/caimi
 All nine were clean at that checkpoint. The user's build fixes were subsequently
 amended into three local topic tips; those active checkouts remain untouched.
 The same source trees are published through separate follow-up commits and isolated
-worktrees. Pre-existing build/soong changes remain outside the port. There are now eighteen source commits
+worktrees. Pre-existing build/soong changes remain outside the port. There are now 21 source commits
 across eleven published forks; original checkpoint hashes remain recorded below.
 
 The port includes PIF, TrickyStore, game/device identity, package visibility, Aurora
@@ -187,8 +187,9 @@ the actual checker/consumer acceptance remains unresolved.
   Joey's upstream file and retains his authorship plus user coauthor credit.
 - Current active tips: security 27c3ec5862429ce676e1a396a747caf7c4567da1,
   Settings 53030932d1aa4b763b77c5085b2430709048dbe0,
-  caimito bf2174958d133abfd1f233dd559e019939d8f707. Their trees equal the public tips.
-- All 101 current snapshot files match the published trees. See
+  caimito bf2174958d133abfd1f233dd559e019939d8f707. Their trees equal the corresponding
+  public build-fix checkpoint. The later Settings wording fix is isolated from active sources.
+- All 101 build-followup snapshot files match that checkpoint's published trees. See
   [tokay-build-followups.md](porting/audit/tokay-build-followups.md) and its verification JSON.
 
 ## Known acceptance limits
@@ -236,7 +237,8 @@ the actual checker/consumer acceptance remains unresolved.
   Make cases unset/false/true, scoped Tokay preflight and commit whitespace pass.
 - The fix was committed in /tmp/tokay-avb-port; active sources/manifests remain untouched.
   Tokay/combined handoff overlays now select this eleventh fork. Frankel's Laguna tree
-  was not changed. No ROM/kernel build or firmware modification was performed.
+  was not changed. No ROM/kernel build or vendor/Trusty firmware modification was performed;
+  the authorized experiment did change vbmeta boot metadata.
 - Keep server backups in out/porting-tests/tokay-avb-metadata and the on-phone original
   vbmeta backup under /data/local/tmp. The full installed partition hash is
   777f68b817b2f4d77fa0a37c99bc2ced3d209fc2044af4caa40be5a03b822616.
@@ -258,6 +260,56 @@ error codes or relevant AVC denials. This does not reproduce a provisioning faul
 or establish consumer acceptance. The exact Settings/action symptom is pending.
 See [status follow-up](porting/audit/tokay-duck-status-followup.json). No setting,
 keybox, package or partition was changed by this check.
+
+## Parallel integration review and follow-up fixes
+
+- Three subagents reviewed the Settings description, genuine RKP status/source wiring,
+  and published handoff/device dependencies. No missing dependency was found in this
+  bounded review of the standard Trusty import route. It does not prove consumer acceptance.
+- The forwarded ADB server initially listed no device. After access was restored,
+  a fresh 2026-11-08 23:53:32 UTC check confirmed root, persistent selection/hostname,
+  Ready/no error, all expected services and no sampled relevant denials or HTTP 400.
+  Actual boot remains unlocked/orange and SELinux Enforcing. At 23:59:39 UTC the
+  stored five-CA path and root self-signature verified again; no private material
+  was exported. No fresh provisioning, renewal, secondary-user or integrity request ran.
+- Settings' generation summary incorrectly required compatible Qualcomm firmware.
+  The backend availability gate already supports the selected Trusty import adapter.
+  Published follow-up 0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c removes that sentence
+  without changing provisioning logic. XML, resource names/caller and whitespace checks pass.
+- The fix is isolated in /tmp/rom-settings-rkp-wording and published as a fast-forward
+  on fruity-lineage/android_packages_apps_Settings/main with identical Git objects.
+  Active Settings and the earlier build-fix worktree remain unchanged. The new UI has
+  not been rebuilt or exercised on hardware.
+- Published framework follow-up 60153c127470c3855d4e979a4b60190f6b13bdf5 retries
+  documented temporary RKP pool/connectivity/busy failures through the existing
+  backoff/network scheduler. Previously they permanently paused renewal. Failed
+  alias cleanup still pauses; permanent, update-required and ambiguous errors keep
+  their existing behavior. Peer review, Java syntax/API and whitespace checks pass;
+  five added Android regressions and live fault injection remain unexecuted.
+- The checker source maps omitted labels to crosses. Official Android 13+ rules also
+  condition optional BASIC/STRONG labels on requester licensing and configuration.
+  The recorded UNEVALUATED response establishes no returned labels, not independently
+  evaluated BASIC failure. Verified requester/backend binding and licensing remain open.
+- Published boot follow-up 4755e2231cf2ccc5617b310a1fb28583e6cb2f89 resumes only
+  legacy temporary Trusty pauses, respects backend selection, and defers import before
+  key/alias work if eager Keystore2 is not registered. Existing systemReady startup,
+  saved-key restoration and networking already run without Settings. Four added
+  persisted-state regressions and the updated hardware boot path remain unexecuted.
+  Local key generation, valid-key reuse and automatic renewal remain conditional on
+  the user's enabled/master settings; permanent/ambiguous/cleanup failures stay paused.
+- The eleven source-fork tips and overlay/dependency mappings were reviewed against
+  the inventory. Frankel still lacks synced proprietary vendor, muzel-kernels and GS 6.6
+  dependencies here; full preflight, compilation and hardware validation remain pending.
+- See [RKP review](porting/audit/rkp-integration-review.md) for the final source snapshot,
+  publication verification and remaining checks. Actual BASIC/DEVICE/STRONG remains unresolved.
+- Local memory.md and tasks.md reverted to older content during the review. Those
+  unexpected unstaged edits were preserved. This update was prepared in the isolated
+  /tmp/rom-memory-rkp-review worktree; the active handoff checkout was not overwritten.
+- Active system/security also has an unstaged reversal of the published callback-type
+  build fix. Its diff was preserved in /tmp; published main remains correct. Reconcile
+  the concurrent edits before rebuilding. Active source inputs were not overwritten.
+- The user authorized disconnecting the phone after the live checks finished. Further
+  device testing requires reconnecting it; this review made no phone changes.
 
 ## Scoped validation commands
 

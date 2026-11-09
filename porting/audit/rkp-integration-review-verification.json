@@ -1,0 +1,306 @@
+{
+  "reviewed_at_utc": "2026-11-09T00:19:18.403576+00:00",
+  "source_checks": {
+    "snapshot_files": 102,
+    "baseline_files": 101,
+    "unchanged_baseline_files": 96,
+    "changed": [
+      {
+        "project": "frameworks/base",
+        "path": "services/core/java/com/android/server/security/rkp/DuckRkpManager.java",
+        "previous_sha256": "f194091da1f8c0819ca6d0bb45fbd51a543d50bd5cb39bd6d1db685a68f2d0d5",
+        "sha256": "2d46de83a94b7264ec0dcdfa83c761eef97f29380f389a13811179c06bacfacc"
+      },
+      {
+        "project": "frameworks/base",
+        "path": "services/tests/RemoteProvisioningServiceTests/src/com/android/server/security/rkp/DuckRkpManagerTest.java",
+        "previous_sha256": "1568a0e7029fa8a0c567e0c9de1f75b1722c5f796a383e9243a7ec51e850dc75",
+        "sha256": "68caefcbd89e28ba4d7578fad90931ce6742d02e38f75cbb4f88ab9287575a40"
+      },
+      {
+        "project": "packages/apps/Settings",
+        "path": "res/values/spoofing.xml",
+        "previous_sha256": "c5516ca1a57c05683a8b0ddc8dd2db5b48c9ee2b1eed339acb5b2893bb519c1c",
+        "sha256": "2393fe8544aaad4f42744764a3c12817bbd32ae6c15c1a262f5d804ff61045a3"
+      },
+      {
+        "project": "frameworks/base",
+        "path": "services/core/java/com/android/server/security/rkp/DuckRkpTrusty.java",
+        "previous_sha256": "6e280b8236d55865f2ebd80cabf590048d54c29b6242bd2f09161075c1cf6689",
+        "sha256": "ac14776cb67723074c3b9709c74317e402ba8cbd8bd7f2cbe6cda99bfaffff46"
+      },
+      {
+        "project": "frameworks/base",
+        "path": "services/tests/servicestests/src/com/android/server/security/rkp/DuckRkpTrustyTest.java",
+        "previous_sha256": "60fd850ecb9f8e1829c68647ae7925f534576d624d787a01bf03c82b1517a47c",
+        "sha256": "31353402fc44d4db657c4ff05ce6a34777e9b6d17694dc8e9f6c7a2fddbd1c3f"
+      }
+    ],
+    "added": [
+      "device/google/zumapro/BoardConfig-common.mk"
+    ],
+    "resource_names": 244,
+    "resource_xml_parse": true,
+    "exactly_one_resource_text_changed": true,
+    "publication": {
+      "project": "packages/apps/Settings",
+      "repository": "fruity-lineage/android_packages_apps_Settings",
+      "branch": "main",
+      "parent": "233ff319af4e0eb8369b4f1a5f976b3205a591e9",
+      "published_tip": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c",
+      "tree": "deb437b7d5540f5d77488a58215d93d74379bf66",
+      "blob": "058c2188b0f4dc7eaf1e48bf2e2856a6e1b1b806",
+      "file": "res/values/spoofing.xml",
+      "fast_forward": true,
+      "identical_commit_tree_blob": true,
+      "verified": true
+    },
+    "framework_publication": {
+      "project": "frameworks/base",
+      "repository": "fruity-lineage/android_frameworks_base",
+      "branch": "main",
+      "parent": "474ebc595d120aa3025f6ec0e95acb9a2112e85e",
+      "published_tip": "60153c127470c3855d4e979a4b60190f6b13bdf5",
+      "tree": "54ff36b40956deb5951bbc74e1e96d3b40cd2375",
+      "files": [
+        {
+          "path": "services/core/java/com/android/server/security/rkp/DuckRkpTrusty.java",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "81cfeea139756b10bc4df680f9956e83385454f9"
+        },
+        {
+          "path": "services/tests/servicestests/src/com/android/server/security/rkp/DuckRkpTrustyTest.java",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e2666d2ce6ab1d7bcf464ea2453c35846c51ad3f"
+        }
+      ],
+      "fast_forward": true,
+      "identical_commit_tree_blobs": true,
+      "verified": true
+    },
+    "source_commit_count": 21,
+    "boot_publication": {
+      "project": "frameworks/base",
+      "repository": "fruity-lineage/android_frameworks_base",
+      "branch": "main",
+      "parent": "60153c127470c3855d4e979a4b60190f6b13bdf5",
+      "published_tip": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89",
+      "tree": "6962960b66170740923f6752ceb7eb582918585c",
+      "files": [
+        {
+          "path": "services/core/java/com/android/server/security/rkp/DuckRkpManager.java",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "fbb53619bfcd09a8aa0548a94a9e04cd7de4af5b"
+        },
+        {
+          "path": "services/core/java/com/android/server/security/rkp/DuckRkpTrusty.java",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "8678714c79769100077f98402a956f10e5d72cd7"
+        },
+        {
+          "path": "services/tests/RemoteProvisioningServiceTests/src/com/android/server/security/rkp/DuckRkpManagerTest.java",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "79e03e521487b6209dfac33aea04b77d2c06686a"
+        }
+      ],
+      "fast_forward": true,
+      "identical_commit_tree_blobs": true,
+      "verified": true
+    }
+  },
+  "java_syntax": {
+    "final_files": 4,
+    "result": "pass",
+    "python": "3.12.3",
+    "tree_sitter": "0.26.0",
+    "tree_sitter_java": "0.23.5",
+    "android_compilation": false,
+    "android_regressions_executed": false,
+    "new_regression_methods": 9
+  },
+  "peer_review": "pass",
+  "boot_integration": {
+    "starts_from_systemReady_without_settings": true,
+    "restores_valid_keybox": true,
+    "local_key_generation": "Android EC P-256, imported into Trusty; hardware origin IMPORTED",
+    "premade_keybox_download": false,
+    "legacy_transient_state_migration": true,
+    "eager_keystore_precheck_before_key_or_alias_operations": true,
+    "disabled_master_manual_keybox_gates_preserved": true,
+    "updated_hardware_boot_or_ota_tested": false
+  },
+  "last_live_state": {
+    "checked_at_utc": "2026-11-08T23:53:32Z",
+    "available": true,
+    "enabled": true,
+    "active": true,
+    "busy": false,
+    "has_keybox": true,
+    "imported": false,
+    "stage": "ready",
+    "error": "",
+    "revision": 1,
+    "automatic_paused": false,
+    "waiting_for_network": false,
+    "expiry_utc": "2026-11-20T09:46:07Z",
+    "renewal_utc": "2026-11-19T09:46:07Z",
+    "known_duck_error_mentions": 0,
+    "relevant_avc_lines": 0,
+    "rkp_keystore_http_400_lines": 0,
+    "scope": "Read-only state/properties/services and recent log sample; no provisioning or consumer request."
+  },
+  "live_config": {
+    "read_only": true,
+    "verdict": null,
+    "properties": {
+      "ro.product.device": "tokay",
+      "ro.lineage.version": "24.0-20261108-UNOFFICIAL-tokay",
+      "ro.build.version.sdk": "37",
+      "ro.lineage.duckrkp.trusty_import": "true",
+      "remote_provisioning.hostname": "remoteprovisioning.googleapis.com",
+      "ro.boot.verifiedbootstate": "orange",
+      "ro.boot.flash.locked": "0",
+      "ro.boot.vbmeta.device_state": "unlocked",
+      "ro.boot.slot_suffix": "_a",
+      "ro.build.version.security_patch": "2026-11-01",
+      "ro.vendor.build.security_patch": "2026-10-05",
+      "ro.bootimage.build.version.security_patch": ""
+    },
+    "settings": {
+      "spoof_activated": "1",
+      "spoof_pif_enabled": "null",
+      "spoof_trickystore_enabled": "null",
+      "spoof_duck_rkp_enabled": "1"
+    },
+    "pif_config": {
+      "present": true,
+      "fingerprint_present": true,
+      "flags": {
+        "spoofBuild": null,
+        "spoofProps": true,
+        "spoofProvider": null,
+        "spoofSignature": null
+      }
+    },
+    "selinux": "Enforcing",
+    "packages": {
+      "com.google.android.gms": {
+        "versionCode": "261136035",
+        "versionName": "26.11.36",
+        "installerPackageName": "com.android.vending",
+        "initiatingPackageName": "com.android.vending",
+        "installed": true
+      },
+      "com.android.vending": {
+        "versionCode": "85392340",
+        "versionName": "53.9.23-34",
+        "installerPackageName": "com.android.vending",
+        "initiatingPackageName": "com.android.vending",
+        "installed": true
+      },
+      "com.google.android.gsf": {
+        "versionCode": "37",
+        "versionName": "17",
+        "installerPackageName": "null",
+        "initiatingPackageName": "null",
+        "installed": true
+      },
+      "gr.nikolasspyr.integritycheck": {
+        "versionCode": "22",
+        "versionName": "2.2",
+        "installerPackageName": "com.android.vending",
+        "initiatingPackageName": "com.android.vending",
+        "installed": true
+      }
+    },
+    "product_properties_sha256": "f8229a2e54274f52f60832cef304ee6551b4ad20298b8a5e2c1ef9963f87b859"
+  },
+  "public_certificate_path": {
+    "read_only": true,
+    "checked_at_utc": "2026-11-08T23:59:39.149557+00:00",
+    "certificate_count": 5,
+    "complete_path_and_root_self_signature": "pass",
+    "certificates": [
+      {
+        "sha256": "f0d95fa094aee809b7598376856c97a012f89bec96b958f97266a58fcbfdb55f",
+        "ca": true,
+        "certificate_sign": true,
+        "not_after_utc": "2026-12-08T23:02:03+00:00"
+      },
+      {
+        "sha256": "6fc6894eaac5a04e307e4bde8dc668bd1105aaf0abb89a592eb0e830c70854e3",
+        "ca": true,
+        "certificate_sign": true,
+        "not_after_utc": "2026-11-20T09:46:07+00:00"
+      },
+      {
+        "sha256": "26fa9600149b2842b3c60ff77e298110909bd22f8c827c03858f959c0f72d410",
+        "ca": true,
+        "certificate_sign": true,
+        "not_after_utc": "2027-01-06T02:36:52+00:00"
+      },
+      {
+        "sha256": "b8b0741e7a5ad98c996cf81eb46ac2d3fb1c28a3bdb2b89eaa930a64ad871632",
+        "ca": true,
+        "certificate_sign": true,
+        "not_after_utc": "2029-02-08T19:59:18+00:00"
+      },
+      {
+        "sha256": "6d9db4ce6c5c0b293166d08986e05774a8776ceb525d9e4329520de12ba4bcc0",
+        "ca": true,
+        "certificate_sign": true,
+        "not_after_utc": "2035-07-15T22:32:18+00:00"
+      }
+    ],
+    "private_material_exported": false,
+    "limits": [
+      "Public certificate path only; no fresh provisioning, private-key signing or consumer/integrity test."
+    ]
+  },
+  "checker_review": {
+    "app_revision": "ee6316e906c7fa948fe688e534c6499f74a919a6",
+    "server_revision": "91178657c076bb6f0aee23c43e014b619a6dcdcc",
+    "absent_labels_display_crosses": true,
+    "request_binding_and_freshness_checked_by_reviewed_client_backend": false,
+    "deployed_backend_and_optional_label_settings_verified": false,
+    "installed_binary_source_equivalence_verified": false,
+    "new_integrity_request_performed": false,
+    "latest_recorded_returned_labels": [],
+    "recorded_licensing": "UNEVALUATED",
+    "basic_device_failure_independently_established": false,
+    "verdict_documentation": "https://developer.android.com/google/play/integrity/verdicts"
+  },
+  "penguin_review": {
+    "organization": "Project-PenguinOS",
+    "branch": "celerity",
+    "manifest": "25e3127140d9e61d30850d8ad5fcf765db8b0e6c",
+    "frameworks_base": "559f366bcc8978767bccb03493bd682699934685",
+    "system_security": "4a467c1d678167f095803897aa7cb5e7fa33240f",
+    "inspected_duck_route": "Qualcomm gated; no Trusty import adapter in inspected directory",
+    "additional_pixel_signing_adapter_found": false
+  },
+  "preservation": {
+    "active_sources_and_manifests_not_modified_by_review": true,
+    "active_memory_tasks_edits_preserved": true,
+    "active_keystore_build_fix_reversal_preserved_and_excluded_from_publication": true,
+    "source_fixes_isolated": true,
+    "phone_mutations": false,
+    "private_material_exported": false,
+    "screen_capture": "Black; no new UI evidence",
+    "device_disconnect_allowed_after_live_checks": true
+  },
+  "limits": [
+    "No rebuilt OTA includes these follow-up fixes, and Android regressions/updated boot or renewal behavior are not executed.",
+    "Frankel vendor/kernel dependencies, compilation and firmware validation remain pending.",
+    "No passing Play Integrity labels are established; requester licensing/configuration and trusted request validation remain unverified.",
+    "The imported-CA route is not the original direct external-key CSR protocol.",
+    "Stored-certificate challenge/origin/purpose are not explicitly asserted by adapter parsing; prior hardware field evidence is recorded separately.",
+    "Wall-clock revalidation, sleep/Doze alarm delay and update-required failure recovery remain bounded unvalidated lifecycle limits.",
+    "Concurrent active Keystore2 and local-note reversions must be reconciled before a rebuild or handoff checkout update."
+  ]
+}

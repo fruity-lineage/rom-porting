@@ -16,6 +16,8 @@ Recorded from this workspace conversation on 2026-11-08.
 - Use device-neutral GitHub descriptions and the shared rom-porting handoff.
 - Carry the shared stack to Pixel 10 frankel too, with its own source and hardware evidence.
 - Preserve active build inputs and isolate other device changes in worktrees.
+- Enabled device RKP should restore, provision and renew automatically at boot without
+  opening Settings. Generate the Duck key locally; do not download a premade keybox.
 
 Add preferences when the user states them. Keep task-specific discoveries in `memory.md`
 and `spoofing-inventory.md`.

@@ -135,9 +135,9 @@
     "upstream": "LineageOS/android_frameworks_base",
     "repository": "fruity-lineage/android_frameworks_base",
     "branch": "main",
-    "local_tip": "535d28c54c950b131550796c9829a4e572446df1",
-    "published_tip": "474ebc595d120aa3025f6ec0e95acb9a2112e85e",
-    "tree": "60ac2574e42b052f80d4ed82c0f7fb9a7e3e471c",
+    "local_tip": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89",
+    "published_tip": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89",
+    "tree": "6962960b66170740923f6752ceb7eb582918585c",
     "backup_ref": "refs/heads/backup/pre-fruity-publication-20261108",
     "commits": [
       {
@@ -162,18 +162,41 @@
           "https://github.com/Evolution-X/frameworks_base/commit/ddce89c4142f89e85830bf3cd2980cf7f472f705",
           "https://github.com/eltavine/Duck-ToolBox/commit/8d6a2470b1033c35946b72bb1f9bc56d8947dd63"
         ]
+      },
+      {
+        "local_commit": "60153c127470c3855d4e979a4b60190f6b13bdf5",
+        "published_commit": "60153c127470c3855d4e979a4b60190f6b13bdf5",
+        "subject": "security: Retry recoverable KeyMint import provisioning failures",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/fruity-lineage/android_frameworks_base/commit/474ebc595d120aa3025f6ec0e95acb9a2112e85e",
+          "https://github.com/fruity-lineage/android_system_security/blob/a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8/keystore2/src/error.rs",
+          "https://android.googlesource.com/platform/system/hardware/interfaces/+/android-17.0.0_r1/keystore2/aidl/android/system/keystore2/ResponseCode.aidl"
+        ]
+      },
+      {
+        "local_commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89",
+        "published_commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89",
+        "subject": "security: Resume recoverable device provisioning state at boot",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/fruity-lineage/android_frameworks_base/commit/60153c127470c3855d4e979a4b60190f6b13bdf5",
+          "https://github.com/fruity-lineage/android_system_security/blob/a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8/keystore2/keystore2.rc"
+        ]
       }
     ],
-    "published": true
+    "published": true,
+    "worktree": "/tmp/rom-framework-rkp-boot-resume",
+    "active_checkout_tip": "535d28c54c950b131550796c9829a4e572446df1"
   },
   {
     "project": "packages/apps/Settings",
     "upstream": "LineageOS/android_packages_apps_Settings",
     "repository": "fruity-lineage/android_packages_apps_Settings",
     "branch": "main",
-    "local_tip": "233ff319af4e0eb8369b4f1a5f976b3205a591e9",
-    "published_tip": "233ff319af4e0eb8369b4f1a5f976b3205a591e9",
-    "tree": "e6b7c18fe6a22cac13aa1a864d2b6490b979f6ce",
+    "local_tip": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c",
+    "published_tip": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c",
+    "tree": "deb437b7d5540f5d77488a58215d93d74379bf66",
     "backup_ref": "refs/heads/backup/pre-fruity-publication-20261108",
     "commits": [
       {
@@ -196,10 +219,20 @@
           "https://github.com/Evolution-X/packages_apps_Settings/commit/3c0e5203a323c7d9a3e36e560be6196ee2a01b5c",
           "https://github.com/fruity-lineage/android_packages_apps_Settings/commit/19a7e7263ff77194412e7aff729ab3d9b924e6b3"
         ]
+      },
+      {
+        "local_commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c",
+        "published_commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c",
+        "subject": "Settings: Remove the Qualcomm-only RKP generation description",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/fruity-lineage/android_packages_apps_Settings/commit/19a7e7263ff77194412e7aff729ab3d9b924e6b3",
+          "https://github.com/fruity-lineage/android_frameworks_base/commit/474ebc595d120aa3025f6ec0e95acb9a2112e85e"
+        ]
       }
     ],
     "published": true,
-    "worktree": "/tmp/rom-settings-build-fix",
+    "worktree": "/tmp/rom-settings-rkp-wording",
     "active_checkout_tip": "53030932d1aa4b763b77c5085b2430709048dbe0"
   },
   {
