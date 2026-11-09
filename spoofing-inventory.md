@@ -258,3 +258,23 @@ allocator/vendor/MTE/module/FIPS behavior needs a coordinated build and testing.
 See [hardened-malloc-publication.json](porting/audit/hardened-malloc-publication.json)
 and the component verification reports. The existing RKP and consumer-acceptance
 limits remain separate; allocator work does not change those recorded results.
+
+## Active Tokay allocator inputs (2026-11-09)
+
+The published source set is now installed into the actual evox Android and GS 6.1
+checkouts. Fifteen existing projects use the publication-map tips on topic branches;
+the allocator is a new Repo-managed project at 8fd6c6016ef53cc97ee5bc6f521cf70859342e37.
+The installed overlays are .repo/local_manifests/tokay.xml and
+out-kernel/google/gs-6.1/.repo/local_manifests/malloc.xml. Original histories, prior
+source heads and unrelated Soong edits are preserved.
+
+[Activation verification](porting/audit/hardened-malloc-activation.json) records each
+previous/active commit and validation: 30 matching source hashes, unique Android
+and kernel manifest paths, valid Repo metadata, successful local sync and zero-error/
+warning scoped preflight. The existing OTA and installed device are unchanged; their
+old build variables omit allocator opt-in and their old kernel output uses VA39.
+Coordinated rebuilding and hardware verification remain pending. Frankel activation
+was not performed. Publication and active-build integration are separate states.
+
+[User RKP handover](porting/audit/tokay-rkp-user-handover.md) retains the later ABL and
+StrongBox reports without promoting the proposed UNEVALUATED cause to verified fact.

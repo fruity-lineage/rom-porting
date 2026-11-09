@@ -25,3 +25,7 @@ Recorded from this workspace conversation on 2026-11-08.
 
 Add preferences when the user states them. Keep task-specific discoveries in `memory.md`
 and `spoofing-inventory.md`.
+
+- A published feature port must be distinguished from one installed in the active
+  build tree. After preserving any running build, finish the active source integration
+  and report separately whether the ROM was rebuilt and validated on hardware.

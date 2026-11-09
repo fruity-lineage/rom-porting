@@ -151,3 +151,21 @@ it is not an exhaustive audit of all organization repositories or historical bra
 - [ ] Validate module/KMI/FIPS loading and allocator/MTE behavior separately on each device.
 
 The existing RKP, renewal/runtime and Play-verdict acceptance tasks above remain pending.
+
+## Tokay active-source checkpoint (2026-11-09)
+
+- [x] Diagnose why the existing OTA omitted hardened_malloc: published worktrees
+  were not installed in the active source checkout.
+- [x] Activate the complete Tokay Android port and both GS 6.1 kernel changes,
+  install both overlays, preserve old refs and the existing Soong edits.
+- [x] Verify 30 allocator file hashes, unique manifest paths, Repo metadata,
+  scoped preflight and local source/kernel sync.
+- [x] Record the supplied RKP handover with provenance and uncertainty.
+- [ ] Build the coordinated Tokay Android/GKI/module set and validate the new OTA
+  and runtime allocator. Existing artifacts still contain the earlier source set.
+- [ ] Validate allocator regressions, MTE, vendor/module/FIPS behavior on Tokay.
+- [ ] Activate and validate the separate Frankel allocator/kernel stack when requested.
+
+The earlier combined install/build checkbox is superseded for Tokay: installation
+is complete; compilation and runtime acceptance remain pending. No build or phone
+change was performed in this task.

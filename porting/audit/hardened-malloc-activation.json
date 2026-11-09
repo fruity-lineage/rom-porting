@@ -1,0 +1,339 @@
+{
+  "date_utc": "2026-11-09T13:57:55.513404+00:00",
+  "target": "tokay",
+  "cause": "Published worktrees were not installed into the active Android/kernel checkouts; the existing OTA was built without the allocator integration.",
+  "active_projects": [
+    {
+      "project": "external/bouncycastle",
+      "previous_commit": "38ec66a303d02bb3a1967ce7c5626bc6391b1303",
+      "active_commit": "6d01d24edd9e4838ddde5be7cbcfff7b1d4ea7bc",
+      "topic_branch": "port/hardened-malloc-tokay-20261109T135225Z"
+    },
+    {
+      "project": "bionic",
+      "previous_commit": "f9af17ea14834116d9689fe54e597bf4cef46558",
+      "active_commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "topic_branch": "port/hardened-malloc-tokay-20261109T135225Z"
+    },
+    {
+      "project": "vendor/lineage",
+      "previous_commit": "8c9e5f8ea343e0e2aaab001a8547a655d31a4d1c",
+      "active_commit": "887e8e0b3ae15e6c84de29953169392cd220a1c8",
+      "topic_branch": "port/hardened-malloc-tokay-20261109T135225Z"
+    },
+    {
+      "project": "system/core",
+      "previous_commit": "f5278125f50e104cb2315d947c721957a6601d81",
+      "active_commit": "e45de95e22142dc10a39c9d38c01942b781a357a",
+      "topic_branch": "port/hardened-malloc-tokay-20261109T135225Z"
+    },
+    {
+      "project": "device/lineage/sepolicy",
+      "previous_commit": "c9299e36c9738e4048bec188054ea0434e7b1798",
+      "active_commit": "7fc49f44fb98584fc3890f0e77609c246b19c126",
+      "topic_branch": "port/hardened-malloc-tokay-20261109T135225Z"
+    },
+    {
+      "project": "frameworks/base",
+      "previous_commit": "535d28c54c950b131550796c9829a4e572446df1",
+      "active_commit": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89",
+      "topic_branch": "port/hardened-malloc-tokay-20261109T135225Z"
+    },
+    {
+      "project": "packages/apps/Settings",
+      "previous_commit": "53030932d1aa4b763b77c5085b2430709048dbe0",
+      "active_commit": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c",
+      "topic_branch": "port/hardened-malloc-tokay-20261109T135225Z"
+    },
+    {
+      "project": "system/security",
+      "previous_commit": "27c3ec5862429ce676e1a396a747caf7c4567da1",
+      "active_commit": "a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8",
+      "topic_branch": "port/hardened-malloc-tokay-20261109T135225Z"
+    },
+    {
+      "project": "device/google/caimito",
+      "previous_commit": "bf2174958d133abfd1f233dd559e019939d8f707",
+      "active_commit": "0d5ae62983fd9143f3a670ef25537b31ff084d90",
+      "topic_branch": "port/hardened-malloc-tokay-20261109T135225Z"
+    },
+    {
+      "project": "device/google/zumapro",
+      "previous_commit": "c03df81e8fed84aeb4f2d26e9cef2ea5762d7c3f",
+      "active_commit": "13f60c3e3a84ace1a311082f134d4a0ab3ae0abd",
+      "topic_branch": "port/hardened-malloc-tokay-20261109T135225Z"
+    },
+    {
+      "project": "out-kernel/google/gs-6.1/common/gki",
+      "previous_commit": "7b58131aec77682c068b072dd055e130cfc971f7",
+      "active_commit": "128e563a7b841cdee51ce79669fee61c99cd0890",
+      "topic_branch": "port/hardened-malloc-tokay-20261109T135225Z"
+    },
+    {
+      "project": "out-kernel/google/gs-6.1/private/devices",
+      "previous_commit": "ec1bafc7ddc9a92937bd110f0b47dc069217ae50",
+      "active_commit": "62e7ed384bc4a3ca22b0c2fc1eab1475ada35e2a",
+      "topic_branch": "port/hardened-malloc-tokay-20261109T135225Z"
+    },
+    {
+      "project": "build/soong",
+      "previous_commit": "a528a88bd553d2a449ad9338a3e944b89a164971",
+      "active_commit": "5851ab423c8e23d764665e74dc72f9bca5963996",
+      "topic_branch": "port/hardened-malloc-tokay-20261109T135225Z"
+    },
+    {
+      "project": "build/make",
+      "previous_commit": "90d006387398ae6899145e6531a304500cfa0f70",
+      "active_commit": "89f1e686f3c1bfbc9ea0dfa921976c30c11df96b",
+      "topic_branch": "port/hardened-malloc-tokay-20261109T135225Z"
+    },
+    {
+      "project": "system/memory/libmemunreachable",
+      "previous_commit": "c3dc0b2f3ce01b53388635a14b01ca7e7a7000cc",
+      "active_commit": "7a95f0c9dee850ccba4887c3b5b00820f20b0e2e",
+      "topic_branch": "port/hardened-malloc-tokay-20261109T135225Z"
+    },
+    {
+      "project": "external/hardened_malloc",
+      "previous_commit": null,
+      "active_commit": "8fd6c6016ef53cc97ee5bc6f521cf70859342e37",
+      "topic_branch": "port/hardened-malloc-tokay-20261109T135225Z"
+    }
+  ],
+  "android_overlay": ".repo/local_manifests/tokay.xml",
+  "android_overlay_sha256": "3872cd51b5b008d1727462ec06f72be5119ae1466326ff11066eeecd9173f749",
+  "kernel_overlay": "out-kernel/google/gs-6.1/.repo/local_manifests/malloc.xml",
+  "kernel_overlay_sha256": "dd7f4d640b2ecc17a6986c0e7c7e107c163b843596d7fa5042aa034bb618c276",
+  "product_flags": {
+    "TARGET_USE_HARDENED_MALLOC": true,
+    "TARGET_HAS_ARM_MTE": true
+  },
+  "source_gki_selected": true,
+  "expected_4k_va_bits": 48,
+  "matched_source_files": 30,
+  "source_hashes": [
+    {
+      "project": "device/google/caimito",
+      "path": "tokay/BoardConfig.mk",
+      "commit": "0d5ae62983fd9143f3a670ef25537b31ff084d90",
+      "sha256": "d0c18c7ff3d237bb45940f3434103816654f13cdf16e5750aaa2d28432f684e8"
+    },
+    {
+      "project": "system/core",
+      "path": "rootdir/init.rc",
+      "commit": "e45de95e22142dc10a39c9d38c01942b781a357a",
+      "sha256": "d6abf4fe838fbc21b5887969554e481a724a49d74b68989b52880303c19fe6ad"
+    },
+    {
+      "project": "out-kernel/google/gs-6.1/common/gki",
+      "path": "arch/arm64/Kconfig",
+      "commit": "128e563a7b841cdee51ce79669fee61c99cd0890",
+      "sha256": "f1f471ec7e81ae713d9c0d0811b53d53fea7081375ee3aba62d42993a50e769c"
+    },
+    {
+      "project": "out-kernel/google/gs-6.1/private/devices",
+      "path": "google/caimito/device.bazelrc",
+      "commit": "62e7ed384bc4a3ca22b0c2fc1eab1475ada35e2a",
+      "sha256": "85c7d6fefdd6361ee1b950f2c50b2a58189627cefc7a8b94c6260621e732d1ed"
+    },
+    {
+      "project": "build/soong",
+      "path": "android/module.go",
+      "commit": "5851ab423c8e23d764665e74dc72f9bca5963996",
+      "sha256": "af85e3bdf61b74b94c6877035d439de7fd0d5b5dc3dffbc57a408330ab92759f"
+    },
+    {
+      "project": "build/soong",
+      "path": "android/variable.go",
+      "commit": "5851ab423c8e23d764665e74dc72f9bca5963996",
+      "sha256": "e6ceba1a89cf86d148a061c4807d38637e24334e4145a0e7eda6ae51797f5e75"
+    },
+    {
+      "project": "build/make",
+      "path": "core/soong_config.mk",
+      "commit": "89f1e686f3c1bfbc9ea0dfa921976c30c11df96b",
+      "sha256": "e79ee52cc2523629f08be5913aaa6dfc7f0da987d09c533f5d599134885ed283"
+    },
+    {
+      "project": "external/hardened_malloc",
+      "path": "Android.bp",
+      "commit": "8fd6c6016ef53cc97ee5bc6f521cf70859342e37",
+      "sha256": "0f4e02d5518050f443e29e521cca5aadd4f8871923774bde3c4f0ce5b2a67978"
+    },
+    {
+      "project": "external/hardened_malloc",
+      "path": "androidtest/Android.bp",
+      "commit": "8fd6c6016ef53cc97ee5bc6f521cf70859342e37",
+      "sha256": "c7941750c34308fecf2d0ce3dbe4c4d9ff2d632d812c84b10191f03e63ed9b0e"
+    },
+    {
+      "project": "external/hardened_malloc",
+      "path": "androidtest/memtag/Android.bp",
+      "commit": "8fd6c6016ef53cc97ee5bc6f521cf70859342e37",
+      "sha256": "423a6d0fbd220c996fbd1009acc743b99daf8c91fa2fa90de12a4fb94bac86df"
+    },
+    {
+      "project": "external/hardened_malloc",
+      "path": "androidtest/memtag/memtag_test.cc",
+      "commit": "8fd6c6016ef53cc97ee5bc6f521cf70859342e37",
+      "sha256": "7aecd47ced19401742b25286e89c51763f780474b45939d9941cce40f8253500"
+    },
+    {
+      "project": "external/hardened_malloc",
+      "path": "androidtest/src/grapheneos/hmalloc/MemtagTest.java",
+      "commit": "8fd6c6016ef53cc97ee5bc6f521cf70859342e37",
+      "sha256": "cfc6ccd1445fd8a8a8cb754b7a0d7f26688752b2f1c0caa6c90c9323deb47cfa"
+    },
+    {
+      "project": "bionic",
+      "path": "libc/Android.bp",
+      "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "sha256": "53a321504b4c5b44a826b8693cc60f9439208f2a56fa936178e82df4d29710e5"
+    },
+    {
+      "project": "bionic",
+      "path": "libc/bionic/android_mallopt.cpp",
+      "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "sha256": "873afcc1e944b48ee0594596fb884909419c58893d5b1b9c5381420b2d47c5b6"
+    },
+    {
+      "project": "bionic",
+      "path": "libc/bionic/h_malloc_wrapper.cpp",
+      "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "sha256": "f56b2b394cd522af02f8b7aec3d46e4aa08056feb0dc4d1419232a961a3c633b"
+    },
+    {
+      "project": "bionic",
+      "path": "libc/bionic/heap_tagging.cpp",
+      "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "sha256": "99aca7a246478fb64ad279e6c6671de9dd9544c3faf8bccdfa040c6a802cb9e6"
+    },
+    {
+      "project": "bionic",
+      "path": "libc/bionic/libc_init_common.cpp",
+      "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "sha256": "6219adc6765a6e39afd27187253036b1e0068b2e3915bcba762978966794bf02"
+    },
+    {
+      "project": "bionic",
+      "path": "libc/bionic/malloc_common.cpp",
+      "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "sha256": "a8177126d8adb170c750478158c12cb7f9abaa539cf893b8a431a848b34c5ace"
+    },
+    {
+      "project": "bionic",
+      "path": "libc/bionic/malloc_common.h",
+      "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "sha256": "71a041c443d0aaeda08f874f2ae12802e3fa890bf868cb524bc18cdab0e72e3c"
+    },
+    {
+      "project": "bionic",
+      "path": "libc/include/malloc.h",
+      "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "sha256": "db503657783b759516cd8f0513c6b79e8e7b9898d64d5c8cc0e43c76722a9979"
+    },
+    {
+      "project": "bionic",
+      "path": "libc/platform/bionic/malloc.h",
+      "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "sha256": "8a64c470e3398629edcbdc0d9059c5f4e4075ae4824fffc0892440d9db9add4d"
+    },
+    {
+      "project": "bionic",
+      "path": "libc/private/bionic_globals.h",
+      "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "sha256": "8a7f919edaddc79a9ef1a999359afaeed7e5bb457f308bbf27d232d971647625"
+    },
+    {
+      "project": "bionic",
+      "path": "libc/private/hardened_malloc_platform.h",
+      "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "sha256": "086d27ff9b7203e24d51a43a71841a3664c6d56cb6965ee7b3739396b5013ae5"
+    },
+    {
+      "project": "bionic",
+      "path": "tests/Android.bp",
+      "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "sha256": "1317c79313183e910cb16baa4d937577c1c641ac862dc8e6439c2976d2f9282a"
+    },
+    {
+      "project": "bionic",
+      "path": "tests/hardened_malloc_test.cpp",
+      "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "sha256": "383c8885b66ef612bc6eb333a50dff79254e34e30c97ea2569ba8804fc73c448"
+    },
+    {
+      "project": "bionic",
+      "path": "tests/malloc_iterate_test.cpp",
+      "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "sha256": "cbf32e89b903ee5d061b3ae1ac23455fe079f75ba38d611d4e0003c578153fa9"
+    },
+    {
+      "project": "bionic",
+      "path": "tests/malloc_test.cpp",
+      "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "sha256": "e4c73af954b6af50207806b327e5b49709f6aa59a07881a97ce9c77b96e3332c"
+    },
+    {
+      "project": "bionic",
+      "path": "tests/utils.cpp",
+      "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "sha256": "0109e574c60808c7bdc0881971910f170914f77ad080c696d6c908ee7352ddde"
+    },
+    {
+      "project": "system/memory/libmemunreachable",
+      "path": "MemUnreachable.cpp",
+      "commit": "7a95f0c9dee850ccba4887c3b5b00820f20b0e2e",
+      "sha256": "40f216f5e6971063c070c250b6c997a7302a27b45067e2d5ceebbb56d6191fcb"
+    },
+    {
+      "project": "system/memory/libmemunreachable",
+      "path": "tests/MemUnreachable_test.cpp",
+      "commit": "7a95f0c9dee850ccba4887c3b5b00820f20b0e2e",
+      "sha256": "80ad625ce1818ec74f2aecf725181a285992276edd9ecd0df9a6eb61dc72e9df"
+    }
+  ],
+  "soong_existing_edits_preserved_byte_for_byte": [
+    "ui/build/config.go",
+    "ui/build/rbe.go"
+  ],
+  "android_manifest_unique_projects": 1249,
+  "kernel_manifest_unique_projects": 18,
+  "repo_metadata_references_valid": true,
+  "scoped_preflight": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "local_sync_verified": [
+    "external/hardened_malloc",
+    "bionic",
+    "build/soong",
+    "build/make",
+    "system/core",
+    "system/memory/libmemunreachable",
+    "device/google/caimito",
+    "out-kernel/google/gs-6.1/common/gki",
+    "out-kernel/google/gs-6.1/private/devices"
+  ],
+  "public_main_tips_rechecked": [
+    "android_bionic",
+    "hardened_malloc",
+    "android_kernel_common_gs-6.1",
+    "android_kernel_google_gs-6.1_devices"
+  ],
+  "existing_build": {
+    "ota": "out/target/product/tokay/lineage-24.0-20261109-UNOFFICIAL-tokay.zip",
+    "allocator_soong_variables_present": false,
+    "kernel_page_size": 4096,
+    "kernel_va_bits": 39,
+    "ota_rebuilt_or_modified": false
+  },
+  "build_executed": false,
+  "device_actions_executed": false,
+  "frankel_activated": false,
+  "limits": [
+    "Coordinated Android/GKI/module build and allocator runtime validation remain pending.",
+    "The installed handset and existing OTA retain the earlier allocator.",
+    "User-reported later RKP/ABL experiments are recorded separately and were not reproduced."
+  ]
+}

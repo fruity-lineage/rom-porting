@@ -348,3 +348,30 @@ makefiles, not a fully evaluated Tokay build graph. See verification.md before i
   vendor runtime, FIPS loading and MTE behavior remain acceptance work per device.
 - Source and handoff work use isolated /tmp worktrees; active build inputs and
   pre-existing edits were preserved. Read the allocator audit and publication mapping.
+
+## Active Tokay allocator integration (2026-11-09)
+
+The earlier allocator publication was isolated from the active sources, so the
+2026-11-09 Tokay OTA did not contain the port. No evox build controller was running
+when activation began; the separate aospa build was left untouched. Fifteen existing
+projects now use their published port commits on topic branches, and
+external/hardened_malloc is imported as a Repo-managed project. The Tokay Android
+overlay and nested GS 6.1 overlay are installed. TARGET_USE_HARDENED_MALLOC and
+TARGET_HAS_ARM_MTE are true; caimito selects source GKI with the 4-KiB VA48 change.
+
+All 30 Tokay-applicable allocator source hashes match published commits. Scoped
+preflight has zero errors/warnings; manifests and local source/kernel sync checks
+pass. The two pre-existing Soong files are preserved byte for byte; backup refs
+retain prior source heads. See [activation verification](porting/audit/hardened-malloc-activation.json).
+
+This is active source integration, not a rebuilt OTA or hardware validation. Old
+Soong variables have no allocator flags and the old kernel output is VA39. Rebuild
+the coordinated Android/GKI/modules before expecting hardened_malloc on the phone.
+Frankel sources/kernel have not been activated by this task. The older allocator
+checkpoints remain valid publication evidence, but their isolation-only status is
+superseded for Tokay.
+
+The user's later RKP/ABL briefing is in
+[tokay-rkp-user-handover.md](porting/audit/tokay-rkp-user-handover.md). Its new device
+results are user reports; the proposed server-side cause of UNEVALUATED is an
+inference. No device action or keybox import occurred here.
