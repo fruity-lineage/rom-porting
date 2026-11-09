@@ -375,3 +375,19 @@ The user's later RKP/ABL briefing is in
 [tokay-rkp-user-handover.md](porting/audit/tokay-rkp-user-handover.md). Its new device
 results are user reports; the proposed server-side cause of UNEVALUATED is an
 inference. No device action or keybox import occurred here.
+
+## Tokay full integrity target (2026-11-09)
+
+The user explicitly requires BASIC, DEVICE and STRONG acceptance. This remains
+unresolved. The current import route records real unlocked/orange state, and
+standard RKPD keys cannot simply replace the exportable signer. A verified Tensor
+direct external-key signing backend is still missing. EC issuer fallback already
+supports RSA leaf certificates, so a missing RSA XML warning alone is not a proved
+blocker. UNEVALUATED does not isolate the exact server rejection reason.
+
+The enable toggles belong to Settings.System; earlier Secure null readings do not
+prove their effective state. The ADB tunnel at 127.0.0.1:50096 now refuses connections;
+a reachable endpoint is needed for fresh bound requester/verdict and actual public
+caller-chain validation. See [integrity parity investigation](porting/audit/tokay-integrity-parity.md).
+No device changes occurred. The earlier allocator activation remains complete at
+the source level; its OTA/runtime validation is separate and still pending.

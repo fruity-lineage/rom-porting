@@ -169,3 +169,18 @@ The existing RKP, renewal/runtime and Play-verdict acceptance tasks above remain
 The earlier combined install/build checkbox is superseded for Tokay: installation
 is complete; compilation and runtime acceptance remain pending. No build or phone
 change was performed in this task.
+
+## Required full Tokay integrity acceptance (2026-11-09)
+
+- [x] Establish BASIC, DEVICE and STRONG passing as the explicit completion criteria.
+- [x] Trace signing/opaque-key restrictions, cross-algorithm issuer fallback and
+  requester/configuration evidence; retain verified facts separately from inference.
+- [ ] Obtain the reachable Tokay ADB endpoint; the existing tunnel refuses connection.
+- [ ] Verify effective System-namespace PIF/TrickyStore toggles and real caller chain.
+- [ ] Establish a working Tensor signing backend that meets the required consumer
+  behavior; the current imported-key route is not verified parity.
+- [ ] Demonstrate fresh authenticated BASIC, DEVICE and STRONG labels with request
+  binding/freshness and requester optional-label configuration validated.
+
+The full integrity objective remains incomplete; no labels were claimed or fabricated.
+Details: [tokay-integrity-parity.md](porting/audit/tokay-integrity-parity.md).

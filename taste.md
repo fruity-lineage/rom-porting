@@ -29,3 +29,7 @@ and `spoofing-inventory.md`.
 - A published feature port must be distinguished from one installed in the active
   build tree. After preserving any running build, finish the active source integration
   and report separately whether the ROM was rebuilt and validated on hardware.
+
+- Tokay completion requires actual BASIC, DEVICE and STRONG Play Integrity passing,
+  matching the requested behavior on supported Snapdragon devices. Duck Ready and
+  successful certificate issuance do not satisfy that acceptance target.

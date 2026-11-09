@@ -278,3 +278,14 @@ was not performed. Publication and active-build integration are separate states.
 
 [User RKP handover](porting/audit/tokay-rkp-user-handover.md) retains the later ABL and
 StrongBox reports without promoting the proposed UNEVALUATED cause to verified fact.
+
+## Full integrity acceptance remains open (2026-11-09)
+
+The user requires actual BASIC/DEVICE/STRONG passing on Tokay. Source review
+confirms EC-to-RSA issuer fallback and rules out a straightforward standard RKPD
+opaque-key signer. The imported intermediate retains actual boot state; a verified
+Tensor external-key signing backend and fresh passing verdicts remain absent.
+[tokay-integrity-parity.md](porting/audit/tokay-integrity-parity.md) records exact
+source references, configuration namespace correction and required device checks.
+The current ADB tunnel refuses connection. No source/backend capability or passing
+label was invented, and no phone setting, keybox or partition was changed.
