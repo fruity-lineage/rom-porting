@@ -221,3 +221,40 @@ Broader consumer behavior and Frankel hardware remain unverified. It adds
 an imported CA, not direct external-key CSR certification. See
 [tokay-duck-import.md](porting/audit/tokay-duck-import.md) and
 [tokay-duck-import-verification.json](porting/audit/tokay-duck-import-verification.json).
+
+## hardened_malloc port (2026-11-09)
+
+Fourteen malloc-related source commits across twelve projects are published in
+fruity-lineage forks on main. Every new subject starts with `malloc:`; original
+upstream history/authors and human credits are retained. The full publication now
+contains 35 source commits across 19 forks. Active Android/kernel inputs were preserved.
+
+| Project | Published tip | New commits |
+| --- | --- | --- |
+| device/google/caimito | [0d5ae62983fd](https://github.com/fruity-lineage/android_device_google_caimito/commit/0d5ae62983fd9143f3a670ef25537b31ff084d90) | 1 |
+| device/google/muzel | [300eef55c0b2](https://github.com/fruity-lineage/android_device_google_muzel/commit/300eef55c0b2bdef00236e2c99832bba29e7c34f) | 1 |
+| system/core | [e45de95e2214](https://github.com/fruity-lineage/android_system_core/commit/e45de95e22142dc10a39c9d38c01942b781a357a) | 1 |
+| out-kernel/google/gs-6.1/common/gki | [128e563a7b84](https://github.com/fruity-lineage/android_kernel_common_gs-6.1/commit/128e563a7b841cdee51ce79669fee61c99cd0890) | 1 |
+| out-kernel/google/gs-6.1/private/devices | [62e7ed384bc4](https://github.com/fruity-lineage/android_kernel_google_gs-6.1_devices/commit/62e7ed384bc4a3ca22b0c2fc1eab1475ada35e2a) | 1 |
+| out-kernel/google/gs-6.6/common/gki | [0bf6c56da947](https://github.com/fruity-lineage/android_kernel_common_gs-6.6/commit/0bf6c56da947b485f9c87d29f1c40008155c2420) | 1 |
+| out-kernel/google/gs-6.6/private/devices | [0004aefef48d](https://github.com/fruity-lineage/android_kernel_google_gs-6.6_devices/commit/0004aefef48d189152996bc4ef1949e64d1bf161) | 1 |
+| build/soong | [5851ab423c8e](https://github.com/fruity-lineage/android_build_soong/commit/5851ab423c8e23d764665e74dc72f9bca5963996) | 1 |
+| build/make | [89f1e686f3c1](https://github.com/fruity-lineage/android_build/commit/89f1e686f3c1bfbc9ea0dfa921976c30c11df96b) | 1 |
+| external/hardened_malloc | [8fd6c6016ef5](https://github.com/fruity-lineage/hardened_malloc/commit/8fd6c6016ef53cc97ee5bc6f521cf70859342e37) | 2 |
+| bionic | [4bf97cec2ff7](https://github.com/fruity-lineage/android_bionic/commit/4bf97cec2ff7787b54e23ca557411efb445e320d) | 2 |
+| system/memory/libmemunreachable | [7a95f0c9dee8](https://github.com/fruity-lineage/android_system_memory_libmemunreachable/commit/7a95f0c9dee850ccba4887c3b5b00820f20b0e2e) | 1 |
+
+The [allocator audit](porting/audit/hardened-malloc.md) records the connected libc,
+Soong/make, init, device, GKI and heap-inspection changes. Both Android and nested
+kernel overlays are required. Thirty-three final modified files have recorded
+SHA-256 hashes; GitHub commit/tree objects match prepared local revisions.
+
+Static source, formatting, ABI signatures, architecture/configuration, preserved
+native hooks, manifest linkfiles, attribution and publication checks pass. These
+checks do not establish Android compilation or boot. The ten new libc test cases,
+heap-inspection regression and upstream MTE tests remain unexecuted. Actual
+allocator/vendor/MTE/module/FIPS behavior needs a coordinated build and testing.
+
+See [hardened-malloc-publication.json](porting/audit/hardened-malloc-publication.json)
+and the component verification reports. The existing RKP and consumer-acceptance
+limits remain separate; allocator work does not change those recorded results.

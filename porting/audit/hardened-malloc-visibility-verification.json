@@ -1,0 +1,17 @@
+{
+  "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+  "parent": "414ca61ddb2a0aa9c362253a80304413151855dc",
+  "project": "bionic",
+  "changed_files": [
+    "libc/Android.bp"
+  ],
+  "sha256": "53a321504b4c5b44a826b8693cc60f9439208f2a56fa936178e82df4d29710e5",
+  "consumer": "external/hardened_malloc/androidtest/memtag/Android.bp",
+  "header_module": "bionic_libc_platform_headers",
+  "checks": [
+    "bpfmt parse/format check",
+    "git diff --check",
+    "exact package visibility consumer resolution"
+  ],
+  "build_executed": false
+}

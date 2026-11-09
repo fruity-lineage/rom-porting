@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+  <remote name="fruity-kernel-github" fetch="https://github.com/" />
+  <remove-project name="kernel/common" />
+  <project name="fruity-lineage/android_kernel_common_gs-6.6" path="common/gki" remote="fruity-kernel-github" revision="refs/heads/main">
+    <linkfile dest="common/build.config.constants" src="build.config.constants" />
+    <linkfile dest="common/modules.bzl" src="modules.bzl" />
+    <linkfile dest=".clang-format" src=".clang-format" />
+  </project>
+  <remove-project name="LineageOS/android_kernel_google_gs-6.6_devices" />
+  <project name="fruity-lineage/android_kernel_google_gs-6.6_devices" path="private/devices" remote="fruity-kernel-github" revision="refs/heads/main">
+    <linkfile dest="AGENTS.md" src="google/common/workspace/root.AGENTS.md" />
+    <linkfile dest="MODULE.bazel" src="google/common/workspace/root.MODULE.bazel" />
+    <linkfile dest="common/BUILD.bazel" src="google/common/workspace/common.BUILD.bazel" />
+    <linkfile dest="private/.clang-format" src="google/common/workspace/private.clang-format" />
+    <linkfile dest="tools/bazel" src="google/common/tools/bazel.sh" />
+    <linkfile dest="tools/build_dist.sh" src="google/common/tools/build_dist.sh" />
+    <linkfile dest="tools/build_compile_commands.sh" src="google/common/tools/build_compile_commands.sh" />
+    <linkfile dest="update_symbol_list.sh" src="google/common/tools/update_symbol_list.sh" />
+    <linkfile dest="download_prebuilts.py" src="google/common/tools/download_prebuilts.py" />
+    <linkfile dest="run_kunit_tests_on_device.sh" src="google/common/tools/run_kunit_tests_on_device.sh" />
+    <linkfile dest="build_raviole.sh" src="google/raviole/build_raviole.sh" />
+    <linkfile dest="build_bluejay.sh" src="google/bluejay/build_bluejay.sh" />
+    <linkfile dest="build_pantah.sh" src="google/pantah/build_pantah.sh" />
+    <linkfile dest="build_lynx.sh" src="google/lynx/build_lynx.sh" />
+    <linkfile dest="build_felix.sh" src="google/felix/build_felix.sh" />
+    <linkfile dest="build_tangorpro.sh" src="google/tangorpro/build_tangorpro.sh" />
+    <linkfile dest="build_shusky.sh" src="google/shusky/build_shusky.sh" />
+    <linkfile dest="build_akita.sh" src="google/akita/build_akita.sh" />
+    <linkfile dest="build_caimito.sh" src="google/caimito/build_caimito.sh" />
+    <linkfile dest="build_comet.sh" src="google/comet/build_comet.sh" />
+    <linkfile dest="build_tegu.sh" src="google/tegu/build_tegu.sh" />
+    <linkfile dest="build_muzel.sh" src="google/muzel/build_muzel.sh" />
+    <linkfile dest="build_rango.sh" src="google/rango/build_rango.sh" />
+    <linkfile dest="build_stallion.sh" src="google/stallion/build_stallion.sh" />
+  </project>
+</manifest>

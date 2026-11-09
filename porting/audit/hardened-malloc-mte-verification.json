@@ -1,0 +1,67 @@
+{
+  "project": "external/hardened_malloc",
+  "worktree": "/tmp/malloc-allocator-port",
+  "commit": "8fd6c6016ef53cc97ee5bc6f521cf70859342e37",
+  "parent": "d6b50e3d248ee767bd248d2d7bcaf9e4584ccf05",
+  "tree": "74c09e9c975abcf540214ec2c5134957d4a89dc5",
+  "author": "fuzailmansuri <mfm9875@gmail.com>",
+  "subject": "malloc: Skip MTE tests on unsupported runtimes",
+  "upstream_pin": "bf37d54560a62b50da72e8fda56abf04f23b5fd2",
+  "bionic_capability_commit": "414ca61ddb2a0aa9c362253a80304413151855dc",
+  "files": [
+    {
+      "path": "androidtest/memtag/Android.bp",
+      "sha256": "423a6d0fbd220c996fbd1009acc743b99daf8c91fa2fa90de12a4fb94bac86df"
+    },
+    {
+      "path": "androidtest/memtag/memtag_test.cc",
+      "sha256": "7aecd47ced19401742b25286e89c51763f780474b45939d9941cce40f8253500"
+    },
+    {
+      "path": "androidtest/src/grapheneos/hmalloc/MemtagTest.java",
+      "sha256": "cfc6ccd1445fd8a8a8cb754b7a0d7f26688752b2f1c0caa6c90c9323deb47cfa"
+    }
+  ],
+  "checks": {
+    "clean_worktree": true,
+    "git_commit_whitespace": true,
+    "java_tree_sitter_parse": true,
+    "cpp_parse_with_existing_TEST_table_expanded": true,
+    "expanded_test_count": 10,
+    "upstream_test_bodies_and_fault_assertions_preserved": true,
+    "blueprint_parse_and_format": true,
+    "changed_cpp_regions_clang_format": true,
+    "all_referenced_header_APIs_found": true,
+    "GNU_affinity_APIs_explicitly_enabled": true,
+    "CPU_preferences_opened_read_only": true,
+    "only_native_exit_77_maps_to_JUnit_assumption": true,
+    "platform_header_module_visibility_resolves": true
+  },
+  "prerequisite": {
+    "project": "bionic",
+    "change": "Add //external/hardened_malloc:__subpackages__ to bionic_libc_platform_headers visibility",
+    "status": "Verified in the Bionic follow-up source",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d"
+  },
+  "runtime_skip_conditions": [
+    "Page size differs from 4096 bytes",
+    "Native allocator supports enumeration (the Scudo/Jemalloc fallback)",
+    "HWCAP2_MTE is absent",
+    "Tagged addressing or MTE checks are disabled/unavailable",
+    "CPU affinity or an allowed CPU preference cannot be read",
+    "An allowed CPU preference differs from asymm",
+    "Kernel does not permit both synchronous and asynchronous thread modes"
+  ],
+  "ordinary_failures_preserved": [
+    "android_mallopt capability query failure",
+    "mallopt tagging-level assertion failure",
+    "signal setup failure",
+    "upstream tag/fault assertion failures"
+  ],
+  "limits": [
+    "No Android/ROM/kernel build or hardware tests",
+    "Full Soong graph not evaluated",
+    "Raw upstream TEST macro table has existing tree-sitter parse errors; normalized table parses cleanly",
+    "Asymmetric CPU policy can change after the read-only check; later fault expectations still fail normally"
+  ]
+}

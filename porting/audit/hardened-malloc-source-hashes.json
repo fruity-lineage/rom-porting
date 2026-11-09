@@ -1,0 +1,200 @@
+[
+  {
+    "project": "device/google/caimito",
+    "path": "tokay/BoardConfig.mk",
+    "commit": "0d5ae62983fd9143f3a670ef25537b31ff084d90",
+    "sha256": "d0c18c7ff3d237bb45940f3434103816654f13cdf16e5750aaa2d28432f684e8"
+  },
+  {
+    "project": "device/google/muzel",
+    "path": "frankel/BoardConfig.mk",
+    "commit": "300eef55c0b2bdef00236e2c99832bba29e7c34f",
+    "sha256": "13bf7b3ec5ca0156f233316c9703ebd2b61f6130cbff4ab106204982469c2a46"
+  },
+  {
+    "project": "system/core",
+    "path": "rootdir/init.rc",
+    "commit": "e45de95e22142dc10a39c9d38c01942b781a357a",
+    "sha256": "d6abf4fe838fbc21b5887969554e481a724a49d74b68989b52880303c19fe6ad"
+  },
+  {
+    "project": "out-kernel/google/gs-6.1/common/gki",
+    "path": "arch/arm64/Kconfig",
+    "commit": "128e563a7b841cdee51ce79669fee61c99cd0890",
+    "sha256": "f1f471ec7e81ae713d9c0d0811b53d53fea7081375ee3aba62d42993a50e769c"
+  },
+  {
+    "project": "out-kernel/google/gs-6.1/private/devices",
+    "path": "google/caimito/device.bazelrc",
+    "commit": "62e7ed384bc4a3ca22b0c2fc1eab1475ada35e2a",
+    "sha256": "85c7d6fefdd6361ee1b950f2c50b2a58189627cefc7a8b94c6260621e732d1ed"
+  },
+  {
+    "project": "out-kernel/google/gs-6.6/common/gki",
+    "path": "arch/arm64/Kconfig",
+    "commit": "0bf6c56da947b485f9c87d29f1c40008155c2420",
+    "sha256": "ea195b293615e46b4c5d0ab5a1de9630a1296bde84ac65d64b7efc90e3e2c3a1"
+  },
+  {
+    "project": "out-kernel/google/gs-6.6/private/devices",
+    "path": "google/muzel/device.bazelrc",
+    "commit": "0004aefef48d189152996bc4ef1949e64d1bf161",
+    "sha256": "433a3120ee4258d1e2c4ea52f703148a32899a0c26864ecf40a0f25e194bae4c"
+  },
+  {
+    "project": "build/soong",
+    "path": "android/module.go",
+    "commit": "5851ab423c8e23d764665e74dc72f9bca5963996",
+    "sha256": "af85e3bdf61b74b94c6877035d439de7fd0d5b5dc3dffbc57a408330ab92759f"
+  },
+  {
+    "project": "build/soong",
+    "path": "android/variable.go",
+    "commit": "5851ab423c8e23d764665e74dc72f9bca5963996",
+    "sha256": "e6ceba1a89cf86d148a061c4807d38637e24334e4145a0e7eda6ae51797f5e75"
+  },
+  {
+    "project": "build/make",
+    "path": "core/soong_config.mk",
+    "commit": "89f1e686f3c1bfbc9ea0dfa921976c30c11df96b",
+    "sha256": "e79ee52cc2523629f08be5913aaa6dfc7f0da987d09c533f5d599134885ed283"
+  },
+  {
+    "project": "external/hardened_malloc",
+    "path": "Android.bp",
+    "commit": "8fd6c6016ef53cc97ee5bc6f521cf70859342e37",
+    "sha256": "0f4e02d5518050f443e29e521cca5aadd4f8871923774bde3c4f0ce5b2a67978"
+  },
+  {
+    "project": "external/hardened_malloc",
+    "path": "androidtest/Android.bp",
+    "commit": "8fd6c6016ef53cc97ee5bc6f521cf70859342e37",
+    "sha256": "c7941750c34308fecf2d0ce3dbe4c4d9ff2d632d812c84b10191f03e63ed9b0e"
+  },
+  {
+    "project": "external/hardened_malloc",
+    "path": "androidtest/memtag/Android.bp",
+    "commit": "8fd6c6016ef53cc97ee5bc6f521cf70859342e37",
+    "sha256": "423a6d0fbd220c996fbd1009acc743b99daf8c91fa2fa90de12a4fb94bac86df"
+  },
+  {
+    "project": "external/hardened_malloc",
+    "path": "androidtest/memtag/memtag_test.cc",
+    "commit": "8fd6c6016ef53cc97ee5bc6f521cf70859342e37",
+    "sha256": "7aecd47ced19401742b25286e89c51763f780474b45939d9941cce40f8253500"
+  },
+  {
+    "project": "external/hardened_malloc",
+    "path": "androidtest/src/grapheneos/hmalloc/MemtagTest.java",
+    "commit": "8fd6c6016ef53cc97ee5bc6f521cf70859342e37",
+    "sha256": "cfc6ccd1445fd8a8a8cb754b7a0d7f26688752b2f1c0caa6c90c9323deb47cfa"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/Android.bp",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+    "sha256": "53a321504b4c5b44a826b8693cc60f9439208f2a56fa936178e82df4d29710e5"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/android_mallopt.cpp",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+    "sha256": "873afcc1e944b48ee0594596fb884909419c58893d5b1b9c5381420b2d47c5b6"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/h_malloc_wrapper.cpp",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+    "sha256": "f56b2b394cd522af02f8b7aec3d46e4aa08056feb0dc4d1419232a961a3c633b"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/heap_tagging.cpp",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+    "sha256": "99aca7a246478fb64ad279e6c6671de9dd9544c3faf8bccdfa040c6a802cb9e6"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/libc_init_common.cpp",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+    "sha256": "6219adc6765a6e39afd27187253036b1e0068b2e3915bcba762978966794bf02"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/malloc_common.cpp",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+    "sha256": "a8177126d8adb170c750478158c12cb7f9abaa539cf893b8a431a848b34c5ace"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/bionic/malloc_common.h",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+    "sha256": "71a041c443d0aaeda08f874f2ae12802e3fa890bf868cb524bc18cdab0e72e3c"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/include/malloc.h",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+    "sha256": "db503657783b759516cd8f0513c6b79e8e7b9898d64d5c8cc0e43c76722a9979"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/platform/bionic/malloc.h",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+    "sha256": "8a64c470e3398629edcbdc0d9059c5f4e4075ae4824fffc0892440d9db9add4d"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/private/bionic_globals.h",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+    "sha256": "8a7f919edaddc79a9ef1a999359afaeed7e5bb457f308bbf27d232d971647625"
+  },
+  {
+    "project": "bionic",
+    "path": "libc/private/hardened_malloc_platform.h",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+    "sha256": "086d27ff9b7203e24d51a43a71841a3664c6d56cb6965ee7b3739396b5013ae5"
+  },
+  {
+    "project": "bionic",
+    "path": "tests/Android.bp",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+    "sha256": "1317c79313183e910cb16baa4d937577c1c641ac862dc8e6439c2976d2f9282a"
+  },
+  {
+    "project": "bionic",
+    "path": "tests/hardened_malloc_test.cpp",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+    "sha256": "383c8885b66ef612bc6eb333a50dff79254e34e30c97ea2569ba8804fc73c448"
+  },
+  {
+    "project": "bionic",
+    "path": "tests/malloc_iterate_test.cpp",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+    "sha256": "cbf32e89b903ee5d061b3ae1ac23455fe079f75ba38d611d4e0003c578153fa9"
+  },
+  {
+    "project": "bionic",
+    "path": "tests/malloc_test.cpp",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+    "sha256": "e4c73af954b6af50207806b327e5b49709f6aa59a07881a97ce9c77b96e3332c"
+  },
+  {
+    "project": "bionic",
+    "path": "tests/utils.cpp",
+    "commit": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+    "sha256": "0109e574c60808c7bdc0881971910f170914f77ad080c696d6c908ee7352ddde"
+  },
+  {
+    "project": "system/memory/libmemunreachable",
+    "path": "MemUnreachable.cpp",
+    "commit": "7a95f0c9dee850ccba4887c3b5b00820f20b0e2e",
+    "sha256": "40f216f5e6971063c070c250b6c997a7302a27b45067e2d5ceebbb56d6191fcb"
+  },
+  {
+    "project": "system/memory/libmemunreachable",
+    "path": "tests/MemUnreachable_test.cpp",
+    "commit": "7a95f0c9dee850ccba4887c3b5b00820f20b0e2e",
+    "sha256": "80ad625ce1818ec74f2aecf725181a285992276edd9ecd0df9a6eb61dc72e9df"
+  }
+]

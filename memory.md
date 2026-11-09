@@ -326,3 +326,25 @@ Run from the Android root:
 The first wraps the skill checker to use caimito/tokay extraction lists and separates
 normal/recovery manifests. Its underlying product scan is static and includes family
 makefiles, not a fully evaluated Tokay build graph. See verification.md before interpreting it.
+
+## hardened_malloc source checkpoint (2026-11-09)
+
+- Fourteen malloc-related commits in twelve projects are published on main, with
+  preserved upstream authors and porter credit. Every subject starts `malloc:`.
+- Exact allocator upstream pin: GrapheneOS/hardened_malloc bf37d54560a62b50da72e8fda56abf04f23b5fd2.
+  Latest allocator tip: 8fd6c6016ef53cc97ee5bc6f521cf70859342e37.
+  Bionic tip: 4bf97cec2ff7787b54e23ca557411efb445e320d.
+- Product opt-in targets Tokay/Frankel. Shared/static libc selects hardened_malloc
+  only for compatible 64-bit/4-KiB/address-space configurations; Scudo fallback
+  and secure-filtered DISABLE_HARDENED_MALLOC opt-out are retained.
+- Source GKI uses 4-KiB VA48/max mmap entropy, preserving the 16-KiB VA47 path.
+  Kernel overlays replace GKI and device configurations in separate Repo workspaces.
+  Initialize nested .repo/repo before repo init to avoid the parent Android workspace.
+- GWP-ASan remains on Scudo fallback; hardened heaps report ENOTSUP for allocation
+  enumeration. Android C++ delete overloads reach free; upstream desktop new.cc
+  is excluded by Android design. MTE tests skip unsupported configurations or CPUs without asymmetric policy.
+- GitHub objects, 33 final changed-file hashes, manifests and source/static checks
+  pass. No allocator Android/kernel build, boot or device test ran. Matching modules,
+  vendor runtime, FIPS loading and MTE behavior remain acceptance work per device.
+- Source and handoff work use isolated /tmp worktrees; active build inputs and
+  pre-existing edits were preserved. Read the allocator audit and publication mapping.

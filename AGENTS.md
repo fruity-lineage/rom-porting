@@ -35,5 +35,8 @@ Read porting/audit/publication-commits.json for the published revisions. Choose 
 overlay from porting/manifests for either device family or both. Preserve upstream
 authors and fuzailmansuri's coauthor credit.
 Only ported work is authorized for publication; unrelated pre-existing edits are excluded.
+Malloc-related port commits use `malloc:` subjects. The allocator audit and the
+nested kernel overlays in porting/manifests/kernels are required handoff material;
+the Android overlay alone does not supply the compatible boot GKI.
 Preserve a running build's inputs. Use isolated worktrees for additional device work,
 and do not switch the active workspace's manifests or source revisions during a build.

@@ -1,0 +1,40 @@
+{
+  "result": "No missing connected libc++abi dependency in pinned Android17 Graphene allocator integration",
+  "graphene_manifest_sha": "8d7d1715314b6504e68ee0c7cd82dc2a5c579ec9",
+  "graphene_aosp_tag": "android-17.0.0_r1",
+  "graphene_standard_aosp_projects": [
+    "external/libcxx",
+    "external/libcxxabi",
+    "prebuilts/clang/host/linux-x86"
+  ],
+  "local_libcxxabi_sha": "84450eba5a24fe5b7df77ed1307bfada05b14dc7",
+  "local_clang_prebuilts_sha": "29182889399818f97baa65ea238c80e8117981eb",
+  "android_provider": "prebuilts/clang/host/linux-x86/Android.bp libc++ and libc++_static prebuilt modules",
+  "legacy_external_libcxxabi_role": "Android.bp defines only Trusty dirgroup; not Android operator provider",
+  "cp2a_clang_version": "clang-r584948b",
+  "llvm_source_sha": "6d4a0935c850ec3ddfc70c4ba97b98adc35c676e",
+  "llvm_operator_source_url": "https://github.com/llvm/llvm-project/blob/6d4a0935c850ec3ddfc70c4ba97b98adc35c676e/libcxxabi/src/stdlib_new_delete.cpp",
+  "source_sha256": "86ad03b757c0ef27cd120fdf0ac005fd50644b3d8d64c63abbf5dc1b7b74cd76",
+  "mapping": "ordinary delete -> free; sized delete -> ordinary delete -> free; aligned delete -> free; sized aligned delete -> aligned delete -> free; arrays/nothrow forward accordingly",
+  "binary_validation": {
+    "archive": "/serverhive4/fruitzail/evox/prebuilts/clang/host/linux-x86/clang-r584948b/android_libc++/platform/aarch64/lib/libc++_static.a",
+    "sha256": "42f30460477fdd1067f8336d61473a8e6eff0853157df12fcd6eb0fec8b871af",
+    "operator_delete_overloads": 12,
+    "direct_free_tail_calls": 2,
+    "h_free_references": 0
+  },
+  "upstream_android_allocator_sources": [
+    "chacha.c",
+    "h_malloc.c",
+    "memory.c",
+    "pages.c",
+    "random.c",
+    "util.c"
+  ],
+  "upstream_android_excludes_desktop_new_cc": true,
+  "desktop_new_cc_role": "Standalone desktop operator definitions additionally call h_free_sized/h_free_aligned_sized; not in upstream Android module",
+  "limitations": [
+    "Source and existing-artifact read-only analysis; no builds or execution",
+    "Application replacement operators remain possible by normal C++ weak-symbol semantics"
+  ]
+}

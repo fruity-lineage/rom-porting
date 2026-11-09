@@ -1,0 +1,180 @@
+{
+  "upstream_allocator_pin": "bf37d54560a62b50da72e8fda56abf04f23b5fd2",
+  "soong_base": "a528a88bd553d2a449ad9338a3e944b89a164971",
+  "make_base": "90d006387398ae6899145e6531a304500cfa0f70",
+  "make_boolean_cases": [
+    {
+      "malloc": null,
+      "mte": null,
+      "json": {
+        "Use_hardened_malloc": false,
+        "Device_has_arm_mte": false
+      }
+    },
+    {
+      "malloc": null,
+      "mte": "false",
+      "json": {
+        "Use_hardened_malloc": false,
+        "Device_has_arm_mte": false
+      }
+    },
+    {
+      "malloc": null,
+      "mte": "true",
+      "json": {
+        "Use_hardened_malloc": false,
+        "Device_has_arm_mte": true
+      }
+    },
+    {
+      "malloc": "false",
+      "mte": null,
+      "json": {
+        "Use_hardened_malloc": false,
+        "Device_has_arm_mte": false
+      }
+    },
+    {
+      "malloc": "false",
+      "mte": "false",
+      "json": {
+        "Use_hardened_malloc": false,
+        "Device_has_arm_mte": false
+      }
+    },
+    {
+      "malloc": "false",
+      "mte": "true",
+      "json": {
+        "Use_hardened_malloc": false,
+        "Device_has_arm_mte": true
+      }
+    },
+    {
+      "malloc": "true",
+      "mte": null,
+      "json": {
+        "Use_hardened_malloc": true,
+        "Device_has_arm_mte": false
+      }
+    },
+    {
+      "malloc": "true",
+      "mte": "false",
+      "json": {
+        "Use_hardened_malloc": true,
+        "Device_has_arm_mte": false
+      }
+    },
+    {
+      "malloc": "true",
+      "mte": "true",
+      "json": {
+        "Use_hardened_malloc": true,
+        "Device_has_arm_mte": true
+      }
+    }
+  ],
+  "arch_variant_schema_checked": true,
+  "select_handlers_registered": true,
+  "mte_tests_require_arm64_allocator_and_mte": true,
+  "bpfmt_parses_and_formatting": true,
+  "gofmt_parse_and_formatting": true,
+  "git_whitespace": true,
+  "unchanged_upstream_sources": [
+    {
+      "path": "LICENSE",
+      "sha256": "30b5235773f6127e962464a7ef397867acfa50b43d79b698bf9c54f64069be81"
+    },
+    {
+      "path": "CREDITS",
+      "sha256": "2bfc5f7322a13f9eeef272f752264b0897a9a48f41465207afa254e0e6affbb3"
+    },
+    {
+      "path": "h_malloc.c",
+      "sha256": "23e7fa7d29ed4ae4e10f040516d95e85437e070c826f8a8dc637b0bbae794ece"
+    },
+    {
+      "path": "memory.c",
+      "sha256": "b799cc8c010cf4d8a81f2b6dc29351a05351d7f083a904b81f32d41fe5e47046"
+    },
+    {
+      "path": "pages.h",
+      "sha256": "6f5b813f9c23af1e7bfc5d3a04ae8a80b56bbe62c62201e060f3ccda203f5dbe"
+    },
+    {
+      "path": "include/h_malloc.h",
+      "sha256": "30cb6c99ad552d2f0fa456d2ccc536ca9abaf23002685fc9a864dcf4569b9948"
+    }
+  ],
+  "rom_kernel_or_go_build_run": false,
+  "limits": [
+    "Soong module graph not evaluated",
+    "Android MTE tests not executed",
+    "No device runtime validation",
+    "Upstream MTE test requires asymmetric checking mode"
+  ],
+  "commits": [
+    {
+      "project": "build/soong",
+      "worktree": "/tmp/malloc-soong-port",
+      "commit": "5851ab423c8e23d764665e74dc72f9bca5963996",
+      "tree": "85df7a40e2a40fea9a9ace91f384794c7425ebc6",
+      "subject": "malloc: Add allocator selection and ARM MTE product variables",
+      "author": "Dmitry Muhomor <muhomor.dmitry@gmail.com>",
+      "committer": "fuzailmansuri <mfm9875@gmail.com>",
+      "files": [
+        {
+          "path": "android/variable.go",
+          "sha256": "e6ceba1a89cf86d148a061c4807d38637e24334e4145a0e7eda6ae51797f5e75"
+        },
+        {
+          "path": "android/module.go",
+          "sha256": "af85e3bdf61b74b94c6877035d439de7fd0d5b5dc3dffbc57a408330ab92759f"
+        }
+      ]
+    },
+    {
+      "project": "build/make",
+      "worktree": "/tmp/malloc-build-port",
+      "commit": "89f1e686f3c1bfbc9ea0dfa921976c30c11df96b",
+      "tree": "f8cc94aa4ae466cd2f2e2224d7ed954069c85d3e",
+      "subject": "malloc: Export allocator selection and ARM MTE booleans",
+      "author": "Dmitry Muhomor <muhomor.dmitry@gmail.com>",
+      "committer": "fuzailmansuri <mfm9875@gmail.com>",
+      "files": [
+        {
+          "path": "core/soong_config.mk",
+          "sha256": "e79ee52cc2523629f08be5913aaa6dfc7f0da987d09c533f5d599134885ed283"
+        }
+      ]
+    },
+    {
+      "project": "external/hardened_malloc",
+      "worktree": "/tmp/malloc-allocator-port",
+      "commit": "d6b50e3d248ee767bd248d2d7bcaf9e4584ccf05",
+      "tree": "fc3605f2656a8bd48d03c628434c2df3240dd0c9",
+      "subject": "malloc: Scope Android allocator headers and MTE tests",
+      "author": "fuzailmansuri <mfm9875@gmail.com>",
+      "committer": "fuzailmansuri <mfm9875@gmail.com>",
+      "files": [
+        {
+          "path": "Android.bp",
+          "sha256": "0f4e02d5518050f443e29e521cca5aadd4f8871923774bde3c4f0ce5b2a67978"
+        },
+        {
+          "path": "androidtest/Android.bp",
+          "sha256": "c7941750c34308fecf2d0ce3dbe4c4d9ff2d632d812c84b10191f03e63ed9b0e"
+        },
+        {
+          "path": "androidtest/memtag/Android.bp",
+          "sha256": "647b923023055d1f9ffe657b970f369a3f63f56fe2a789eda4b49176d7118454"
+        }
+      ]
+    }
+  ],
+  "active_build_inputs_preserved": true,
+  "allocator_platform_and_runtime_apex_available": true,
+  "license_kind_definitions_verified": true
+}

@@ -27,6 +27,20 @@
   <project name="LineageOS/android_device_google_muzel-kernels" path="device/google/muzel-kernels" remote="fruity-port-github" revision="refs/heads/lineage-24.0" />
   <remove-project name="TheMuppets/proprietary_vendor_google_frankel" optional="true" />
   <project name="TheMuppets/proprietary_vendor_google_frankel" path="vendor/google/frankel" remote="fruity-port-github" revision="refs/heads/lineage-24.0" clone-depth="1" />
+  <remove-project name="LineageOS/android_build" optional="true" />
+  <project path="build/make" name="fruity-lineage/android_build" remote="fruity-port-github" revision="refs/heads/main" groups="pdk,sysui-studio">
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="LineageOS/android_build_soong" optional="true" />
+  <project path="build/soong" name="fruity-lineage/android_build_soong" remote="fruity-port-github" revision="refs/heads/main" groups="pdk,tradefed,sysui-studio" />
+  <remove-project name="platform/system/memory/libmemunreachable" optional="true" />
+  <project path="system/memory/libmemunreachable" name="fruity-lineage/android_system_memory_libmemunreachable" remote="fruity-port-github" revision="refs/heads/main" groups="pdk" />
+  <project path="external/hardened_malloc" name="fruity-lineage/hardened_malloc" remote="fruity-port-github" revision="refs/heads/main" groups="pdk" />
   <project name="fruity-lineage/rom-porting" path="agent-memory" remote="fruity-port-github" revision="refs/heads/main">
     <linkfile src="AGENTS.md" dest="AGENTS.md" />
     <linkfile src="taste.md" dest="taste.md" />

@@ -18,6 +18,10 @@ Recorded from this workspace conversation on 2026-11-08.
 - Preserve active build inputs and isolate other device changes in worktrees.
 - Enabled device RKP should restore, provision and renew automatically at boot without
   opening Settings. Generate the Duck key locally; do not download a premade keybox.
+- Port GrapheneOS hardened_malloc as a connected allocator, libc, build and kernel change.
+- Every new commit for the hardened_malloc port must start its subject with `malloc:`,
+  including dependency wiring, kernel patches and handoff documentation. Keep inherited
+  upstream history and authorship intact.
 
 Add preferences when the user states them. Keep task-specific discoveries in `memory.md`
 and `spoofing-inventory.md`.

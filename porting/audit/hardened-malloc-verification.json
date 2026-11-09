@@ -1,0 +1,170 @@
+{
+  "date_utc": "2026-11-09T01:10:25.696013+00:00",
+  "new_commits": 14,
+  "new_projects": 12,
+  "total_source_commits": 35,
+  "total_source_forks": 19,
+  "final_changed_source_hashes": 33,
+  "all_malloc_subjects_prefixed": true,
+  "github_exact_commits_and_trees": true,
+  "all_default_branches_main": true,
+  "published_repositories": [
+    {
+      "repository": "fruity-lineage/android_external_bouncycastle",
+      "branch": "main",
+      "tip": "6d01d24edd9e4838ddde5be7cbcfff7b1d4ea7bc",
+      "tree": "4216bd3ab659e3f31fcf5ad5b15e09c251d19d9f",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_bionic",
+      "branch": "main",
+      "tip": "4bf97cec2ff7787b54e23ca557411efb445e320d",
+      "tree": "ee7191ada16a86da411d1bf1fec0ce1fc49919c6",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_vendor_lineage",
+      "branch": "main",
+      "tip": "887e8e0b3ae15e6c84de29953169392cd220a1c8",
+      "tree": "565399672310113808be796ddc922e9abe0fc049",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_system_core",
+      "branch": "main",
+      "tip": "e45de95e22142dc10a39c9d38c01942b781a357a",
+      "tree": "b9369d2d9133aac8194c9142a2595c1155584abd",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_device_lineage_sepolicy",
+      "branch": "main",
+      "tip": "7fc49f44fb98584fc3890f0e77609c246b19c126",
+      "tree": "c2b7ddcaf38f4c47cb6d5d04c7c9c13947c5f47a",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_frameworks_base",
+      "branch": "main",
+      "tip": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89",
+      "tree": "6962960b66170740923f6752ceb7eb582918585c",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_packages_apps_Settings",
+      "branch": "main",
+      "tip": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c",
+      "tree": "deb437b7d5540f5d77488a58215d93d74379bf66",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_system_security",
+      "branch": "main",
+      "tip": "a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8",
+      "tree": "11c5c2de89fbc415194a1fcf044967dea7fe39f0",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_device_google_caimito",
+      "branch": "main",
+      "tip": "0d5ae62983fd9143f3a670ef25537b31ff084d90",
+      "tree": "e6e2032f71d66141a2c85bafbea4dc97cd8f5f87",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_device_google_muzel",
+      "branch": "main",
+      "tip": "300eef55c0b2bdef00236e2c99832bba29e7c34f",
+      "tree": "0de14e4905fb202d8ad6b0695098d957f2706e6a",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_device_google_zumapro",
+      "branch": "main",
+      "tip": "13f60c3e3a84ace1a311082f134d4a0ab3ae0abd",
+      "tree": "c34fad6d450868770415b14fc3027c68ee993bb0",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_kernel_common_gs-6.1",
+      "branch": "main",
+      "tip": "128e563a7b841cdee51ce79669fee61c99cd0890",
+      "tree": "0b58b4e189a2edb1f2efb2f305501fc5eac570b4",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_kernel_google_gs-6.1_devices",
+      "branch": "main",
+      "tip": "62e7ed384bc4a3ca22b0c2fc1eab1475ada35e2a",
+      "tree": "dbcac31ac026c831cc1cc0b9e8fc7fccd6f4022e",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_kernel_common_gs-6.6",
+      "branch": "main",
+      "tip": "0bf6c56da947b485f9c87d29f1c40008155c2420",
+      "tree": "a1da8cce09c15095788de0c060a12187300eeab1",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_kernel_google_gs-6.6_devices",
+      "branch": "main",
+      "tip": "0004aefef48d189152996bc4ef1949e64d1bf161",
+      "tree": "59a7e5fd475fd424859867520b4a11ae3b3ed166",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_build_soong",
+      "branch": "main",
+      "tip": "5851ab423c8e23d764665e74dc72f9bca5963996",
+      "tree": "85df7a40e2a40fea9a9ace91f384794c7425ebc6",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_build",
+      "branch": "main",
+      "tip": "89f1e686f3c1bfbc9ea0dfa921976c30c11df96b",
+      "tree": "f8cc94aa4ae466cd2f2e2224d7ed954069c85d3e",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/hardened_malloc",
+      "branch": "main",
+      "tip": "8fd6c6016ef53cc97ee5bc6f521cf70859342e37",
+      "tree": "74c09e9c975abcf540214ec2c5134957d4a89dc5",
+      "verified": true
+    },
+    {
+      "repository": "fruity-lineage/android_system_memory_libmemunreachable",
+      "branch": "main",
+      "tip": "7a95f0c9dee850ccba4887c3b5b00820f20b0e2e",
+      "tree": "5fca9a9b8c2177b31ca67c1f27944c9dd42a92cc",
+      "verified": true
+    }
+  ],
+  "android_overlays_parse_and_unique_paths": true,
+  "build_make_six_inherited_linkfiles_preserved": true,
+  "nested_kernel_overlay_linkfiles_preserved": true,
+  "nested_repo_initialization_and_shell_review": true,
+  "two_independent_libc_reviews": true,
+  "active_build_inputs_preserved": true,
+  "component_reports": [
+    "hardened-malloc-plumbing-verification.json",
+    "hardened-malloc-libc-verification.json",
+    "hardened-malloc-kernel-commits.json",
+    "hardened-malloc-cxx-verification.json",
+    "hardened-malloc-mte-verification.json",
+    "hardened-malloc-visibility-verification.json"
+  ],
+  "build_executed": false,
+  "android_tests_executed": false,
+  "hardware_validation_executed": false,
+  "limits": [
+    "Full Soong evaluation, linking and coordinated Android/GKI/module compilation pending",
+    "New libc/libmem regressions and applicable upstream MTE tests unexecuted",
+    "Boot, vendor/performance/native bridge/recovery and FIPS loading pending per device",
+    "Unsupported pages/address spaces retain Scudo",
+    "Hardened enumeration unsupported; GWP remains on Scudo fallback"
+  ]
+}

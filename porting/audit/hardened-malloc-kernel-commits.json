@@ -1,0 +1,197 @@
+[
+  {
+    "project": "device/google/caimito",
+    "base": "2f7cc304134f77b3858da6e9d2390a5b22fbc467",
+    "worktree": "/tmp/malloc-caimito",
+    "commit": "0d5ae62983fd9143f3a670ef25537b31ff084d90",
+    "base_tree": "de14f764bf325ecfc181214052b0b7319337f0f1",
+    "tree": "e6e2032f71d66141a2c85bafbea4dc97cd8f5f87",
+    "files": [
+      "tokay/BoardConfig.mk"
+    ],
+    "author": "Dmitry Muhomor <muhomor.dmitry@gmail.com>",
+    "committer": "fuzailmansuri <mfm9875@gmail.com>",
+    "subject": "malloc: Enable hardened allocator and MTE on supported devices",
+    "upstream": "https://github.com/LineageOS/android_device_google_caimito",
+    "patch": "/tmp/malloc-device-kernel-patches/malloc-caimito.patch",
+    "patch_sha256": "e2a6719efaab15143b9a7315665ed5f38eab0f3cca32188de4fc452bafa24415",
+    "validation": {
+      "clean_worktree": true,
+      "exact_parent": true,
+      "subject_prefix": true,
+      "committer_identity": true,
+      "applies_to_exact_base": true,
+      "no_change_id": true,
+      "amend_tree_preserved": true,
+      "amend_author_and_date_preserved": true
+    }
+  },
+  {
+    "project": "device/google/muzel",
+    "base": "9c4bad6692c8275790bff334263914ddbd2a59e5",
+    "worktree": "/tmp/malloc-muzel",
+    "commit": "300eef55c0b2bdef00236e2c99832bba29e7c34f",
+    "base_tree": "1b89905adb299ff0f35a3744619d5b69cecaef4b",
+    "tree": "0de14e4905fb202d8ad6b0695098d957f2706e6a",
+    "files": [
+      "frankel/BoardConfig.mk"
+    ],
+    "author": "Dmitry Muhomor <muhomor.dmitry@gmail.com>",
+    "committer": "fuzailmansuri <mfm9875@gmail.com>",
+    "subject": "malloc: Enable hardened allocator and MTE on supported devices",
+    "upstream": "https://github.com/LineageOS/android_device_google_muzel",
+    "patch": "/tmp/malloc-device-kernel-patches/malloc-muzel.patch",
+    "patch_sha256": "df802d5981958922ac3303a09d160ac2951031ec9aed82f4f8162b6833dc04a3",
+    "validation": {
+      "clean_worktree": true,
+      "exact_parent": true,
+      "subject_prefix": true,
+      "committer_identity": true,
+      "applies_to_exact_base": true,
+      "no_change_id": true,
+      "amend_tree_preserved": true,
+      "amend_author_and_date_preserved": true
+    }
+  },
+  {
+    "project": "system/core",
+    "base": "19383c870279c12a823f1757ac455961b0973485",
+    "worktree": "/tmp/malloc-system-core",
+    "commit": "e45de95e22142dc10a39c9d38c01942b781a357a",
+    "base_tree": "88286a85679865dae4a35548a1af0f59fb0b3a48",
+    "tree": "b9369d2d9133aac8194c9142a2595c1155584abd",
+    "files": [
+      "rootdir/init.rc"
+    ],
+    "author": "Daniel Micay <danielmicay@gmail.com>",
+    "committer": "fuzailmansuri <mfm9875@gmail.com>",
+    "subject": "malloc: Increase the process mapping limit for guarded heaps",
+    "upstream": "https://github.com/LineageOS/android_system_core",
+    "patch": "/tmp/malloc-device-kernel-patches/malloc-system-core.patch",
+    "patch_sha256": "39d55d9b47698bdfda0be0dbe58a29ba9be035a854a85eccdb838a3df4a1276a",
+    "validation": {
+      "clean_worktree": true,
+      "exact_parent": true,
+      "subject_prefix": true,
+      "committer_identity": true,
+      "applies_to_exact_base": true,
+      "no_change_id": true,
+      "amend_tree_preserved": true,
+      "amend_author_and_date_preserved": true
+    }
+  },
+  {
+    "project": "out-kernel/google/gs-6.1/common/gki",
+    "base": "7b58131aec77682c068b072dd055e130cfc971f7",
+    "worktree": "/tmp/malloc-gs6.1-gki",
+    "commit": "128e563a7b841cdee51ce79669fee61c99cd0890",
+    "base_tree": "98fe2e0436faf0d5102a97f75e9151dc5d4c27ef",
+    "tree": "0b58b4e189a2edb1f2efb2f305501fc5eac570b4",
+    "files": [
+      "arch/arm64/Kconfig"
+    ],
+    "author": "flawedworld <flawedworld@flawed.world>",
+    "committer": "fuzailmansuri <mfm9875@gmail.com>",
+    "subject": "malloc: Default 4K arm64 kernels to 48-bit VA",
+    "upstream": "https://android.googlesource.com/kernel/common",
+    "patch": "/tmp/malloc-device-kernel-patches/malloc-gs6.1-gki.patch",
+    "patch_sha256": "8c0e12643a63c6e87df42bb0eb36ea8059442b338143512a870a8a37e6df97dc",
+    "validation": {
+      "clean_worktree": true,
+      "exact_parent": true,
+      "subject_prefix": true,
+      "committer_identity": true,
+      "applies_to_exact_base": true,
+      "no_change_id": true,
+      "amend_tree_preserved": true,
+      "amend_author_and_date_preserved": true
+    },
+    "github_mirror": "https://github.com/aosp-mirror-neo/kernel_common"
+  },
+  {
+    "project": "out-kernel/google/gs-6.1/private/devices",
+    "base": "ec1bafc7ddc9a92937bd110f0b47dc069217ae50",
+    "worktree": "/tmp/malloc-gs6.1-devices",
+    "commit": "62e7ed384bc4a3ca22b0c2fc1eab1475ada35e2a",
+    "base_tree": "867164c979055edd5c901d0b302d03b3e2991931",
+    "tree": "dbcac31ac026c831cc1cc0b9e8fc7fccd6f4022e",
+    "files": [
+      "google/caimito/device.bazelrc"
+    ],
+    "author": "fuzailmansuri <mfm9875@gmail.com>",
+    "committer": "fuzailmansuri <mfm9875@gmail.com>",
+    "subject": "malloc: Build selected GKI from source",
+    "upstream": "https://github.com/LineageOS/android_kernel_google_gs-6.1_devices",
+    "patch": "/tmp/malloc-device-kernel-patches/malloc-gs6.1-devices.patch",
+    "patch_sha256": "ae05790a22958f36650a7071ab909c691a20db5877d402707d572f0213a94d48",
+    "validation": {
+      "clean_worktree": true,
+      "exact_parent": true,
+      "subject_prefix": true,
+      "committer_identity": true,
+      "applies_to_exact_base": true,
+      "no_change_id": true,
+      "amend_tree_preserved": true,
+      "amend_author_and_date_preserved": true
+    }
+  },
+  {
+    "project": "out-kernel/google/gs-6.6/common/gki",
+    "base": "16f4b570c6c3536fc3e17695b88c7411083c2036",
+    "worktree": "/tmp/malloc-gs6.6-gki",
+    "upstream": "https://android.googlesource.com/kernel/common",
+    "gitdir": "/tmp/malloc-gs6.6-gki.git",
+    "sparse": true,
+    "commit": "0bf6c56da947b485f9c87d29f1c40008155c2420",
+    "base_tree": "63c4c82fba798830f1593598c0452f450f274dec",
+    "tree": "a1da8cce09c15095788de0c060a12187300eeab1",
+    "files": [
+      "arch/arm64/Kconfig"
+    ],
+    "author": "flawedworld <flawedworld@flawed.world>",
+    "committer": "fuzailmansuri <mfm9875@gmail.com>",
+    "subject": "malloc: Default 4K arm64 kernels to 48-bit VA",
+    "patch": "/tmp/malloc-device-kernel-patches/malloc-gs6.6-gki.patch",
+    "patch_sha256": "2819e94a2f503dbfbd969ba8cb5dfc5f9c74a4b52477d32726901173d612a741",
+    "validation": {
+      "clean_worktree": true,
+      "exact_parent": true,
+      "subject_prefix": true,
+      "committer_identity": true,
+      "applies_to_exact_base": true,
+      "no_change_id": true,
+      "amend_tree_preserved": true,
+      "amend_author_and_date_preserved": true
+    },
+    "github_mirror": "https://github.com/aosp-mirror-neo/kernel_common"
+  },
+  {
+    "project": "out-kernel/google/gs-6.6/private/devices",
+    "base": "97945345672f65d966fcaa1c20ed6ccbe2f5e2d2",
+    "worktree": "/tmp/malloc-gs6.6-devices",
+    "upstream": "https://github.com/LineageOS/android_kernel_google_gs-6.6_devices",
+    "gitdir": "/tmp/malloc-gs6.6-devices.git",
+    "sparse": true,
+    "commit": "0004aefef48d189152996bc4ef1949e64d1bf161",
+    "base_tree": "2017e1c3dd75b9f9a342c5fc62b1e3641b941bed",
+    "tree": "59a7e5fd475fd424859867520b4a11ae3b3ed166",
+    "files": [
+      "google/muzel/device.bazelrc"
+    ],
+    "author": "fuzailmansuri <mfm9875@gmail.com>",
+    "committer": "fuzailmansuri <mfm9875@gmail.com>",
+    "subject": "malloc: Build selected GKI from source",
+    "patch": "/tmp/malloc-device-kernel-patches/malloc-gs6.6-devices.patch",
+    "patch_sha256": "e35da0da2e6caa108107476ad792d503b9551e5186fbd93a5716c148266f1f75",
+    "validation": {
+      "clean_worktree": true,
+      "exact_parent": true,
+      "subject_prefix": true,
+      "committer_identity": true,
+      "applies_to_exact_base": true,
+      "no_change_id": true,
+      "amend_tree_preserved": true,
+      "amend_author_and_date_preserved": true
+    }
+  }
+]

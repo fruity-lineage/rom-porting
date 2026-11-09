@@ -77,3 +77,13 @@ outcomes and records the remaining checks. Keep the vbmeta and on-phone keybox b
 the ADB bridge does not provide fastboot recovery. Temporary stay-awake was restored.
 The [read-only collector](porting/tools/check-play-integrity.py) retains selected
 configuration/verdict fields without copying private keys or raw request material.
+
+## Allocator port
+
+The [hardened_malloc audit](porting/audit/hardened-malloc.md) covers the separate
+allocator, bionic, build and kernel integration. Malloc-related port commits use
+`malloc:` subjects. The Android overlays include its userspace dependencies;
+install the matching overlay in `porting/manifests/kernels` into the nested kernel
+workspace before selecting a lunch target. Both parts are required. Unsupported
+page sizes/address spaces retain Scudo. Compilation, boot and allocator runtime
+validation remain pending on both families.

@@ -1,0 +1,94 @@
+{
+  "date_utc": "2026-11-09",
+  "build_executed": false,
+  "android_tests_executed": false,
+  "device_test_executed": false,
+  "upstream_bionic_pin": "e93ce48518dc0fba69878cb4ace37a3525862cbe",
+  "upstream_allocator_pin": "bf37d54560a62b50da72e8fda56abf04f23b5fd2",
+  "checks": [
+    "bpfmt parser/formatting for libc and tests Android.bp",
+    "host clang++ syntax-only platform probe with Wall/Wextra/Werror",
+    "host clang++ syntax-only complete LP64 hardened dispatch against actual MallocDispatch and pinned h_malloc.h",
+    "new C++ files and memory regression tree-sitter parse clean",
+    "changed legacy C++ files retain baseline macro parse diagnostics",
+    "Soong Use_hardened_malloc schema and libhardened_malloc_headers symbols match",
+    "Soong exclude_static_libs removes both ordinary and whole archives at cc/linker.go:334-335",
+    "shared and static startup, protected native dispatch and hook chains reviewed",
+    "GWP non-null default guard inspected; rejects H before setting Initialized; tests select Scudo via environment opt-out",
+    "private android_mallopt symbol already exposes apex and llndk ABI",
+    "existing native hook files hash-identical to published parent",
+    "two independent peer reviews; withdrawn GWP false-enabled finding documented"
+  ],
+  "limitations": [
+    "No Android compilation, linkage, test execution or device validation",
+    "8-TiB compatibility reservation is conservative and may decline H under virtual-memory limits",
+    "4 KiB actual runtime pages required; 16/64 KiB runtimes select Scudo",
+    "H hardened malloc iterate unsupported; libmemunreachable returns ENOTSUP",
+    "GWP-ASan intentionally unavailable with H; retained with Scudo fallback",
+    "H mallopt supports M_PURGE only; relevant existing tests are scoped to supported allocators",
+    "C++ sized-deallocation hardening via h_free_sized is outside this integration",
+    "MTE upstream tests require asymmetric checking and compatible device/kernel support"
+  ],
+  "projects": [
+    {
+      "project": "bionic",
+      "worktree": "/tmp/rom-bionic-hardened-malloc",
+      "base": "32c175151d1b0fd666de2bfa70b32e246d26cbe8",
+      "commit": "414ca61ddb2a0aa9c362253a80304413151855dc",
+      "tree": "ffc7ccd7375a8047553462d57d04657239b601a0",
+      "subject": "malloc: Add opt-in hardened allocator with Scudo fallback",
+      "author": "Daniel Micay <danielmicay@gmail.com>",
+      "committer": "fuzailmansuri <mfm9875@gmail.com>",
+      "sha256": {
+        "libc/Android.bp": "c1e09a716210cc970ee35191468262345f9bcb028827715075148ce8371606e2",
+        "libc/bionic/android_mallopt.cpp": "873afcc1e944b48ee0594596fb884909419c58893d5b1b9c5381420b2d47c5b6",
+        "libc/bionic/h_malloc_wrapper.cpp": "f56b2b394cd522af02f8b7aec3d46e4aa08056feb0dc4d1419232a961a3c633b",
+        "libc/bionic/heap_tagging.cpp": "99aca7a246478fb64ad279e6c6671de9dd9544c3faf8bccdfa040c6a802cb9e6",
+        "libc/bionic/libc_init_common.cpp": "6219adc6765a6e39afd27187253036b1e0068b2e3915bcba762978966794bf02",
+        "libc/bionic/malloc_common.cpp": "a8177126d8adb170c750478158c12cb7f9abaa539cf893b8a431a848b34c5ace",
+        "libc/bionic/malloc_common.h": "71a041c443d0aaeda08f874f2ae12802e3fa890bf868cb524bc18cdab0e72e3c",
+        "libc/include/malloc.h": "db503657783b759516cd8f0513c6b79e8e7b9898d64d5c8cc0e43c76722a9979",
+        "libc/platform/bionic/malloc.h": "8a64c470e3398629edcbdc0d9059c5f4e4075ae4824fffc0892440d9db9add4d",
+        "libc/private/bionic_globals.h": "8a7f919edaddc79a9ef1a999359afaeed7e5bb457f308bbf27d232d971647625",
+        "libc/private/hardened_malloc_platform.h": "086d27ff9b7203e24d51a43a71841a3664c6d56cb6965ee7b3739396b5013ae5",
+        "tests/Android.bp": "1317c79313183e910cb16baa4d937577c1c641ac862dc8e6439c2976d2f9282a",
+        "tests/hardened_malloc_test.cpp": "383c8885b66ef612bc6eb333a50dff79254e34e30c97ea2569ba8804fc73c448",
+        "tests/malloc_iterate_test.cpp": "cbf32e89b903ee5d061b3ae1ac23455fe079f75ba38d611d4e0003c578153fa9",
+        "tests/malloc_test.cpp": "e4c73af954b6af50207806b327e5b49709f6aa59a07881a97ce9c77b96e3332c",
+        "tests/utils.cpp": "0109e574c60808c7bdc0881971910f170914f77ad080c696d6c908ee7352ddde"
+      }
+    },
+    {
+      "project": "system/memory/libmemunreachable",
+      "worktree": "/tmp/rom-memory-hardened-malloc",
+      "base": "c3dc0b2f3ce01b53388635a14b01ca7e7a7000cc",
+      "commit": "7a95f0c9dee850ccba4887c3b5b00820f20b0e2e",
+      "tree": "5fca9a9b8c2177b31ca67c1f27944c9dd42a92cc",
+      "subject": "malloc: Reject unsupported allocation enumeration",
+      "author": "fuzailmansuri <mfm9875@gmail.com>",
+      "committer": "fuzailmansuri <mfm9875@gmail.com>",
+      "sha256": {
+        "MemUnreachable.cpp": "40f216f5e6971063c070c250b6c997a7302a27b45067e2d5ceebbb56d6191fcb",
+        "tests/MemUnreachable_test.cpp": "80ad625ce1818ec74f2aecf725181a285992276edd9ecd0df9a6eb61dc72e9df"
+      }
+    }
+  ],
+  "native_hook_files_preserved": [
+    "libc/SYSCALLS.TXT",
+    "libc/bionic/custom_rom_hide.cpp",
+    "libc/bionic/custom_rom_hide.h",
+    "libc/bionic/dirent.cpp",
+    "libc/bionic/dup.cpp",
+    "libc/bionic/faccessat.cpp",
+    "libc/bionic/fcntl.cpp",
+    "libc/bionic/fdsan.cpp",
+    "libc/bionic/lstat.cpp",
+    "libc/bionic/open.cpp",
+    "libc/bionic/readlink.cpp",
+    "libc/bionic/stat.cpp",
+    "libc/bionic/sys_statfs.cpp",
+    "libc/bionic/system_property_api.cpp",
+    "tests/fcntl_test.cpp"
+  ],
+  "hardened_malloc_test_cases": 10
+}

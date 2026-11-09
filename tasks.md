@@ -131,3 +131,23 @@ access remains rejected by shipped firmware. See
 
 Source coverage is bounded to the connected active stack and recorded history queries;
 it is not an exhaustive audit of all organization repositories or historical branches.
+
+## hardened_malloc (2026-11-09)
+
+- [x] Trace pinned upstream allocator, matching Android libc/build dependencies,
+  4-KiB/VA requirements and both source GKI selections.
+- [x] Import the fork with original history/license; wire product flags, libc, MTE
+  disable, fatal handling, malloc_info and truthful unsupported heap inspection.
+- [x] Preserve Scudo/16-KiB/low-memory/HWASan fallbacks and prior native hooks.
+- [x] Adapt both kernels, init mapping limits and selected device/source-GKI configs.
+- [x] Add allocator regressions and runtime guards for upstream MTE tests.
+- [x] Finish independent source/manifest/setup reviews, 33 source hashes and
+  publication checks; publish 14 malloc: source commits across 12 projects.
+- [x] Update Android/nested kernel overlays, provenance, agent memory and instructions.
+- [ ] After active builds finish, install both required overlays and build the
+  coordinated Android/GKI/module set. Agent work used static checks only.
+- [ ] Run added libc/libmem tests and applicable MTE tests; verify startup, fallback,
+  camera/media/graphics/browser/native bridge, recovery and static processes.
+- [ ] Validate module/KMI/FIPS loading and allocator/MTE behavior separately on each device.
+
+The existing RKP, renewal/runtime and Play-verdict acceptance tasks above remain pending.
