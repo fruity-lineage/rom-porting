@@ -391,3 +391,24 @@ a reachable endpoint is needed for fresh bound requester/verdict and actual publ
 caller-chain validation. See [integrity parity investigation](porting/audit/tokay-integrity-parity.md).
 No device changes occurred. The earlier allocator activation remains complete at
 the source level; its OTA/runtime validation is separate and still pending.
+
+## Tokay live integrity and active PIF corrections (2026-11-09)
+
+ADB access was restored. Three fresh checker responses still omit all device labels
+and report UNEVALUATED app recognition/licensing. The missing owner PIF profile was
+restored through Settings to recommended bluejay Canary; its native staging and
+Java hooks were observed. A temporary provider comparison also failed and was
+restored. No account data was erased or private key material exported.
+
+Public Vending caller metadata confirms locked/verified leaf versus unlocked/orange
+Google-signed Duck intermediate; signatures verify. RSA leaves work with the EC
+issuer; a disposable RSA probe verified and was deleted. Exact server rejection
+logic and GMS's full public chain remain unobserved.
+
+Framework 9413fe8/4c9ed08 and Settings 31eae4c are published and in active Tokay
+build inputs. They fix configuration reload/enablement/restarts and apply PIF IDs
+before generated-leaf signing. Static checks pass; 13 Android regressions and
+production compilation/hardware validation remain pending. Installed ROM and
+allocator/GKI still belong to the prior build. Full integrity is not achieved,
+and no supported Tensor signing alternative was established.
+Read porting/audit/tokay-integrity-runtime.md and its scoped JSON reports.

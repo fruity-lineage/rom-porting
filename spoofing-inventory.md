@@ -289,3 +289,24 @@ Tensor external-key signing backend and fresh passing verdicts remain absent.
 source references, configuration namespace correction and required device checks.
 The current ADB tunnel refuses connection. No source/backend capability or passing
 label was invented, and no phone setting, keybox or partition was changed.
+
+## Tokay PIF runtime follow-ups (2026-11-09)
+
+| Project | Published and active commit | Change |
+| --- | --- | --- |
+| frameworks/base | 9413fe868c27b3410c054f9a4666eb5d521501fa | Reset parsed flags; owner enable switch; staged/coalesced config restarts |
+| frameworks/base | 4c9ed082169abc5dab5391eca7b3b3ffe3defae7 | Apply requested PIF IDs before generated-leaf signing |
+| packages/apps/Settings | 31eae4cc1336dd3960acb9c14543df001dc1acf3 | Delegate PIF restarts to framework observer |
+
+All have original contributor credit and fuzailmansuri porter identity. Eight Java/
+Kotlin source/test parses, whitespace/hash checks and scoped preflight pass. Thirteen
+Android regressions remain unexecuted; source compilation and installed behavior are
+pending. Source activation preserved backup/pre-pif-consistency-20261109 in both
+projects and changed no running evox build inputs (none was active).
+
+Fresh runtime: missing profile restored, all labels still absent, imported Duck
+intermediate still unlocked/orange, RSA-with-EC issuance verified. Provider experiment
+restored, probe alias deleted and probe jars removed. Exact server rejection remains
+unknown. Reports: porting/audit/tokay-integrity-runtime.md and
+tokay-integrity-live-20261109.json, tokay-pif-*-verification.json,
+tokay-pif-source-activation.json.

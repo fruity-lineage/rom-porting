@@ -173,9 +173,9 @@
     "upstream": "LineageOS/android_frameworks_base",
     "repository": "fruity-lineage/android_frameworks_base",
     "branch": "main",
-    "local_tip": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89",
-    "published_tip": "4755e2231cf2ccc5617b310a1fb28583e6cb2f89",
-    "tree": "6962960b66170740923f6752ceb7eb582918585c",
+    "local_tip": "4c9ed082169abc5dab5391eca7b3b3ffe3defae7",
+    "published_tip": "4c9ed082169abc5dab5391eca7b3b3ffe3defae7",
+    "tree": "b622f297dde7575cd76c5661fd26684521fbc65e",
     "backup_ref": "refs/heads/backup/pre-fruity-publication-20261108",
     "commits": [
       {
@@ -221,20 +221,40 @@
           "https://github.com/fruity-lineage/android_frameworks_base/commit/60153c127470c3855d4e979a4b60190f6b13bdf5",
           "https://github.com/fruity-lineage/android_system_security/blob/a39ce2250d6ad58dcefa377bdd9e8465fd83e9c8/keystore2/keystore2.rc"
         ]
+      },
+      {
+        "local_commit": "9413fe868c27b3410c054f9a4666eb5d521501fa",
+        "published_commit": "9413fe868c27b3410c054f9a4666eb5d521501fa",
+        "subject": "security: Apply PIF enablement and config changes consistently",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/fruity-lineage/android_frameworks_base/commit/e2f24efe3b33840b0fee1128ebec0a4c4e0915a3"
+        ],
+        "validation": "Static syntax/hash/caller/preflight checks pass; Android compilation and regressions pending."
+      },
+      {
+        "local_commit": "4c9ed082169abc5dab5391eca7b3b3ffe3defae7",
+        "published_commit": "4c9ed082169abc5dab5391eca7b3b3ffe3defae7",
+        "subject": "security: Apply PIF identity before signing generated attestations",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/fruity-lineage/android_frameworks_base/commit/e2f24efe3b33840b0fee1128ebec0a4c4e0915a3"
+        ],
+        "validation": "Static syntax/hash/caller/preflight checks pass; Android compilation and regressions pending."
       }
     ],
     "published": true,
-    "worktree": "/tmp/rom-framework-rkp-boot-resume",
-    "active_checkout_tip": "535d28c54c950b131550796c9829a4e572446df1"
+    "worktree": "/tmp/rom-framework-pif-reload",
+    "active_checkout_tip": "4c9ed082169abc5dab5391eca7b3b3ffe3defae7"
   },
   {
     "project": "packages/apps/Settings",
     "upstream": "LineageOS/android_packages_apps_Settings",
     "repository": "fruity-lineage/android_packages_apps_Settings",
     "branch": "main",
-    "local_tip": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c",
-    "published_tip": "0a2e3c2c7dd19611e2e0a131c7530573ed59fc1c",
-    "tree": "deb437b7d5540f5d77488a58215d93d74379bf66",
+    "local_tip": "31eae4cc1336dd3960acb9c14543df001dc1acf3",
+    "published_tip": "31eae4cc1336dd3960acb9c14543df001dc1acf3",
+    "tree": "95f527a8754d6f37b4714b92cad5e696612aa87a",
     "backup_ref": "refs/heads/backup/pre-fruity-publication-20261108",
     "commits": [
       {
@@ -267,11 +287,21 @@
           "https://github.com/fruity-lineage/android_packages_apps_Settings/commit/19a7e7263ff77194412e7aff729ab3d9b924e6b3",
           "https://github.com/fruity-lineage/android_frameworks_base/commit/474ebc595d120aa3025f6ec0e95acb9a2112e85e"
         ]
+      },
+      {
+        "local_commit": "31eae4cc1336dd3960acb9c14543df001dc1acf3",
+        "published_commit": "31eae4cc1336dd3960acb9c14543df001dc1acf3",
+        "subject": "Settings: Let PIF configuration observers restart GMS",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/fruity-lineage/android_frameworks_base/commit/9413fe868c27b3410c054f9a4666eb5d521501fa"
+        ],
+        "validation": "Static syntax/hash/caller/preflight checks pass; Android compilation and regressions pending."
       }
     ],
     "published": true,
-    "worktree": "/tmp/rom-settings-rkp-wording",
-    "active_checkout_tip": "53030932d1aa4b763b77c5085b2430709048dbe0"
+    "worktree": "/tmp/rom-settings-pif-reload",
+    "active_checkout_tip": "31eae4cc1336dd3960acb9c14543df001dc1acf3"
   },
   {
     "project": "system/security",

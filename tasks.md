@@ -184,3 +184,20 @@ change was performed in this task.
 
 The full integrity objective remains incomplete; no labels were claimed or fabricated.
 Details: [tokay-integrity-parity.md](porting/audit/tokay-integrity-parity.md).
+
+## Tokay integrity runtime checkpoint (2026-11-09)
+
+- [x] Restore ADB access and capture fresh checker responses.
+- [x] Verify absent owner PIF profile, restore it and observe Java/native integration.
+- [x] Verify public Vending caller chain and actual EC issuer fallback for RSA.
+- [x] Perform and restore provider comparison without account-data clearing.
+- [x] Publish and activate three PIF reload/toggle/restart/generated-ID corrections.
+- [x] Preserve other builds, existing source edits and the active allocator port.
+- [ ] Compile coordinated Android/GKI/modules and run 13 PIF regressions plus allocator tests.
+- [ ] Verify rebuilt-source consumer behavior and allocator runtime on Tokay.
+- [ ] Establish a Tensor signing backend that can satisfy the requested consumer trust.
+- [ ] Validate requester label configuration, authenticated response binding and actual
+  BASIC/DEVICE/STRONG passing. No labels are established by the current responses.
+
+This supersedes the earlier unreachable-tunnel task. The imported-key backend still
+contains actual unlocked/orange BootInfo. Source fixes alone do not prove acceptance.

@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-09",
+  "project": "frameworks/base",
+  "worktree": "/tmp/rom-framework-pif-reload",
+  "commit": "4c9ed082169abc5dab5391eca7b3b3ffe3defae7",
+  "parent": "9413fe868c27b3410c054f9a4666eb5d521501fa",
+  "coauthor": "rmp22 <195054967+rmp22@users.noreply.github.com>",
+  "clean": true,
+  "published": true,
+  "build_executed": false,
+  "device_mutations_executed": false,
+  "android_tests_executed": false,
+  "android_regression_tests_added": 5,
+  "files": [
+    {
+      "path": "core/java/android/security/trickystore/CertificateGenerator.java",
+      "sha256": "afcc80aac76fda0b9dee67021a1959b4f52929ef2663843d64c015132232cb46"
+    },
+    {
+      "path": "core/java/android/security/trickystore/CertificateHacker.java",
+      "sha256": "fc84c865b14e52c4175ea2d5c260eb524f52faa4dfdc52994d059beadfdc91fb"
+    },
+    {
+      "path": "core/tests/coretests/src/android/security/trickystore/CertificateGeneratorIdentityTest.java",
+      "sha256": "af02a96a32ef077034af711a55e6d59e9b4397b005f8affc111164a88b114671"
+    }
+  ],
+  "validation": {
+    "java_files_parsed": 3,
+    "parse_errors": 0,
+    "whitespace_errors": 0,
+    "existing_verified_keybox_retrieval_guard_unchanged": true,
+    "profile_mapping_occurs_before_certificate_construction": true
+  },
+  "limits": [
+    "Android compilation and five new regressions remain unexecuted.",
+    "Existing signed leaf identities are retained until new key generation.",
+    "Imported Duck intermediate boot state is unchanged.",
+    "Play Integrity verdict acceptance remains unproved by this source change."
+  ],
+  "active_source_integrated": true,
+  "validation_scope": "Source checks only; installed ROM is the earlier build."
+}

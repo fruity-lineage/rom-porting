@@ -1,0 +1,183 @@
+{
+  "date": "2026-11-09",
+  "device": "Pixel 9 / tokay",
+  "installed_build_incremental": "1794188022",
+  "acceptance_target": [
+    "MEETS_BASIC_INTEGRITY",
+    "MEETS_DEVICE_INTEGRITY",
+    "MEETS_STRONG_INTEGRITY"
+  ],
+  "acceptance_achieved": false,
+  "initial_pif_config_present": false,
+  "profile_restored": {
+    "MANUFACTURER": "Google",
+    "BRAND": "google",
+    "MODEL": "Pixel 6a",
+    "PRODUCT": "bluejay_beta",
+    "DEVICE": "bluejay",
+    "FINGERPRINT": "google/bluejay_beta/bluejay:CANARY/ZP11.261016.008/16754936:user/release-keys",
+    "SECURITY_PATCH": "2026-11-05",
+    "DEVICE_INITIAL_SDK_INT": "32",
+    "_canary_month": "2026-11",
+    "_canary_release_date": "2026-11-04",
+    "manually_imported": false
+  },
+  "provider_comparison_restored": true,
+  "device_probe_jars_removed": true,
+  "private_material_exported": false,
+  "application_data_cleared": false,
+  "verdicts": {
+    "baseline": {
+      "verdict_available": true,
+      "labels": {
+        "MEETS_BASIC_INTEGRITY": false,
+        "MEETS_DEVICE_INTEGRITY": false,
+        "MEETS_STRONG_INTEGRITY": false
+      },
+      "app_licensing": "UNEVALUATED",
+      "app_recognition": "UNEVALUATED",
+      "server_sdk_version": null,
+      "authenticity": "Decoded input supplied by operator; token authenticity not verified here",
+      "label_semantics": "Flags show presence in the response; optional labels also depend on requester settings and licensing",
+      "device_recognition_field_present": false,
+      "request_package": "gr.nikolasspyr.integritycheck",
+      "request_timestamp": "1794233767147",
+      "evidence_source": "Decoded third-party checker UI; Google token authenticity not independently verified."
+    },
+    "profile_restored": {
+      "verdict_available": true,
+      "labels": {
+        "MEETS_BASIC_INTEGRITY": false,
+        "MEETS_DEVICE_INTEGRITY": false,
+        "MEETS_STRONG_INTEGRITY": false
+      },
+      "app_licensing": "UNEVALUATED",
+      "app_recognition": "UNEVALUATED",
+      "server_sdk_version": null,
+      "authenticity": "Decoded input supplied by operator; token authenticity not verified here",
+      "label_semantics": "Flags show presence in the response; optional labels also depend on requester settings and licensing",
+      "device_recognition_field_present": false,
+      "request_package": "gr.nikolasspyr.integritycheck",
+      "request_timestamp": "1794234464310",
+      "evidence_source": "Decoded third-party checker UI; Google token authenticity not independently verified."
+    },
+    "provider_enabled_comparison": {
+      "verdict_available": true,
+      "labels": {
+        "MEETS_BASIC_INTEGRITY": false,
+        "MEETS_DEVICE_INTEGRITY": false,
+        "MEETS_STRONG_INTEGRITY": false
+      },
+      "app_licensing": "UNEVALUATED",
+      "app_recognition": "UNEVALUATED",
+      "server_sdk_version": null,
+      "authenticity": "Decoded input supplied by operator; token authenticity not verified here",
+      "label_semantics": "Flags show presence in the response; optional labels also depend on requester settings and licensing",
+      "request_timestamp": "1794234788124",
+      "device_recognition_field_present": false,
+      "evidence_source": "Decoded third-party checker UI; Google token authenticity not independently verified."
+    }
+  },
+  "public_certificate_evidence": {
+    "vending-baseline": {
+      "all_chain_signatures_verified": true,
+      "certificate_count": 6,
+      "leaf_public_algorithm": "EC",
+      "issuer_public_algorithm": "EC",
+      "leaf_identity": {
+        "brand": "google",
+        "device": "tokay",
+        "product": "tokay",
+        "manufacturer": "Google",
+        "model": "Pixel 9"
+      },
+      "leaf_root_of_trust": {
+        "enforcement": "hardware",
+        "device_locked": true,
+        "verified_boot_state": 0,
+        "boot_key_length": 32,
+        "boot_key_all_zero": false
+      },
+      "imported_intermediate_root_of_trust": {
+        "enforcement": "hardware",
+        "device_locked": false,
+        "verified_boot_state": 2,
+        "boot_key_length": 32,
+        "boot_key_all_zero": true
+      },
+      "imported_intermediate_origin": 2,
+      "probe_alias_deleted": null
+    },
+    "vending-after-profile": {
+      "all_chain_signatures_verified": true,
+      "certificate_count": 6,
+      "leaf_public_algorithm": "EC",
+      "issuer_public_algorithm": "EC",
+      "leaf_identity": {
+        "brand": "google",
+        "device": "tokay",
+        "product": "tokay",
+        "manufacturer": "Google",
+        "model": "Pixel 9"
+      },
+      "leaf_root_of_trust": {
+        "enforcement": "hardware",
+        "device_locked": true,
+        "verified_boot_state": 0,
+        "boot_key_length": 32,
+        "boot_key_all_zero": false
+      },
+      "imported_intermediate_root_of_trust": {
+        "enforcement": "hardware",
+        "device_locked": false,
+        "verified_boot_state": 2,
+        "boot_key_length": 32,
+        "boot_key_all_zero": true
+      },
+      "imported_intermediate_origin": 2,
+      "probe_alias_deleted": null
+    },
+    "rsa-fallback": {
+      "all_chain_signatures_verified": true,
+      "certificate_count": 6,
+      "leaf_public_algorithm": "RSA",
+      "issuer_public_algorithm": "EC",
+      "leaf_identity": {
+        "brand": "google",
+        "device": "tokay",
+        "product": "tokay",
+        "manufacturer": "Google",
+        "model": "Pixel 9"
+      },
+      "leaf_root_of_trust": {
+        "enforcement": "hardware",
+        "device_locked": true,
+        "verified_boot_state": 0,
+        "boot_key_length": 32,
+        "boot_key_all_zero": false
+      },
+      "imported_intermediate_root_of_trust": {
+        "enforcement": "hardware",
+        "device_locked": false,
+        "verified_boot_state": 2,
+        "boot_key_length": 32,
+        "boot_key_all_zero": true
+      },
+      "imported_intermediate_origin": 2,
+      "probe_alias_deleted": true
+    }
+  },
+  "runtime_hook_evidence": {
+    "gms_and_vending_software_generation_observed": true,
+    "pif_load_after_profile_observed": true,
+    "chain_update_after_profile_observed": true,
+    "provider_block_armed_in_comparison": true
+  },
+  "coverage_limits": [
+    "Public metadata was read for the Vending request alias; no network upload capture was performed.",
+    "The independent GMS public-metadata probe was terminated; its chain was not captured.",
+    "The exact Google rejection reason and requester optional-label configuration remain unknown.",
+    "New source corrections have not been compiled or installed on the device.",
+    "A valid chain and RKPD HTTP 200 do not establish Play Integrity acceptance."
+  ]
+}
