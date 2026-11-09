@@ -687,14 +687,14 @@
   },
   {
     "project": "external/hardened_malloc",
-    "worktree": "/tmp/malloc-allocator-port",
+    "worktree": "/serverhive4/fruitzail/evox/external/hardened_malloc",
     "base": "bf37d54560a62b50da72e8fda56abf04f23b5fd2",
     "repository": "fruity-lineage/hardened_malloc",
     "fork_source": "GrapheneOS/hardened_malloc",
     "branch": "main",
-    "local_tip": "8fd6c6016ef53cc97ee5bc6f521cf70859342e37",
-    "published_tip": "8fd6c6016ef53cc97ee5bc6f521cf70859342e37",
-    "tree": "74c09e9c975abcf540214ec2c5134957d4a89dc5",
+    "local_tip": "f09ff6af6ec9805b24886623fec7a540b192d1c9",
+    "published_tip": "f09ff6af6ec9805b24886623fec7a540b192d1c9",
+    "tree": "6842d4b779e63bee8a99840c1523aa989be924fe",
     "commits": [
       {
         "local_commit": "d6b50e3d248ee767bd248d2d7bcaf9e4584ccf05",
@@ -714,11 +714,22 @@
           "https://github.com/GrapheneOS/hardened_malloc/commit/bf37d54560a62b50da72e8fda56abf04f23b5fd2",
           "https://github.com/fruity-lineage/android_bionic/commit/414ca61ddb2a0aa9c362253a80304413151855dc"
         ]
+      },
+      {
+        "local_commit": "f09ff6af6ec9805b24886623fec7a540b192d1c9",
+        "published_commit": "f09ff6af6ec9805b24886623fec7a540b192d1c9",
+        "subject": "malloc: Complete allocator header and test availability",
+        "author": "fuzailmansuri <mfm9875@gmail.com>",
+        "references": [
+          "https://github.com/fruity-lineage/hardened_malloc/commit/d6b50e3d248ee767bd248d2d7bcaf9e4584ccf05"
+        ],
+        "validation": "Tokay Soong graph generation passes; Linux HMallocTest and arm64 memtag_test remain enabled, Windows HMallocTest is absent. Compilation and device tests pending."
       }
     ],
     "published": true,
     "verified": true,
-    "upstream": "GrapheneOS/hardened_malloc"
+    "upstream": "GrapheneOS/hardened_malloc",
+    "active_checkout_tip": "f09ff6af6ec9805b24886623fec7a540b192d1c9"
   },
   {
     "project": "system/memory/libmemunreachable",

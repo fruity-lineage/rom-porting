@@ -421,3 +421,14 @@ regressions pass. Android compilation and hardware execution remain pending.
 Both local ADB endpoints tested now reset the protocol, despite accepting TCP.
 Build-rule override and restored device access were requested. No new build or
 integrity verdict was produced. See porting/audit/tokay-confidence-readiness.md.
+
+## Allocator Soong availability correction (2026-11-09)
+
+external/hardened_malloc is active and published on main at
+f09ff6af6ec9805b24886623fec7a540b192d1c9. Header availability now covers product,
+vendor and APEX consumers with an inherited APEX SDK floor. HMallocTest excludes
+its unsupported Windows variant. The exact failed Tokay Soong analysis now exits
+successfully; its graph retains Linux HMallocTest and arm64 memtag_test.
+Only graph generation was executed in this follow-up; native/Java compilation,
+final image success and device validation remain pending. See
+porting/audit/hardened-malloc-soong-availability.json.

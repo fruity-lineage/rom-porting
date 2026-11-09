@@ -215,3 +215,14 @@ contains actual unlocked/orange BootInfo. Source fixes alone do not prove accept
 
 Details: [validation readiness](porting/audit/tokay-confidence-readiness.md).
 No build or new device verdict was produced by these checks.
+
+## Allocator Soong build blockers (2026-11-09)
+
+- [x] Fix inherited allocator headers for product/vendor and APEX consumers.
+- [x] Exclude Windows HMallocTest while retaining the supported Linux host test.
+- [x] Rerun the reported Soong analysis successfully and verify retained arm64 MTE tests.
+- [x] Commit and publish f09ff6a in external/hardened_malloc; update publication mapping.
+- [ ] Complete native/Java compilation, coordinated image production and device tests.
+
+The [Soong verification](porting/audit/hardened-malloc-soong-availability.json)
+records the narrower validation scope. No passing integrity verdict is implied.

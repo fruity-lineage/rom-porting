@@ -319,3 +319,18 @@ preflight and nine host evidence-collector tests pass. There are no new source
 commits in this check; the existing publication-map revisions remain active.
 Compilation, Android regressions and hardware acceptance remain pending. Both
 checked ADB endpoints reset the protocol; no fresh STRONG result was obtained.
+
+## Allocator header and host-test availability (2026-11-09)
+
+Project: external/hardened_malloc. Active/published commit:
+[f09ff6a](https://github.com/fruity-lineage/hardened_malloc/commit/f09ff6af6ec9805b24886623fec7a540b192d1c9).
+Parent: 8fd6c6016ef53cc97ee5bc6f521cf70859342e37. The two-file correction supplies
+product/vendor header variants, APEX availability and inherited minimum SDK,
+and disables the unsupported Windows HMallocTest variant. Existing history and
+credits are preserved; the new commit uses the user's identity and malloc: subject.
+
+The exact Tokay Soong graph-generation action succeeds. Generated targets retain
+Linux HMallocTest and arm64 memtag_test; Windows HMallocTest is absent. GitHub main
+commit/tree match the clean active project. The two new file hashes supersede the
+earlier allocator snapshot entries for these paths. Full compilation and hardware
+validation remain pending. See [verification](porting/audit/hardened-malloc-soong-availability.json).

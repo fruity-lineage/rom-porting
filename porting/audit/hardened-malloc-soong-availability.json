@@ -1,0 +1,59 @@
+{
+  "date_utc": "2026-11-09T16:21:46.770975+00:00",
+  "project": "external/hardened_malloc",
+  "parent": "8fd6c6016ef53cc97ee5bc6f521cf70859342e37",
+  "commit": "f09ff6af6ec9805b24886623fec7a540b192d1c9",
+  "tree": "6842d4b779e63bee8a99840c1523aa989be924fe",
+  "subject": "malloc: Complete allocator header and test availability",
+  "author": "fuzailmansuri <mfm9875@gmail.com>",
+  "published_repository": "fruity-lineage/hardened_malloc",
+  "published_branch": "main",
+  "published_commit_and_tree_verified": true,
+  "reported_failures": [
+    "libasync_safe product variant could not resolve libhardened_malloc_headers",
+    "The inherited header dependency lacked com.android.adbd APEX availability and a minimum SDK",
+    "Windows HMallocTest depended on disabled Tradefed libraries"
+  ],
+  "fixes": [
+    "Expose the header module to product and vendor consumers",
+    "Allow header use in any APEX and inherit its minimum SDK",
+    "Disable only the unsupported Windows HMallocTest variant"
+  ],
+  "files": [
+    {
+      "project": "external/hardened_malloc",
+      "path": "Android.bp",
+      "commit": "f09ff6af6ec9805b24886623fec7a540b192d1c9",
+      "sha256": "2a7031657634c8ea8517fef7575b3268f86605af3bc412f8ed8ab48c488003c5"
+    },
+    {
+      "project": "external/hardened_malloc",
+      "path": "androidtest/Android.bp",
+      "commit": "f09ff6af6ec9805b24886623fec7a540b192d1c9",
+      "sha256": "1d8d44fbb0c4eaac5033f053e4f3a96599e494f7e253f134894b0f2813e839fa"
+    }
+  ],
+  "validation": {
+    "target": "lineage_tokay",
+    "use_hardened_malloc": true,
+    "device_has_arm_mte": true,
+    "method": "Reran the reported Soong graph-generation action with the existing soong_build executable",
+    "soong_exit_code": 0,
+    "generated_ninja": "out/soong/build.lineage_tokay.ninja",
+    "generated_ninja_bytes": 366545623,
+    "host_test_variant": "linux_glibc_common",
+    "windows_test_variant_present": false,
+    "device_mte_test_variant": "android_arm64_armv8-2a_cortex-a55",
+    "git_diff_check": "pass",
+    "allocator_project_clean": true,
+    "native_or_java_compilation_executed": false,
+    "kernel_build_executed": false,
+    "device_tests_executed": false
+  },
+  "limits": [
+    "Successful graph generation does not establish native or Java compilation, final OTA success or boot",
+    "Linux host and arm64 MTE tests remain in the graph but were not executed",
+    "Frankel graph generation and hardware behavior were not tested",
+    "Play Integrity acceptance remains unresolved"
+  ]
+}
